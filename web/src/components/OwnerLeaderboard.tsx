@@ -13,6 +13,7 @@ type ColKey =
   | "record"
   | "win_pct"
   | "points_for"
+  | "points_against"
   | "ppg"
   | "championships"
   | "runner_ups"
@@ -70,6 +71,15 @@ const COLS: Record<ColKey, ColumnDef> = {
     defaultDir: "desc",
     sortValue: (o) => o.points_for,
     cell: (o) => fmt.pts(o.points_for),
+  },
+  points_against: {
+    key: "points_against",
+    label: "PA",
+    align: "right",
+    // Default to ASC: lower PA means luckier schedule / opponents scored less.
+    defaultDir: "asc",
+    sortValue: (o) => o.points_against,
+    cell: (o) => fmt.pts(o.points_against),
   },
   ppg: {
     key: "ppg",
@@ -170,11 +180,13 @@ export default function OwnerLeaderboard({
                   onClick={() => handleHeaderClick(c.key)}
                   aria-sort={isSorted ? (sortDir === "asc" ? "ascending" : "descending") : "none"}
                 >
-                  <span className="inline-flex items-baseline gap-1.5">
+                  <span className="inline-flex items-baseline gap-1">
                     {c.label}
-                    <span className={`text-[10px] ${isSorted ? "text-[#8a6a22]" : "text-[#b9ae9d]"}`}>
-                      {isSorted ? (sortDir === "asc" ? "up" : "down") : "sort"}
-                    </span>
+                    {isSorted && (
+                      <span aria-hidden className="text-[10px] text-[#8a6a22]">
+                        {sortDir === "asc" ? "▲" : "▼"}
+                      </span>
+                    )}
                   </span>
                 </th>
               );

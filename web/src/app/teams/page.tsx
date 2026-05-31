@@ -39,6 +39,7 @@ export default function OwnersIndex() {
           "record",
           "win_pct",
           "points_for",
+          "points_against",
           "ppg",
           "championships",
           "runner_ups",

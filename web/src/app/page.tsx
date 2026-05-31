@@ -95,11 +95,6 @@ export default function HomePage() {
         title="Active Owner Leaderboard"
         subtitle={`Owners in the ${meta.current_year} league. Click any column to sort and compare all-time performance.`}
       >
-        <div className="mb-3 flex justify-end">
-          <Link href="/teams" className="badge hover:border-[#123d35]/30 hover:text-[#123d35]">
-            View all owners
-          </Link>
-        </div>
         <OwnerLeaderboard
           rows={leaderboard}
           columns={[
@@ -107,6 +102,7 @@ export default function HomePage() {
             "record",
             "win_pct",
             "points_for",
+            "points_against",
             "ppg",
             "championships",
             "runner_ups",
@@ -116,6 +112,23 @@ export default function HomePage() {
           ]}
           defaultSort={{ key: "win_pct", dir: "desc" }}
         />
+        <Link
+          href="/teams"
+          className="group mt-6 flex items-center justify-between gap-4 rounded-xl border border-[#123d35]/20 bg-gradient-to-r from-[#123d35] to-[#1b5a4d] px-6 py-5 text-white shadow-sm transition hover:shadow-lg hover:from-[#0e3128] hover:to-[#17483e]"
+        >
+          <div>
+            <div className="text-xs font-bold uppercase tracking-[0.18em] text-[#f7d77d]">
+              Open the archive
+            </div>
+            <div className="mt-1 text-xl font-black">All-Time Owner Leaderboard</div>
+            <div className="mt-1 text-sm text-white/75">
+              Every owner since {meta.years[0]} — active, alumni, co-owners, championships, the works.
+            </div>
+          </div>
+          <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-[#f7d77d] text-2xl font-black text-[#123d35] transition group-hover:translate-x-1">
+            →
+          </div>
+        </Link>
       </Section>
 
       <Section eyebrow="Hall of Champions" title="Champions Roll">

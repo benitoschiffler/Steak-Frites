@@ -72,22 +72,32 @@ export default function KeeperValidator({
     <div className="premium-panel rounded-xl p-4">
       {/* Team picker */}
       <div className="grid gap-4 lg:grid-cols-[16rem_1fr]">
-        <aside className="space-y-2">
+        <aside className="space-y-2 lg:sticky lg:top-24 lg:self-start">
           <div className="kicker px-1">Team Room</div>
           <div className="flex gap-2 overflow-x-auto pb-2 lg:flex-col lg:overflow-visible lg:pb-0">
-            {teamGroups.map((t) => (
-              <button
-                key={t.team_id}
-                onClick={() => switchTeam(t.team_id)}
-                className={`min-w-max rounded-lg border px-3 py-2 text-left text-sm font-bold transition lg:min-w-0 ${
-                  t.team_id === activeTeamId
-                    ? "border-[#123d35] bg-[#123d35] text-[#fffaf0] shadow-sm"
-                    : "border-black/10 bg-[#fffdf7] text-[#3b3328] hover:border-[#c8962d]/50"
-                }`}
-              >
-                {t.team_name}
-              </button>
-            ))}
+            {teamGroups.map((t) => {
+              const isActive = t.team_id === activeTeamId;
+              return (
+                <button
+                  key={t.team_id}
+                  onClick={() => switchTeam(t.team_id)}
+                  className={`min-w-max rounded-lg border px-3 py-2 text-left transition lg:min-w-0 ${
+                    isActive
+                      ? "border-[#123d35] bg-[#123d35] text-[#fffaf0] shadow-sm"
+                      : "border-black/10 bg-[#fffdf7] text-[#3b3328] hover:border-[#c8962d]/50"
+                  }`}
+                >
+                  <div className="text-sm font-bold leading-tight">{t.team_name}</div>
+                  {t.owners && (
+                    <div className={`mt-0.5 text-[11px] font-semibold leading-tight ${
+                      isActive ? "text-[#f7d77d]" : "text-[#766d61]"
+                    }`}>
+                      {t.owners}
+                    </div>
+                  )}
+                </button>
+              );
+            })}
           </div>
         </aside>
 
@@ -147,10 +157,10 @@ export default function KeeperValidator({
             )}
           </div>
 
-          {/* Candidate list */}
-          <div className="table-shell rounded-lg">
+          {/* Candidate list — scrolls inside its shell with a sticky header */}
+          <div className="table-shell rounded-lg max-h-[60vh] overflow-y-auto">
             <table className="min-w-full text-sm">
-              <thead className="text-left">
+              <thead className="text-left sticky top-0 z-10 bg-[#f3eed9] shadow-[0_1px_0_rgba(0,0,0,0.08)]">
                 <tr>
                   <th className="px-3 py-3 w-8"></th>
                   <th className="px-3 py-3">Player</th>

@@ -35,10 +35,12 @@ export default function KeepersPage() {
 
   return (
     <div className="space-y-10">
-      <header className="premium-panel rounded-xl p-6">
-        <div className="kicker">Keeper Desk</div>
-        <h1 className="mt-2 text-4xl font-black tracking-tight">Keepers</h1>
-        <p className="mt-2 max-w-3xl text-[#6f6a60]">
+      <header className="premium-panel flex flex-col gap-2 rounded-xl p-5 md:flex-row md:items-end md:justify-between md:p-6">
+        <div>
+          <div className="kicker">Keeper Desk</div>
+          <h1 className="mt-1 text-3xl font-black tracking-tight md:text-4xl">Keepers</h1>
+        </div>
+        <p className="max-w-md text-sm text-[#6f6a60] md:text-right">
           Track current keepers, browse historical keepers, and plan {meta.next_year} keeper choices.
         </p>
       </header>

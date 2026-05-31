@@ -30,9 +30,56 @@ def reapply_overrides_to_existing_seasons() -> int:
         apply_overrides_to_members(data.get("members", []))
         for t in data.get("teams", []):
             apply_overrides_to_team(t)
+        # Strip ESPN's "continuation" weeks. After the fantasy championship is
+        # decided, ESPN's API keeps reporting the final-week matchup data for
+        # every remaining scoringPeriod (W17/W18 in 13-week regular-season
+        # years, W18 in 14-week years). These aren't real games — they're
+        # duplicate echoes that bloat single-week records and player MVPs.
+        dedupe_continuation_weeks(data)
         p.write_text(json.dumps(data, indent=2, default=str))
         count += 1
     return count
+
+
+def dedupe_continuation_weeks(season: dict) -> None:
+    """Remove weeks whose matchups are byte-identical to the previous week —
+    those are ESPN's post-championship 'continuation' weeks, not real games.
+
+    Modifies season['matchups'] and season['box_scores'] in place.
+    """
+    matchups = season.get("matchups") or []
+    if not matchups:
+        return
+    # Build per-week signature = tuple of sorted matchup tuples.
+    by_week: dict[int, list[tuple]] = {}
+    for m in matchups:
+        sig = (
+            m.get("home_team_id"),
+            m.get("away_team_id"),
+            m.get("home_score"),
+            m.get("away_score"),
+            m.get("matchup_type"),
+        )
+        by_week.setdefault(m["week"], []).append(sig)
+    week_sigs = {w: tuple(sorted(sigs)) for w, sigs in by_week.items()}
+    weeks = sorted(week_sigs.keys())
+    continuation: set[int] = set()
+    for i in range(1, len(weeks)):
+        if week_sigs[weeks[i]] == week_sigs[weeks[i - 1]]:
+            continuation.add(weeks[i])
+    if not continuation:
+        return
+    # Strip matchups for continuation weeks
+    season["matchups"] = [m for m in matchups if m.get("week") not in continuation]
+    # Strip box_scores keys that are continuation weeks (keys are stringified ints)
+    bx = season.get("box_scores") or {}
+    if isinstance(bx, dict):
+        for w in list(bx.keys()):
+            try:
+                if int(w) in continuation:
+                    del bx[w]
+            except (TypeError, ValueError):
+                continue
 
 
 def rewrite_meta() -> dict:

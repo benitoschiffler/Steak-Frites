@@ -1,0 +1,1301 @@
+[
+  {
+    "owner_id": "{3A1A4E24-2A98-4038-9A4E-242A98803865}",
+    "display_name": "Bennett Schiff",
+    "aliases": [
+      "Ben Schiff",
+      "Bennett Schiff"
+    ],
+    "primary_aliases": [
+      "Ben Schiff",
+      "Bennett Schiff"
+    ],
+    "co_owner_names": [],
+    "appearances": [
+      {
+        "year": 2016,
+        "team_id": 1,
+        "team_name": "Wilfork on First Date",
+        "wins": 8,
+        "losses": 4,
+        "ties": 1,
+        "points_for": 1396.5,
+        "final_standing": 3
+      },
+      {
+        "year": 2017,
+        "team_id": 1,
+        "team_name": "Counting Crowells",
+        "wins": 7,
+        "losses": 6,
+        "ties": 0,
+        "points_for": 1346.5800000000002,
+        "final_standing": 3
+      },
+      {
+        "year": 2018,
+        "team_id": 1,
+        "team_name": "WILD 'N OUT",
+        "wins": 8,
+        "losses": 5,
+        "ties": 0,
+        "points_for": 1501.6200000000001,
+        "final_standing": 4
+      },
+      {
+        "year": 2019,
+        "team_id": 1,
+        "team_name": "Deshaun of The Dead",
+        "wins": 7,
+        "losses": 6,
+        "ties": 0,
+        "points_for": 1411.4399999999998,
+        "final_standing": 6
+      },
+      {
+        "year": 2020,
+        "team_id": 1,
+        "team_name": "JewJew Smith-Schiffler",
+        "wins": 11,
+        "losses": 2,
+        "ties": 0,
+        "points_for": 1658.7599999999998,
+        "final_standing": 3
+      },
+      {
+        "year": 2021,
+        "team_id": 1,
+        "team_name": "JewJew Smith-Schiffler",
+        "wins": 6,
+        "losses": 7,
+        "ties": 0,
+        "points_for": 1143.8400000000001,
+        "final_standing": 5
+      },
+      {
+        "year": 2022,
+        "team_id": 1,
+        "team_name": "I Am Inevitable",
+        "wins": 7,
+        "losses": 7,
+        "ties": 0,
+        "points_for": 1450.2,
+        "final_standing": 6
+      },
+      {
+        "year": 2023,
+        "team_id": 1,
+        "team_name": "Started From The Bottom",
+        "wins": 8,
+        "losses": 6,
+        "ties": 0,
+        "points_for": 1643.8799999999997,
+        "final_standing": 2
+      },
+      {
+        "year": 2024,
+        "team_id": 1,
+        "team_name": "Just Happy To Be Here",
+        "wins": 7,
+        "losses": 7,
+        "ties": 0,
+        "points_for": 1629.6999999999998,
+        "final_standing": 5
+      },
+      {
+        "year": 2025,
+        "team_id": 1,
+        "team_name": "Lily Phillips ",
+        "wins": 2,
+        "losses": 12,
+        "ties": 0,
+        "points_for": 1570.2800000000002,
+        "final_standing": 9
+      }
+    ]
+  },
+  {
+    "owner_id": "{600CAC49-2450-42EF-ABF1-33E7F0327DE9}",
+    "display_name": "Lane Kirschner",
+    "aliases": [
+      "Lane Kirschner"
+    ],
+    "primary_aliases": [
+      "Lane Kirschner"
+    ],
+    "co_owner_names": [],
+    "appearances": [
+      {
+        "year": 2016,
+        "team_id": 2,
+        "team_name": "Chronic  Masterdeflater",
+        "wins": 7,
+        "losses": 6,
+        "ties": 0,
+        "points_for": 1334.5,
+        "final_standing": 7
+      },
+      {
+        "year": 2018,
+        "team_id": 5,
+        "team_name": "Team Kirschner",
+        "wins": 7,
+        "losses": 6,
+        "ties": 0,
+        "points_for": 1488.54,
+        "final_standing": 6
+      }
+    ]
+  },
+  {
+    "owner_id": "{5431883D-E365-4401-97B9-DAD7EC2156AD}",
+    "display_name": "Dylan Campbell",
+    "aliases": [
+      "Dylan Campbell"
+    ],
+    "primary_aliases": [
+      "Dylan Campbell"
+    ],
+    "co_owner_names": [],
+    "appearances": [
+      {
+        "year": 2016,
+        "team_id": 3,
+        "team_name": "The Sticker Squad",
+        "wins": 7,
+        "losses": 6,
+        "ties": 0,
+        "points_for": 1357.0,
+        "final_standing": 5
+      },
+      {
+        "year": 2017,
+        "team_id": 3,
+        "team_name": "The Laptop Squad",
+        "wins": 4,
+        "losses": 9,
+        "ties": 0,
+        "points_for": 1161.0000000000002,
+        "final_standing": 8
+      },
+      {
+        "year": 2020,
+        "team_id": 11,
+        "team_name": "50 Feet  Of Crap",
+        "wins": 7,
+        "losses": 6,
+        "ties": 0,
+        "points_for": 1270.2400000000002,
+        "final_standing": 4
+      },
+      {
+        "year": 2021,
+        "team_id": 11,
+        "team_name": "50 Feet  Of Crap",
+        "wins": 8,
+        "losses": 5,
+        "ties": 0,
+        "points_for": 1074.2199999999998,
+        "final_standing": 1
+      },
+      {
+        "year": 2022,
+        "team_id": 11,
+        "team_name": "Tyreek Hill's Burner Account",
+        "wins": 10,
+        "losses": 4,
+        "ties": 0,
+        "points_for": 1697.1399999999999,
+        "final_standing": 2
+      },
+      {
+        "year": 2023,
+        "team_id": 11,
+        "team_name": "Tyreek Hill is Dead to Me Now",
+        "wins": 6,
+        "losses": 8,
+        "ties": 0,
+        "points_for": 1460.34,
+        "final_standing": 7
+      }
+    ]
+  },
+  {
+    "owner_id": "{429F0506-3667-4F0B-A2ED-1761D0A3F682}",
+    "display_name": "Ben Wolbransky",
+    "aliases": [
+      "Ben Wolbransky"
+    ],
+    "primary_aliases": [
+      "Ben Wolbransky"
+    ],
+    "co_owner_names": [],
+    "appearances": [
+      {
+        "year": 2016,
+        "team_id": 4,
+        "team_name": "How's Business? Boomin'",
+        "wins": 7,
+        "losses": 6,
+        "ties": 0,
+        "points_for": 1338.0,
+        "final_standing": 4
+      },
+      {
+        "year": 2018,
+        "team_id": 6,
+        "team_name": "Shrek's Shreks",
+        "wins": 6,
+        "losses": 7,
+        "ties": 0,
+        "points_for": 1496.6200000000001,
+        "final_standing": 7
+      },
+      {
+        "year": 2019,
+        "team_id": 6,
+        "team_name": "The Turbo Team",
+        "wins": 7,
+        "losses": 6,
+        "ties": 0,
+        "points_for": 1416.32,
+        "final_standing": 1
+      },
+      {
+        "year": 2020,
+        "team_id": 6,
+        "team_name": "The  Turbo Football Team",
+        "wins": 5,
+        "losses": 8,
+        "ties": 0,
+        "points_for": 1420.9400000000003,
+        "final_standing": 9
+      },
+      {
+        "year": 2021,
+        "team_id": 6,
+        "team_name": "The  Turbo Football Team",
+        "wins": 5,
+        "losses": 7,
+        "ties": 1,
+        "points_for": 1183.64,
+        "final_standing": 7
+      },
+      {
+        "year": 2022,
+        "team_id": 6,
+        "team_name": "Hambone Fake Namingtons",
+        "wins": 7,
+        "losses": 7,
+        "ties": 0,
+        "points_for": 1424.0,
+        "final_standing": 9
+      },
+      {
+        "year": 2023,
+        "team_id": 6,
+        "team_name": "Shirt Brothers",
+        "wins": 8,
+        "losses": 6,
+        "ties": 0,
+        "points_for": 1553.2200000000003,
+        "final_standing": 6
+      },
+      {
+        "year": 2024,
+        "team_id": 6,
+        "team_name": "Nude Egg",
+        "wins": 6,
+        "losses": 8,
+        "ties": 0,
+        "points_for": 1669.92,
+        "final_standing": 8
+      },
+      {
+        "year": 2025,
+        "team_id": 6,
+        "team_name": "Nude Egg",
+        "wins": 9,
+        "losses": 5,
+        "ties": 0,
+        "points_for": 1663.0,
+        "final_standing": 6
+      }
+    ]
+  },
+  {
+    "owner_id": "{4F5F2872-3868-445B-A9B7-97762020CC26}",
+    "display_name": "Yogev Almog",
+    "aliases": [
+      "Yogev Almog"
+    ],
+    "primary_aliases": [
+      "Yogev Almog"
+    ],
+    "co_owner_names": [],
+    "appearances": [
+      {
+        "year": 2016,
+        "team_id": 5,
+        "team_name": "Gurelys Gone Wild",
+        "wins": 7,
+        "losses": 6,
+        "ties": 0,
+        "points_for": 1397.5,
+        "final_standing": 6
+      },
+      {
+        "year": 2017,
+        "team_id": 5,
+        "team_name": "Why In Such  A Murray? ",
+        "wins": 5,
+        "losses": 8,
+        "ties": 0,
+        "points_for": 1166.38,
+        "final_standing": 9
+      },
+      {
+        "year": 2018,
+        "team_id": 11,
+        "team_name": "Finna Win This  Year Ya Diggs?",
+        "wins": 6,
+        "losses": 7,
+        "ties": 0,
+        "points_for": 1516.74,
+        "final_standing": 5
+      }
+    ]
+  },
+  {
+    "owner_id": "{6EB109A3-B9E1-4D2D-B109-A3B9E10D2D41}",
+    "display_name": "Stefan Lachkar",
+    "aliases": [
+      "Stefan Lachkar"
+    ],
+    "primary_aliases": [
+      "Stefan Lachkar"
+    ],
+    "co_owner_names": [],
+    "appearances": [
+      {
+        "year": 2016,
+        "team_id": 6,
+        "team_name": "Fuck This League @schiff",
+        "wins": 5,
+        "losses": 8,
+        "ties": 0,
+        "points_for": 1269.0,
+        "final_standing": 8
+      },
+      {
+        "year": 2017,
+        "team_id": 6,
+        "team_name": "2017 Fantasy   Champ FTL",
+        "wins": 10,
+        "losses": 3,
+        "ties": 0,
+        "points_for": 1596.1999999999998,
+        "final_standing": 1
+      },
+      {
+        "year": 2018,
+        "team_id": 3,
+        "team_name": "Running The  Table",
+        "wins": 7,
+        "losses": 6,
+        "ties": 0,
+        "points_for": 1497.64,
+        "final_standing": 2
+      },
+      {
+        "year": 2019,
+        "team_id": 3,
+        "team_name": "Running The Table",
+        "wins": 4,
+        "losses": 9,
+        "ties": 0,
+        "points_for": 1464.12,
+        "final_standing": 8
+      },
+      {
+        "year": 2020,
+        "team_id": 3,
+        "team_name": "3CHI Robby Hootz",
+        "wins": 8,
+        "losses": 5,
+        "ties": 0,
+        "points_for": 1445.32,
+        "final_standing": 5
+      },
+      {
+        "year": 2021,
+        "team_id": 3,
+        "team_name": "3CHI Robby Hootz",
+        "wins": 8,
+        "losses": 5,
+        "ties": 0,
+        "points_for": 1286.68,
+        "final_standing": 6
+      },
+      {
+        "year": 2022,
+        "team_id": 3,
+        "team_name": "Ridley's  Bookie",
+        "wins": 9,
+        "losses": 5,
+        "ties": 0,
+        "points_for": 1620.5199999999998,
+        "final_standing": 1
+      },
+      {
+        "year": 2023,
+        "team_id": 3,
+        "team_name": "Olaver Your Face",
+        "wins": 8,
+        "losses": 6,
+        "ties": 0,
+        "points_for": 1604.6799999999998,
+        "final_standing": 5
+      },
+      {
+        "year": 2024,
+        "team_id": 3,
+        "team_name": "Stroud Boys",
+        "wins": 8,
+        "losses": 6,
+        "ties": 0,
+        "points_for": 1678.34,
+        "final_standing": 6
+      },
+      {
+        "year": 2025,
+        "team_id": 3,
+        "team_name": "Diggs in a Blankets",
+        "wins": 10,
+        "losses": 4,
+        "ties": 0,
+        "points_for": 1825.64,
+        "final_standing": 4
+      }
+    ]
+  },
+  {
+    "owner_id": "{61CFF49A-6ECD-4466-8FF4-9A6ECD9466D1}",
+    "display_name": "Steven Hafif",
+    "aliases": [
+      "Steven Hafif"
+    ],
+    "primary_aliases": [
+      "Steven Hafif"
+    ],
+    "co_owner_names": [],
+    "appearances": [
+      {
+        "year": 2016,
+        "team_id": 7,
+        "team_name": "Team Hafif",
+        "wins": 8,
+        "losses": 5,
+        "ties": 0,
+        "points_for": 1243.0,
+        "final_standing": 1
+      },
+      {
+        "year": 2017,
+        "team_id": 7,
+        "team_name": "Paper Boy",
+        "wins": 3,
+        "losses": 10,
+        "ties": 0,
+        "points_for": 1123.8,
+        "final_standing": 12
+      }
+    ]
+  },
+  {
+    "owner_id": "{92775292-B9FA-4B38-B752-92B9FADB38B0}",
+    "display_name": "sam hymes",
+    "aliases": [
+      "sam hymes"
+    ],
+    "primary_aliases": [
+      "sam hymes"
+    ],
+    "co_owner_names": [],
+    "appearances": [
+      {
+        "year": 2016,
+        "team_id": 8,
+        "team_name": "Team Schuss",
+        "wins": 5,
+        "losses": 8,
+        "ties": 0,
+        "points_for": 1176.5,
+        "final_standing": 11
+      },
+      {
+        "year": 2017,
+        "team_id": 8,
+        "team_name": "Commes des Gar\u00c3\u00a7on",
+        "wins": 5,
+        "losses": 8,
+        "ties": 0,
+        "points_for": 1224.4800000000002,
+        "final_standing": 10
+      }
+    ]
+  },
+  {
+    "owner_id": "{BDC02B8B-DDC4-464E-B2E9-065DF145DDBB}",
+    "display_name": "Jonathan Coopersmith",
+    "aliases": [
+      "Jon Coop",
+      "Jonathan Coopersmith"
+    ],
+    "primary_aliases": [
+      "Jon Coop",
+      "Jonathan Coopersmith"
+    ],
+    "co_owner_names": [],
+    "appearances": [
+      {
+        "year": 2016,
+        "team_id": 9,
+        "team_name": "Need Based",
+        "wins": 5,
+        "losses": 7,
+        "ties": 1,
+        "points_for": 1150.0,
+        "final_standing": 10
+      },
+      {
+        "year": 2017,
+        "team_id": 9,
+        "team_name": "Need Based",
+        "wins": 9,
+        "losses": 4,
+        "ties": 0,
+        "points_for": 1391.1599999999999,
+        "final_standing": 6
+      },
+      {
+        "year": 2019,
+        "team_id": 5,
+        "team_name": "Wraith Talk",
+        "wins": 6,
+        "losses": 7,
+        "ties": 0,
+        "points_for": 1361.34,
+        "final_standing": 9
+      },
+      {
+        "year": 2020,
+        "team_id": 5,
+        "team_name": "Wraith Talk",
+        "wins": 7,
+        "losses": 6,
+        "ties": 0,
+        "points_for": 1468.1,
+        "final_standing": 1
+      },
+      {
+        "year": 2021,
+        "team_id": 5,
+        "team_name": "Wraith Talk",
+        "wins": 3,
+        "losses": 10,
+        "ties": 0,
+        "points_for": 778.82,
+        "final_standing": 10
+      },
+      {
+        "year": 2022,
+        "team_id": 5,
+        "team_name": "Cooper Kupp or Smith",
+        "wins": 6,
+        "losses": 8,
+        "ties": 0,
+        "points_for": 1519.48,
+        "final_standing": 8
+      },
+      {
+        "year": 2023,
+        "team_id": 5,
+        "team_name": "Bijan Mustard",
+        "wins": 6,
+        "losses": 8,
+        "ties": 0,
+        "points_for": 1426.7399999999998,
+        "final_standing": 9
+      },
+      {
+        "year": 2024,
+        "team_id": 5,
+        "team_name": "CeeDeez Nuts",
+        "wins": 8,
+        "losses": 6,
+        "ties": 0,
+        "points_for": 1889.08,
+        "final_standing": 2
+      },
+      {
+        "year": 2025,
+        "team_id": 5,
+        "team_name": "McConkey Kong",
+        "wins": 6,
+        "losses": 8,
+        "ties": 0,
+        "points_for": 1629.5800000000002,
+        "final_standing": 1
+      }
+    ]
+  },
+  {
+    "owner_id": "{E66E0E46-40EF-4FDA-B0AB-3C6FABB395F8}",
+    "display_name": "Skyler Kohn",
+    "aliases": [
+      "Skyler Kohn"
+    ],
+    "primary_aliases": [
+      "Skyler Kohn"
+    ],
+    "co_owner_names": [],
+    "appearances": [
+      {
+        "year": 2016,
+        "team_id": 10,
+        "team_name": "Team Kohn",
+        "wins": 6,
+        "losses": 7,
+        "ties": 0,
+        "points_for": 1160.5,
+        "final_standing": 9
+      },
+      {
+        "year": 2017,
+        "team_id": 2,
+        "team_name": "Chronic  Masterdeflater",
+        "wins": 6,
+        "losses": 7,
+        "ties": 0,
+        "points_for": 1346.28,
+        "final_standing": 4
+      }
+    ]
+  },
+  {
+    "owner_id": "{ECD9E4C2-4E30-4915-AC59-6C1700E34A69}",
+    "display_name": "Ben katz",
+    "aliases": [
+      "alan katz",
+      "Ben katz"
+    ],
+    "primary_aliases": [
+      "alan katz",
+      "Ben katz"
+    ],
+    "co_owner_names": [],
+    "appearances": [
+      {
+        "year": 2016,
+        "team_id": 11,
+        "team_name": "Team katz",
+        "wins": 7,
+        "losses": 6,
+        "ties": 0,
+        "points_for": 1356.0,
+        "final_standing": 2
+      },
+      {
+        "year": 2017,
+        "team_id": 11,
+        "team_name": "Hyde-ing My Johnson",
+        "wins": 6,
+        "losses": 7,
+        "ties": 0,
+        "points_for": 1322.2399999999998,
+        "final_standing": 7
+      },
+      {
+        "year": 2018,
+        "team_id": 7,
+        "team_name": "Give my Chubb an OBJ...plz",
+        "wins": 8,
+        "losses": 5,
+        "ties": 0,
+        "points_for": 1591.24,
+        "final_standing": 3
+      },
+      {
+        "year": 2019,
+        "team_id": 7,
+        "team_name": "Team Katz",
+        "wins": 11,
+        "losses": 2,
+        "ties": 0,
+        "points_for": 1621.6999999999998,
+        "final_standing": 3
+      },
+      {
+        "year": 2020,
+        "team_id": 7,
+        "team_name": "Team Katz",
+        "wins": 5,
+        "losses": 8,
+        "ties": 0,
+        "points_for": 1359.6399999999999,
+        "final_standing": 7
+      },
+      {
+        "year": 2021,
+        "team_id": 7,
+        "team_name": "Team Katz",
+        "wins": 10,
+        "losses": 3,
+        "ties": 0,
+        "points_for": 1305.3600000000001,
+        "final_standing": 3
+      },
+      {
+        "year": 2022,
+        "team_id": 7,
+        "team_name": "Los Peloteros De Katz",
+        "wins": 3,
+        "losses": 11,
+        "ties": 0,
+        "points_for": 1422.8000000000002,
+        "final_standing": 7
+      },
+      {
+        "year": 2023,
+        "team_id": 7,
+        "team_name": "Los Peloteros De Katz",
+        "wins": 10,
+        "losses": 4,
+        "ties": 0,
+        "points_for": 1587.3200000000002,
+        "final_standing": 4
+      },
+      {
+        "year": 2024,
+        "team_id": 7,
+        "team_name": "Los Peloteros De Katz",
+        "wins": 9,
+        "losses": 5,
+        "ties": 0,
+        "points_for": 1702.6600000000003,
+        "final_standing": 4
+      },
+      {
+        "year": 2025,
+        "team_id": 7,
+        "team_name": "Los Peloteros De Katz",
+        "wins": 5,
+        "losses": 9,
+        "ties": 0,
+        "points_for": 1609.1,
+        "final_standing": 8
+      }
+    ]
+  },
+  {
+    "owner_id": "{B792F7C9-61CE-4E29-940C-DC1C5E6C4208}",
+    "display_name": "Ryan Vader",
+    "aliases": [
+      "Ryan Vader"
+    ],
+    "primary_aliases": [
+      "Ryan Vader"
+    ],
+    "co_owner_names": [],
+    "appearances": [
+      {
+        "year": 2016,
+        "team_id": 12,
+        "team_name": "Kentucky Buckets",
+        "wins": 5,
+        "losses": 8,
+        "ties": 0,
+        "points_for": 1224.5,
+        "final_standing": 12
+      },
+      {
+        "year": 2017,
+        "team_id": 12,
+        "team_name": "Kentucky Buckets",
+        "wins": 10,
+        "losses": 3,
+        "ties": 0,
+        "points_for": 1361.22,
+        "final_standing": 2
+      },
+      {
+        "year": 2018,
+        "team_id": 12,
+        "team_name": "Where is Tyreeks Neck",
+        "wins": 5,
+        "losses": 8,
+        "ties": 0,
+        "points_for": 1452.0800000000002,
+        "final_standing": 10
+      },
+      {
+        "year": 2019,
+        "team_id": 12,
+        "team_name": "Where is Tyreeks Neck",
+        "wins": 8,
+        "losses": 5,
+        "ties": 0,
+        "points_for": 1449.1599999999996,
+        "final_standing": 2
+      },
+      {
+        "year": 2020,
+        "team_id": 12,
+        "team_name": "Pls Trade Me Thick Necks",
+        "wins": 7,
+        "losses": 6,
+        "ties": 0,
+        "points_for": 1619.52,
+        "final_standing": 6
+      },
+      {
+        "year": 2021,
+        "team_id": 12,
+        "team_name": "Pls Trade Me Thick Necks",
+        "wins": 4,
+        "losses": 9,
+        "ties": 0,
+        "points_for": 1253.28,
+        "final_standing": 9
+      },
+      {
+        "year": 2022,
+        "team_id": 12,
+        "team_name": "Pls Trade Me Thick Necks",
+        "wins": 9,
+        "losses": 5,
+        "ties": 0,
+        "points_for": 1632.0800000000002,
+        "final_standing": 4
+      },
+      {
+        "year": 2023,
+        "team_id": 12,
+        "team_name": "Pls Trade Me Thick Necks",
+        "wins": 7,
+        "losses": 7,
+        "ties": 0,
+        "points_for": 1666.7200000000003,
+        "final_standing": 1
+      },
+      {
+        "year": 2024,
+        "team_id": 12,
+        "team_name": "Jack, Robin, Harry and Sons",
+        "wins": 10,
+        "losses": 4,
+        "ties": 0,
+        "points_for": 1817.6200000000003,
+        "final_standing": 1
+      },
+      {
+        "year": 2025,
+        "team_id": 12,
+        "team_name": "2 Browns 2 Felonies",
+        "wins": 12,
+        "losses": 2,
+        "ties": 0,
+        "points_for": 1865.7,
+        "final_standing": 3
+      }
+    ]
+  },
+  {
+    "owner_id": "{F6405BA0-4462-458F-805B-A04462258FE9}",
+    "display_name": "Dylan Lowndes",
+    "aliases": [
+      "Dylan Lowndes"
+    ],
+    "primary_aliases": [
+      "Dylan Lowndes"
+    ],
+    "co_owner_names": [],
+    "appearances": [
+      {
+        "year": 2017,
+        "team_id": 4,
+        "team_name": "Barkers Bark",
+        "wins": 5,
+        "losses": 8,
+        "ties": 0,
+        "points_for": 1288.76,
+        "final_standing": 11
+      }
+    ]
+  },
+  {
+    "owner_id": "{CBF6473A-C5A3-46D7-8EF8-BFAF0D868891}",
+    "display_name": "Ben Goldstein",
+    "aliases": [
+      "Ben Goldstein",
+      "Jordan Klein"
+    ],
+    "primary_aliases": [
+      "Ben Goldstein"
+    ],
+    "co_owner_names": [
+      "Jordan Klein"
+    ],
+    "appearances": [
+      {
+        "year": 2017,
+        "team_id": 10,
+        "team_name": "Hunting for the Win",
+        "wins": 8,
+        "losses": 5,
+        "ties": 0,
+        "points_for": 1346.9999999999998,
+        "final_standing": 5
+      },
+      {
+        "year": 2018,
+        "team_id": 10,
+        "team_name": "Team Goldstein",
+        "wins": 5,
+        "losses": 8,
+        "ties": 0,
+        "points_for": 1582.58,
+        "final_standing": 9
+      },
+      {
+        "year": 2019,
+        "team_id": 10,
+        "team_name": "Team Goldstein",
+        "wins": 6,
+        "losses": 7,
+        "ties": 0,
+        "points_for": 1364.4399999999998,
+        "final_standing": 7
+      },
+      {
+        "year": 2020,
+        "team_id": 10,
+        "team_name": "Team Goldstein",
+        "wins": 1,
+        "losses": 12,
+        "ties": 0,
+        "points_for": 1269.5400000000002,
+        "final_standing": 10
+      },
+      {
+        "year": 2021,
+        "team_id": 10,
+        "team_name": "Team Goldstein",
+        "wins": 9,
+        "losses": 4,
+        "ties": 0,
+        "points_for": 1207.92,
+        "final_standing": 4
+      },
+      {
+        "year": 2022,
+        "team_id": 10,
+        "team_name": "Team Goldstein",
+        "wins": 8,
+        "losses": 6,
+        "ties": 0,
+        "points_for": 1462.0599999999997,
+        "final_standing": 3
+      },
+      {
+        "year": 2023,
+        "team_id": 10,
+        "team_name": "Team Goldstein",
+        "wins": 6,
+        "losses": 8,
+        "ties": 0,
+        "points_for": 1513.8000000000002,
+        "final_standing": 3
+      },
+      {
+        "year": 2024,
+        "team_id": 10,
+        "team_name": "Team Goldstein",
+        "wins": 5,
+        "losses": 9,
+        "ties": 0,
+        "points_for": 1635.46,
+        "final_standing": 7
+      },
+      {
+        "year": 2025,
+        "team_id": 10,
+        "team_name": "Team Goldstein",
+        "wins": 5,
+        "losses": 9,
+        "ties": 0,
+        "points_for": 1541.8200000000002,
+        "final_standing": 10
+      }
+    ]
+  },
+  {
+    "owner_id": "{4F3E4D57-5F87-4D74-92C0-40815B7DFD51}",
+    "display_name": "Jake Fischer",
+    "aliases": [
+      "Jake Fischer",
+      "seth taratoot"
+    ],
+    "primary_aliases": [
+      "Jake Fischer"
+    ],
+    "co_owner_names": [
+      "seth taratoot"
+    ],
+    "appearances": [
+      {
+        "year": 2018,
+        "team_id": 2,
+        "team_name": "Process Trusters",
+        "wins": 7,
+        "losses": 6,
+        "ties": 0,
+        "points_for": 1559.5600000000002,
+        "final_standing": 1
+      },
+      {
+        "year": 2019,
+        "team_id": 2,
+        "team_name": "Process Trusters",
+        "wins": 7,
+        "losses": 6,
+        "ties": 0,
+        "points_for": 1508.3799999999999,
+        "final_standing": 5
+      },
+      {
+        "year": 2020,
+        "team_id": 2,
+        "team_name": "Process Trusters",
+        "wins": 5,
+        "losses": 8,
+        "ties": 0,
+        "points_for": 1450.2999999999997,
+        "final_standing": 8
+      },
+      {
+        "year": 2021,
+        "team_id": 2,
+        "team_name": "Process Trusters",
+        "wins": 5,
+        "losses": 7,
+        "ties": 1,
+        "points_for": 1007.6,
+        "final_standing": 8
+      },
+      {
+        "year": 2022,
+        "team_id": 2,
+        "team_name": "Process Trusters",
+        "wins": 8,
+        "losses": 6,
+        "ties": 0,
+        "points_for": 1422.08,
+        "final_standing": 5
+      },
+      {
+        "year": 2023,
+        "team_id": 2,
+        "team_name": "Traded James Harden!",
+        "wins": 5,
+        "losses": 9,
+        "ties": 0,
+        "points_for": 1318.6399999999999,
+        "final_standing": 8
+      },
+      {
+        "year": 2024,
+        "team_id": 2,
+        "team_name": "Jake and Seth",
+        "wins": 7,
+        "losses": 7,
+        "ties": 0,
+        "points_for": 1685.4599999999998,
+        "final_standing": 3
+      },
+      {
+        "year": 2025,
+        "team_id": 2,
+        "team_name": "Jake and Seth",
+        "wins": 6,
+        "losses": 8,
+        "ties": 0,
+        "points_for": 1600.7,
+        "final_standing": 2
+      }
+    ]
+  },
+  {
+    "owner_id": "{D919A776-B138-4470-ABA8-48265F7DC679}",
+    "display_name": "Jacob Rubin",
+    "aliases": [
+      "Jacob Rubin"
+    ],
+    "primary_aliases": [
+      "Jacob Rubin"
+    ],
+    "co_owner_names": [],
+    "appearances": [
+      {
+        "year": 2018,
+        "team_id": 9,
+        "team_name": "JohnMayer = GOAT",
+        "wins": 6,
+        "losses": 7,
+        "ties": 0,
+        "points_for": 1452.56,
+        "final_standing": 8
+      }
+    ]
+  },
+  {
+    "owner_id": "{8D1E7E24-92F1-49FC-ADF1-C8193EA1C44E}",
+    "display_name": "Adam Heckelman",
+    "aliases": [
+      "Adam Heckelman"
+    ],
+    "primary_aliases": [
+      "Adam Heckelman"
+    ],
+    "co_owner_names": [],
+    "appearances": [
+      {
+        "year": 2019,
+        "team_id": 9,
+        "team_name": "Saquads squad  Ship",
+        "wins": 8,
+        "losses": 5,
+        "ties": 0,
+        "points_for": 1551.3400000000004,
+        "final_standing": 4
+      },
+      {
+        "year": 2020,
+        "team_id": 9,
+        "team_name": "Saquads squad  Ship",
+        "wins": 9,
+        "losses": 4,
+        "ties": 0,
+        "points_for": 1523.8799999999999,
+        "final_standing": 2
+      },
+      {
+        "year": 2021,
+        "team_id": 9,
+        "team_name": "Saquads squad  Ship",
+        "wins": 6,
+        "losses": 7,
+        "ties": 0,
+        "points_for": 1074.7000000000003,
+        "final_standing": 2
+      },
+      {
+        "year": 2022,
+        "team_id": 9,
+        "team_name": "Saquads squad  Ship",
+        "wins": 3,
+        "losses": 11,
+        "ties": 0,
+        "points_for": 1391.4800000000002,
+        "final_standing": 10
+      },
+      {
+        "year": 2023,
+        "team_id": 9,
+        "team_name": "Saquads squad  Ship",
+        "wins": 6,
+        "losses": 8,
+        "ties": 0,
+        "points_for": 1418.4600000000003,
+        "final_standing": 10
+      },
+      {
+        "year": 2024,
+        "team_id": 9,
+        "team_name": "Saquads squad  Ship",
+        "wins": 4,
+        "losses": 10,
+        "ties": 0,
+        "points_for": 1654.76,
+        "final_standing": 10
+      },
+      {
+        "year": 2025,
+        "team_id": 9,
+        "team_name": "Saquads squad  Ship",
+        "wins": 4,
+        "losses": 10,
+        "ties": 0,
+        "points_for": 1483.3,
+        "final_standing": 7
+      }
+    ]
+  },
+  {
+    "owner_id": "{96349FBC-DBBD-4841-B49F-BCDBBD9841B6}",
+    "display_name": "Jeremy Isaacs",
+    "aliases": [
+      "Jeremy Isaacs"
+    ],
+    "primary_aliases": [
+      "Jeremy Isaacs"
+    ],
+    "co_owner_names": [],
+    "appearances": [
+      {
+        "year": 2019,
+        "team_id": 11,
+        "team_name": "Finna Win This  Year Ya Diggs?",
+        "wins": 1,
+        "losses": 12,
+        "ties": 0,
+        "points_for": 1076.78,
+        "final_standing": 10
+      }
+    ]
+  },
+  {
+    "owner_id": "{93FE02E3-D523-4B1D-AC57-E31C8D235433}",
+    "display_name": "Jules Salkind",
+    "aliases": [
+      "Jules Salkind"
+    ],
+    "primary_aliases": [
+      "Jules Salkind"
+    ],
+    "co_owner_names": [],
+    "appearances": [
+      {
+        "year": 2024,
+        "team_id": 11,
+        "team_name": "Tickle Pitts",
+        "wins": 6,
+        "losses": 8,
+        "ties": 0,
+        "points_for": 1579.6200000000001,
+        "final_standing": 9
+      },
+      {
+        "year": 2025,
+        "team_id": 11,
+        "team_name": "E Bo Nix",
+        "wins": 11,
+        "losses": 3,
+        "ties": 0,
+        "points_for": 1906.1,
+        "final_standing": 5
+      }
+    ]
+  }
+]

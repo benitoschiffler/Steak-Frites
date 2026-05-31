@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Node / Next.js
+node_modules/
+.next/
+out/
+.vercel/
+*.tsbuildinfo
+next-env.d.ts
+
+# Local env / secrets — NEVER commit these
+.env
+.env.local
+.env.*.local
+
+# Raw ESPN dumps (large CSVs, can be regenerated)
+exports/
+
+# Editor / OS
+.DS_Store
+.idea/
+.vscode/
+
+# Claude Code allowlist contains historic shell commands with ESPN cookies
+.claude/

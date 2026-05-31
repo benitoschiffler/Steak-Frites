@@ -1,0 +1,5005 @@
+{
+  "year": 2026,
+  "players": [
+    {
+      "player_id": 4430807,
+      "name": "Bijan Robinson",
+      "position": "RB",
+      "pro_team_id": 1,
+      "adp": 2.22,
+      "percent_owned": 99.72,
+      "rank_standard": 1,
+      "rank_ppr": 1
+    },
+    {
+      "player_id": 4429795,
+      "name": "Jahmyr Gibbs",
+      "position": "RB",
+      "pro_team_id": 8,
+      "adp": 2.34,
+      "percent_owned": 99.73,
+      "rank_standard": 2,
+      "rank_ppr": 2
+    },
+    {
+      "player_id": 4426515,
+      "name": "Puka Nacua",
+      "position": "WR",
+      "pro_team_id": 14,
+      "adp": 4.13,
+      "percent_owned": 99.69,
+      "rank_standard": 3,
+      "rank_ppr": 3
+    },
+    {
+      "player_id": 4362628,
+      "name": "Ja'Marr Chase",
+      "position": "WR",
+      "pro_team_id": 4,
+      "adp": 5.05,
+      "percent_owned": 99.72,
+      "rank_standard": 4,
+      "rank_ppr": 4
+    },
+    {
+      "player_id": 3117251,
+      "name": "Christian McCaffrey",
+      "position": "RB",
+      "pro_team_id": 25,
+      "adp": 5.21,
+      "percent_owned": 99.71,
+      "rank_standard": 6,
+      "rank_ppr": 5
+    },
+    {
+      "player_id": 4430878,
+      "name": "Jaxon Smith-Njigba",
+      "position": "WR",
+      "pro_team_id": 26,
+      "adp": 6.53,
+      "percent_owned": 99.69,
+      "rank_standard": 5,
+      "rank_ppr": 6
+    },
+    {
+      "player_id": 4242335,
+      "name": "Jonathan Taylor",
+      "position": "RB",
+      "pro_team_id": 11,
+      "adp": 8.29,
+      "percent_owned": 99.67,
+      "rank_standard": 7,
+      "rank_ppr": 8
+    },
+    {
+      "player_id": 4374302,
+      "name": "Amon-Ra St. Brown",
+      "position": "WR",
+      "pro_team_id": 8,
+      "adp": 8.3,
+      "percent_owned": 99.71,
+      "rank_standard": 8,
+      "rank_ppr": 7
+    },
+    {
+      "player_id": 4429160,
+      "name": "De'Von Achane",
+      "position": "RB",
+      "pro_team_id": 15,
+      "adp": 11.03,
+      "percent_owned": 99.63,
+      "rank_standard": 15,
+      "rank_ppr": 9
+    },
+    {
+      "player_id": 4241389,
+      "name": "CeeDee Lamb",
+      "position": "WR",
+      "pro_team_id": 6,
+      "adp": 11.53,
+      "percent_owned": 99.69,
+      "rank_standard": 9,
+      "rank_ppr": 10
+    },
+    {
+      "player_id": 4262921,
+      "name": "Justin Jefferson",
+      "position": "WR",
+      "pro_team_id": 16,
+      "adp": 12.75,
+      "percent_owned": 99.65,
+      "rank_standard": 11,
+      "rank_ppr": 12
+    },
+    {
+      "player_id": 4379399,
+      "name": "James Cook III",
+      "position": "RB",
+      "pro_team_id": 2,
+      "adp": 13.21,
+      "percent_owned": 99.66,
+      "rank_standard": 12,
+      "rank_ppr": 13
+    },
+    {
+      "player_id": 4890973,
+      "name": "Ashton Jeanty",
+      "position": "RB",
+      "pro_team_id": 13,
+      "adp": 13.57,
+      "percent_owned": 99.47,
+      "rank_standard": 18,
+      "rank_ppr": 11
+    },
+    {
+      "player_id": 3929630,
+      "name": "Saquon Barkley",
+      "position": "RB",
+      "pro_team_id": 21,
+      "adp": 15.53,
+      "percent_owned": 99.54,
+      "rank_standard": 20,
+      "rank_ppr": 16
+    },
+    {
+      "player_id": 4870808,
+      "name": "Jeremiyah Love",
+      "position": "RB",
+      "pro_team_id": 22,
+      "adp": 17.11,
+      "percent_owned": 95.73,
+      "rank_standard": 17,
+      "rank_ppr": 14
+    },
+    {
+      "player_id": 3043078,
+      "name": "Derrick Henry",
+      "position": "RB",
+      "pro_team_id": 33,
+      "adp": 17.98,
+      "percent_owned": 99.47,
+      "rank_standard": 10,
+      "rank_ppr": 18
+    },
+    {
+      "player_id": 4426502,
+      "name": "Drake London",
+      "position": "WR",
+      "pro_team_id": 1,
+      "adp": 19.09,
+      "percent_owned": 99.47,
+      "rank_standard": 14,
+      "rank_ppr": 15
+    },
+    {
+      "player_id": 4361307,
+      "name": "Trey McBride",
+      "position": "TE",
+      "pro_team_id": 22,
+      "adp": 20.62,
+      "percent_owned": 99.64,
+      "rank_standard": 16,
+      "rank_ppr": 22
+    },
+    {
+      "player_id": 4685382,
+      "name": "Omarion Hampton",
+      "position": "RB",
+      "pro_team_id": 24,
+      "adp": 21.38,
+      "percent_owned": 98.44,
+      "rank_standard": 19,
+      "rank_ppr": 20
+    },
+    {
+      "player_id": 3918298,
+      "name": "Josh Allen",
+      "position": "QB",
+      "pro_team_id": 2,
+      "adp": 23.57,
+      "percent_owned": 99.68,
+      "rank_standard": 36,
+      "rank_ppr": 73
+    },
+    {
+      "player_id": 4258173,
+      "name": "Nico Collins",
+      "position": "WR",
+      "pro_team_id": 34,
+      "adp": 24.01,
+      "percent_owned": 99.3,
+      "rank_standard": 25,
+      "rank_ppr": 19
+    },
+    {
+      "player_id": 4428331,
+      "name": "Rashee Rice",
+      "position": "WR",
+      "pro_team_id": 12,
+      "adp": 24.38,
+      "percent_owned": 98.98,
+      "rank_standard": 13,
+      "rank_ppr": 17
+    },
+    {
+      "player_id": 4432665,
+      "name": "Brock Bowers",
+      "position": "TE",
+      "pro_team_id": 13,
+      "adp": 24.63,
+      "percent_owned": 99.59,
+      "rank_standard": 24,
+      "rank_ppr": 24
+    },
+    {
+      "player_id": 4595348,
+      "name": "Malik Nabers",
+      "position": "WR",
+      "pro_team_id": 19,
+      "adp": 25.67,
+      "percent_owned": 99.21,
+      "rank_standard": 26,
+      "rank_ppr": 21
+    },
+    {
+      "player_id": 4047365,
+      "name": "Josh Jacobs",
+      "position": "RB",
+      "pro_team_id": 9,
+      "adp": 26.63,
+      "percent_owned": 99.09,
+      "rank_standard": 21,
+      "rank_ppr": 23
+    },
+    {
+      "player_id": 4362238,
+      "name": "Chase Brown",
+      "position": "RB",
+      "pro_team_id": 4,
+      "adp": 26.89,
+      "percent_owned": 98.2,
+      "rank_standard": 30,
+      "rank_ppr": 25
+    },
+    {
+      "player_id": 4567048,
+      "name": "Kenneth Walker III",
+      "position": "RB",
+      "pro_team_id": 12,
+      "adp": 27.23,
+      "percent_owned": 99.13,
+      "rank_standard": 23,
+      "rank_ppr": 30
+    },
+    {
+      "player_id": 4426354,
+      "name": "George Pickens",
+      "position": "WR",
+      "pro_team_id": 6,
+      "adp": 27.38,
+      "percent_owned": 99.43,
+      "rank_standard": 28,
+      "rank_ppr": 28
+    },
+    {
+      "player_id": 4427366,
+      "name": "Breece Hall",
+      "position": "RB",
+      "pro_team_id": 20,
+      "adp": 31.56,
+      "percent_owned": 97.65,
+      "rank_standard": 22,
+      "rank_ppr": 27
+    },
+    {
+      "player_id": 4047646,
+      "name": "A.J. Brown",
+      "position": "WR",
+      "pro_team_id": 21,
+      "adp": 32.53,
+      "percent_owned": 99.02,
+      "rank_standard": 27,
+      "rank_ppr": 29
+    },
+    {
+      "player_id": 4361370,
+      "name": "Chris Olave",
+      "position": "WR",
+      "pro_team_id": 18,
+      "adp": 32.87,
+      "percent_owned": 98.22,
+      "rank_standard": 33,
+      "rank_ppr": 26
+    },
+    {
+      "player_id": 4361579,
+      "name": "Javonte Williams",
+      "position": "RB",
+      "pro_team_id": 6,
+      "adp": 35.54,
+      "percent_owned": 97.5,
+      "rank_standard": 31,
+      "rank_ppr": 34
+    },
+    {
+      "player_id": 4430737,
+      "name": "Kyren Williams",
+      "position": "RB",
+      "pro_team_id": 14,
+      "adp": 36.45,
+      "percent_owned": 97.69,
+      "rank_standard": 69,
+      "rank_ppr": 35
+    },
+    {
+      "player_id": 3916387,
+      "name": "Lamar Jackson",
+      "position": "QB",
+      "pro_team_id": 33,
+      "adp": 36.83,
+      "percent_owned": 99.48,
+      "rank_standard": 88,
+      "rank_ppr": 79
+    },
+    {
+      "player_id": 4569618,
+      "name": "Garrett Wilson",
+      "position": "WR",
+      "pro_team_id": 20,
+      "adp": 38.91,
+      "percent_owned": 97.82,
+      "rank_standard": 29,
+      "rank_ppr": 31
+    },
+    {
+      "player_id": 4241478,
+      "name": "DeVonta Smith",
+      "position": "WR",
+      "pro_team_id": 21,
+      "adp": 39.55,
+      "percent_owned": 98.17,
+      "rank_standard": 74,
+      "rank_ppr": 33
+    },
+    {
+      "player_id": 4685472,
+      "name": "Tetairoa McMillan",
+      "position": "WR",
+      "pro_team_id": 29,
+      "adp": 39.75,
+      "percent_owned": 98.33,
+      "rank_standard": 34,
+      "rank_ppr": 32
+    },
+    {
+      "player_id": 4696981,
+      "name": "Cam Skattebo",
+      "position": "RB",
+      "pro_team_id": 19,
+      "adp": 41.23,
+      "percent_owned": 97.84,
+      "rank_standard": 72,
+      "rank_ppr": 71
+    },
+    {
+      "player_id": 4239996,
+      "name": "Travis Etienne Jr.",
+      "position": "RB",
+      "pro_team_id": 18,
+      "adp": 42.03,
+      "percent_owned": 96.34,
+      "rank_standard": 70,
+      "rank_ppr": 36
+    },
+    {
+      "player_id": 4429615,
+      "name": "Zay Flowers",
+      "position": "WR",
+      "pro_team_id": 33,
+      "adp": 44.63,
+      "percent_owned": 98.13,
+      "rank_standard": 35,
+      "rank_ppr": 69
+    },
+    {
+      "player_id": 4723086,
+      "name": "Colston Loveland",
+      "position": "TE",
+      "pro_team_id": 3,
+      "adp": 44.64,
+      "percent_owned": 98.54,
+      "rank_standard": 81,
+      "rank_ppr": 77
+    },
+    {
+      "player_id": 16800,
+      "name": "Davante Adams",
+      "position": "WR",
+      "pro_team_id": 14,
+      "adp": 44.78,
+      "percent_owned": 98.2,
+      "rank_standard": 32,
+      "rank_ppr": 74
+    },
+    {
+      "player_id": 4431459,
+      "name": "Tyler Warren",
+      "position": "TE",
+      "pro_team_id": 11,
+      "adp": 47.41,
+      "percent_owned": 98.79,
+      "rank_standard": 82,
+      "rank_ppr": 83
+    },
+    {
+      "player_id": 4239993,
+      "name": "Tee Higgins",
+      "position": "WR",
+      "pro_team_id": 4,
+      "adp": 49.36,
+      "percent_owned": 96.98,
+      "rank_standard": 76,
+      "rank_ppr": 72
+    },
+    {
+      "player_id": 4596448,
+      "name": "Bucky Irving",
+      "position": "RB",
+      "pro_team_id": 27,
+      "adp": 50.88,
+      "percent_owned": 95.96,
+      "rank_standard": 73,
+      "rank_ppr": 75
+    },
+    {
+      "player_id": 4567750,
+      "name": "Emeka Egbuka",
+      "position": "WR",
+      "pro_team_id": 27,
+      "adp": 52.39,
+      "percent_owned": 95.07,
+      "rank_standard": 75,
+      "rank_ppr": 81
+    },
+    {
+      "player_id": 4431452,
+      "name": "Drake Maye",
+      "position": "QB",
+      "pro_team_id": 17,
+      "adp": 52.49,
+      "percent_owned": 99.08,
+      "rank_standard": 89,
+      "rank_ppr": 101
+    },
+    {
+      "player_id": 4685702,
+      "name": "Quinshon Judkins",
+      "position": "RB",
+      "pro_team_id": 5,
+      "adp": 52.93,
+      "percent_owned": 94.76,
+      "rank_standard": 71,
+      "rank_ppr": 78
+    },
+    {
+      "player_id": 3121422,
+      "name": "Terry McLaurin",
+      "position": "WR",
+      "pro_team_id": 28,
+      "adp": 53.18,
+      "percent_owned": 95.98,
+      "rank_standard": 78,
+      "rank_ppr": 70
+    },
+    {
+      "player_id": 4426348,
+      "name": "Jayden Daniels",
+      "position": "QB",
+      "pro_team_id": 28,
+      "adp": 53.65,
+      "percent_owned": 98.56,
+      "rank_standard": 87,
+      "rank_ppr": 89
+    },
+    {
+      "player_id": 3915511,
+      "name": "Joe Burrow",
+      "position": "QB",
+      "pro_team_id": 4,
+      "adp": 55.91,
+      "percent_owned": 95.59,
+      "rank_standard": 111,
+      "rank_ppr": 102
+    },
+    {
+      "player_id": 4432710,
+      "name": "TreVeyon Henderson",
+      "position": "RB",
+      "pro_team_id": 17,
+      "adp": 57.47,
+      "percent_owned": 92.05,
+      "rank_standard": 93,
+      "rank_ppr": 84
+    },
+    {
+      "player_id": 4871023,
+      "name": "Carnell Tate",
+      "position": "WR",
+      "pro_team_id": 10,
+      "adp": 57.52,
+      "percent_owned": 91.76,
+      "rank_standard": 85,
+      "rank_ppr": 76
+    },
+    {
+      "player_id": 4612826,
+      "name": "Ladd McConkey",
+      "position": "WR",
+      "pro_team_id": 24,
+      "adp": 57.71,
+      "percent_owned": 95.19,
+      "rank_standard": 79,
+      "rank_ppr": 80
+    },
+    {
+      "player_id": 4040715,
+      "name": "Jalen Hurts",
+      "position": "QB",
+      "pro_team_id": 21,
+      "adp": 60.3,
+      "percent_owned": 97.98,
+      "rank_standard": 90,
+      "rank_ppr": 103
+    },
+    {
+      "player_id": 4685512,
+      "name": "Jadarian Price",
+      "position": "RB",
+      "pro_team_id": 26,
+      "adp": 60.38,
+      "percent_owned": 87.46,
+      "rank_standard": 94,
+      "rank_ppr": 86
+    },
+    {
+      "player_id": 4372016,
+      "name": "Jaylen Waddle",
+      "position": "WR",
+      "pro_team_id": 7,
+      "adp": 60.51,
+      "percent_owned": 96.44,
+      "rank_standard": 83,
+      "rank_ppr": 82
+    },
+    {
+      "player_id": 5083076,
+      "name": "Harold Fannin Jr.",
+      "position": "TE",
+      "pro_team_id": 5,
+      "adp": 63.39,
+      "percent_owned": 92.51,
+      "rank_standard": 106,
+      "rank_ppr": 95
+    },
+    {
+      "player_id": 3915416,
+      "name": "DJ Moore",
+      "position": "WR",
+      "pro_team_id": 2,
+      "adp": 64.47,
+      "percent_owned": 92.81,
+      "rank_standard": 84,
+      "rank_ppr": 87
+    },
+    {
+      "player_id": 4259545,
+      "name": "D'Andre Swift",
+      "position": "RB",
+      "pro_team_id": 3,
+      "adp": 66.79,
+      "percent_owned": 91.18,
+      "rank_standard": 95,
+      "rank_ppr": 94
+    },
+    {
+      "player_id": 4360248,
+      "name": "Kyle Pitts Sr.",
+      "position": "TE",
+      "pro_team_id": 1,
+      "adp": 67.39,
+      "percent_owned": 95.0,
+      "rank_standard": 105,
+      "rank_ppr": 105
+    },
+    {
+      "player_id": 4426388,
+      "name": "Jameson Williams",
+      "position": "WR",
+      "pro_team_id": 8,
+      "adp": 67.7,
+      "percent_owned": 94.07,
+      "rank_standard": 77,
+      "rank_ppr": 85
+    },
+    {
+      "player_id": 4035538,
+      "name": "David Montgomery",
+      "position": "RB",
+      "pro_team_id": 34,
+      "adp": 69.86,
+      "percent_owned": 90.95,
+      "rank_standard": 96,
+      "rank_ppr": 96
+    },
+    {
+      "player_id": 4689114,
+      "name": "Jaxson Dart",
+      "position": "QB",
+      "pro_team_id": 19,
+      "adp": 70.96,
+      "percent_owned": 93.98,
+      "rank_standard": 108,
+      "rank_ppr": 114
+    },
+    {
+      "player_id": 4431299,
+      "name": "Rome Odunze",
+      "position": "WR",
+      "pro_team_id": 3,
+      "adp": 71.8,
+      "percent_owned": 91.57,
+      "rank_standard": 80,
+      "rank_ppr": 90
+    },
+    {
+      "player_id": 4882093,
+      "name": "Bhayshul Tuten",
+      "position": "RB",
+      "pro_team_id": 30,
+      "adp": 73.83,
+      "percent_owned": 89.15,
+      "rank_standard": 91,
+      "rank_ppr": 93
+    },
+    {
+      "player_id": 4685278,
+      "name": "Luther Burden III",
+      "position": "WR",
+      "pro_team_id": 3,
+      "adp": 74.09,
+      "percent_owned": 90.43,
+      "rank_standard": 99,
+      "rank_ppr": 88
+    },
+    {
+      "player_id": 4430027,
+      "name": "Sam LaPorta",
+      "position": "TE",
+      "pro_team_id": 8,
+      "adp": 74.44,
+      "percent_owned": 92.28,
+      "rank_standard": 141,
+      "rank_ppr": 113
+    },
+    {
+      "player_id": 4241416,
+      "name": "Chuba Hubbard",
+      "position": "RB",
+      "pro_team_id": 29,
+      "adp": 75.74,
+      "percent_owned": 91.18,
+      "rank_standard": 134,
+      "rank_ppr": 97
+    },
+    {
+      "player_id": 4432708,
+      "name": "Marvin Harrison Jr.",
+      "position": "WR",
+      "pro_team_id": 22,
+      "adp": 77.82,
+      "percent_owned": 90.28,
+      "rank_standard": 100,
+      "rank_ppr": 91
+    },
+    {
+      "player_id": 16737,
+      "name": "Mike Evans",
+      "position": "WR",
+      "pro_team_id": 25,
+      "adp": 79.24,
+      "percent_owned": 91.18,
+      "rank_standard": 113,
+      "rank_ppr": 107
+    },
+    {
+      "player_id": -16034,
+      "name": "Texans D/ST",
+      "position": "D/ST",
+      "pro_team_id": 34,
+      "adp": 81.71,
+      "percent_owned": 99.32,
+      "rank_standard": 236,
+      "rank_ppr": 182
+    },
+    {
+      "player_id": 3953687,
+      "name": "Brandon Aubrey",
+      "position": "K",
+      "pro_team_id": 6,
+      "adp": 83.25,
+      "percent_owned": 99.67,
+      "rank_standard": 251,
+      "rank_ppr": 180
+    },
+    {
+      "player_id": 4047650,
+      "name": "DK Metcalf",
+      "position": "WR",
+      "pro_team_id": 23,
+      "adp": 83.47,
+      "percent_owned": 93.09,
+      "rank_standard": 103,
+      "rank_ppr": 106
+    },
+    {
+      "player_id": 4035687,
+      "name": "Michael Pittman Jr.",
+      "position": "WR",
+      "pro_team_id": 23,
+      "adp": 84.61,
+      "percent_owned": 91.56,
+      "rank_standard": 114,
+      "rank_ppr": 99
+    },
+    {
+      "player_id": 4880281,
+      "name": "Jordyn Tyson",
+      "position": "WR",
+      "pro_team_id": 18,
+      "adp": 85.48,
+      "percent_owned": 83.16,
+      "rank_standard": 112,
+      "rank_ppr": 100
+    },
+    {
+      "player_id": 4360078,
+      "name": "Alec Pierce",
+      "position": "WR",
+      "pro_team_id": 11,
+      "adp": 86.95,
+      "percent_owned": 88.75,
+      "rank_standard": 101,
+      "rank_ppr": 104
+    },
+    {
+      "player_id": 3128429,
+      "name": "Courtland Sutton",
+      "position": "WR",
+      "pro_team_id": 7,
+      "adp": 87.02,
+      "percent_owned": 91.47,
+      "rank_standard": 86,
+      "rank_ppr": 108
+    },
+    {
+      "player_id": 15847,
+      "name": "Travis Kelce",
+      "position": "TE",
+      "pro_team_id": 12,
+      "adp": 87.32,
+      "percent_owned": 90.84,
+      "rank_standard": 143,
+      "rank_ppr": 132
+    },
+    {
+      "player_id": 3916148,
+      "name": "Tony Pollard",
+      "position": "RB",
+      "pro_team_id": 10,
+      "adp": 88.07,
+      "percent_owned": 88.38,
+      "rank_standard": 97,
+      "rank_ppr": 111
+    },
+    {
+      "player_id": -16007,
+      "name": "Broncos D/ST",
+      "position": "D/ST",
+      "pro_team_id": 7,
+      "adp": 88.1,
+      "percent_owned": 99.18,
+      "rank_standard": 234,
+      "rank_ppr": 183
+    },
+    {
+      "player_id": 4569987,
+      "name": "Jaylen Warren",
+      "position": "RB",
+      "pro_team_id": 23,
+      "adp": 90.27,
+      "percent_owned": 87.32,
+      "rank_standard": 138,
+      "rank_ppr": 116
+    },
+    {
+      "player_id": 2577417,
+      "name": "Dak Prescott",
+      "position": "QB",
+      "pro_team_id": 6,
+      "adp": 90.95,
+      "percent_owned": 90.01,
+      "rank_standard": 119,
+      "rank_ppr": 144
+    },
+    {
+      "player_id": 3042519,
+      "name": "Aaron Jones Sr.",
+      "position": "RB",
+      "pro_team_id": 16,
+      "adp": 93.8,
+      "percent_owned": 87.21,
+      "rank_standard": 135,
+      "rank_ppr": 112
+    },
+    {
+      "player_id": 3040151,
+      "name": "George Kittle",
+      "position": "TE",
+      "pro_team_id": 25,
+      "adp": 94.04,
+      "percent_owned": 89.53,
+      "rank_standard": 151,
+      "rank_ppr": 148
+    },
+    {
+      "player_id": 4248528,
+      "name": "Christian Watson",
+      "position": "WR",
+      "pro_team_id": 9,
+      "adp": 94.27,
+      "percent_owned": 87.74,
+      "rank_standard": 102,
+      "rank_ppr": 115
+    },
+    {
+      "player_id": 4038815,
+      "name": "Rico Dowdle",
+      "position": "RB",
+      "pro_team_id": 23,
+      "adp": 96.49,
+      "percent_owned": 87.7,
+      "rank_standard": 136,
+      "rank_ppr": 125
+    },
+    {
+      "player_id": -16026,
+      "name": "Seahawks D/ST",
+      "position": "D/ST",
+      "pro_team_id": 26,
+      "adp": 97.57,
+      "percent_owned": 98.44,
+      "rank_standard": 239,
+      "rank_ppr": 190
+    },
+    {
+      "player_id": 4361741,
+      "name": "Brock Purdy",
+      "position": "QB",
+      "pro_team_id": 25,
+      "adp": 97.98,
+      "percent_owned": 90.4,
+      "rank_standard": 121,
+      "rank_ppr": 142
+    },
+    {
+      "player_id": 4870795,
+      "name": "Makai Lemon",
+      "position": "WR",
+      "pro_team_id": 21,
+      "adp": 100.12,
+      "percent_owned": 82.29,
+      "rank_standard": 116,
+      "rank_ppr": 128
+    },
+    {
+      "player_id": 4432773,
+      "name": "Brian Thomas Jr.",
+      "position": "WR",
+      "pro_team_id": 30,
+      "adp": 100.2,
+      "percent_owned": 87.15,
+      "rank_standard": 117,
+      "rank_ppr": 120
+    },
+    {
+      "player_id": 3116165,
+      "name": "Chris Godwin Jr.",
+      "position": "WR",
+      "pro_team_id": 27,
+      "adp": 101.21,
+      "percent_owned": 87.05,
+      "rank_standard": 130,
+      "rank_ppr": 117
+    },
+    {
+      "player_id": 3121023,
+      "name": "Dallas Goedert",
+      "position": "TE",
+      "pro_team_id": 21,
+      "adp": 102.58,
+      "percent_owned": 90.21,
+      "rank_standard": 107,
+      "rank_ppr": 149
+    },
+    {
+      "player_id": 4371733,
+      "name": "Kenneth Gainwell",
+      "position": "RB",
+      "pro_team_id": 27,
+      "adp": 102.65,
+      "percent_owned": 85.34,
+      "rank_standard": 146,
+      "rank_ppr": 121
+    },
+    {
+      "player_id": 4431611,
+      "name": "Caleb Williams",
+      "position": "QB",
+      "pro_team_id": 3,
+      "adp": 103.07,
+      "percent_owned": 89.97,
+      "rank_standard": 124,
+      "rank_ppr": 171
+    },
+    {
+      "player_id": 4432620,
+      "name": "Parker Washington",
+      "position": "WR",
+      "pro_team_id": 30,
+      "adp": 103.41,
+      "percent_owned": 85.95,
+      "rank_standard": 104,
+      "rank_ppr": 119
+    },
+    {
+      "player_id": 4241985,
+      "name": "J.K. Dobbins",
+      "position": "RB",
+      "pro_team_id": 7,
+      "adp": 103.44,
+      "percent_owned": 86.95,
+      "rank_standard": 139,
+      "rank_ppr": 126
+    },
+    {
+      "player_id": 3916433,
+      "name": "Jakobi Meyers",
+      "position": "WR",
+      "pro_team_id": 30,
+      "adp": 103.96,
+      "percent_owned": 86.88,
+      "rank_standard": 125,
+      "rank_ppr": 118
+    },
+    {
+      "player_id": 12483,
+      "name": "Matthew Stafford",
+      "position": "QB",
+      "pro_team_id": 14,
+      "adp": 104.15,
+      "percent_owned": 91.08,
+      "rank_standard": 123,
+      "rank_ppr": 192
+    },
+    {
+      "player_id": 4697815,
+      "name": "Rachaad White",
+      "position": "RB",
+      "pro_team_id": 28,
+      "adp": 105.33,
+      "percent_owned": 84.09,
+      "rank_standard": 148,
+      "rank_ppr": 124
+    },
+    {
+      "player_id": 4569173,
+      "name": "Rhamondre Stevenson",
+      "position": "RB",
+      "pro_team_id": 17,
+      "adp": 105.54,
+      "percent_owned": 86.43,
+      "rank_standard": 137,
+      "rank_ppr": 129
+    },
+    {
+      "player_id": 3139477,
+      "name": "Patrick Mahomes",
+      "position": "QB",
+      "pro_team_id": 12,
+      "adp": 105.64,
+      "percent_owned": 90.01,
+      "rank_standard": 132,
+      "rank_ppr": 186
+    },
+    {
+      "player_id": 4242355,
+      "name": "Jake Ferguson",
+      "position": "TE",
+      "pro_team_id": 6,
+      "adp": 106.44,
+      "percent_owned": 88.22,
+      "rank_standard": 153,
+      "rank_ppr": 150
+    },
+    {
+      "player_id": 4569587,
+      "name": "Wan'Dale Robinson",
+      "position": "WR",
+      "pro_team_id": 10,
+      "adp": 108.63,
+      "percent_owned": 85.86,
+      "rank_standard": 157,
+      "rank_ppr": 123
+    },
+    {
+      "player_id": 4568490,
+      "name": "RJ Harvey",
+      "position": "RB",
+      "pro_team_id": 7,
+      "adp": 109.6,
+      "percent_owned": 85.43,
+      "rank_standard": 161,
+      "rank_ppr": 135
+    },
+    {
+      "player_id": 4362081,
+      "name": "Cameron Dicker",
+      "position": "K",
+      "pro_team_id": 24,
+      "adp": 111.65,
+      "percent_owned": 98.82,
+      "rank_standard": 252,
+      "rank_ppr": 197
+    },
+    {
+      "player_id": 4572680,
+      "name": "Tucker Kraft",
+      "position": "TE",
+      "pro_team_id": 9,
+      "adp": 112.32,
+      "percent_owned": 85.48,
+      "rank_standard": 144,
+      "rank_ppr": 165
+    },
+    {
+      "player_id": 4608686,
+      "name": "Kyle Monangai",
+      "position": "RB",
+      "pro_team_id": 3,
+      "adp": 112.8,
+      "percent_owned": 84.97,
+      "rank_standard": 149,
+      "rank_ppr": 137
+    },
+    {
+      "player_id": 4360761,
+      "name": "Michael Wilson",
+      "position": "WR",
+      "pro_team_id": 22,
+      "adp": 113.97,
+      "percent_owned": 85.68,
+      "rank_standard": 127,
+      "rank_ppr": 134
+    },
+    {
+      "player_id": 4360310,
+      "name": "Trevor Lawrence",
+      "position": "QB",
+      "pro_team_id": 30,
+      "adp": 114.43,
+      "percent_owned": 88.28,
+      "rank_standard": 118,
+      "rank_ppr": 162
+    },
+    {
+      "player_id": 4701936,
+      "name": "Matthew Golden",
+      "position": "WR",
+      "pro_team_id": 9,
+      "adp": 115.19,
+      "percent_owned": 83.71,
+      "rank_standard": 115,
+      "rank_ppr": 131
+    },
+    {
+      "player_id": 4685415,
+      "name": "Travis Hunter",
+      "position": "WR",
+      "pro_team_id": 30,
+      "adp": 115.9,
+      "percent_owned": 53.82,
+      "rank_standard": 128,
+      "rank_ppr": 127
+    },
+    {
+      "player_id": 4428209,
+      "name": "Ricky Pearsall",
+      "position": "WR",
+      "pro_team_id": 25,
+      "adp": 117.55,
+      "percent_owned": 83.43,
+      "rank_standard": 126,
+      "rank_ppr": 130
+    },
+    {
+      "player_id": 4426338,
+      "name": "Bo Nix",
+      "position": "QB",
+      "pro_team_id": 7,
+      "adp": 120.1,
+      "percent_owned": 87.15,
+      "rank_standard": 120,
+      "rank_ppr": 175
+    },
+    {
+      "player_id": -16023,
+      "name": "Steelers D/ST",
+      "position": "D/ST",
+      "pro_team_id": 23,
+      "adp": 121.08,
+      "percent_owned": 88.72,
+      "rank_standard": 238,
+      "rank_ppr": 200
+    },
+    {
+      "player_id": 4870653,
+      "name": "KC Concepcion",
+      "position": "WR",
+      "pro_team_id": 5,
+      "adp": 122.48,
+      "percent_owned": 67.52,
+      "rank_standard": 129,
+      "rank_ppr": 136
+    },
+    {
+      "player_id": 4429096,
+      "name": "Blake Corum",
+      "position": "RB",
+      "pro_team_id": 14,
+      "adp": 122.76,
+      "percent_owned": 78.94,
+      "rank_standard": 167,
+      "rank_ppr": 139
+    },
+    {
+      "player_id": -16017,
+      "name": "Patriots D/ST",
+      "position": "D/ST",
+      "pro_team_id": 17,
+      "adp": 122.97,
+      "percent_owned": 93.32,
+      "rank_standard": 246,
+      "rank_ppr": 196
+    },
+    {
+      "player_id": 2473037,
+      "name": "Jason Myers",
+      "position": "K",
+      "pro_team_id": 26,
+      "adp": 122.98,
+      "percent_owned": 97.81,
+      "rank_standard": 253,
+      "rank_ppr": 209
+    },
+    {
+      "player_id": 4683062,
+      "name": "Xavier Worthy",
+      "position": "WR",
+      "pro_team_id": 12,
+      "adp": 123.19,
+      "percent_owned": 82.53,
+      "rank_standard": 175,
+      "rank_ppr": 143
+    },
+    {
+      "player_id": 2971573,
+      "name": "Ka'imi Fairbairn",
+      "position": "K",
+      "pro_team_id": 34,
+      "adp": 125.52,
+      "percent_owned": 91.71,
+      "rank_standard": 257,
+      "rank_ppr": 207
+    },
+    {
+      "player_id": 4038941,
+      "name": "Justin Herbert",
+      "position": "QB",
+      "pro_team_id": 24,
+      "adp": 126.36,
+      "percent_owned": 83.42,
+      "rank_standard": 131,
+      "rank_ppr": 188
+    },
+    {
+      "player_id": -16014,
+      "name": "Rams D/ST",
+      "position": "D/ST",
+      "pro_team_id": 14,
+      "adp": 126.42,
+      "percent_owned": 78.31,
+      "rank_standard": 240,
+      "rank_ppr": 203
+    },
+    {
+      "player_id": 4429205,
+      "name": "Jordan Addison",
+      "position": "WR",
+      "pro_team_id": 16,
+      "adp": 127.23,
+      "percent_owned": 84.01,
+      "rank_standard": 156,
+      "rank_ppr": 141
+    },
+    {
+      "player_id": 4361050,
+      "name": "Isaiah Likely",
+      "position": "TE",
+      "pro_team_id": 19,
+      "adp": 127.54,
+      "percent_owned": 78.88,
+      "rank_standard": 163,
+      "rank_ppr": 176
+    },
+    {
+      "player_id": 4678008,
+      "name": "Jonathon Brooks",
+      "position": "RB",
+      "pro_team_id": 29,
+      "adp": 128.37,
+      "percent_owned": 53.9,
+      "rank_standard": 169,
+      "rank_ppr": 147
+    },
+    {
+      "player_id": 4688813,
+      "name": "Josh Downs",
+      "position": "WR",
+      "pro_team_id": 11,
+      "adp": 128.45,
+      "percent_owned": 75.31,
+      "rank_standard": 174,
+      "rank_ppr": 138
+    },
+    {
+      "player_id": -16021,
+      "name": "Eagles D/ST",
+      "position": "D/ST",
+      "pro_team_id": 21,
+      "adp": 130.61,
+      "percent_owned": 84.04,
+      "rank_standard": 243,
+      "rank_ppr": 202
+    },
+    {
+      "player_id": 4575131,
+      "name": "Jacory Croskey-Merritt",
+      "position": "RB",
+      "pro_team_id": 28,
+      "adp": 131.08,
+      "percent_owned": 63.35,
+      "rank_standard": 150,
+      "rank_ppr": 154
+    },
+    {
+      "player_id": 5083315,
+      "name": "Kenyon Sadiq",
+      "position": "TE",
+      "pro_team_id": 20,
+      "adp": 133.19,
+      "percent_owned": 67.91,
+      "rank_standard": 162,
+      "rank_ppr": 212
+    },
+    {
+      "player_id": 4373678,
+      "name": "Khalil Shakir",
+      "position": "WR",
+      "pro_team_id": 2,
+      "adp": 133.65,
+      "percent_owned": 81.65,
+      "rank_standard": 173,
+      "rank_ppr": 151
+    },
+    {
+      "player_id": 4686361,
+      "name": "Cam Little",
+      "position": "K",
+      "pro_team_id": 30,
+      "adp": 136.03,
+      "percent_owned": 88.6,
+      "rank_standard": 262,
+      "rank_ppr": 223
+    },
+    {
+      "player_id": -16033,
+      "name": "Ravens D/ST",
+      "position": "D/ST",
+      "pro_team_id": 33,
+      "adp": 137.16,
+      "percent_owned": 87.4,
+      "rank_standard": 241,
+      "rank_ppr": 205
+    },
+    {
+      "player_id": 4426385,
+      "name": "Zach Charbonnet",
+      "position": "RB",
+      "pro_team_id": 26,
+      "adp": 137.19,
+      "percent_owned": 71.46,
+      "rank_standard": 188,
+      "rank_ppr": 158
+    },
+    {
+      "player_id": 3116365,
+      "name": "Mark Andrews",
+      "position": "TE",
+      "pro_team_id": 33,
+      "adp": 137.22,
+      "percent_owned": 81.48,
+      "rank_standard": 142,
+      "rank_ppr": 224
+    },
+    {
+      "player_id": 4574716,
+      "name": "Harrison Mevis",
+      "position": "K",
+      "pro_team_id": 14,
+      "adp": 139.5,
+      "percent_owned": 91.32,
+      "rank_standard": 254,
+      "rank_ppr": 215
+    },
+    {
+      "player_id": 4429059,
+      "name": "Woody Marks",
+      "position": "RB",
+      "pro_team_id": 34,
+      "adp": 140.52,
+      "percent_owned": 68.25,
+      "rank_standard": 170,
+      "rank_ppr": 155
+    },
+    {
+      "player_id": 4361432,
+      "name": "Romeo Doubs",
+      "position": "WR",
+      "pro_team_id": 17,
+      "adp": 141.05,
+      "percent_owned": 79.31,
+      "rank_standard": 158,
+      "rank_ppr": 164
+    },
+    {
+      "player_id": 4429025,
+      "name": "Quentin Johnston",
+      "position": "WR",
+      "pro_team_id": 24,
+      "adp": 141.57,
+      "percent_owned": 76.9,
+      "rank_standard": 176,
+      "rank_ppr": 163
+    },
+    {
+      "player_id": 4361529,
+      "name": "Isiah Pacheco",
+      "position": "RB",
+      "pro_team_id": 8,
+      "adp": 141.62,
+      "percent_owned": 57.27,
+      "rank_standard": 190,
+      "rank_ppr": 160
+    },
+    {
+      "player_id": 4362249,
+      "name": "Jayden Reed",
+      "position": "WR",
+      "pro_team_id": 9,
+      "adp": 142.6,
+      "percent_owned": 71.78,
+      "rank_standard": 171,
+      "rank_ppr": 157
+    },
+    {
+      "player_id": 4428557,
+      "name": "Tyjae Spears",
+      "position": "RB",
+      "pro_team_id": 10,
+      "adp": 144.42,
+      "percent_owned": 54.01,
+      "rank_standard": 217,
+      "rank_ppr": 156
+    },
+    {
+      "player_id": 4034949,
+      "name": "Eddy Pineiro",
+      "position": "K",
+      "pro_team_id": 25,
+      "adp": 146.03,
+      "percent_owned": 83.69,
+      "rank_standard": 259,
+      "rank_ppr": 218
+    },
+    {
+      "player_id": -16005,
+      "name": "Browns D/ST",
+      "position": "D/ST",
+      "pro_team_id": 5,
+      "adp": 146.44,
+      "percent_owned": 81.34,
+      "rank_standard": 247,
+      "rank_ppr": 232
+    },
+    {
+      "player_id": 3054850,
+      "name": "Alvin Kamara",
+      "position": "RB",
+      "pro_team_id": 18,
+      "adp": 149.04,
+      "percent_owned": 64.61,
+      "rank_standard": 189,
+      "rank_ppr": 166
+    },
+    {
+      "player_id": 4036133,
+      "name": "T.J. Hockenson",
+      "position": "TE",
+      "pro_team_id": 16,
+      "adp": 149.33,
+      "percent_owned": 72.76,
+      "rank_standard": 165,
+      "rank_ppr": 194
+    },
+    {
+      "player_id": 4689936,
+      "name": "Jake Bates",
+      "position": "K",
+      "pro_team_id": 8,
+      "adp": 150.84,
+      "percent_owned": 70.09,
+      "rank_standard": 263,
+      "rank_ppr": 225
+    },
+    {
+      "player_id": 4360569,
+      "name": "Jordan Mason",
+      "position": "RB",
+      "pro_team_id": 16,
+      "adp": 152.92,
+      "percent_owned": 41.37,
+      "rank_standard": 168,
+      "rank_ppr": 169
+    },
+    {
+      "player_id": 3046779,
+      "name": "Jared Goff",
+      "position": "QB",
+      "pro_team_id": 8,
+      "adp": 153.11,
+      "percent_owned": 50.95,
+      "rank_standard": 187,
+      "rank_ppr": 260
+    },
+    {
+      "player_id": 4385690,
+      "name": "Dalton Kincaid",
+      "position": "TE",
+      "pro_team_id": 2,
+      "adp": 153.72,
+      "percent_owned": 35.08,
+      "rank_standard": 155,
+      "rank_ppr": 227
+    },
+    {
+      "player_id": 3055899,
+      "name": "Harrison Butker",
+      "position": "K",
+      "pro_team_id": 12,
+      "adp": 154.36,
+      "percent_owned": 75.27,
+      "rank_standard": 260,
+      "rank_ppr": 235
+    },
+    {
+      "player_id": -16016,
+      "name": "Vikings D/ST",
+      "position": "D/ST",
+      "pro_team_id": 16,
+      "adp": 154.8,
+      "percent_owned": 46.6,
+      "rank_standard": 505,
+      "rank_ppr": 226
+    },
+    {
+      "player_id": 3917315,
+      "name": "Kyler Murray",
+      "position": "QB",
+      "pro_team_id": 16,
+      "adp": 154.98,
+      "percent_owned": 61.32,
+      "rank_standard": 182,
+      "rank_ppr": 229
+    },
+    {
+      "player_id": 4723820,
+      "name": "Omar Cooper Jr.",
+      "position": "WR",
+      "pro_team_id": 20,
+      "adp": 156.35,
+      "percent_owned": 37.05,
+      "rank_standard": 201,
+      "rank_ppr": 170
+    },
+    {
+      "player_id": -16008,
+      "name": "Lions D/ST",
+      "position": "D/ST",
+      "pro_team_id": 8,
+      "adp": 157.23,
+      "percent_owned": 32.94,
+      "rank_standard": 248,
+      "rank_ppr": 241
+    },
+    {
+      "player_id": 4360689,
+      "name": "Tyler Shough",
+      "position": "QB",
+      "pro_team_id": 18,
+      "adp": 157.31,
+      "percent_owned": 49.64,
+      "rank_standard": 183,
+      "rank_ppr": 219
+    },
+    {
+      "player_id": 4695883,
+      "name": "Jalen Coker",
+      "position": "WR",
+      "pro_team_id": 29,
+      "adp": 159.1,
+      "percent_owned": 37.17,
+      "rank_standard": 181,
+      "rank_ppr": 168
+    },
+    {
+      "player_id": -16030,
+      "name": "Jaguars D/ST",
+      "position": "D/ST",
+      "pro_team_id": 30,
+      "adp": 159.28,
+      "percent_owned": 62.76,
+      "rank_standard": 364,
+      "rank_ppr": 234
+    },
+    {
+      "player_id": 4697745,
+      "name": "Tyler Loop",
+      "position": "K",
+      "pro_team_id": 33,
+      "adp": 159.44,
+      "percent_owned": 43.31,
+      "rank_standard": 266,
+      "rank_ppr": 238
+    },
+    {
+      "player_id": 3052587,
+      "name": "Baker Mayfield",
+      "position": "QB",
+      "pro_team_id": 27,
+      "adp": 160.45,
+      "percent_owned": 38.52,
+      "rank_standard": 204,
+      "rank_ppr": 261
+    },
+    {
+      "player_id": 2976212,
+      "name": "Stefon Diggs",
+      "position": "WR",
+      "pro_team_id": 0,
+      "adp": 160.89,
+      "percent_owned": 28.14,
+      "rank_standard": 300,
+      "rank_ppr": 249
+    },
+    {
+      "player_id": 17372,
+      "name": "Chris Boswell",
+      "position": "K",
+      "pro_team_id": 23,
+      "adp": 161.0,
+      "percent_owned": 31.9,
+      "rank_standard": 343,
+      "rank_ppr": 247
+    },
+    {
+      "player_id": 3116406,
+      "name": "Tyreek Hill",
+      "position": "WR",
+      "pro_team_id": 0,
+      "adp": 161.05,
+      "percent_owned": 39.21,
+      "rank_standard": 294,
+      "rank_ppr": 302
+    },
+    {
+      "player_id": 3046439,
+      "name": "Hunter Henry",
+      "position": "TE",
+      "pro_team_id": 17,
+      "adp": 161.34,
+      "percent_owned": 34.41,
+      "rank_standard": 164,
+      "rank_ppr": 259
+    },
+    {
+      "player_id": 4362619,
+      "name": "Chris Rodriguez Jr.",
+      "position": "RB",
+      "pro_team_id": 30,
+      "adp": 161.78,
+      "percent_owned": 23.31,
+      "rank_standard": 193,
+      "rank_ppr": 177
+    },
+    {
+      "player_id": 4877706,
+      "name": "Jayden Higgins",
+      "position": "WR",
+      "pro_team_id": 34,
+      "adp": 161.97,
+      "percent_owned": 21.14,
+      "rank_standard": 179,
+      "rank_ppr": 173
+    },
+    {
+      "player_id": 4032473,
+      "name": "Rashid Shaheed",
+      "position": "WR",
+      "pro_team_id": 26,
+      "adp": 163.05,
+      "percent_owned": 26.57,
+      "rank_standard": 202,
+      "rank_ppr": 195
+    },
+    {
+      "player_id": 4837248,
+      "name": "Fernando Mendoza",
+      "position": "QB",
+      "pro_team_id": 13,
+      "adp": 163.08,
+      "percent_owned": 25.1,
+      "rank_standard": 323,
+      "rank_ppr": 326
+    },
+    {
+      "player_id": 4036378,
+      "name": "Jordan Love",
+      "position": "QB",
+      "pro_team_id": 9,
+      "adp": 164.12,
+      "percent_owned": 22.28,
+      "rank_standard": 284,
+      "rank_ppr": 295
+    },
+    {
+      "player_id": 4567104,
+      "name": "Will Reichard",
+      "position": "K",
+      "pro_team_id": 16,
+      "adp": 164.42,
+      "percent_owned": 29.15,
+      "rank_standard": 270,
+      "rank_ppr": 246
+    },
+    {
+      "player_id": -16024,
+      "name": "Chargers D/ST",
+      "position": "D/ST",
+      "pro_team_id": 24,
+      "adp": 164.84,
+      "percent_owned": 18.69,
+      "rank_standard": 250,
+      "rank_ppr": 251
+    },
+    {
+      "player_id": 3929645,
+      "name": "Juwan Johnson",
+      "position": "TE",
+      "pro_team_id": 18,
+      "adp": 164.85,
+      "percent_owned": 23.89,
+      "rank_standard": 273,
+      "rank_ppr": 267
+    },
+    {
+      "player_id": 4430834,
+      "name": "Jalen McMillan",
+      "position": "WR",
+      "pro_team_id": 27,
+      "adp": 165.07,
+      "percent_owned": 18.34,
+      "rank_standard": 196,
+      "rank_ppr": 174
+    },
+    {
+      "player_id": 4373626,
+      "name": "Tyler Allgeier",
+      "position": "RB",
+      "pro_team_id": 22,
+      "adp": 165.15,
+      "percent_owned": 23.12,
+      "rank_standard": 231,
+      "rank_ppr": 181
+    },
+    {
+      "player_id": 17427,
+      "name": "Cairo Santos",
+      "position": "K",
+      "pro_team_id": 3,
+      "adp": 165.38,
+      "percent_owned": 40.72,
+      "rank_standard": 267,
+      "rank_ppr": 242
+    },
+    {
+      "player_id": -16012,
+      "name": "Chiefs D/ST",
+      "position": "D/ST",
+      "pro_team_id": 12,
+      "adp": 165.7,
+      "percent_owned": 31.1,
+      "rank_standard": 249,
+      "rank_ppr": 281
+    },
+    {
+      "player_id": 3912547,
+      "name": "Sam Darnold",
+      "position": "QB",
+      "pro_team_id": 26,
+      "adp": 165.93,
+      "percent_owned": 14.0,
+      "rank_standard": 321,
+      "rank_ppr": 324
+    },
+    {
+      "player_id": 3925357,
+      "name": "Calvin Ridley",
+      "position": "WR",
+      "pro_team_id": 10,
+      "adp": 166.34,
+      "percent_owned": 46.96,
+      "rank_standard": 177,
+      "rank_ppr": 179
+    },
+    {
+      "player_id": 4241463,
+      "name": "Jerry Jeudy",
+      "position": "WR",
+      "pro_team_id": 5,
+      "adp": 166.56,
+      "percent_owned": 37.02,
+      "rank_standard": 180,
+      "rank_ppr": 187
+    },
+    {
+      "player_id": -16006,
+      "name": "Cowboys D/ST",
+      "position": "D/ST",
+      "pro_team_id": 6,
+      "adp": 166.59,
+      "percent_owned": 9.98,
+      "rank_standard": 511,
+      "rank_ppr": 511
+    },
+    {
+      "player_id": 3917792,
+      "name": "Daniel Jones",
+      "position": "QB",
+      "pro_team_id": 11,
+      "adp": 166.68,
+      "percent_owned": 36.58,
+      "rank_standard": 186,
+      "rank_ppr": 233
+    },
+    {
+      "player_id": 4832800,
+      "name": "Denzel Boston",
+      "position": "WR",
+      "pro_team_id": 5,
+      "adp": 166.82,
+      "percent_owned": 11.57,
+      "rank_standard": 197,
+      "rank_ppr": 239
+    },
+    {
+      "player_id": 3150744,
+      "name": "Chase McLaughlin",
+      "position": "K",
+      "pro_team_id": 27,
+      "adp": 167.16,
+      "percent_owned": 25.05,
+      "rank_standard": 344,
+      "rank_ppr": 346
+    },
+    {
+      "player_id": 4688380,
+      "name": "Cam Ward",
+      "position": "QB",
+      "pro_team_id": 10,
+      "adp": 167.36,
+      "percent_owned": 7.02,
+      "rank_standard": 286,
+      "rank_ppr": 298
+    },
+    {
+      "player_id": 4360516,
+      "name": "Tyrone Tracy Jr.",
+      "position": "RB",
+      "pro_team_id": 19,
+      "adp": 167.37,
+      "percent_owned": 9.13,
+      "rank_standard": 215,
+      "rank_ppr": 254
+    },
+    {
+      "player_id": 4432577,
+      "name": "C.J. Stroud",
+      "position": "QB",
+      "pro_team_id": 34,
+      "adp": 167.41,
+      "percent_owned": 8.51,
+      "rank_standard": 290,
+      "rank_ppr": 300
+    },
+    {
+      "player_id": 4241474,
+      "name": "Brian Robinson Jr.",
+      "position": "RB",
+      "pro_team_id": 1,
+      "adp": 167.47,
+      "percent_owned": 8.91,
+      "rank_standard": 216,
+      "rank_ppr": 204
+    },
+    {
+      "player_id": 4429013,
+      "name": "Tank Bigsby",
+      "position": "RB",
+      "pro_team_id": 21,
+      "adp": 167.49,
+      "percent_owned": 5.58,
+      "rank_standard": 195,
+      "rank_ppr": 189
+    },
+    {
+      "player_id": -16009,
+      "name": "Packers D/ST",
+      "position": "D/ST",
+      "pro_team_id": 9,
+      "adp": 167.5,
+      "percent_owned": 8.09,
+      "rank_standard": 342,
+      "rank_ppr": 345
+    },
+    {
+      "player_id": 3886598,
+      "name": "Jauan Jennings",
+      "position": "WR",
+      "pro_team_id": 16,
+      "adp": 167.85,
+      "percent_owned": 13.89,
+      "rank_standard": 226,
+      "rank_ppr": 217
+    },
+    {
+      "player_id": 4242512,
+      "name": "Malik Willis",
+      "position": "QB",
+      "pro_team_id": 15,
+      "adp": 167.93,
+      "percent_owned": 10.64,
+      "rank_standard": 206,
+      "rank_ppr": 263
+    },
+    {
+      "player_id": -16025,
+      "name": "49ers D/ST",
+      "position": "D/ST",
+      "pro_team_id": 25,
+      "adp": 167.94,
+      "percent_owned": 8.54,
+      "rank_standard": 424,
+      "rank_ppr": 425
+    },
+    {
+      "player_id": 2977187,
+      "name": "Cooper Kupp",
+      "position": "WR",
+      "pro_team_id": 26,
+      "adp": 168.18,
+      "percent_owned": 7.12,
+      "rank_standard": 311,
+      "rank_ppr": 315
+    },
+    {
+      "player_id": 4430539,
+      "name": "Brenton Strange",
+      "position": "TE",
+      "pro_team_id": 30,
+      "adp": 168.23,
+      "percent_owned": 7.78,
+      "rank_standard": 218,
+      "rank_ppr": 270
+    },
+    {
+      "player_id": 4685261,
+      "name": "Germie Bernard",
+      "position": "WR",
+      "pro_team_id": 23,
+      "adp": 168.41,
+      "percent_owned": 6.3,
+      "rank_standard": 208,
+      "rank_ppr": 210
+    },
+    {
+      "player_id": 3126486,
+      "name": "Deebo Samuel",
+      "position": "WR",
+      "pro_team_id": 0,
+      "adp": 168.41,
+      "percent_owned": 12.71,
+      "rank_standard": 295,
+      "rank_ppr": 305
+    },
+    {
+      "player_id": 4360234,
+      "name": "Evan McPherson",
+      "position": "K",
+      "pro_team_id": 4,
+      "adp": 168.46,
+      "percent_owned": 6.14,
+      "rank_standard": 369,
+      "rank_ppr": 370
+    },
+    {
+      "player_id": 4869961,
+      "name": "Chris Bell",
+      "position": "WR",
+      "pro_team_id": 15,
+      "adp": 168.48,
+      "percent_owned": 5.78,
+      "rank_standard": 203,
+      "rank_ppr": 211
+    },
+    {
+      "player_id": 4595342,
+      "name": "Oronde Gadsden",
+      "position": "TE",
+      "pro_team_id": 24,
+      "adp": 168.52,
+      "percent_owned": 22.49,
+      "rank_standard": 318,
+      "rank_ppr": 322
+    },
+    {
+      "player_id": -16027,
+      "name": "Buccaneers D/ST",
+      "position": "D/ST",
+      "pro_team_id": 27,
+      "adp": 168.52,
+      "percent_owned": 4.9,
+      "rank_standard": 341,
+      "rank_ppr": 344
+    },
+    {
+      "player_id": 3045147,
+      "name": "James Conner",
+      "position": "RB",
+      "pro_team_id": 22,
+      "adp": 168.63,
+      "percent_owned": 23.63,
+      "rank_standard": 232,
+      "rank_ppr": 248
+    },
+    {
+      "player_id": -16002,
+      "name": "Bills D/ST",
+      "position": "D/ST",
+      "pro_team_id": 2,
+      "adp": 168.63,
+      "percent_owned": 6.12,
+      "rank_standard": 517,
+      "rank_ppr": 517
+    },
+    {
+      "player_id": -16010,
+      "name": "Titans D/ST",
+      "position": "D/ST",
+      "pro_team_id": 10,
+      "adp": 168.68,
+      "percent_owned": 9.29,
+      "rank_standard": 510,
+      "rank_ppr": 509
+    },
+    {
+      "player_id": 4869461,
+      "name": "Trey Smack",
+      "position": "K",
+      "pro_team_id": 9,
+      "adp": 168.73,
+      "percent_owned": 5.93,
+      "rank_standard": 412,
+      "rank_ppr": 413
+    },
+    {
+      "player_id": 4686658,
+      "name": "Mike Washington Jr.",
+      "position": "RB",
+      "pro_team_id": 13,
+      "adp": 168.76,
+      "percent_owned": 5.9,
+      "rank_standard": 211,
+      "rank_ppr": 258
+    },
+    {
+      "player_id": 4360635,
+      "name": "Chig Okonkwo",
+      "position": "TE",
+      "pro_team_id": 28,
+      "adp": 168.8,
+      "percent_owned": 4.22,
+      "rank_standard": 370,
+      "rank_ppr": 323
+    },
+    {
+      "player_id": 3050478,
+      "name": "Jake Elliott",
+      "position": "K",
+      "pro_team_id": 21,
+      "adp": 168.82,
+      "percent_owned": 4.64,
+      "rank_standard": 487,
+      "rank_ppr": 489
+    },
+    {
+      "player_id": 4685720,
+      "name": "Bryce Young",
+      "position": "QB",
+      "pro_team_id": 29,
+      "adp": 168.84,
+      "percent_owned": 4.4,
+      "rank_standard": 322,
+      "rank_ppr": 325
+    },
+    {
+      "player_id": 4360438,
+      "name": "Brandon Aiyuk",
+      "position": "WR",
+      "pro_team_id": 25,
+      "adp": 168.88,
+      "percent_owned": 12.75,
+      "rank_standard": 297,
+      "rank_ppr": 307
+    },
+    {
+      "player_id": -16003,
+      "name": "Bears D/ST",
+      "position": "D/ST",
+      "pro_team_id": 3,
+      "adp": 168.88,
+      "percent_owned": 5.41,
+      "rank_standard": 410,
+      "rank_ppr": 411
+    },
+    {
+      "player_id": 4366031,
+      "name": "Tank Dell",
+      "position": "WR",
+      "pro_team_id": 34,
+      "adp": 168.9,
+      "percent_owned": 19.62,
+      "rank_standard": 281,
+      "rank_ppr": 294
+    },
+    {
+      "player_id": 4428718,
+      "name": "Tre Tucker",
+      "position": "WR",
+      "pro_team_id": 13,
+      "adp": 168.91,
+      "percent_owned": 9.93,
+      "rank_standard": 210,
+      "rank_ppr": 253
+    },
+    {
+      "player_id": -16019,
+      "name": "Giants D/ST",
+      "position": "D/ST",
+      "pro_team_id": 19,
+      "adp": 168.94,
+      "percent_owned": 5.1,
+      "rank_standard": 507,
+      "rank_ppr": 508
+    },
+    {
+      "player_id": 5081432,
+      "name": "Antonio Williams",
+      "position": "WR",
+      "pro_team_id": 28,
+      "adp": 168.96,
+      "percent_owned": 3.72,
+      "rank_standard": 209,
+      "rank_ppr": 250
+    },
+    {
+      "player_id": 4870847,
+      "name": "Ja'Kobi Lane",
+      "position": "WR",
+      "pro_team_id": 33,
+      "adp": 169.08,
+      "percent_owned": 2.98,
+      "rank_standard": 375,
+      "rank_ppr": 376
+    },
+    {
+      "player_id": 4361411,
+      "name": "Pat Freiermuth",
+      "position": "TE",
+      "pro_team_id": 23,
+      "adp": 169.15,
+      "percent_owned": 4.71,
+      "rank_standard": 303,
+      "rank_ppr": 286
+    },
+    {
+      "player_id": 8439,
+      "name": "Aaron Rodgers",
+      "position": "QB",
+      "pro_team_id": 23,
+      "adp": 169.18,
+      "percent_owned": 2.71,
+      "rank_standard": 387,
+      "rank_ppr": 388
+    },
+    {
+      "player_id": 3123076,
+      "name": "David Njoku",
+      "position": "TE",
+      "pro_team_id": 24,
+      "adp": 169.19,
+      "percent_owned": 5.53,
+      "rank_standard": 418,
+      "rank_ppr": 419
+    },
+    {
+      "player_id": 4685555,
+      "name": "Nicholas Singleton",
+      "position": "RB",
+      "pro_team_id": 10,
+      "adp": 169.22,
+      "percent_owned": 2.94,
+      "rank_standard": 315,
+      "rank_ppr": 319
+    },
+    {
+      "player_id": 4702555,
+      "name": "Jonah Coleman",
+      "position": "RB",
+      "pro_team_id": 7,
+      "adp": 169.24,
+      "percent_owned": 3.79,
+      "rank_standard": 324,
+      "rank_ppr": 327
+    },
+    {
+      "player_id": 3124679,
+      "name": "Jason Sanders",
+      "position": "K",
+      "pro_team_id": 19,
+      "adp": 169.25,
+      "percent_owned": 7.26,
+      "rank_standard": 368,
+      "rank_ppr": 369
+    },
+    {
+      "player_id": 4685247,
+      "name": "Braelon Allen",
+      "position": "RB",
+      "pro_team_id": 20,
+      "adp": 169.3,
+      "percent_owned": 3.52,
+      "rank_standard": 194,
+      "rank_ppr": 216
+    },
+    {
+      "player_id": 4040655,
+      "name": "Darnell Mooney",
+      "position": "WR",
+      "pro_team_id": 19,
+      "adp": 169.4,
+      "percent_owned": 3.26,
+      "rank_standard": 291,
+      "rank_ppr": 240
+    },
+    {
+      "player_id": 2985659,
+      "name": "Wil Lutz",
+      "position": "K",
+      "pro_team_id": 7,
+      "adp": 169.41,
+      "percent_owned": 2.71,
+      "rank_standard": 490,
+      "rank_ppr": 491
+    },
+    {
+      "player_id": 4576297,
+      "name": "AJ Barner",
+      "position": "TE",
+      "pro_team_id": 26,
+      "adp": 169.42,
+      "percent_owned": 4.52,
+      "rank_standard": 319,
+      "rank_ppr": 371
+    },
+    {
+      "player_id": 4570037,
+      "name": "Terrance Ferguson",
+      "position": "TE",
+      "pro_team_id": 14,
+      "adp": 169.43,
+      "percent_owned": 2.55,
+      "rank_standard": 222,
+      "rank_ppr": 310
+    },
+    {
+      "player_id": 4832955,
+      "name": "Emmett Johnson",
+      "position": "RB",
+      "pro_team_id": 12,
+      "adp": 169.47,
+      "percent_owned": 2.96,
+      "rank_standard": 326,
+      "rank_ppr": 330
+    },
+    {
+      "player_id": -16004,
+      "name": "Bengals D/ST",
+      "position": "D/ST",
+      "pro_team_id": 4,
+      "adp": 169.48,
+      "percent_owned": 2.15,
+      "rank_standard": 409,
+      "rank_ppr": 410
+    },
+    {
+      "player_id": 4038441,
+      "name": "Justice Hill",
+      "position": "RB",
+      "pro_team_id": 33,
+      "adp": 169.49,
+      "percent_owned": 2.56,
+      "rank_standard": 271,
+      "rank_ppr": 284
+    },
+    {
+      "player_id": -16011,
+      "name": "Colts D/ST",
+      "position": "D/ST",
+      "pro_team_id": 11,
+      "adp": 169.49,
+      "percent_owned": 3.86,
+      "rank_standard": 366,
+      "rank_ppr": 368
+    },
+    {
+      "player_id": 5123663,
+      "name": "Isaac TeSlaa",
+      "position": "WR",
+      "pro_team_id": 8,
+      "adp": 169.56,
+      "percent_owned": 2.69,
+      "rank_standard": 310,
+      "rank_ppr": 314
+    },
+    {
+      "player_id": 4569923,
+      "name": "Andy Borregales",
+      "position": "K",
+      "pro_team_id": 17,
+      "adp": 169.58,
+      "percent_owned": 2.97,
+      "rank_standard": 495,
+      "rank_ppr": 496
+    },
+    {
+      "player_id": 4429023,
+      "name": "MarShawn Lloyd",
+      "position": "RB",
+      "pro_team_id": 9,
+      "adp": 169.58,
+      "percent_owned": 4.73,
+      "rank_standard": 357,
+      "rank_ppr": 360
+    },
+    {
+      "player_id": 4382466,
+      "name": "Jalen Nailor",
+      "position": "WR",
+      "pro_team_id": 13,
+      "adp": 169.6,
+      "percent_owned": 3.39,
+      "rank_standard": 223,
+      "rank_ppr": 252
+    },
+    {
+      "player_id": 3117256,
+      "name": "Dalton Schultz",
+      "position": "TE",
+      "pro_team_id": 34,
+      "adp": 169.6,
+      "percent_owned": 3.58,
+      "rank_standard": 305,
+      "rank_ppr": 311
+    },
+    {
+      "player_id": 4431574,
+      "name": "Eli Stowers",
+      "position": "TE",
+      "pro_team_id": 21,
+      "adp": 169.61,
+      "percent_owned": 3.09,
+      "rank_standard": 445,
+      "rank_ppr": 460
+    },
+    {
+      "player_id": 4696044,
+      "name": "Kaelon Black",
+      "position": "RB",
+      "pro_team_id": 25,
+      "adp": 169.61,
+      "percent_owned": 2.74,
+      "rank_standard": 280,
+      "rank_ppr": 291
+    },
+    {
+      "player_id": 4430968,
+      "name": "Kimani Vidal",
+      "position": "RB",
+      "pro_team_id": 24,
+      "adp": 169.61,
+      "percent_owned": 3.53,
+      "rank_standard": 233,
+      "rank_ppr": 280
+    },
+    {
+      "player_id": 4685246,
+      "name": "Kaytron Allen",
+      "position": "RB",
+      "pro_team_id": 28,
+      "adp": 169.67,
+      "percent_owned": 1.57,
+      "rank_standard": 314,
+      "rank_ppr": 318
+    },
+    {
+      "player_id": 10621,
+      "name": "Nick Folk",
+      "position": "K",
+      "pro_team_id": 1,
+      "adp": 169.67,
+      "percent_owned": 3.67,
+      "rank_standard": 411,
+      "rank_ppr": 412
+    },
+    {
+      "player_id": 15683,
+      "name": "Justin Tucker",
+      "position": "K",
+      "pro_team_id": 0,
+      "adp": 169.67,
+      "percent_owned": 0.49,
+      "rank_standard": 1914,
+      "rank_ppr": 1912
+    },
+    {
+      "player_id": 4710714,
+      "name": "De'Zhaun Stribling",
+      "position": "WR",
+      "pro_team_id": 25,
+      "adp": 169.68,
+      "percent_owned": 2.19,
+      "rank_standard": 327,
+      "rank_ppr": 331
+    },
+    {
+      "player_id": 4360939,
+      "name": "Rashod Bateman",
+      "position": "WR",
+      "pro_team_id": 33,
+      "adp": 169.7,
+      "percent_owned": 1.9,
+      "rank_standard": 225,
+      "rank_ppr": 273
+    },
+    {
+      "player_id": 4870612,
+      "name": "Zachariah Branch",
+      "position": "WR",
+      "pro_team_id": 1,
+      "adp": 169.71,
+      "percent_owned": 2.2,
+      "rank_standard": 987,
+      "rank_ppr": 987
+    },
+    {
+      "player_id": 4685397,
+      "name": "Jordan James",
+      "position": "RB",
+      "pro_team_id": 25,
+      "adp": 169.72,
+      "percent_owned": 2.32,
+      "rank_standard": 277,
+      "rank_ppr": 290
+    },
+    {
+      "player_id": -16013,
+      "name": "Raiders D/ST",
+      "position": "D/ST",
+      "pro_team_id": 13,
+      "adp": 169.73,
+      "percent_owned": 2.41,
+      "rank_standard": 516,
+      "rank_ppr": 516
+    },
+    {
+      "player_id": 4635008,
+      "name": "Keon Coleman",
+      "position": "WR",
+      "pro_team_id": 2,
+      "adp": 169.74,
+      "percent_owned": 2.0,
+      "rank_standard": 332,
+      "rank_ppr": 335
+    },
+    {
+      "player_id": 5081397,
+      "name": "Dylan Sampson",
+      "position": "RB",
+      "pro_team_id": 5,
+      "adp": 169.74,
+      "percent_owned": 3.32,
+      "rank_standard": 329,
+      "rank_ppr": 332
+    },
+    {
+      "player_id": 4430802,
+      "name": "Darnell Washington",
+      "position": "TE",
+      "pro_team_id": 23,
+      "adp": 169.75,
+      "percent_owned": 1.19,
+      "rank_standard": 459,
+      "rank_ppr": 448
+    },
+    {
+      "player_id": -16029,
+      "name": "Panthers D/ST",
+      "position": "D/ST",
+      "pro_team_id": 29,
+      "adp": 169.77,
+      "percent_owned": 2.11,
+      "rank_standard": 427,
+      "rank_ppr": 429
+    },
+    {
+      "player_id": 3917232,
+      "name": "Tyler Bass",
+      "position": "K",
+      "pro_team_id": 2,
+      "adp": 169.78,
+      "percent_owned": 1.3,
+      "rank_standard": 491,
+      "rank_ppr": 492
+    },
+    {
+      "player_id": 4249087,
+      "name": "Matt Gay",
+      "position": "K",
+      "pro_team_id": 13,
+      "adp": 169.79,
+      "percent_owned": 1.06,
+      "rank_standard": 497,
+      "rank_ppr": 498
+    },
+    {
+      "player_id": -16001,
+      "name": "Falcons D/ST",
+      "position": "D/ST",
+      "pro_team_id": 1,
+      "adp": 169.79,
+      "percent_owned": 1.77,
+      "rank_standard": 515,
+      "rank_ppr": 515
+    },
+    {
+      "player_id": -16015,
+      "name": "Dolphins D/ST",
+      "position": "D/ST",
+      "pro_team_id": 15,
+      "adp": 169.8,
+      "percent_owned": 0.96,
+      "rank_standard": 519,
+      "rank_ppr": 519
+    },
+    {
+      "player_id": 4429501,
+      "name": "Ray Davis",
+      "position": "RB",
+      "pro_team_id": 2,
+      "adp": 169.81,
+      "percent_owned": 2.04,
+      "rank_standard": 214,
+      "rank_ppr": 266
+    },
+    {
+      "player_id": 4432762,
+      "name": "Shedeur Sanders",
+      "position": "QB",
+      "pro_team_id": 5,
+      "adp": 169.82,
+      "percent_owned": 2.97,
+      "rank_standard": 429,
+      "rank_ppr": 430
+    },
+    {
+      "player_id": 4869645,
+      "name": "Caleb Douglas",
+      "position": "WR",
+      "pro_team_id": 15,
+      "adp": 169.83,
+      "percent_owned": 1.58,
+      "rank_standard": 224,
+      "rank_ppr": 271
+    },
+    {
+      "player_id": 4685522,
+      "name": "Ty Simpson",
+      "position": "QB",
+      "pro_team_id": 14,
+      "adp": 169.83,
+      "percent_owned": 1.44,
+      "rank_standard": 478,
+      "rank_ppr": 479
+    },
+    {
+      "player_id": 4682648,
+      "name": "Malachi Fields",
+      "position": "WR",
+      "pro_team_id": 19,
+      "adp": 169.83,
+      "percent_owned": 2.06,
+      "rank_standard": 1012,
+      "rank_ppr": 1013
+    },
+    {
+      "player_id": 4686728,
+      "name": "Gunnar Helm",
+      "position": "TE",
+      "pro_team_id": 10,
+      "adp": 169.84,
+      "percent_owned": 1.74,
+      "rank_standard": 320,
+      "rank_ppr": 321
+    },
+    {
+      "player_id": 4568263,
+      "name": "Ryan Fitzgerald",
+      "position": "K",
+      "pro_team_id": 29,
+      "adp": 169.84,
+      "percent_owned": 0.59,
+      "rank_standard": 498,
+      "rank_ppr": 501
+    },
+    {
+      "player_id": 4566158,
+      "name": "Ben Sauls",
+      "position": "K",
+      "pro_team_id": 19,
+      "adp": 169.86,
+      "percent_owned": 0.21,
+      "rank_standard": 2564,
+      "rank_ppr": 2550
+    },
+    {
+      "player_id": 3116385,
+      "name": "Joe Mixon",
+      "position": "RB",
+      "pro_team_id": 0,
+      "adp": 169.86,
+      "percent_owned": 1.46,
+      "rank_standard": 1876,
+      "rank_ppr": 1877
+    },
+    {
+      "player_id": 15818,
+      "name": "Keenan Allen",
+      "position": "WR",
+      "pro_team_id": 0,
+      "adp": 169.87,
+      "percent_owned": 0.91,
+      "rank_standard": 1911,
+      "rank_ppr": 1909
+    },
+    {
+      "player_id": -16028,
+      "name": "Commanders D/ST",
+      "position": "D/ST",
+      "pro_team_id": 28,
+      "adp": 169.87,
+      "percent_owned": 1.42,
+      "rank_standard": 513,
+      "rank_ppr": 513
+    },
+    {
+      "player_id": 5083754,
+      "name": "Ryan Flournoy",
+      "position": "WR",
+      "pro_team_id": 6,
+      "adp": 169.87,
+      "percent_owned": 1.46,
+      "rank_standard": 313,
+      "rank_ppr": 316
+    },
+    {
+      "player_id": 4682745,
+      "name": "Jaylen Wright",
+      "position": "RB",
+      "pro_team_id": 15,
+      "adp": 169.87,
+      "percent_owned": 1.3,
+      "rank_standard": 347,
+      "rank_ppr": 349
+    },
+    {
+      "player_id": 15864,
+      "name": "Geno Smith",
+      "position": "QB",
+      "pro_team_id": 20,
+      "adp": 169.89,
+      "percent_owned": 1.61,
+      "rank_standard": 384,
+      "rank_ppr": 387
+    },
+    {
+      "player_id": 4571557,
+      "name": "Spencer Shrader",
+      "position": "K",
+      "pro_team_id": 11,
+      "adp": 169.89,
+      "percent_owned": 0.22,
+      "rank_standard": 2471,
+      "rank_ppr": 2474
+    },
+    {
+      "player_id": 5529,
+      "name": "Philip Rivers",
+      "position": "QB",
+      "pro_team_id": 11,
+      "adp": 169.9,
+      "percent_owned": 0.28,
+      "rank_standard": 1924,
+      "rank_ppr": 2542
+    },
+    {
+      "player_id": 4702559,
+      "name": "Oscar Delp",
+      "position": "TE",
+      "pro_team_id": 18,
+      "adp": 169.91,
+      "percent_owned": 0.62,
+      "rank_standard": 1235,
+      "rank_ppr": 1234
+    },
+    {
+      "player_id": 4594749,
+      "name": "Michael Trigg",
+      "position": "TE",
+      "pro_team_id": 6,
+      "adp": 169.91,
+      "percent_owned": 0.15,
+      "rank_standard": null,
+      "rank_ppr": null
+    },
+    {
+      "player_id": 4431325,
+      "name": "Taylen Green",
+      "position": "QB",
+      "pro_team_id": 5,
+      "adp": 169.92,
+      "percent_owned": 0.3,
+      "rank_standard": 1589,
+      "rank_ppr": 1590
+    },
+    {
+      "player_id": 4430034,
+      "name": "Xavier Legette",
+      "position": "WR",
+      "pro_team_id": 29,
+      "adp": 169.92,
+      "percent_owned": 1.33,
+      "rank_standard": 337,
+      "rank_ppr": 342
+    },
+    {
+      "player_id": -16020,
+      "name": "Jets D/ST",
+      "position": "D/ST",
+      "pro_team_id": 20,
+      "adp": 169.92,
+      "percent_owned": 1.06,
+      "rank_standard": 425,
+      "rank_ppr": 426
+    },
+    {
+      "player_id": 4258595,
+      "name": "Cole Kmet",
+      "position": "TE",
+      "pro_team_id": 3,
+      "adp": 169.92,
+      "percent_owned": 1.01,
+      "rank_standard": 468,
+      "rank_ppr": 469
+    },
+    {
+      "player_id": 4570561,
+      "name": "Eric Gray",
+      "position": "RB",
+      "pro_team_id": 19,
+      "adp": 169.93,
+      "percent_owned": 0.06,
+      "rank_standard": 1451,
+      "rank_ppr": 1453
+    },
+    {
+      "player_id": 3116593,
+      "name": "Dalvin Cook",
+      "position": "RB",
+      "pro_team_id": 0,
+      "adp": 169.93,
+      "percent_owned": 0.06,
+      "rank_standard": 1877,
+      "rank_ppr": 1878
+    },
+    {
+      "player_id": 4372066,
+      "name": "Jake Moody",
+      "position": "K",
+      "pro_team_id": 28,
+      "adp": 169.93,
+      "percent_owned": 0.73,
+      "rank_standard": 494,
+      "rank_ppr": 495
+    },
+    {
+      "player_id": 4259619,
+      "name": "Blake Grupe",
+      "position": "K",
+      "pro_team_id": 11,
+      "adp": 169.93,
+      "percent_owned": 0.68,
+      "rank_standard": 492,
+      "rank_ppr": 493
+    },
+    {
+      "player_id": 4241457,
+      "name": "Najee Harris",
+      "position": "RB",
+      "pro_team_id": 0,
+      "adp": 169.93,
+      "percent_owned": 0.49,
+      "rank_standard": 2037,
+      "rank_ppr": 2031
+    },
+    {
+      "player_id": 4567096,
+      "name": "John Metchie III",
+      "position": "WR",
+      "pro_team_id": 29,
+      "adp": 169.93,
+      "percent_owned": 0.26,
+      "rank_standard": 1405,
+      "rank_ppr": 1407
+    },
+    {
+      "player_id": 4360405,
+      "name": "Jake Bobo",
+      "position": "WR",
+      "pro_team_id": 26,
+      "adp": 169.93,
+      "percent_owned": 0.18,
+      "rank_standard": 1472,
+      "rank_ppr": 1473
+    },
+    {
+      "player_id": 4424106,
+      "name": "Gunner Olszewski",
+      "position": "WR",
+      "pro_team_id": 19,
+      "adp": 169.93,
+      "percent_owned": 0.1,
+      "rank_standard": 1371,
+      "rank_ppr": 1373
+    },
+    {
+      "player_id": 4360799,
+      "name": "Jordan Travis",
+      "position": "QB",
+      "pro_team_id": 0,
+      "adp": 169.93,
+      "percent_owned": 0.04,
+      "rank_standard": 2377,
+      "rank_ppr": 2371
+    },
+    {
+      "player_id": 3975763,
+      "name": "Greg Joseph",
+      "position": "K",
+      "pro_team_id": 0,
+      "adp": 169.93,
+      "percent_owned": 0.06,
+      "rank_standard": 1873,
+      "rank_ppr": 1874
+    },
+    {
+      "player_id": 4775196,
+      "name": "Tommy Mellott",
+      "position": "WR",
+      "pro_team_id": 0,
+      "adp": 169.93,
+      "percent_owned": 0.04,
+      "rank_standard": 2483,
+      "rank_ppr": 2480
+    },
+    {
+      "player_id": 4603186,
+      "name": "Jack Bech",
+      "position": "WR",
+      "pro_team_id": 13,
+      "adp": 169.93,
+      "percent_owned": 1.72,
+      "rank_standard": 230,
+      "rank_ppr": 277
+    },
+    {
+      "player_id": 3128720,
+      "name": "Nick Chubb",
+      "position": "RB",
+      "pro_team_id": 0,
+      "adp": 169.94,
+      "percent_owned": 0.46,
+      "rank_standard": 1878,
+      "rank_ppr": 1879
+    },
+    {
+      "player_id": 4683153,
+      "name": "Skyler Bell",
+      "position": "WR",
+      "pro_team_id": 2,
+      "adp": 169.94,
+      "percent_owned": 1.29,
+      "rank_standard": 1039,
+      "rank_ppr": 1040
+    },
+    {
+      "player_id": 4832846,
+      "name": "Demond Claiborne",
+      "position": "RB",
+      "pro_team_id": 16,
+      "adp": 169.94,
+      "percent_owned": 1.14,
+      "rank_standard": 316,
+      "rank_ppr": 320
+    },
+    {
+      "player_id": 3049899,
+      "name": "Younghoe Koo",
+      "position": "K",
+      "pro_team_id": 20,
+      "adp": 169.94,
+      "percent_owned": 0.22,
+      "rank_standard": 1898,
+      "rank_ppr": 1896
+    },
+    {
+      "player_id": -16018,
+      "name": "Saints D/ST",
+      "position": "D/ST",
+      "pro_team_id": 18,
+      "adp": 169.94,
+      "percent_owned": 21.86,
+      "rank_standard": 426,
+      "rank_ppr": 427
+    },
+    {
+      "player_id": 5081508,
+      "name": "Eli Heidenreich",
+      "position": "RB",
+      "pro_team_id": 23,
+      "adp": 169.94,
+      "percent_owned": 0.81,
+      "rank_standard": 1590,
+      "rank_ppr": 1597
+    },
+    {
+      "player_id": 14880,
+      "name": "Kirk Cousins",
+      "position": "QB",
+      "pro_team_id": 13,
+      "adp": 169.94,
+      "percent_owned": 1.34,
+      "rank_standard": 430,
+      "rank_ppr": 431
+    },
+    {
+      "player_id": 4831959,
+      "name": "Eli Raridon",
+      "position": "TE",
+      "pro_team_id": 17,
+      "adp": 169.94,
+      "percent_owned": 0.54,
+      "rank_standard": 1227,
+      "rank_ppr": 1226
+    },
+    {
+      "player_id": 4883647,
+      "name": "Elic Ayomanor",
+      "position": "WR",
+      "pro_team_id": 10,
+      "adp": 169.94,
+      "percent_owned": 0.75,
+      "rank_standard": 1265,
+      "rank_ppr": 1266
+    },
+    {
+      "player_id": 4570688,
+      "name": "Caden Davis",
+      "position": "K",
+      "pro_team_id": 0,
+      "adp": 169.95,
+      "percent_owned": 0.11,
+      "rank_standard": 2513,
+      "rank_ppr": 2512
+    },
+    {
+      "player_id": 4241374,
+      "name": "Grant Calcaterra",
+      "position": "TE",
+      "pro_team_id": 21,
+      "adp": 169.95,
+      "percent_owned": 0.13,
+      "rank_standard": 1248,
+      "rank_ppr": 1248
+    },
+    {
+      "player_id": 4241479,
+      "name": "Tua Tagovailoa",
+      "position": "QB",
+      "pro_team_id": 1,
+      "adp": 169.95,
+      "percent_owned": 1.77,
+      "rank_standard": 423,
+      "rank_ppr": 424
+    },
+    {
+      "player_id": 4372716,
+      "name": "Nikko Remigio",
+      "position": "WR",
+      "pro_team_id": 12,
+      "adp": 169.95,
+      "percent_owned": 0.12,
+      "rank_standard": 1328,
+      "rank_ppr": 1329
+    },
+    {
+      "player_id": 16733,
+      "name": "Odell Beckham Jr.",
+      "position": "WR",
+      "pro_team_id": 0,
+      "adp": 169.95,
+      "percent_owned": 0.47,
+      "rank_standard": 1912,
+      "rank_ppr": 1910
+    },
+    {
+      "player_id": 3895856,
+      "name": "Christian Kirk",
+      "position": "WR",
+      "pro_team_id": 25,
+      "adp": 169.95,
+      "percent_owned": 2.33,
+      "rank_standard": 335,
+      "rank_ppr": 338
+    },
+    {
+      "player_id": 2576925,
+      "name": "Darren Waller",
+      "position": "TE",
+      "pro_team_id": 0,
+      "adp": 169.95,
+      "percent_owned": 0.21,
+      "rank_standard": 1748,
+      "rank_ppr": 1749
+    },
+    {
+      "player_id": 11122,
+      "name": "Matt Prater",
+      "position": "K",
+      "pro_team_id": 0,
+      "adp": 169.95,
+      "percent_owned": 0.14,
+      "rank_standard": 1923,
+      "rank_ppr": 1921
+    },
+    {
+      "player_id": 4566192,
+      "name": "Joshua Karty",
+      "position": "K",
+      "pro_team_id": 22,
+      "adp": 169.95,
+      "percent_owned": 0.08,
+      "rank_standard": 2350,
+      "rank_ppr": 2344
+    },
+    {
+      "player_id": 4429105,
+      "name": "Arian Smith",
+      "position": "WR",
+      "pro_team_id": 20,
+      "adp": 169.95,
+      "percent_owned": 0.14,
+      "rank_standard": 1310,
+      "rank_ppr": 1311
+    },
+    {
+      "player_id": 4243003,
+      "name": "Ronnie Rivers",
+      "position": "RB",
+      "pro_team_id": 14,
+      "adp": 169.96,
+      "percent_owned": 0.09,
+      "rank_standard": 1431,
+      "rank_ppr": 1433
+    },
+    {
+      "player_id": 4243315,
+      "name": "Salvon Ahmed",
+      "position": "RB",
+      "pro_team_id": 3,
+      "adp": 169.96,
+      "percent_owned": 0.03,
+      "rank_standard": 2007,
+      "rank_ppr": 2003
+    },
+    {
+      "player_id": 4360174,
+      "name": "Michael Woods II",
+      "position": "WR",
+      "pro_team_id": 7,
+      "adp": 169.96,
+      "percent_owned": 0.02,
+      "rank_standard": 1415,
+      "rank_ppr": 1417
+    },
+    {
+      "player_id": 4243371,
+      "name": "Riley Patterson",
+      "position": "K",
+      "pro_team_id": 15,
+      "adp": 169.96,
+      "percent_owned": 0.17,
+      "rank_standard": 2092,
+      "rank_ppr": 2086
+    },
+    {
+      "player_id": 5097554,
+      "name": "Kameron Johnson",
+      "position": "WR",
+      "pro_team_id": 27,
+      "adp": 169.96,
+      "percent_owned": 0.11,
+      "rank_standard": 1308,
+      "rank_ppr": 1309
+    },
+    {
+      "player_id": 4360290,
+      "name": "Brayden Willis",
+      "position": "TE",
+      "pro_team_id": 25,
+      "adp": 169.96,
+      "percent_owned": 0.03,
+      "rank_standard": 1461,
+      "rank_ppr": 1462
+    },
+    {
+      "player_id": 2975863,
+      "name": "Eric Saubert",
+      "position": "TE",
+      "pro_team_id": 26,
+      "adp": 169.96,
+      "percent_owned": 0.08,
+      "rank_standard": 1246,
+      "rank_ppr": 1246
+    },
+    {
+      "player_id": 4878878,
+      "name": "Amar Johnson",
+      "position": "RB",
+      "pro_team_id": 24,
+      "adp": 169.96,
+      "percent_owned": 0.03,
+      "rank_standard": 1575,
+      "rank_ppr": 1570
+    },
+    {
+      "player_id": 4260394,
+      "name": "Aidan O'Connell",
+      "position": "QB",
+      "pro_team_id": 13,
+      "adp": 169.96,
+      "percent_owned": 0.14,
+      "rank_standard": 1459,
+      "rank_ppr": 1460
+    },
+    {
+      "player_id": 4426407,
+      "name": "Trey Palmer",
+      "position": "WR",
+      "pro_team_id": 18,
+      "adp": 169.96,
+      "percent_owned": 0.07,
+      "rank_standard": 1460,
+      "rank_ppr": 1461
+    },
+    {
+      "player_id": 4879250,
+      "name": "Cole Payton",
+      "position": "QB",
+      "pro_team_id": 21,
+      "adp": 169.96,
+      "percent_owned": 0.12,
+      "rank_standard": 1596,
+      "rank_ppr": 1600
+    },
+    {
+      "player_id": 4361112,
+      "name": "Devin Culp",
+      "position": "TE",
+      "pro_team_id": 27,
+      "adp": 169.96,
+      "percent_owned": 0.06,
+      "rank_standard": 1233,
+      "rank_ppr": 1232
+    },
+    {
+      "player_id": 4259147,
+      "name": "Jake Tonges",
+      "position": "TE",
+      "pro_team_id": 25,
+      "adp": 169.96,
+      "percent_owned": 2.15,
+      "rank_standard": 371,
+      "rank_ppr": 374
+    },
+    {
+      "player_id": 4361604,
+      "name": "Blake Watson",
+      "position": "RB",
+      "pro_team_id": 0,
+      "adp": 169.96,
+      "percent_owned": 0.04,
+      "rank_standard": 2403,
+      "rank_ppr": 2397
+    },
+    {
+      "player_id": 4877824,
+      "name": "Zach Horton",
+      "position": "TE",
+      "pro_team_id": 8,
+      "adp": 169.97,
+      "percent_owned": 0.02,
+      "rank_standard": 1562,
+      "rank_ppr": 1573
+    },
+    {
+      "player_id": 4683151,
+      "name": "Deion Burks",
+      "position": "WR",
+      "pro_team_id": 11,
+      "adp": 169.97,
+      "percent_owned": 0.18,
+      "rank_standard": 1598,
+      "rank_ppr": 1589
+    },
+    {
+      "player_id": 4361665,
+      "name": "Christopher Dunn",
+      "position": "K",
+      "pro_team_id": 0,
+      "adp": 169.97,
+      "percent_owned": 0.04,
+      "rank_standard": 2203,
+      "rank_ppr": 2197
+    },
+    {
+      "player_id": 4431492,
+      "name": "Roman Wilson",
+      "position": "WR",
+      "pro_team_id": 23,
+      "adp": 169.97,
+      "percent_owned": 0.34,
+      "rank_standard": 1483,
+      "rank_ppr": 1484
+    },
+    {
+      "player_id": 4240911,
+      "name": "Jacob Kibodi",
+      "position": "RB",
+      "pro_team_id": 0,
+      "adp": 169.97,
+      "percent_owned": 0.04,
+      "rank_standard": 2474,
+      "rank_ppr": 2470
+    },
+    {
+      "player_id": 15965,
+      "name": "Dustin Hopkins",
+      "position": "K",
+      "pro_team_id": 0,
+      "adp": 169.97,
+      "percent_owned": 0.07,
+      "rank_standard": 1920,
+      "rank_ppr": 1918
+    },
+    {
+      "player_id": 4361777,
+      "name": "Zamir White",
+      "position": "RB",
+      "pro_team_id": 0,
+      "adp": 169.97,
+      "percent_owned": 0.08,
+      "rank_standard": 2117,
+      "rank_ppr": 2111
+    },
+    {
+      "player_id": 3122840,
+      "name": "Deshaun Watson",
+      "position": "QB",
+      "pro_team_id": 5,
+      "adp": 169.97,
+      "percent_owned": 1.34,
+      "rank_standard": 388,
+      "rank_ppr": 389
+    },
+    {
+      "player_id": 4245131,
+      "name": "Tim Jones",
+      "position": "WR",
+      "pro_team_id": 30,
+      "adp": 169.97,
+      "percent_owned": 0.04,
+      "rank_standard": 1425,
+      "rank_ppr": 1427
+    },
+    {
+      "player_id": 4431509,
+      "name": "Kaden Prather",
+      "position": "WR",
+      "pro_team_id": 0,
+      "adp": 169.97,
+      "percent_owned": 0.04,
+      "rank_standard": 2505,
+      "rank_ppr": 2504
+    },
+    {
+      "player_id": 4685477,
+      "name": "Jam Miller",
+      "position": "RB",
+      "pro_team_id": 17,
+      "adp": 169.97,
+      "percent_owned": 0.17,
+      "rank_standard": 1588,
+      "rank_ppr": 1594
+    },
+    {
+      "player_id": 4427600,
+      "name": "Terrell Jennings",
+      "position": "RB",
+      "pro_team_id": 17,
+      "adp": 169.97,
+      "percent_owned": 0.07,
+      "rank_standard": 1505,
+      "rank_ppr": 1507
+    },
+    {
+      "player_id": 3051392,
+      "name": "Ezekiel Elliott",
+      "position": "RB",
+      "pro_team_id": 0,
+      "adp": 169.97,
+      "percent_owned": 0.04,
+      "rank_standard": 1894,
+      "rank_ppr": 1892
+    },
+    {
+      "player_id": 16339,
+      "name": "Brandon McManus",
+      "position": "K",
+      "pro_team_id": 0,
+      "adp": 169.97,
+      "percent_owned": 0.52,
+      "rank_standard": 1918,
+      "rank_ppr": 1916
+    },
+    {
+      "player_id": 4057082,
+      "name": "Mason Kinsey",
+      "position": "WR",
+      "pro_team_id": 10,
+      "adp": 169.97,
+      "percent_owned": 0.07,
+      "rank_standard": 1351,
+      "rank_ppr": 1352
+    },
+    {
+      "player_id": 2576336,
+      "name": "Ameer Abdullah",
+      "position": "RB",
+      "pro_team_id": 30,
+      "adp": 169.97,
+      "percent_owned": 0.05,
+      "rank_standard": 1360,
+      "rank_ppr": 1361
+    },
+    {
+      "player_id": 4372414,
+      "name": "Elijah Moore",
+      "position": "WR",
+      "pro_team_id": 21,
+      "adp": 169.97,
+      "percent_owned": 0.11,
+      "rank_standard": 1386,
+      "rank_ppr": 1388
+    },
+    {
+      "player_id": 3139602,
+      "name": "D'Ernest Johnson",
+      "position": "RB",
+      "pro_team_id": 0,
+      "adp": 169.97,
+      "percent_owned": 0.01,
+      "rank_standard": 1930,
+      "rank_ppr": 1927
+    },
+    {
+      "player_id": 4708486,
+      "name": "Jimmy Horn Jr.",
+      "position": "WR",
+      "pro_team_id": 29,
+      "adp": 169.97,
+      "percent_owned": 0.2,
+      "rank_standard": 1316,
+      "rank_ppr": 1317
+    },
+    {
+      "player_id": 4433959,
+      "name": "Ben Yurosek",
+      "position": "TE",
+      "pro_team_id": 16,
+      "adp": 169.97,
+      "percent_owned": 0.02,
+      "rank_standard": 1577,
+      "rank_ppr": 1560
+    },
+    {
+      "player_id": 4360238,
+      "name": "Dameon Pierce",
+      "position": "RB",
+      "pro_team_id": 21,
+      "adp": 169.97,
+      "percent_owned": 0.14,
+      "rank_standard": 1407,
+      "rank_ppr": 1409
+    },
+    {
+      "player_id": 2310331,
+      "name": "Tyler Johnson",
+      "position": "WR",
+      "pro_team_id": 6,
+      "adp": 169.97,
+      "percent_owned": 0.03,
+      "rank_standard": 1375,
+      "rank_ppr": 1377
+    },
+    {
+      "player_id": 4245661,
+      "name": "Lucas Havrisik",
+      "position": "K",
+      "pro_team_id": 9,
+      "adp": 169.97,
+      "percent_owned": 0.11,
+      "rank_standard": 2332,
+      "rank_ppr": 2337
+    },
+    {
+      "player_id": 4567216,
+      "name": "D.J. Williams",
+      "position": "RB",
+      "pro_team_id": 0,
+      "adp": 169.97,
+      "percent_owned": 0.04,
+      "rank_standard": 2428,
+      "rank_ppr": 2423
+    },
+    {
+      "player_id": 4917427,
+      "name": "Tanner Koziol",
+      "position": "TE",
+      "pro_team_id": 30,
+      "adp": 169.97,
+      "percent_owned": 0.09,
+      "rank_standard": 1228,
+      "rank_ppr": 1227
+    },
+    {
+      "player_id": 4698301,
+      "name": "Jermaine Jackson",
+      "position": "WR",
+      "pro_team_id": 0,
+      "adp": 169.97,
+      "percent_owned": 0.04,
+      "rank_standard": 2475,
+      "rank_ppr": 2472
+    },
+    {
+      "player_id": 4432208,
+      "name": "Caleb Lohner",
+      "position": "TE",
+      "pro_team_id": 7,
+      "adp": 169.97,
+      "percent_owned": 0.03,
+      "rank_standard": 1533,
+      "rank_ppr": 1534
+    },
+    {
+      "player_id": 4430191,
+      "name": "Skyy Moore",
+      "position": "WR",
+      "pro_team_id": 9,
+      "adp": 169.97,
+      "percent_owned": 0.18,
+      "rank_standard": 1340,
+      "rank_ppr": 1341
+    },
+    {
+      "player_id": 4430104,
+      "name": "Sincere McCormick",
+      "position": "RB",
+      "pro_team_id": 25,
+      "adp": 169.97,
+      "percent_owned": 0.04,
+      "rank_standard": 1504,
+      "rank_ppr": 1506
+    },
+    {
+      "player_id": 2969939,
+      "name": "Jameis Winston",
+      "position": "QB",
+      "pro_team_id": 19,
+      "adp": 169.97,
+      "percent_owned": 0.51,
+      "rank_standard": 477,
+      "rank_ppr": 478
+    },
+    {
+      "player_id": 4432338,
+      "name": "Luke Lachey",
+      "position": "TE",
+      "pro_team_id": 0,
+      "adp": 169.97,
+      "percent_owned": 0.03,
+      "rank_standard": 1526,
+      "rank_ppr": 2493
+    },
+    {
+      "player_id": 4248068,
+      "name": "Aaron Shampklin",
+      "position": "RB",
+      "pro_team_id": 0,
+      "adp": 169.97,
+      "percent_owned": 0.03,
+      "rank_standard": 2419,
+      "rank_ppr": 2413
+    },
+    {
+      "player_id": 4045305,
+      "name": "Ian Thomas",
+      "position": "TE",
+      "pro_team_id": 13,
+      "adp": 169.97,
+      "percent_owned": 0.06,
+      "rank_standard": 1258,
+      "rank_ppr": 1257
+    },
+    {
+      "player_id": 4575665,
+      "name": "Jacob Cowing",
+      "position": "WR",
+      "pro_team_id": 25,
+      "adp": 169.97,
+      "percent_owned": 0.1,
+      "rank_standard": 1331,
+      "rank_ppr": 1332
+    },
+    {
+      "player_id": 4035020,
+      "name": "Charlie Woerner",
+      "position": "TE",
+      "pro_team_id": 1,
+      "adp": 169.97,
+      "percent_owned": 0.06,
+      "rank_standard": 1259,
+      "rank_ppr": 1258
+    },
+    {
+      "player_id": 4569682,
+      "name": "Audric Estime",
+      "position": "RB",
+      "pro_team_id": 18,
+      "adp": 169.97,
+      "percent_owned": 0.19,
+      "rank_standard": 1484,
+      "rank_ppr": 1486
+    },
+    {
+      "player_id": 14881,
+      "name": "Russell Wilson",
+      "position": "QB",
+      "pro_team_id": 0,
+      "adp": 169.97,
+      "percent_owned": 0.12,
+      "rank_standard": 1922,
+      "rank_ppr": 1920
+    },
+    {
+      "player_id": 4692590,
+      "name": "Jalin Hyatt",
+      "position": "WR",
+      "pro_team_id": 19,
+      "adp": 169.97,
+      "percent_owned": 0.11,
+      "rank_standard": 1444,
+      "rank_ppr": 1446
+    },
+    {
+      "player_id": 4426364,
+      "name": "Baylor Cupp",
+      "position": "TE",
+      "pro_team_id": 0,
+      "adp": 169.97,
+      "percent_owned": 0.04,
+      "rank_standard": 2463,
+      "rank_ppr": 2446
+    },
+    {
+      "player_id": 4012556,
+      "name": "C.J. Ham",
+      "position": "RB",
+      "pro_team_id": 16,
+      "adp": 169.97,
+      "percent_owned": 0.05,
+      "rank_standard": 1755,
+      "rank_ppr": 1756
+    },
+    {
+      "player_id": 3052177,
+      "name": "John Ross",
+      "position": "WR",
+      "pro_team_id": 0,
+      "adp": 169.97,
+      "percent_owned": 0.06,
+      "rank_standard": 1883,
+      "rank_ppr": 2476
+    },
+    {
+      "player_id": 2976499,
+      "name": "Amari Cooper",
+      "position": "WR",
+      "pro_team_id": 13,
+      "adp": 169.97,
+      "percent_owned": 0.1,
+      "rank_standard": 1903,
+      "rank_ppr": 1901
+    },
+    {
+      "player_id": 4879194,
+      "name": "Josh Cameron",
+      "position": "WR",
+      "pro_team_id": 30,
+      "adp": 169.97,
+      "percent_owned": 0.07,
+      "rank_standard": 1349,
+      "rank_ppr": 1350
+    },
+    {
+      "player_id": 4248425,
+      "name": "Carlos Washington Jr.",
+      "position": "RB",
+      "pro_team_id": 15,
+      "adp": 169.97,
+      "percent_owned": 0.05,
+      "rank_standard": 2430,
+      "rank_ppr": 2425
+    },
+    {
+      "player_id": 2573079,
+      "name": "Carson Wentz",
+      "position": "QB",
+      "pro_team_id": 16,
+      "adp": 169.97,
+      "percent_owned": 0.13,
+      "rank_standard": 1366,
+      "rank_ppr": 1368
+    },
+    {
+      "player_id": 4379405,
+      "name": "Jaylen Johnson",
+      "position": "WR",
+      "pro_team_id": 0,
+      "adp": 169.97,
+      "percent_owned": 0.03,
+      "rank_standard": 2460,
+      "rank_ppr": 2442
+    },
+    {
+      "player_id": 2577327,
+      "name": "Tyler Lockett",
+      "position": "WR",
+      "pro_team_id": 0,
+      "adp": 169.97,
+      "percent_owned": 0.11,
+      "rank_standard": 1901,
+      "rank_ppr": 1899
+    },
+    {
+      "player_id": 3134353,
+      "name": "Tim Patrick",
+      "position": "WR",
+      "pro_team_id": 20,
+      "adp": 169.97,
+      "percent_owned": 0.05,
+      "rank_standard": 1879,
+      "rank_ppr": 1366
+    },
+    {
+      "player_id": 3050487,
+      "name": "Anthony Miller",
+      "position": "WR",
+      "pro_team_id": 0,
+      "adp": 169.97,
+      "percent_owned": 0.03,
+      "rank_standard": 1893,
+      "rank_ppr": 2465
+    },
+    {
+      "player_id": 4565908,
+      "name": "Tyler Scott",
+      "position": "WR",
+      "pro_team_id": 14,
+      "adp": 169.97,
+      "percent_owned": 0.04,
+      "rank_standard": 1453,
+      "rank_ppr": 1455
+    },
+    {
+      "player_id": 4912052,
+      "name": "Justin Joly",
+      "position": "TE",
+      "pro_team_id": 7,
+      "adp": 169.97,
+      "percent_owned": 0.37,
+      "rank_standard": 1597,
+      "rank_ppr": 1583
+    },
+    {
+      "player_id": 5092436,
+      "name": "Jude McAtamney",
+      "position": "K",
+      "pro_team_id": 0,
+      "adp": 169.97,
+      "percent_owned": 0.06,
+      "rank_standard": 2473,
+      "rank_ppr": 2473
+    },
+    {
+      "player_id": 4912218,
+      "name": "Cyrus Allen",
+      "position": "WR",
+      "pro_team_id": 12,
+      "adp": 169.97,
+      "percent_owned": 0.29,
+      "rank_standard": 1148,
+      "rank_ppr": 1149
+    },
+    {
+      "player_id": 5088338,
+      "name": "Elijah Sarratt",
+      "position": "WR",
+      "pro_team_id": 33,
+      "adp": 169.97,
+      "percent_owned": 1.03,
+      "rank_standard": 377,
+      "rank_ppr": 381
+    },
+    {
+      "player_id": 4242526,
+      "name": "John Samuel Shenker",
+      "position": "TE",
+      "pro_team_id": 0,
+      "adp": 169.97,
+      "percent_owned": 0.06,
+      "rank_standard": 2477,
+      "rank_ppr": 2469
+    },
+    {
+      "player_id": 4242536,
+      "name": "Sal Cannella",
+      "position": "TE",
+      "pro_team_id": 0,
+      "adp": 169.97,
+      "percent_owned": 0.04,
+      "rank_standard": 2563,
+      "rank_ppr": 2522
+    },
+    {
+      "player_id": 4035693,
+      "name": "Velus Jones Jr.",
+      "position": "RB",
+      "pro_team_id": 26,
+      "adp": 169.97,
+      "percent_owned": 0.05,
+      "rank_standard": 1406,
+      "rank_ppr": 1408
+    },
+    {
+      "player_id": 4367567,
+      "name": "Julius Chestnut",
+      "position": "RB",
+      "pro_team_id": 10,
+      "adp": 169.97,
+      "percent_owned": 0.08,
+      "rank_standard": 1424,
+      "rank_ppr": 1426
+    },
+    {
+      "player_id": 4426990,
+      "name": "Jalen Cropper",
+      "position": "WR",
+      "pro_team_id": 0,
+      "adp": 169.97,
+      "percent_owned": 0.04,
+      "rank_standard": 2461,
+      "rank_ppr": 2440
+    },
+    {
+      "player_id": 4695193,
+      "name": "Efton Chism III",
+      "position": "WR",
+      "pro_team_id": 17,
+      "adp": 169.97,
+      "percent_owned": 0.17,
+      "rank_standard": 1339,
+      "rank_ppr": 1340
+    },
+    {
+      "player_id": 4426948,
+      "name": "Luke McCaffrey",
+      "position": "WR",
+      "pro_team_id": 28,
+      "adp": 169.97,
+      "percent_owned": 0.43,
+      "rank_standard": 1335,
+      "rank_ppr": 1336
+    },
+    {
+      "player_id": 4429262,
+      "name": "Jaheim Bell",
+      "position": "TE",
+      "pro_team_id": 23,
+      "adp": 169.98,
+      "percent_owned": 0.12,
+      "rank_standard": 1494,
+      "rank_ppr": 1496
+    },
+    {
+      "player_id": 4369886,
+      "name": "Chris Blair",
+      "position": "WR",
+      "pro_team_id": 1,
+      "adp": 169.98,
+      "percent_owned": 0.05,
+      "rank_standard": 1475,
+      "rank_ppr": 1481
+    },
+    {
+      "player_id": 4685279,
+      "name": "Jaydon Blue",
+      "position": "RB",
+      "pro_team_id": 6,
+      "adp": 169.98,
+      "percent_owned": 1.52,
+      "rank_standard": 358,
+      "rank_ppr": 361
+    },
+    {
+      "player_id": 15835,
+      "name": "Zach Ertz",
+      "position": "TE",
+      "pro_team_id": 0,
+      "adp": 169.98,
+      "percent_owned": 0.34,
+      "rank_standard": 1913,
+      "rank_ppr": 1911
+    },
+    {
+      "player_id": 4257188,
+      "name": "Charlie Jones",
+      "position": "WR",
+      "pro_team_id": 4,
+      "adp": 169.98,
+      "percent_owned": 0.13,
+      "rank_standard": 1319,
+      "rank_ppr": 1320
+    },
+    {
+      "player_id": 4249030,
+      "name": "D.J. Montgomery",
+      "position": "WR",
+      "pro_team_id": 0,
+      "adp": 169.98,
+      "percent_owned": 0.02,
+      "rank_standard": 2110,
+      "rank_ppr": 2104
+    },
+    {
+      "player_id": 4869748,
+      "name": "Zavion Thomas",
+      "position": "WR",
+      "pro_team_id": 3,
+      "adp": 169.98,
+      "percent_owned": 0.54,
+      "rank_standard": 1210,
+      "rank_ppr": 1210
+    },
+    {
+      "player_id": 4689546,
+      "name": "Danny Gray",
+      "position": "WR",
+      "pro_team_id": 21,
+      "adp": 169.98,
+      "percent_owned": 0.03,
+      "rank_standard": 1411,
+      "rank_ppr": 1413
+    },
+    {
+      "player_id": 3919510,
+      "name": "Alex Bachman",
+      "position": "WR",
+      "pro_team_id": 0,
+      "adp": 169.98,
+      "percent_owned": 0.03,
+      "rank_standard": 2029,
+      "rank_ppr": 2421
+    },
+    {
+      "player_id": 5085024,
+      "name": "CJ Williams",
+      "position": "WR",
+      "pro_team_id": 30,
+      "adp": 169.98,
+      "percent_owned": 0.03,
+      "rank_standard": 1604,
+      "rank_ppr": 1584
+    },
+    {
+      "player_id": 4429676,
+      "name": "Tyler Goodson",
+      "position": "RB",
+      "pro_team_id": 1,
+      "adp": 169.98,
+      "percent_owned": 0.07,
+      "rank_standard": 1480,
+      "rank_ppr": 1479
+    },
+    {
+      "player_id": 4243331,
+      "name": "Cade Otton",
+      "position": "TE",
+      "pro_team_id": 27,
+      "adp": 169.98,
+      "percent_owned": 1.56,
+      "rank_standard": 415,
+      "rank_ppr": 415
+    },
+    {
+      "player_id": 4714379,
+      "name": "Seydou Traore",
+      "position": "TE",
+      "pro_team_id": 15,
+      "adp": 169.98,
+      "percent_owned": 0.04,
+      "rank_standard": 1587,
+      "rank_ppr": 1596
+    },
+    {
+      "player_id": 4372526,
+      "name": "Deneric Prince",
+      "position": "RB",
+      "pro_team_id": 0,
+      "adp": 169.98,
+      "percent_owned": 0.01,
+      "rank_standard": 2267,
+      "rank_ppr": 2262
+    },
+    {
+      "player_id": 4722908,
+      "name": "Drew Ogletree",
+      "position": "TE",
+      "pro_team_id": 11,
+      "adp": 169.98,
+      "percent_owned": 0.06,
+      "rank_standard": 1242,
+      "rank_ppr": 1240
+    },
+    {
+      "player_id": 12460,
+      "name": "Graham Gano",
+      "position": "K",
+      "pro_team_id": 0,
+      "adp": 169.98,
+      "percent_owned": 0.03,
+      "rank_standard": 1925,
+      "rank_ppr": 1922
+    },
+    {
+      "player_id": 4249836,
+      "name": "Pierre Strong Jr.",
+      "position": "RB",
+      "pro_team_id": 9,
+      "adp": 169.98,
+      "percent_owned": 0.12,
+      "rank_standard": 1412,
+      "rank_ppr": 1414
+    },
+    {
+      "player_id": 3059915,
+      "name": "Kareem Hunt",
+      "position": "RB",
+      "pro_team_id": 0,
+      "adp": 169.98,
+      "percent_owned": 0.38,
+      "rank_standard": 1889,
+      "rank_ppr": 1888
+    },
+    {
+      "player_id": 5208436,
+      "name": "Louis Rees-Zammit",
+      "position": "RB",
+      "pro_team_id": 0,
+      "adp": 169.98,
+      "percent_owned": 0.03,
+      "rank_standard": 2401,
+      "rank_ppr": 2395
+    },
+    {
+      "player_id": 4362617,
+      "name": "Bryce Oliver",
+      "position": "WR",
+      "pro_team_id": 10,
+      "adp": 169.98,
+      "percent_owned": 0.04,
+      "rank_standard": 1506,
+      "rank_ppr": 1508
+    },
+    {
+      "player_id": 4432260,
+      "name": "Matthew Hibner",
+      "position": "TE",
+      "pro_team_id": 33,
+      "adp": 169.98,
+      "percent_owned": 0.16,
+      "rank_standard": 1245,
+      "rank_ppr": 1243
+    },
+    {
+      "player_id": 4034948,
+      "name": "Feleipe Franks",
+      "position": "TE",
+      "pro_team_id": 29,
+      "adp": 169.98,
+      "percent_owned": 0.02,
+      "rank_standard": 1397,
+      "rank_ppr": 1399
+    },
+    {
+      "player_id": 3068267,
+      "name": "Austin Ekeler",
+      "position": "RB",
+      "pro_team_id": 0,
+      "adp": 169.98,
+      "percent_owned": 0.28,
+      "rank_standard": 1891,
+      "rank_ppr": 1890
+    },
+    {
+      "player_id": 16760,
+      "name": "Jimmy Garoppolo",
+      "position": "QB",
+      "pro_team_id": 0,
+      "adp": 169.98,
+      "percent_owned": 0.05,
+      "rank_standard": 1916,
+      "rank_ppr": 1914
+    },
+    {
+      "player_id": 3051876,
+      "name": "Evan Engram",
+      "position": "TE",
+      "pro_team_id": 7,
+      "adp": 169.98,
+      "percent_owned": 2.09,
+      "rank_standard": 417,
+      "rank_ppr": 418
+    },
+    {
+      "player_id": 4567506,
+      "name": "Tahj Washington",
+      "position": "WR",
+      "pro_team_id": 15,
+      "adp": 169.98,
+      "percent_owned": 0.08,
+      "rank_standard": 1492,
+      "rank_ppr": 1494
+    },
+    {
+      "player_id": 4698597,
+      "name": "Barion Brown",
+      "position": "WR",
+      "pro_team_id": 18,
+      "adp": 169.98,
+      "percent_owned": 0.09,
+      "rank_standard": 1330,
+      "rank_ppr": 1331
+    },
+    {
+      "player_id": 4696700,
+      "name": "Tip Reiman",
+      "position": "TE",
+      "pro_team_id": 22,
+      "adp": 169.98,
+      "percent_owned": 0.08,
+      "rank_standard": 1254,
+      "rank_ppr": 1253
+    },
+    {
+      "player_id": 14993,
+      "name": "Greg Zuerlein",
+      "position": "K",
+      "pro_team_id": 0,
+      "adp": 169.98,
+      "percent_owned": 0.04,
+      "rank_standard": 1921,
+      "rank_ppr": 1919
+    },
+    {
+      "player_id": 4877034,
+      "name": "Jaren Kanak",
+      "position": "TE",
+      "pro_team_id": 10,
+      "adp": 169.98,
+      "percent_owned": 0.03,
+      "rank_standard": 1593,
+      "rank_ppr": 1587
+    },
+    {
+      "player_id": 4035222,
+      "name": "Trayveon Williams",
+      "position": "RB",
+      "pro_team_id": 0,
+      "adp": 169.98,
+      "percent_owned": 0.03,
+      "rank_standard": 1835,
+      "rank_ppr": 1836
+    },
+    {
+      "player_id": 4401805,
+      "name": "Dareke Young",
+      "position": "WR",
+      "pro_team_id": 13,
+      "adp": 169.98,
+      "percent_owned": 0.07,
+      "rank_standard": 1341,
+      "rank_ppr": 1342
+    },
+    {
+      "player_id": 4426386,
+      "name": "Roschon Johnson",
+      "position": "RB",
+      "pro_team_id": 3,
+      "adp": 169.98,
+      "percent_owned": 0.21,
+      "rank_standard": 1440,
+      "rank_ppr": 1442
+    },
+    {
+      "player_id": 4696736,
+      "name": "Tanner Brown",
+      "position": "K",
+      "pro_team_id": 0,
+      "adp": 169.98,
+      "percent_owned": 0.04,
+      "rank_standard": 2266,
+      "rank_ppr": 2261
+    },
+    {
+      "player_id": 4432722,
+      "name": "Athan Kaliakmanis",
+      "position": "QB",
+      "pro_team_id": 28,
+      "adp": 169.98,
+      "percent_owned": 0.04,
+      "rank_standard": 1591,
+      "rank_ppr": 1595
+    },
+    {
+      "player_id": 4432731,
+      "name": "Moliki Matavao",
+      "position": "TE",
+      "pro_team_id": 18,
+      "adp": 169.98,
+      "percent_owned": 0.02,
+      "rank_standard": 1535,
+      "rank_ppr": 1536
+    },
+    {
+      "player_id": 3916566,
+      "name": "K.J. Osborn",
+      "position": "WR",
+      "pro_team_id": 10,
+      "adp": 169.98,
+      "percent_owned": 0.05,
+      "rank_standard": 1379,
+      "rank_ppr": 1381
+    },
+    {
+      "player_id": 15168,
+      "name": "Case Keenum",
+      "position": "QB",
+      "pro_team_id": 3,
+      "adp": 169.98,
+      "percent_owned": 0.07,
+      "rank_standard": 1368,
+      "rank_ppr": 1370
+    },
+    {
+      "player_id": 5065495,
+      "name": "Kaden Davis",
+      "position": "WR",
+      "pro_team_id": 0,
+      "adp": 169.98,
+      "percent_owned": 0.03,
+      "rank_standard": 2427,
+      "rank_ppr": 2422
+    },
+    {
+      "player_id": 3928925,
+      "name": "JaMycal Hasty",
+      "position": "RB",
+      "pro_team_id": 0,
+      "adp": 169.98,
+      "percent_owned": 0.01,
+      "rank_standard": 2005,
+      "rank_ppr": 2001
+    },
+    {
+      "player_id": 4240350,
+      "name": "Xazavian Valladay",
+      "position": "RB",
+      "pro_team_id": 0,
+      "adp": 169.98,
+      "percent_owned": 0.02,
+      "rank_standard": 2277,
+      "rank_ppr": 2272
+    },
+    {
+      "player_id": 4428796,
+      "name": "Casey Washington",
+      "position": "WR",
+      "pro_team_id": 1,
+      "adp": 169.98,
+      "percent_owned": 0.05,
+      "rank_standard": 1487,
+      "rank_ppr": 1489
+    },
+    {
+      "player_id": 3910544,
+      "name": "Joshua Kelley",
+      "position": "RB",
+      "pro_team_id": 0,
+      "adp": 169.98,
+      "percent_owned": 0.02,
+      "rank_standard": 1960,
+      "rank_ppr": 1957
+    },
+    {
+      "player_id": 4391845,
+      "name": "Cody Schrader",
+      "position": "RB",
+      "pro_team_id": 7,
+      "adp": 169.98,
+      "percent_owned": 0.04,
+      "rank_standard": 1502,
+      "rank_ppr": 1504
+    },
+    {
+      "player_id": 4426875,
+      "name": "Sam Howell",
+      "position": "QB",
+      "pro_team_id": 6,
+      "adp": 169.98,
+      "percent_owned": 0.11,
+      "rank_standard": 1409,
+      "rank_ppr": 1411
+    },
+    {
+      "player_id": 4869132,
+      "name": "Reggie Virgil",
+      "position": "WR",
+      "pro_team_id": 22,
+      "adp": 169.98,
+      "percent_owned": 0.09,
+      "rank_standard": 1261,
+      "rank_ppr": 1261
+    },
+    {
+      "player_id": 4035676,
+      "name": "Zack Moss",
+      "position": "RB",
+      "pro_team_id": 0,
+      "adp": 169.98,
+      "percent_owned": 0.04,
+      "rank_standard": 1958,
+      "rank_ppr": 1955
+    },
+    {
+      "player_id": 4426893,
+      "name": "Joshua Cephus",
+      "position": "WR",
+      "pro_team_id": 0,
+      "adp": 169.98,
+      "percent_owned": 0.02,
+      "rank_standard": 2429,
+      "rank_ppr": 2424
+    },
+    {
+      "player_id": 4373684,
+      "name": "Scott Matlock",
+      "position": "RB",
+      "pro_team_id": 24,
+      "adp": 169.98,
+      "percent_owned": 0.04,
+      "rank_standard": 1456,
+      "rank_ppr": 1457
+    },
+    {
+      "player_id": 3120348,
+      "name": "JuJu Smith-Schuster",
+      "position": "WR",
+      "pro_team_id": 0,
+      "adp": 169.98,
+      "percent_owned": 0.16,
+      "rank_standard": 1882,
+      "rank_ppr": 1882
+    },
+    {
+      "player_id": 4363551,
+      "name": "Dylan Drummond",
+      "position": "WR",
+      "pro_team_id": 1,
+      "adp": 169.98,
+      "percent_owned": 0.08,
+      "rank_standard": 1479,
+      "rank_ppr": 1482
+    },
+    {
+      "player_id": 4036032,
+      "name": "Brittain Brown",
+      "position": "RB",
+      "pro_team_id": 3,
+      "adp": 169.99,
+      "percent_owned": 0.13,
+      "rank_standard": 1422,
+      "rank_ppr": 1424
+    },
+    {
+      "player_id": 4372063,
+      "name": "Ronnie Bell",
+      "position": "WR",
+      "pro_team_id": 18,
+      "adp": 169.99,
+      "percent_owned": 0.03,
+      "rank_standard": 1458,
+      "rank_ppr": 1459
+    },
+    {
+      "player_id": 4431466,
+      "name": "Jordan Watkins",
+      "position": "WR",
+      "pro_team_id": 25,
+      "adp": 169.99,
+      "percent_owned": 0.07,
+      "rank_standard": 1523,
+      "rank_ppr": 1525
+    },
+    {
+      "player_id": 4429435,
+      "name": "Brady Cook",
+      "position": "QB",
+      "pro_team_id": 20,
+      "adp": 169.99,
+      "percent_owned": 0.11,
+      "rank_standard": 1556,
+      "rank_ppr": 1556
+    },
+    {
+      "player_id": 4427278,
+      "name": "Xavier Gipson",
+      "position": "WR",
+      "pro_team_id": 19,
+      "adp": 169.99,
+      "percent_owned": 0.04,
+      "rank_standard": 1470,
+      "rank_ppr": 1471
+    },
+    {
+      "player_id": 5150247,
+      "name": "Malik Benson",
+      "position": "WR",
+      "pro_team_id": 13,
+      "adp": 169.99,
+      "percent_owned": 0.18,
+      "rank_standard": 1603,
+      "rank_ppr": 1605
+    },
+    {
+      "player_id": 4372026,
+      "name": "Cameron Latu",
+      "position": "TE",
+      "pro_team_id": 21,
+      "adp": 169.99,
+      "percent_owned": 0.04,
+      "rank_standard": 1445,
+      "rank_ppr": 1447
+    },
+    {
+      "player_id": 4259553,
+      "name": "Stetson Bennett IV",
+      "position": "QB",
+      "pro_team_id": 14,
+      "adp": 169.99,
+      "percent_owned": 0.16,
+      "rank_standard": 1443,
+      "rank_ppr": 1445
+    },
+    {
+      "player_id": 4685504,
+      "name": "Sam Roush",
+      "position": "TE",
+      "pro_team_id": 3,
+      "adp": 169.99,
+      "percent_owned": 0.2,
+      "rank_standard": 1243,
+      "rank_ppr": 1241
+    },
+    {
+      "player_id": 4431562,
+      "name": "Phil Mafah",
+      "position": "RB",
+      "pro_team_id": 6,
+      "adp": 169.99,
+      "percent_owned": 0.12,
+      "rank_standard": 1524,
+      "rank_ppr": 1526
+    },
+    {
+      "player_id": 4876132,
+      "name": "Josh Cuevas",
+      "position": "TE",
+      "pro_team_id": 33,
+      "adp": 169.99,
+      "percent_owned": 0.08,
+      "rank_standard": 1244,
+      "rank_ppr": 1244
+    },
+    {
+      "player_id": 4714365,
+      "name": "Carson Steele",
+      "position": "RB",
+      "pro_team_id": 21,
+      "adp": 169.99,
+      "percent_owned": 0.04,
+      "rank_standard": 1497,
+      "rank_ppr": 1499
+    },
+    {
+      "player_id": 3123052,
+      "name": "Michael Badgley",
+      "position": "K",
+      "pro_team_id": 0,
+      "adp": 169.99,
+      "percent_owned": 0.06,
+      "rank_standard": 1890,
+      "rank_ppr": 1889
+    },
+    {
+      "player_id": 4689988,
+      "name": "Jason Brownlee",
+      "position": "WR",
+      "pro_team_id": 12,
+      "adp": 169.99,
+      "percent_owned": 0.04,
+      "rank_standard": 1466,
+      "rank_ppr": 1467
+    },
+    {
+      "player_id": 4362452,
+      "name": "Jaret Patterson",
+      "position": "RB",
+      "pro_team_id": 24,
+      "adp": 169.99,
+      "percent_owned": 0.05,
+      "rank_standard": 1398,
+      "rank_ppr": 1400
+    },
+    {
+      "player_id": 4573398,
+      "name": "Max Brosmer",
+      "position": "QB",
+      "pro_team_id": 16,
+      "adp": 169.99,
+      "percent_owned": 0.07,
+      "rank_standard": 1558,
+      "rank_ppr": 1565
+    },
+    {
+      "player_id": 4362504,
+      "name": "Brevin Jordan",
+      "position": "TE",
+      "pro_team_id": 34,
+      "adp": 169.99,
+      "percent_owned": 0.04,
+      "rank_standard": 1391,
+      "rank_ppr": 1393
+    },
+    {
+      "player_id": 3121410,
+      "name": "Parris Campbell",
+      "position": "WR",
+      "pro_team_id": 6,
+      "adp": 169.99,
+      "percent_owned": 0.06,
+      "rank_standard": 1364,
+      "rank_ppr": 1365
+    },
+    {
+      "player_id": 4051167,
+      "name": "Parker Romo",
+      "position": "K",
+      "pro_team_id": 0,
+      "adp": 169.99,
+      "percent_owned": 0.05,
+      "rank_standard": 2420,
+      "rank_ppr": 2414
+    },
+    {
+      "player_id": 4034862,
+      "name": "Jack Stoll",
+      "position": "TE",
+      "pro_team_id": 5,
+      "adp": 169.99,
+      "percent_owned": 0.06,
+      "rank_standard": 1400,
+      "rank_ppr": 1402
+    },
+    {
+      "player_id": 3871102,
+      "name": "David Sills V",
+      "position": "WR",
+      "pro_team_id": 27,
+      "adp": 169.99,
+      "percent_owned": 0.04,
+      "rank_standard": 1404,
+      "rank_ppr": 1406
+    },
+    {
+      "player_id": 4372758,
+      "name": "Kevin Austin Jr.",
+      "position": "WR",
+      "pro_team_id": 18,
+      "adp": 169.99,
+      "percent_owned": 0.05,
+      "rank_standard": 1507,
+      "rank_ppr": 1509
+    },
+    {
+      "player_id": 4034946,
+      "name": "Kyle Trask",
+      "position": "QB",
+      "pro_team_id": 0,
+      "adp": 169.99,
+      "percent_owned": 0.02,
+      "rank_standard": 2041,
+      "rank_ppr": 2035
+    },
+    {
+      "player_id": 4686104,
+      "name": "Johnny Wilson",
+      "position": "WR",
+      "pro_team_id": 21,
+      "adp": 169.99,
+      "percent_owned": 0.06,
+      "rank_standard": 1495,
+      "rank_ppr": 1497
+    },
+    {
+      "player_id": 4714771,
+      "name": "Drew Allar",
+      "position": "QB",
+      "pro_team_id": 23,
+      "adp": 169.99,
+      "percent_owned": 0.59,
+      "rank_standard": 1594,
+      "rank_ppr": 1598
+    },
+    {
+      "player_id": 4569372,
+      "name": "Dalevon Campbell",
+      "position": "WR",
+      "pro_team_id": 24,
+      "adp": 169.99,
+      "percent_owned": 0.02,
+      "rank_standard": 1566,
+      "rank_ppr": 1580
+    },
+    {
+      "player_id": 4569382,
+      "name": "Jordan Whittington",
+      "position": "WR",
+      "pro_team_id": 14,
+      "adp": 169.99,
+      "percent_owned": 0.27,
+      "rank_standard": 1015,
+      "rank_ppr": 1016
+    },
+    {
+      "player_id": 4039057,
+      "name": "Lil'Jordan Humphrey",
+      "position": "WR",
+      "pro_team_id": 7,
+      "adp": 169.99,
+      "percent_owned": 0.1,
+      "rank_standard": 1370,
+      "rank_ppr": 1372
+    },
+    {
+      "player_id": 4360637,
+      "name": "Jeshaun Jones",
+      "position": "WR",
+      "pro_team_id": 16,
+      "adp": 169.99,
+      "percent_owned": 0.07,
+      "rank_standard": 1350,
+      "rank_ppr": 1351
+    },
+    {
+      "player_id": 3914307,
+      "name": "Maurice Alexander",
+      "position": "WR",
+      "pro_team_id": 3,
+      "adp": 169.99,
+      "percent_owned": 0.04,
+      "rank_standard": 1438,
+      "rank_ppr": 1440
+    },
+    {
+      "player_id": 3054212,
+      "name": "Jonnu Smith",
+      "position": "TE",
+      "pro_team_id": 0,
+      "adp": 169.99,
+      "percent_owned": 0.22,
+      "rank_standard": 1832,
+      "rank_ppr": 1833
+    },
+    {
+      "player_id": 4239934,
+      "name": "AJ Dillon",
+      "position": "RB",
+      "pro_team_id": 29,
+      "adp": 169.99,
+      "percent_owned": 0.15,
+      "rank_standard": 1374,
+      "rank_ppr": 1376
+    },
+    {
+      "player_id": 3914397,
+      "name": "Scotty Miller",
+      "position": "WR",
+      "pro_team_id": 3,
+      "adp": 169.99,
+      "percent_owned": 0.06,
+      "rank_standard": 1361,
+      "rank_ppr": 1362
+    },
+    {
+      "player_id": 4428532,
+      "name": "Ainias Smith",
+      "position": "WR",
+      "pro_team_id": 29,
+      "adp": 169.99,
+      "percent_owned": 0.03,
+      "rank_standard": 1490,
+      "rank_ppr": 1492
+    },
+    {
+      "player_id": 3676833,
+      "name": "KaVontae Turpin",
+      "position": "WR",
+      "pro_team_id": 6,
+      "adp": 169.99,
+      "percent_owned": 1.02,
+      "rank_standard": 979,
+      "rank_ppr": 979
+    },
+    {
+      "player_id": 4240021,
+      "name": "Cam Akers",
+      "position": "RB",
+      "pro_team_id": 0,
+      "adp": 169.99,
+      "percent_owned": 0.09,
+      "rank_standard": 1955,
+      "rank_ppr": 1952
+    },
+    {
+      "player_id": 2468609,
+      "name": "Taysom Hill",
+      "position": "TE",
+      "pro_team_id": 0,
+      "adp": 169.99,
+      "percent_owned": 0.21,
+      "rank_standard": 1831,
+      "rank_ppr": 1832
+    },
+    {
+      "player_id": 4567747,
+      "name": "Garrett Nussmeier",
+      "position": "QB",
+      "pro_team_id": 12,
+      "adp": 169.99,
+      "percent_owned": 0.15,
+      "rank_standard": 1595,
+      "rank_ppr": 1599
+    },
+    {
+      "player_id": 4430637,
+      "name": "Ja'Lynn Polk",
+      "position": "WR",
+      "pro_team_id": 18,
+      "adp": 169.99,
+      "percent_owned": 0.13,
+      "rank_standard": 1482,
+      "rank_ppr": 1483
+    },
+    {
+      "player_id": 4037457,
+      "name": "Travis Homer",
+      "position": "RB",
+      "pro_team_id": 23,
+      "adp": 169.99,
+      "percent_owned": 0.06,
+      "rank_standard": 1363,
+      "rank_ppr": 1364
+    },
+    {
+      "player_id": 4430841,
+      "name": "Carson Beck",
+      "position": "QB",
+      "pro_team_id": 22,
+      "adp": 169.99,
+      "percent_owned": 1.73,
+      "rank_standard": 451,
+      "rank_ppr": 453
+    },
+    {
+      "player_id": 4877203,
+      "name": "Gage Larvadain",
+      "position": "WR",
+      "pro_team_id": 5,
+      "adp": 169.99,
+      "percent_owned": 0.04,
+      "rank_standard": 1336,
+      "rank_ppr": 1337
+    },
+    {
+      "player_id": 4682652,
+      "name": "Devin Neal",
+      "position": "RB",
+      "pro_team_id": 18,
+      "adp": 169.99,
+      "percent_owned": 0.52,
+      "rank_standard": 1538,
+      "rank_ppr": 1539
+    },
+    {
+      "player_id": 4879276,
+      "name": "Bryce Lance",
+      "position": "WR",
+      "pro_team_id": 18,
+      "adp": 169.99,
+      "percent_owned": 0.56,
+      "rank_standard": 1014,
+      "rank_ppr": 1015
+    },
+    {
+      "player_id": 4686781,
+      "name": "Brenden Rice",
+      "position": "WR",
+      "pro_team_id": 9,
+      "adp": 169.99,
+      "percent_owned": 0.05,
+      "rank_standard": 2356,
+      "rank_ppr": 1485
+    },
+    {
+      "player_id": 4429012,
+      "name": "Kendall Milton",
+      "position": "RB",
+      "pro_team_id": 4,
+      "adp": 169.99,
+      "percent_owned": 0.04,
+      "rank_standard": 1508,
+      "rank_ppr": 1510
+    },
+    {
+      "player_id": 4428963,
+      "name": "Cade York",
+      "position": "K",
+      "pro_team_id": 20,
+      "adp": 169.99,
+      "percent_owned": 0.38,
+      "rank_standard": 504,
+      "rank_ppr": 505
+    },
+    {
+      "player_id": 4240573,
+      "name": "Ihmir Smith-Marsette",
+      "position": "WR",
+      "pro_team_id": 22,
+      "adp": 169.99,
+      "percent_owned": 0.03,
+      "rank_standard": 1392,
+      "rank_ppr": 1394
+    },
+    {
+      "player_id": 4361418,
+      "name": "Will Levis",
+      "position": "QB",
+      "pro_team_id": 10,
+      "adp": 169.99,
+      "percent_owned": 0.13,
+      "rank_standard": 1441,
+      "rank_ppr": 1443
+    },
+    {
+      "player_id": 4431210,
+      "name": "Beaux Collins",
+      "position": "WR",
+      "pro_team_id": 19,
+      "adp": 169.99,
+      "percent_owned": 0.03,
+      "rank_standard": 1553,
+      "rank_ppr": 1554
+    },
+    {
+      "player_id": 4244856,
+      "name": "Austin Trammell",
+      "position": "WR",
+      "pro_team_id": 30,
+      "adp": 169.99,
+      "percent_owned": 0.04,
+      "rank_standard": 1433,
+      "rank_ppr": 1435
+    },
+    {
+      "player_id": 4048259,
+      "name": "Avery Williams",
+      "position": "RB",
+      "pro_team_id": 0,
+      "adp": 169.99,
+      "percent_owned": 0.01,
+      "rank_standard": 2067,
+      "rank_ppr": 2061
+    },
+    {
+      "player_id": 4240657,
+      "name": "Michael Carter",
+      "position": "RB",
+      "pro_team_id": 10,
+      "adp": 169.99,
+      "percent_owned": 0.24,
+      "rank_standard": 1385,
+      "rank_ppr": 1387
+    },
+    {
+      "player_id": 4044111,
+      "name": "Chris Oladokun",
+      "position": "QB",
+      "pro_team_id": 12,
+      "adp": 169.99,
+      "percent_owned": 0.04,
+      "rank_standard": 1421,
+      "rank_ppr": 1423
+    },
+    {
+      "player_id": 9614,
+      "name": "Marcedes Lewis",
+      "position": "TE",
+      "pro_team_id": 0,
+      "adp": 170.0,
+      "percent_owned": 0.01,
+      "rank_standard": 1834,
+      "rank_ppr": 1835
+    },
+    {
+      "player_id": 4050373,
+      "name": "Quez Watkins",
+      "position": "WR",
+      "pro_team_id": 21,
+      "adp": 170.0,
+      "percent_owned": 0.1,
+      "rank_standard": 1378,
+      "rank_ppr": 1380
+    },
+    {
+      "player_id": 3923392,
+      "name": "Mitchell Wilcox",
+      "position": "TE",
+      "pro_team_id": 0,
+      "adp": 170.0,
+      "percent_owned": 0.01,
+      "rank_standard": 2096,
+      "rank_ppr": 2090
+    },
+    {
+      "player_id": 4240858,
+      "name": "Hendon Hooker",
+      "position": "QB",
+      "pro_team_id": 10,
+      "adp": 170.0,
+      "percent_owned": 0.04,
+      "rank_standard": 1442,
+      "rank_ppr": 1444
+    },
+    {
+      "player_id": 4036026,
+      "name": "Dez Fitzpatrick",
+      "position": "WR",
+      "pro_team_id": 0,
+      "adp": 170.0,
+      "percent_owned": 0.01,
+      "rank_standard": 2058,
+      "rank_ppr": 2052
+    },
+    {
+      "player_id": 4427238,
+      "name": "Dillon Gabriel",
+      "position": "QB",
+      "pro_team_id": 5,
+      "adp": 170.0,
+      "percent_owned": 0.2,
+      "rank_standard": 1518,
+      "rank_ppr": 1520
+    },
+    {
+      "player_id": 4259308,
+      "name": "Raheem Blackshear",
+      "position": "RB",
+      "pro_team_id": 0,
+      "adp": 170.0,
+      "percent_owned": 0.02,
+      "rank_standard": 2168,
+      "rank_ppr": 2162
+    },
+    {
+      "player_id": 4431342,
+      "name": "Brennan Presley",
+      "position": "WR",
+      "pro_team_id": 14,
+      "adp": 170.0,
+      "percent_owned": 0.02,
+      "rank_standard": 1567,
+      "rank_ppr": 1579
+    },
+    {
+      "player_id": 15795,
+      "name": "DeAndre Hopkins",
+      "position": "WR",
+      "pro_team_id": 0,
+      "adp": 170.0,
+      "percent_owned": 0.2,
+      "rank_standard": 1908,
+      "rank_ppr": 1906
+    },
+    {
+      "player_id": 4431353,
+      "name": "Xavier Restrepo",
+      "position": "WR",
+      "pro_team_id": 10,
+      "adp": 170.0,
+      "percent_owned": 0.05,
+      "rank_standard": 1544,
+      "rank_ppr": 1544
+    },
+    {
+      "player_id": 4259324,
+      "name": "Travis Vokolek",
+      "position": "TE",
+      "pro_team_id": 0,
+      "adp": 170.0,
+      "percent_owned": 0.01,
+      "rank_standard": 2308,
+      "rank_ppr": 2317
+    },
+    {
+      "player_id": 4429202,
+      "name": "Israel Abanikanda",
+      "position": "RB",
+      "pro_team_id": 6,
+      "adp": 170.0,
+      "percent_owned": 0.07,
+      "rank_standard": 1450,
+      "rank_ppr": 1452
+    },
+    {
+      "player_id": 4683159,
+      "name": "Lewis Bond",
+      "position": "WR",
+      "pro_team_id": 34,
+      "adp": 170.0,
+      "percent_owned": 0.04,
+      "rank_standard": 1583,
+      "rank_ppr": 1601
+    }
+  ]
+}

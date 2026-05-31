@@ -1,0 +1,1152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fantasy Football Draft Lottery</title>
+  <style>
+    :root {
+      --bg: #0a0e1a;
+      --surface: #111827;
+      --surface2: #1f2937;
+      --border: #374151;
+      --accent: #3b82f6;
+      --accent2: #8b5cf6;
+      --gold: #f59e0b;
+      --silver: #94a3b8;
+      --bronze: #cd7c45;
+      --text: #f9fafb;
+      --muted: #9ca3af;
+      --green: #10b981;
+      --red: #ef4444;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Segoe UI', system-ui, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+    }
+
+    /* ── Layout ────────────────────────────── */
+    .app { max-width: 960px; margin: 0 auto; padding: 24px 16px 60px; }
+
+    header {
+      text-align: center;
+      margin-bottom: 32px;
+    }
+    header h1 {
+      font-size: clamp(1.8rem, 5vw, 3rem);
+      font-weight: 900;
+      background: linear-gradient(135deg, #f59e0b, #8b5cf6, #3b82f6);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      letter-spacing: -1px;
+    }
+    header p { color: var(--muted); margin-top: 6px; font-size: 0.95rem; }
+
+    /* ── Tabs ──────────────────────────────── */
+    .tabs {
+      display: flex;
+      gap: 4px;
+      background: var(--surface);
+      border-radius: 12px;
+      padding: 4px;
+      margin-bottom: 28px;
+    }
+    .tab-btn {
+      flex: 1;
+      padding: 10px;
+      border: none;
+      background: transparent;
+      color: var(--muted);
+      font-size: 0.9rem;
+      font-weight: 600;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: all .2s;
+    }
+    .tab-btn.active {
+      background: var(--surface2);
+      color: var(--text);
+      box-shadow: 0 1px 4px rgba(0,0,0,.4);
+    }
+    .tab-panel { display: none; }
+    .tab-panel.active { display: block; }
+
+    /* ── Cards ─────────────────────────────── */
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 24px;
+      margin-bottom: 20px;
+    }
+    .card h2 {
+      font-size: 1.1rem;
+      font-weight: 700;
+      margin-bottom: 16px;
+      color: var(--accent);
+    }
+
+    /* ── Team Setup Grid ───────────────────── */
+    .team-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 10px;
+    }
+    .team-input-row {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--surface2);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 10px 12px;
+      transition: border-color .2s;
+    }
+    .team-input-row:focus-within { border-color: var(--accent); }
+    .rank-badge {
+      min-width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.75rem;
+      font-weight: 800;
+      background: var(--border);
+      color: var(--muted);
+      flex-shrink: 0;
+    }
+    .team-input-row.rank-1  .rank-badge { background: #78350f; color: #fde68a; }
+    .team-input-row.rank-2  .rank-badge { background: #1e3a5f; color: #93c5fd; }
+    .team-input-row.rank-3  .rank-badge { background: #312e81; color: #c4b5fd; }
+    .rank-pct {
+      font-size: 0.7rem;
+      color: var(--muted);
+      min-width: 36px;
+      text-align: right;
+      flex-shrink: 0;
+    }
+    .team-input {
+      flex: 1;
+      background: transparent;
+      border: none;
+      color: var(--text);
+      font-size: 0.875rem;
+      font-weight: 600;
+      outline: none;
+      min-width: 0;
+    }
+    .team-input::placeholder { color: var(--border); font-weight: 400; }
+
+    /* ── Settings ──────────────────────────── */
+    .settings-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      align-items: flex-end;
+    }
+    .setting-group {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+    .setting-group label {
+      font-size: 0.8rem;
+      color: var(--muted);
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: .04em;
+    }
+    select, input[type=number], input[type=range] {
+      background: var(--surface2);
+      border: 1px solid var(--border);
+      color: var(--text);
+      border-radius: 8px;
+      padding: 8px 12px;
+      font-size: 0.875rem;
+      outline: none;
+      cursor: pointer;
+    }
+    select:focus, input[type=number]:focus { border-color: var(--accent); }
+    input[type=range] {
+      padding: 4px;
+      width: 140px;
+      accent-color: var(--accent);
+    }
+
+    /* ── Buttons ───────────────────────────── */
+    .btn {
+      padding: 12px 28px;
+      border: none;
+      border-radius: 10px;
+      font-size: 1rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all .2s;
+    }
+    .btn-primary {
+      background: linear-gradient(135deg, var(--accent), var(--accent2));
+      color: #fff;
+      box-shadow: 0 4px 20px rgba(59,130,246,.35);
+    }
+    .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 6px 24px rgba(59,130,246,.5); }
+    .btn-primary:active { transform: translateY(0); }
+    .btn-primary:disabled { opacity: .5; cursor: not-allowed; transform: none; }
+    .btn-ghost {
+      background: var(--surface2);
+      color: var(--muted);
+      border: 1px solid var(--border);
+    }
+    .btn-ghost:hover { color: var(--text); border-color: var(--muted); }
+
+    .action-row {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      align-items: center;
+      margin-top: 8px;
+    }
+
+    /* ── Lottery Stage ─────────────────────── */
+    #lottery-panel {
+      position: relative;
+    }
+
+    .lottery-stage {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 24px;
+      padding: 32px 0 16px;
+    }
+
+    /* Lottery machine */
+    .lottery-machine {
+      position: relative;
+      width: 200px;
+      height: 200px;
+    }
+    .machine-bowl {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      background: radial-gradient(circle at 35% 35%, #1e3a5f, #0f172a);
+      border: 3px solid var(--accent);
+      box-shadow: 0 0 40px rgba(59,130,246,.4), inset 0 0 40px rgba(0,0,0,.6);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      position: relative;
+    }
+    .machine-glass {
+      position: absolute;
+      inset: 0;
+      border-radius: 50%;
+      background: radial-gradient(circle at 30% 25%, rgba(255,255,255,.12) 0%, transparent 60%);
+      pointer-events: none;
+    }
+    .ball-container {
+      position: absolute;
+      inset: 10px;
+      border-radius: 50%;
+    }
+    .lottery-ball {
+      position: absolute;
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.55rem;
+      font-weight: 800;
+      color: #fff;
+      text-shadow: 0 1px 2px rgba(0,0,0,.7);
+      cursor: default;
+      user-select: none;
+      transition: transform .3s;
+    }
+    .lottery-ball::after {
+      content: '';
+      position: absolute;
+      top: 3px; left: 5px;
+      width: 8px; height: 5px;
+      background: rgba(255,255,255,.4);
+      border-radius: 50%;
+      transform: rotate(-30deg);
+    }
+
+    @keyframes spin {
+      0%   { transform: translate(var(--tx0), var(--ty0)) rotate(0deg); }
+      100% { transform: translate(var(--tx1), var(--ty1)) rotate(360deg); }
+    }
+    @keyframes floatBall {
+      0%, 100% { transform: translate(var(--tx), var(--ty)); }
+      50% { transform: translate(calc(var(--tx) + 8px), calc(var(--ty) - 8px)); }
+    }
+
+    /* Winner reveal area */
+    .reveal-zone {
+      min-height: 90px;
+      width: 100%;
+      max-width: 400px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .pick-announcement {
+      text-align: center;
+      animation: popIn .4s cubic-bezier(.175,.885,.32,1.275) both;
+    }
+    @keyframes popIn {
+      0% { opacity: 0; transform: scale(.5); }
+      100% { opacity: 1; transform: scale(1); }
+    }
+    .pick-number {
+      font-size: 0.9rem;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: .1em;
+      font-weight: 700;
+    }
+    .pick-team {
+      font-size: 2rem;
+      font-weight: 900;
+      margin: 4px 0;
+    }
+    .pick-from {
+      font-size: 0.85rem;
+      color: var(--muted);
+    }
+
+    .draw-status {
+      font-size: 0.85rem;
+      color: var(--muted);
+      min-height: 20px;
+      text-align: center;
+    }
+    .draw-status.active { color: var(--accent); }
+
+    /* Progress picks */
+    .picks-progress {
+      width: 100%;
+    }
+    .picks-progress h3 {
+      font-size: 0.85rem;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: .07em;
+      margin-bottom: 10px;
+    }
+    .picks-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+      gap: 8px;
+    }
+    .pick-item {
+      background: var(--surface2);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 10px 12px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      opacity: .4;
+      transition: all .4s;
+    }
+    .pick-item.revealed {
+      opacity: 1;
+      border-color: var(--accent);
+      background: rgba(59,130,246,.08);
+    }
+    .pick-item.current {
+      opacity: 1;
+      border-color: var(--gold);
+      background: rgba(245,158,11,.08);
+      box-shadow: 0 0 16px rgba(245,158,11,.2);
+    }
+    .pick-num {
+      font-size: 1.1rem;
+      font-weight: 900;
+      color: var(--muted);
+      min-width: 24px;
+    }
+    .pick-item.revealed .pick-num { color: var(--accent); }
+    .pick-item.current  .pick-num { color: var(--gold); }
+    .pick-info { min-width: 0; }
+    .pick-info .pname {
+      font-size: 0.8rem;
+      font-weight: 700;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .pick-info .prank {
+      font-size: 0.68rem;
+      color: var(--muted);
+    }
+
+    /* ── Odds Table ────────────────────────── */
+    .odds-table-wrap { overflow-x: auto; }
+    table.odds-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.85rem;
+    }
+    .odds-table th {
+      text-align: left;
+      padding: 8px 12px;
+      color: var(--muted);
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: .05em;
+      border-bottom: 1px solid var(--border);
+    }
+    .odds-table td {
+      padding: 10px 12px;
+      border-bottom: 1px solid rgba(55,65,81,.5);
+    }
+    .odds-table tr:last-child td { border-bottom: none; }
+    .odds-table tbody tr:hover td { background: rgba(255,255,255,.03); }
+    .team-name-cell { font-weight: 700; }
+    .pct-bar-cell { width: 140px; }
+    .pct-bar-bg {
+      background: var(--border);
+      border-radius: 99px;
+      height: 6px;
+      overflow: hidden;
+    }
+    .pct-bar-fill {
+      height: 100%;
+      border-radius: 99px;
+      background: linear-gradient(90deg, var(--accent), var(--accent2));
+      transition: width .3s;
+    }
+
+    /* ── Results Tab ───────────────────────── */
+    .results-empty {
+      text-align: center;
+      padding: 60px 20px;
+      color: var(--muted);
+    }
+    .results-empty svg { opacity: .3; margin-bottom: 16px; }
+
+    .results-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+      gap: 12px;
+    }
+    .result-card {
+      background: var(--surface2);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 16px;
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+    .result-pick-num {
+      font-size: 2rem;
+      font-weight: 900;
+      min-width: 52px;
+      text-align: center;
+      line-height: 1;
+    }
+    .result-pick-num.p1 { color: var(--gold); }
+    .result-pick-num.p2 { color: var(--silver); }
+    .result-pick-num.p3 { color: var(--bronze); }
+    .result-pick-num.other { color: var(--muted); }
+    .result-info .result-team { font-size: 1rem; font-weight: 800; }
+    .result-info .result-stood { font-size: 0.78rem; color: var(--muted); margin-top: 2px; }
+
+    /* ── Confetti ──────────────────────────── */
+    #confetti-canvas {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      pointer-events: none;
+      z-index: 999;
+    }
+
+    /* ── Odds label colors ─────────────────── */
+    .pct-high  { color: #f87171; font-weight: 700; }
+    .pct-med   { color: #fbbf24; font-weight: 700; }
+    .pct-low   { color: #34d399; font-weight: 700; }
+
+    /* ── Countdown ─────────────────────────── */
+    .countdown-ring {
+      font-size: 3.5rem;
+      font-weight: 900;
+      color: var(--gold);
+      animation: countPulse .8s ease-in-out;
+    }
+    @keyframes countPulse {
+      0%   { transform: scale(1.4); opacity: 0; }
+      30%  { opacity: 1; }
+      80%  { transform: scale(1); opacity: 1; }
+      100% { opacity: 0; transform: scale(.8); }
+    }
+
+    /* scrollbar */
+    ::-webkit-scrollbar { width: 6px; height: 6px; }
+    ::-webkit-scrollbar-track { background: var(--bg); }
+    ::-webkit-scrollbar-thumb { background: var(--border); border-radius: 99px; }
+  </style>
+</head>
+<body>
+<canvas id="confetti-canvas"></canvas>
+
+<div class="app">
+  <header>
+    <h1>🏈 Draft Lottery</h1>
+    <p>Fantasy Football · 10 Teams</p>
+  </header>
+
+  <div class="tabs">
+    <button class="tab-btn active" onclick="showTab('setup')">Setup</button>
+    <button class="tab-btn" onclick="showTab('lottery')" id="tab-lottery">Lottery</button>
+    <button class="tab-btn" onclick="showTab('odds')">Odds</button>
+    <button class="tab-btn" onclick="showTab('results')" id="tab-results">Results</button>
+  </div>
+
+  <!-- ── SETUP TAB ──────────────────────────── -->
+  <div class="tab-panel active" id="tab-panel-setup">
+    <div class="card">
+      <h2>Team Names (by Final Standings)</h2>
+      <p style="font-size:.8rem;color:var(--muted);margin-bottom:14px;">Enter team names in order of final standings. Worst place team gets the highest lottery odds.</p>
+      <div class="team-grid" id="team-grid"></div>
+    </div>
+
+    <div class="card">
+      <h2>Lottery Settings</h2>
+      <div class="settings-row">
+        <div class="setting-group">
+          <label>Lottery Picks</label>
+          <select id="lottery-picks-count" onchange="updateLotteryCount()">
+            <option value="3">Top 3 picks (rest by standings)</option>
+            <option value="5">Top 5 picks</option>
+            <option value="10" selected>All 10 picks</option>
+          </select>
+        </div>
+        <div class="setting-group">
+          <label>Reveal Speed</label>
+          <select id="reveal-speed">
+            <option value="3000">Dramatic (3 s)</option>
+            <option value="5000" selected>Suspenseful (5 s)</option>
+            <option value="8000">Agonizing (8 s)</option>
+            <option value="1000">Fast (1 s)</option>
+          </select>
+        </div>
+        <div class="setting-group">
+          <label>Animations</label>
+          <select id="animations-toggle">
+            <option value="on" selected>On</option>
+            <option value="off">Off</option>
+          </select>
+        </div>
+      </div>
+    </div>
+
+    <div class="action-row">
+      <button class="btn btn-primary" onclick="startLottery()">Run Lottery →</button>
+      <button class="btn btn-ghost" onclick="fillSampleNames()">Load Sample Teams</button>
+    </div>
+  </div>
+
+  <!-- ── LOTTERY TAB ────────────────────────── -->
+  <div class="tab-panel" id="tab-panel-lottery">
+    <div class="card">
+      <div class="lottery-stage">
+        <div class="lottery-machine">
+          <div class="machine-bowl">
+            <div class="machine-glass"></div>
+            <div class="ball-container" id="ball-container"></div>
+          </div>
+        </div>
+
+        <div class="reveal-zone" id="reveal-zone">
+          <p style="color:var(--muted);font-size:.9rem;">Press Draw Next Pick to begin</p>
+        </div>
+
+        <div class="draw-status" id="draw-status">Ready to draw</div>
+
+        <div class="action-row" style="justify-content:center;">
+          <button class="btn btn-primary" id="draw-btn" onclick="drawNext()">Draw Pick #1</button>
+          <button class="btn btn-ghost" onclick="resetLottery()">Reset</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="picks-progress">
+        <h3>Draft Order Progress</h3>
+        <div class="picks-list" id="picks-list"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── ODDS TAB ────────────────────────────── -->
+  <div class="tab-panel" id="tab-panel-odds">
+    <div class="card">
+      <h2>Lottery Odds — Pick #1</h2>
+      <div class="odds-table-wrap">
+        <table class="odds-table" id="odds-table">
+          <thead>
+            <tr>
+              <th>Standing</th>
+              <th>Team</th>
+              <th>Pick #1 odds</th>
+              <th style="width:140px;">Bar</th>
+            </tr>
+          </thead>
+          <tbody id="odds-tbody"></tbody>
+        </table>
+      </div>
+    </div>
+    <p style="font-size:.78rem;color:var(--muted);padding:0 4px;">After each pick is drawn, remaining odds are redistributed proportionally among remaining teams.</p>
+  </div>
+
+  <!-- ── RESULTS TAB ────────────────────────── -->
+  <div class="tab-panel" id="tab-panel-results">
+    <div id="results-container">
+      <div class="results-empty">
+        <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+        <p>Run the lottery to see results here.</p>
+      </div>
+    </div>
+    <div class="action-row" id="results-actions" style="display:none;margin-top:0;">
+      <button class="btn btn-primary" onclick="copyResults()">Copy Results</button>
+      <button class="btn btn-ghost" onclick="resetAll()">New Lottery</button>
+    </div>
+  </div>
+</div>
+
+<script>
+// ──────────────────────────────────────────────
+//  DATA
+// ──────────────────────────────────────────────
+const BASE_ODDS = [25.0, 17.5, 14.5, 11.0, 9.0, 7.0, 5.5, 4.5, 3.5, 2.5]; // index 0 = 10th place (worst)
+const STANDING_LABELS = ['10th (Worst)','9th','8th','7th','6th','5th','4th','3rd','2nd','1st (Best)'];
+const BALL_COLORS = ['#ef4444','#f97316','#eab308','#22c55e','#14b8a6','#3b82f6','#8b5cf6','#ec4899','#06b6d4','#84cc16'];
+
+let teams = Array(10).fill('');
+let lotteryPicks = 10;
+let currentPick = 0;
+let draftOrder = [];      // [{team, fromRank, pickNum}]
+let remainingTeams = [];  // indices into teams array
+let isDrawing = false;
+let allDone = false;
+let ballEls = [];
+let spinAnimations = [];
+
+// ──────────────────────────────────────────────
+//  SETUP
+// ──────────────────────────────────────────────
+function buildSetupUI() {
+  const grid = document.getElementById('team-grid');
+  grid.innerHTML = '';
+  for (let i = 0; i < 10; i++) {
+    const rank = i + 1; // 1 = worst (10th place), 10 = best (1st place)
+    const standing = 10 - i; // standing: 10 = worst
+    const row = document.createElement('div');
+    row.className = `team-input-row rank-${rank <= 3 ? rank : 0}`;
+    row.innerHTML = `
+      <div class="rank-badge">${standing}</div>
+      <input class="team-input" id="team-${i}" type="text"
+        placeholder="${STANDING_LABELS[i]}"
+        value="${teams[i]}"
+        oninput="teams[${i}]=this.value;updateOddsTable();"
+        maxlength="24" />
+      <span class="rank-pct">${BASE_ODDS[i]}%</span>
+    `;
+    grid.appendChild(row);
+  }
+  updateOddsTable();
+}
+
+function getTeamName(idx) {
+  return teams[idx]?.trim() || STANDING_LABELS[idx];
+}
+
+function updateLotteryCount() {
+  lotteryPicks = parseInt(document.getElementById('lottery-picks-count').value);
+}
+
+function fillSampleNames() {
+  const samples = ['Team Chaos','Draft Dodgers','The Benchmob','Gridiron Ghosts',
+    'Touchdown Tyrants','Fumble Factory','Blitz Crew','Red Zone Rangers',
+    'Hail Mary Squad','Dynasty Dreams'];
+  samples.forEach((n, i) => {
+    teams[i] = n;
+    document.getElementById(`team-${i}`).value = n;
+  });
+  updateOddsTable();
+}
+
+// ──────────────────────────────────────────────
+//  ODDS TABLE
+// ──────────────────────────────────────────────
+function updateOddsTable() {
+  const tbody = document.getElementById('odds-tbody');
+  tbody.innerHTML = '';
+  for (let i = 0; i < 10; i++) {
+    const pct = BASE_ODDS[i];
+    const cls = pct >= 15 ? 'pct-high' : pct >= 8 ? 'pct-med' : 'pct-low';
+    const tr = document.createElement('tr');
+    tr.innerHTML = `
+      <td>${STANDING_LABELS[i]}</td>
+      <td class="team-name-cell">${getTeamName(i)}</td>
+      <td><span class="${cls}">${pct}%</span></td>
+      <td class="pct-bar-cell">
+        <div class="pct-bar-bg">
+          <div class="pct-bar-fill" style="width:${(pct/25)*100}%"></div>
+        </div>
+      </td>
+    `;
+    tbody.appendChild(tr);
+  }
+}
+
+// ──────────────────────────────────────────────
+//  LOTTERY MACHINE BALLS
+// ──────────────────────────────────────────────
+function spawnBalls(teamIndices) {
+  const container = document.getElementById('ball-container');
+  container.innerHTML = '';
+  ballEls = [];
+  spinAnimations.forEach(a => a && a.cancel && a.cancel());
+  spinAnimations = [];
+
+  const r = 66; // radius of bowl area
+  teamIndices.forEach((idx, bi) => {
+    const el = document.createElement('div');
+    el.className = 'lottery-ball';
+    el.style.background = BALL_COLORS[idx % BALL_COLORS.length];
+    el.style.boxShadow = `0 2px 8px rgba(0,0,0,.5), 0 0 12px ${BALL_COLORS[idx % BALL_COLORS.length]}60`;
+    el.textContent = getTeamName(idx).substring(0, 5);
+    el.style.fontSize = '0.45rem';
+    el.style.fontWeight = '800';
+
+    // random starting position within bowl
+    const angle = (bi / teamIndices.length) * Math.PI * 2;
+    const dist = Math.random() * r * 0.7;
+    const x = Math.cos(angle) * dist;
+    const y = Math.sin(angle) * dist;
+
+    el.style.left = `calc(50% + ${x}px - 14px)`;
+    el.style.top  = `calc(50% + ${y}px - 14px)`;
+
+    container.appendChild(el);
+    ballEls[idx] = el;
+  });
+}
+
+function animateBalls(active) {
+  if (document.getElementById('animations-toggle').value !== 'on') return;
+  ballEls.forEach((el, idx) => {
+    if (!el) return;
+    if (!active) {
+      el.style.animation = 'none';
+      return;
+    }
+    const tx = (Math.random() - 0.5) * 80;
+    const ty = (Math.random() - 0.5) * 80;
+    el.style.setProperty('--tx', `${tx}px`);
+    el.style.setProperty('--ty', `${ty}px`);
+    el.style.animation = `floatBall ${1.5 + Math.random()}s ease-in-out infinite`;
+    el.style.animationDelay = `${Math.random() * 1.5}s`;
+  });
+}
+
+function turboBalls() {
+  if (document.getElementById('animations-toggle').value !== 'on') return;
+  ballEls.forEach((el) => {
+    if (!el) return;
+    const tx0 = (Math.random() - 0.5) * 80;
+    const ty0 = (Math.random() - 0.5) * 80;
+    const tx1 = (Math.random() - 0.5) * 80;
+    const ty1 = (Math.random() - 0.5) * 80;
+    el.style.setProperty('--tx0', `${tx0}px`);
+    el.style.setProperty('--ty0', `${ty0}px`);
+    el.style.setProperty('--tx1', `${tx1}px`);
+    el.style.setProperty('--ty1', `${ty1}px`);
+    el.style.animation = `spin ${0.3 + Math.random() * 0.3}s linear infinite`;
+  });
+}
+
+function highlightWinnerBall(winnerIdx) {
+  ballEls.forEach((el, idx) => {
+    if (!el) return;
+    if (idx === winnerIdx) {
+      el.style.animation = 'none';
+      el.style.transform = 'scale(1.6)';
+      el.style.zIndex = '10';
+      el.style.boxShadow = `0 0 24px ${BALL_COLORS[idx % BALL_COLORS.length]}, 0 0 40px ${BALL_COLORS[idx % BALL_COLORS.length]}80`;
+    } else {
+      el.style.animation = 'none';
+      el.style.opacity = '0.2';
+    }
+  });
+}
+
+function removeBall(winnerIdx) {
+  if (ballEls[winnerIdx]) {
+    ballEls[winnerIdx].style.transition = 'all .5s';
+    ballEls[winnerIdx].style.transform = 'scale(0) translateY(-60px)';
+    ballEls[winnerIdx].style.opacity = '0';
+    setTimeout(() => { if (ballEls[winnerIdx]) ballEls[winnerIdx].remove(); ballEls[winnerIdx] = null; }, 500);
+  }
+}
+
+// ──────────────────────────────────────────────
+//  START LOTTERY
+// ──────────────────────────────────────────────
+function startLottery() {
+  teams = Array.from({length:10}, (_,i) => {
+    const el = document.getElementById(`team-${i}`);
+    return el ? el.value.trim() : '';
+  });
+  lotteryPicks = parseInt(document.getElementById('lottery-picks-count').value);
+
+  currentPick = 0;
+  draftOrder = [];
+  remainingTeams = Array.from({length:10}, (_,i) => i);
+  allDone = false;
+  isDrawing = false;
+
+  buildPicksList();
+  spawnBalls(remainingTeams);
+  animateBalls(true);
+
+  document.getElementById('reveal-zone').innerHTML = `<p style="color:var(--muted);font-size:.9rem;">Press <strong>Draw Pick #1</strong> to begin</p>`;
+  document.getElementById('draw-status').textContent = 'Ready to draw';
+  document.getElementById('draw-status').className = 'draw-status';
+  document.getElementById('draw-btn').textContent = 'Draw Pick #1';
+  document.getElementById('draw-btn').disabled = false;
+
+  showTab('lottery');
+}
+
+// ──────────────────────────────────────────────
+//  PICKS LIST UI
+// ──────────────────────────────────────────────
+function buildPicksList() {
+  const list = document.getElementById('picks-list');
+  list.innerHTML = '';
+  for (let i = 0; i < 10; i++) {
+    const el = document.createElement('div');
+    el.className = 'pick-item' + (i === 0 ? ' current' : '');
+    el.id = `pick-slot-${i}`;
+    const isLottery = i < lotteryPicks;
+    el.innerHTML = `
+      <div class="pick-num">${i+1}</div>
+      <div class="pick-info">
+        <div class="pname">—</div>
+        <div class="prank">${isLottery ? '🎱 Lottery' : '📋 By standings'}</div>
+      </div>
+    `;
+    list.appendChild(el);
+  }
+}
+
+function updatePickSlot(pickIdx, teamIdx) {
+  const el = document.getElementById(`pick-slot-${pickIdx}`);
+  if (!el) return;
+  el.className = 'pick-item revealed';
+  el.querySelector('.pname').textContent = getTeamName(teamIdx);
+  el.querySelector('.prank').textContent = `Was ${STANDING_LABELS[teamIdx]}`;
+}
+
+function setCurrentSlot(pickIdx) {
+  document.querySelectorAll('.pick-item.current').forEach(e => e.classList.remove('current'));
+  const el = document.getElementById(`pick-slot-${pickIdx}`);
+  if (el && !el.classList.contains('revealed')) el.classList.add('current');
+}
+
+// ──────────────────────────────────────────────
+//  WEIGHTED DRAW
+// ──────────────────────────────────────────────
+function drawWeighted(teamIndices) {
+  const weights = teamIndices.map(i => BASE_ODDS[i]);
+  const total = weights.reduce((a,b) => a+b, 0);
+  let r = Math.random() * total;
+  for (let i = 0; i < teamIndices.length; i++) {
+    r -= weights[i];
+    if (r <= 0) return teamIndices[i];
+  }
+  return teamIndices[teamIndices.length - 1];
+}
+
+// ──────────────────────────────────────────────
+//  MAIN DRAW FUNCTION
+// ──────────────────────────────────────────────
+async function drawNext() {
+  if (isDrawing || allDone) return;
+  isDrawing = true;
+
+  const drawBtn = document.getElementById('draw-btn');
+  drawBtn.disabled = true;
+
+  const pickIdx = currentPick;
+  const speed = parseInt(document.getElementById('reveal-speed').value);
+
+  if (pickIdx < lotteryPicks) {
+    // LOTTERY DRAW
+    await runLotteryDraw(pickIdx, speed);
+  } else {
+    // FILL REST BY STANDINGS (auto complete)
+    fillRestByStandings();
+    return;
+  }
+
+  currentPick++;
+
+  if (currentPick >= 10) {
+    // Done
+    allDone = true;
+    drawBtn.textContent = 'View Results';
+    drawBtn.disabled = false;
+    drawBtn.onclick = () => { buildResultsTab(); showTab('results'); };
+    document.getElementById('draw-status').textContent = '🎉 Draft order complete!';
+    buildResultsTab();
+    launchConfetti();
+  } else if (currentPick >= lotteryPicks && lotteryPicks < 10) {
+    // next picks are by standings — fill automatically
+    drawBtn.disabled = true;
+    setTimeout(() => {
+      fillRestByStandings();
+    }, 600);
+  } else {
+    drawBtn.textContent = `Draw Pick #${currentPick + 1}`;
+    drawBtn.disabled = false;
+    setCurrentSlot(currentPick);
+  }
+
+  isDrawing = false;
+}
+
+async function runLotteryDraw(pickIdx, speed) {
+  const statusEl = document.getElementById('draw-status');
+  const revealZone = document.getElementById('reveal-zone');
+
+  statusEl.textContent = `Drawing pick #${pickIdx + 1}...`;
+  statusEl.className = 'draw-status active';
+
+  // Turbo spin
+  turboBalls();
+  await sleep(speed * 0.6);
+
+  // Slow down — pick winner
+  const winner = drawWeighted(remainingTeams);
+  highlightWinnerBall(winner);
+  await sleep(400);
+
+  // Countdown
+  if (speed >= 3000) {
+    for (let c = 3; c >= 1; c--) {
+      revealZone.innerHTML = `<div class="countdown-ring">${c}</div>`;
+      await sleep(700);
+    }
+  }
+
+  // Reveal
+  const pickColors = ['#f59e0b','#94a3b8','#cd7c45'];
+  const color = pickColors[pickIdx] || 'var(--accent)';
+  revealZone.innerHTML = `
+    <div class="pick-announcement">
+      <div class="pick-number">Pick #${pickIdx + 1}</div>
+      <div class="pick-team" style="color:${color}">${getTeamName(winner)}</div>
+      <div class="pick-from">Was ${STANDING_LABELS[winner]}</div>
+    </div>
+  `;
+
+  statusEl.textContent = `✓ Pick #${pickIdx + 1}: ${getTeamName(winner)}`;
+  statusEl.className = 'draw-status';
+
+  draftOrder.push({ teamIdx: winner, fromRank: winner, pickNum: pickIdx + 1 });
+  updatePickSlot(pickIdx, winner);
+  remainingTeams = remainingTeams.filter(i => i !== winner);
+
+  await sleep(500);
+  removeBall(winner);
+  animateBalls(true);
+}
+
+function fillRestByStandings() {
+  // Sort remaining by standings (worst first gets best remaining pick)
+  const sorted = [...remainingTeams].sort((a, b) => b - a); // higher index = worse standing
+  // Wait — lower index in our array = 10th place (worst) = should get earlier pick
+  // Actually index 0 = 10th place worst, index 9 = 1st place best
+  // Worst team (index 0) should get the next best pick if they didn't win lottery
+  const sortedByStanding = [...remainingTeams].sort((a, b) => a - b); // index 0 first (worst)
+
+  sortedByStanding.forEach((teamIdx) => {
+    draftOrder.push({ teamIdx, fromRank: teamIdx, pickNum: currentPick + 1 });
+    updatePickSlot(currentPick, teamIdx);
+    currentPick++;
+  });
+
+  remainingTeams = [];
+  allDone = true;
+
+  const drawBtn = document.getElementById('draw-btn');
+  drawBtn.textContent = 'View Results';
+  drawBtn.disabled = false;
+  drawBtn.onclick = () => { buildResultsTab(); showTab('results'); };
+  document.getElementById('draw-status').textContent = '🎉 Draft order complete!';
+  buildResultsTab();
+  launchConfetti();
+}
+
+// ──────────────────────────────────────────────
+//  RESULTS
+// ──────────────────────────────────────────────
+function buildResultsTab() {
+  const container = document.getElementById('results-container');
+  if (!draftOrder.length) return;
+
+  container.innerHTML = '<div class="results-grid" id="results-grid"></div>';
+  const grid = document.getElementById('results-grid');
+
+  draftOrder.forEach((pick, i) => {
+    const numClass = i === 0 ? 'p1' : i === 1 ? 'p2' : i === 2 ? 'p3' : 'other';
+    const card = document.createElement('div');
+    card.className = 'result-card';
+    card.innerHTML = `
+      <div class="result-pick-num ${numClass}">#${i+1}</div>
+      <div class="result-info">
+        <div class="result-team">${getTeamName(pick.teamIdx)}</div>
+        <div class="result-stood">Finished: ${STANDING_LABELS[pick.fromRank]}</div>
+      </div>
+    `;
+    grid.appendChild(card);
+  });
+
+  document.getElementById('results-actions').style.display = 'flex';
+  document.getElementById('tab-results').style.color = 'var(--green)';
+}
+
+function copyResults() {
+  if (!draftOrder.length) return;
+  const text = draftOrder.map((p, i) =>
+    `Pick #${i+1}: ${getTeamName(p.teamIdx)} (was ${STANDING_LABELS[p.fromRank]})`
+  ).join('\n');
+  navigator.clipboard.writeText(text).then(() => {
+    const btn = event.target;
+    btn.textContent = 'Copied!';
+    setTimeout(() => btn.textContent = 'Copy Results', 1500);
+  });
+}
+
+// ──────────────────────────────────────────────
+//  RESET
+// ──────────────────────────────────────────────
+function resetLottery() {
+  currentPick = 0;
+  draftOrder = [];
+  remainingTeams = Array.from({length:10}, (_,i) => i);
+  allDone = false;
+  isDrawing = false;
+
+  buildPicksList();
+  spawnBalls(remainingTeams);
+  animateBalls(true);
+
+  document.getElementById('reveal-zone').innerHTML = `<p style="color:var(--muted);font-size:.9rem;">Press <strong>Draw Pick #1</strong> to begin</p>`;
+  document.getElementById('draw-status').textContent = 'Ready to draw';
+  document.getElementById('draw-status').className = 'draw-status';
+  const drawBtn = document.getElementById('draw-btn');
+  drawBtn.textContent = 'Draw Pick #1';
+  drawBtn.disabled = false;
+  drawBtn.onclick = drawNext;
+}
+
+function resetAll() {
+  resetLottery();
+  document.getElementById('results-container').innerHTML = `
+    <div class="results-empty">
+      <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+      <p>Run the lottery to see results here.</p>
+    </div>`;
+  document.getElementById('results-actions').style.display = 'none';
+  document.getElementById('tab-results').style.color = '';
+  showTab('setup');
+}
+
+// ──────────────────────────────────────────────
+//  CONFETTI
+// ──────────────────────────────────────────────
+function launchConfetti() {
+  const canvas = document.getElementById('confetti-canvas');
+  const ctx = canvas.getContext('2d');
+  canvas.width = window.innerWidth;
+  canvas.height = window.innerHeight;
+
+  const pieces = Array.from({length: 120}, () => ({
+    x: Math.random() * canvas.width,
+    y: Math.random() * -canvas.height,
+    w: 6 + Math.random() * 8,
+    h: 10 + Math.random() * 14,
+    color: ['#f59e0b','#3b82f6','#8b5cf6','#10b981','#ef4444','#ec4899'][Math.floor(Math.random()*6)],
+    vx: (Math.random() - 0.5) * 4,
+    vy: 2 + Math.random() * 4,
+    rot: Math.random() * 360,
+    vr: (Math.random() - 0.5) * 8,
+    life: 1
+  }));
+
+  let frame = 0;
+  function tick() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    pieces.forEach(p => {
+      p.x += p.vx; p.y += p.vy; p.rot += p.vr;
+      if (p.y > canvas.height) { p.y = -20; p.x = Math.random() * canvas.width; }
+      ctx.save();
+      ctx.translate(p.x + p.w/2, p.y + p.h/2);
+      ctx.rotate(p.rot * Math.PI/180);
+      ctx.globalAlpha = Math.min(1, (200 - frame) / 60);
+      ctx.fillStyle = p.color;
+      ctx.fillRect(-p.w/2, -p.h/2, p.w, p.h);
+      ctx.restore();
+    });
+    frame++;
+    if (frame < 240) requestAnimationFrame(tick);
+    else ctx.clearRect(0, 0, canvas.width, canvas.height);
+  }
+  requestAnimationFrame(tick);
+}
+
+// ──────────────────────────────────────────────
+//  TABS
+// ──────────────────────────────────────────────
+function showTab(name) {
+  document.querySelectorAll('.tab-btn').forEach((b, i) => {
+    const names = ['setup','lottery','odds','results'];
+    b.classList.toggle('active', names[i] === name);
+  });
+  document.querySelectorAll('.tab-panel').forEach(p => {
+    p.classList.toggle('active', p.id === `tab-panel-${name}`);
+  });
+}
+
+// ──────────────────────────────────────────────
+//  HELPERS
+// ──────────────────────────────────────────────
+function sleep(ms) { return new Promise(r => setTimeout(r, ms)); }
+
+// ──────────────────────────────────────────────
+//  INIT
+// ──────────────────────────────────────────────
+buildSetupUI();
+updateOddsTable();
+</script>
+</body>
+</html>

@@ -1,0 +1,162 @@
+@import "tailwindcss";
+
+:root {
+  --background: #f5f2ea;
+  --foreground: #17140f;
+  --ink: #17140f;
+  --muted: #6f6a60;
+  --paper: #fffaf0;
+  --paper-strong: #fffdf7;
+  --line: #ded4bf;
+  --club-green: #123d35;
+  --club-green-2: #0b2a25;
+  --oxblood: #7d1d1d;
+  --gold: #c8962d;
+  --gold-soft: #f1dfaa;
+  --grass: #2f6f4e;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+body {
+  background:
+    radial-gradient(circle at 16% 0%, rgba(200, 150, 45, 0.16), transparent 28rem),
+    linear-gradient(180deg, #f8f5ee 0%, var(--background) 42%, #eee8da 100%);
+  color: var(--foreground);
+  font-family: var(--font-geist-sans), Arial, Helvetica, sans-serif;
+}
+
+::selection {
+  background: var(--gold-soft);
+  color: var(--ink);
+}
+
+.premium-panel {
+  border: 1px solid rgba(72, 57, 36, 0.16);
+  background:
+    linear-gradient(180deg, rgba(255, 253, 247, 0.94), rgba(255, 250, 240, 0.92));
+  box-shadow: 0 18px 45px rgba(47, 38, 22, 0.08);
+}
+
+.club-panel {
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  background:
+    linear-gradient(135deg, rgba(18, 61, 53, 0.98), rgba(11, 42, 37, 0.98));
+  color: #fffaf0;
+  box-shadow: 0 24px 60px rgba(18, 61, 53, 0.2);
+}
+
+.stat-card {
+  border: 1px solid rgba(72, 57, 36, 0.15);
+  background: rgba(255, 253, 247, 0.88);
+  box-shadow: 0 14px 32px rgba(47, 38, 22, 0.06);
+}
+
+.table-shell {
+  overflow-x: auto;
+  border: 1px solid rgba(72, 57, 36, 0.15);
+  background: rgba(255, 253, 247, 0.9);
+  box-shadow: 0 14px 34px rgba(47, 38, 22, 0.06);
+}
+
+.table-shell table {
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+.table-shell thead {
+  background: rgba(18, 61, 53, 0.06);
+  color: #5b554c;
+}
+
+.table-shell tbody tr:hover {
+  background: rgba(200, 150, 45, 0.08);
+}
+
+.kicker {
+  color: var(--gold);
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid rgba(72, 57, 36, 0.16);
+  border-radius: 999px;
+  background: rgba(255, 250, 240, 0.88);
+  color: #3b3328;
+  font-size: 0.72rem;
+  font-weight: 700;
+  line-height: 1;
+  padding: 0.32rem 0.58rem;
+  white-space: nowrap;
+}
+
+.badge-gold {
+  border-color: rgba(200, 150, 45, 0.34);
+  background: rgba(241, 223, 170, 0.7);
+  color: #5e3f06;
+}
+
+.badge-green {
+  border-color: rgba(47, 111, 78, 0.28);
+  background: rgba(47, 111, 78, 0.1);
+  color: #164331;
+}
+
+.badge-red {
+  border-color: rgba(125, 29, 29, 0.22);
+  background: rgba(125, 29, 29, 0.08);
+  color: #711818;
+}
+
+.rank-medal {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.7rem;
+  height: 1.7rem;
+  border-radius: 999px;
+  border: 1px solid rgba(72, 57, 36, 0.14);
+  background: rgba(255, 250, 240, 0.82);
+  color: #766d61;
+  font-size: 0.75rem;
+  font-weight: 800;
+}
+
+.rank-medal[data-rank="1"] {
+  background: linear-gradient(135deg, #f8e7a9, #c8962d);
+  color: #332201;
+}
+
+.rank-medal[data-rank="2"] {
+  background: linear-gradient(135deg, #f2f1ec, #b6b0a5);
+  color: #282520;
+}
+
+.rank-medal[data-rank="3"] {
+  background: linear-gradient(135deg, #f0c39a, #a2602d);
+  color: #2f1707;
+}
+
+.owner-avatar {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 999px;
+  border: 1px solid rgba(200, 150, 45, 0.45);
+  background: linear-gradient(135deg, #123d35, #7d1d1d);
+  color: #fffaf0;
+  font-size: 0.72rem;
+  font-weight: 900;
+}

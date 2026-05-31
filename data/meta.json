@@ -1,0 +1,21 @@
+{
+  "league_id": 113984,
+  "years": [
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+  ],
+  "current_year": 2025,
+  "next_year": 2026,
+  "excluded_record_years": {
+    "2021": "Played on Sleeper \u2014 ESPN data not authoritative."
+  },
+  "updated_at": "2026-05-31T15:32:16.899275+00:00"
+}

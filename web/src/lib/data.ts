@@ -3,7 +3,7 @@ import 'server-only';
 import fs from 'node:fs';
 import path from 'node:path';
 import type {
-  AdpData, KeeperData, Meta, Owner, Records, Season,
+  AdpData, KeeperData, Meta, Owner, PlayerData, Records, Season,
 } from './types';
 
 const DATA_DIR = path.resolve(process.cwd(), '..', 'data');
@@ -31,6 +31,10 @@ export function loadKeepers(): KeeperData {
 
 export function loadAdp(): AdpData {
   return readJson<AdpData>('adp.json');
+}
+
+export function loadPlayers(): PlayerData {
+  return readJson<PlayerData>('players.json');
 }
 
 export function loadSeason(year: number): Season {

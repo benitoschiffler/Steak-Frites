@@ -288,3 +288,83 @@ export type AdpData = {
   year: number;
   players: AdpPlayer[];
 };
+
+// ─── Player stats / MVPs ───────────────────────────────────────────────
+export type PlayerPerformance = {
+  year: number;
+  week: number;
+  player_id: number;
+  player_name: string;
+  position: string | null;
+  slot_position: string | null;
+  pro_team: string | null;
+  points: number;
+  started: boolean;
+  team_id: number | null;
+  team_name: string | null;
+  owner_ids: string[];
+  owner_names: string[];
+  team_won: boolean | null;
+  is_playoff: boolean;
+};
+
+export type WinningTeamLeader = {
+  player_id: number;
+  player_name: string;
+  position: string | null;
+  weeks_started: number;
+  wins_when_started: number;
+  win_rate_when_started: number;
+  total_starting_points: number;
+  ppg_started: number;
+  seasons_count: number;
+  last_year: number;
+};
+
+export type MvpRecord = {
+  player_id: number;
+  player_name: string;
+  position: string | null;
+  team_id: number | null;
+  team_name: string | null;
+  owner_ids: string[];
+  owner_names: string[];
+  starting_points: number;
+  ppg_started?: number;
+  games_started: number;
+  team_wins?: number;
+  team_games?: number;
+  team_win_rate?: number;
+  team_wins_when_started?: number;
+  team_winning_share_sum?: number;
+  mvp_score?: number;
+};
+
+export type SeasonMvp = {
+  regular_season: {
+    mvp: MvpRecord | null;
+    runners_up: MvpRecord[];
+  };
+  playoff: {
+    mvp: MvpRecord | null;
+    runners_up: MvpRecord[];
+    champion_team_id: number | null;
+    champion_team_name: string | null;
+  };
+};
+
+export type PlayerData = {
+  all_time_top_by_position: Record<string, PlayerPerformance[]>;
+  season_top_by_position: Record<string, Record<string, PlayerPerformance[]>>;
+  winning_team_appearances: WinningTeamLeader[];
+  mvps_by_season: Record<string, SeasonMvp>;
+  methodology: {
+    regular_season_mvp: string;
+    playoff_mvp: string;
+    notes: string;
+  };
+  coverage: {
+    first_year_with_box_scores: number | null;
+    last_year_with_box_scores: number | null;
+  };
+};

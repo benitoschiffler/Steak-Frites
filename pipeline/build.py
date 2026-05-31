@@ -4,7 +4,7 @@ For an ESPN-free re-process (e.g., after editing pipeline/overrides.py), use:
 
     python -m pipeline.postprocess && python -m pipeline.records && python -m pipeline.keepers
 """
-from . import pull, postprocess, records, keepers
+from . import pull, postprocess, records, keepers, players
 
 
 def main():
@@ -15,6 +15,7 @@ def main():
     postprocess.main()
     records.main()
     keepers.main()
+    players.main()
 
 
 if __name__ == "__main__":

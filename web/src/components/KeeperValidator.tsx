@@ -160,7 +160,7 @@ export default function KeeperValidator({
           {/* Candidate list — scrolls inside its shell with a sticky header */}
           <div className="table-shell rounded-lg max-h-[60vh] overflow-y-auto">
             <table className="min-w-full text-sm">
-              <thead className="text-left sticky top-0 z-10 bg-[#f3eed9] shadow-[0_1px_0_rgba(0,0,0,0.08)]">
+              <thead className="text-left sticky top-0 z-10">
                 <tr>
                   <th className="px-3 py-3 w-8"></th>
                   <th className="px-3 py-3">Player</th>

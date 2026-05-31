@@ -49,6 +49,7 @@ export default function OwnersIndex() {
         defaultSort={{ key: "win_pct", dir: "desc" }}
         activeOwnerIds={activeIds}
         coOwnerNamesById={coOwnerNamesById}
+        enableActiveFilter
       />
     </div>
   );

@@ -143,22 +143,30 @@ export default function OwnerLeaderboard({
   defaultSort,
   activeOwnerIds,
   coOwnerNamesById,
+  enableActiveFilter = false,
 }: {
   rows: OwnerAllTime[];
   /** Ordered list of column keys to render. */
   columns: ColKey[];
   defaultSort: { key: ColKey; dir: SortDir };
-  /** If provided, owners in this set get a ⭐ next to their name. */
+  /** If provided, owners in this set get an "Active" badge next to their name. */
   activeOwnerIds?: string[];
   /** If provided, owner ids in this map render a "w/ ..." annotation under the name. */
   coOwnerNamesById?: Record<string, string[]>;
+  /** Show a filter toggle above the table to limit rows to active owners only. */
+  enableActiveFilter?: boolean;
 }) {
   const [sortKey, setSortKey] = useState<ColKey>(defaultSort.key);
   const [sortDir, setSortDir] = useState<SortDir>(defaultSort.dir);
+  const [activeOnly, setActiveOnly] = useState(false);
   const activeSet = new Set(activeOwnerIds ?? []);
 
+  const filtered = activeOnly && activeOwnerIds
+    ? rows.filter((r) => activeSet.has(r.owner_id))
+    : rows;
+
   const activeCol = COLS[sortKey];
-  const sorted = [...rows].sort((a, b) => {
+  const sorted = [...filtered].sort((a, b) => {
     const av = activeCol.sortValue(a);
     const bv = activeCol.sortValue(b);
     let cmp: number;
@@ -176,11 +184,53 @@ export default function OwnerLeaderboard({
     }
   }
 
+  const totalCount = rows.length;
+  const activeCount = activeOwnerIds ? rows.filter((r) => activeSet.has(r.owner_id)).length : 0;
+
   return (
-    <div className="table-shell rounded-lg">
-      <table className="min-w-full text-sm">
-        <thead className="sticky top-0 text-left">
-          <tr>
+    <div className="space-y-3">
+      {enableActiveFilter && activeOwnerIds && (
+        <div className="flex flex-wrap items-center gap-2">
+          <span className="text-xs font-bold uppercase tracking-[0.14em] text-[#766d61]">Filter</span>
+          <button
+            type="button"
+            onClick={() => setActiveOnly(false)}
+            className={`rounded-full border px-3 py-1.5 text-xs font-bold uppercase tracking-[0.12em] transition ${
+              !activeOnly
+                ? "border-[#123d35] bg-[#123d35] text-[#fffaf0]"
+                : "border-black/10 bg-[#fffdf7] text-[#5c5549] hover:border-[#123d35]/40"
+            }`}
+          >
+            All owners
+            <span className={`ml-1.5 font-black ${!activeOnly ? "text-[#f7d77d]" : "text-[#9a907f]"}`}>
+              {totalCount}
+            </span>
+          </button>
+          <button
+            type="button"
+            onClick={() => setActiveOnly(true)}
+            className={`rounded-full border px-3 py-1.5 text-xs font-bold uppercase tracking-[0.12em] transition ${
+              activeOnly
+                ? "border-[#2f6f4e] bg-[#2f6f4e] text-[#fffaf0]"
+                : "border-black/10 bg-[#fffdf7] text-[#5c5549] hover:border-[#2f6f4e]/40"
+            }`}
+          >
+            Active only
+            <span className={`ml-1.5 font-black ${activeOnly ? "text-[#f7d77d]" : "text-[#9a907f]"}`}>
+              {activeCount}
+            </span>
+          </button>
+          {activeOnly && (
+            <span className="ml-auto text-[11px] font-semibold text-[#766d61]">
+              Showing {sorted.length} of {totalCount} owners
+            </span>
+          )}
+        </div>
+      )}
+      <div className="table-shell rounded-lg">
+        <table className="min-w-full text-sm">
+          <thead className="sticky top-[68px] text-left">
+            <tr>
             <th className="px-3 py-3 text-xs font-black uppercase tracking-[0.14em]">Rank</th>
             {columns.map((k) => {
               const c = COLS[k];
@@ -254,7 +304,8 @@ export default function OwnerLeaderboard({
             </tr>
           ))}
         </tbody>
-      </table>
+        </table>
+      </div>
     </div>
   );
 }

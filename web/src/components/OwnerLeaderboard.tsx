@@ -227,9 +227,9 @@ export default function OwnerLeaderboard({
           )}
         </div>
       )}
-      <div className="table-shell rounded-lg">
+      <div className="table-shell rounded-lg max-h-[75vh] overflow-y-auto">
         <table className="min-w-full text-sm">
-          <thead className="sticky top-[68px] text-left">
+          <thead className="sticky top-0 z-10 text-left">
             <tr>
             <th className="px-3 py-3 text-xs font-black uppercase tracking-[0.14em]">Rank</th>
             {columns.map((k) => {

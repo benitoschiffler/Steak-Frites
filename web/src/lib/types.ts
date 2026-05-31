@@ -338,6 +338,7 @@ export type MvpRecord = {
   team_wins_when_started?: number;
   team_winning_share_sum?: number;
   mvp_score?: number;
+  best_week_points?: number | null;
 };
 
 export type SeasonMvp = {

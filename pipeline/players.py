@@ -371,9 +371,22 @@ def compute() -> dict[str, Any]:
                 )
                 rec["starting_points"] += p["points"]
                 rec["games_started"] += 1
+            # Compute best/worst single-week points per player during the playoff run
+            best_week: dict[int, float] = defaultdict(lambda: float("-inf"))
+            for p in year_perfs:
+                if not p["is_playoff"] or p["team_id"] != champ_team_id:
+                    continue
+                if p["player_id"] in playoff_agg:
+                    if p["points"] > best_week[p["player_id"]]:
+                        best_week[p["player_id"]] = p["points"]
+
             playoff_list = sorted(
                 [
-                    {**rec, "starting_points": round(rec["starting_points"], 2)}
+                    {
+                        **rec,
+                        "starting_points": round(rec["starting_points"], 2),
+                        "best_week_points": round(best_week[rec["player_id"]], 2) if rec["player_id"] in best_week else None,
+                    }
                     for rec in playoff_agg.values()
                 ],
                 key=lambda x: x["starting_points"],

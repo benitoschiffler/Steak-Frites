@@ -6521,7 +6521,8 @@
             "Ben Wolbransky"
           ],
           "starting_points": 126.5,
-          "games_started": 5
+          "games_started": 5,
+          "best_week_points": 25.6
         },
         "runners_up": [
           {
@@ -6537,7 +6538,8 @@
               "Ben Wolbransky"
             ],
             "starting_points": 124.74,
-            "games_started": 5
+            "games_started": 5,
+            "best_week_points": 28.54
           },
           {
             "player_id": 16944,
@@ -6552,7 +6554,8 @@
               "Ben Wolbransky"
             ],
             "starting_points": 111.5,
-            "games_started": 5
+            "games_started": 5,
+            "best_week_points": 29.2
           },
           {
             "player_id": 2576434,
@@ -6567,7 +6570,8 @@
               "Ben Wolbransky"
             ],
             "starting_points": 80.9,
-            "games_started": 5
+            "games_started": 5,
+            "best_week_points": 19.7
           },
           {
             "player_id": 4047646,
@@ -6582,7 +6586,8 @@
               "Ben Wolbransky"
             ],
             "starting_points": 65.8,
-            "games_started": 4
+            "games_started": 4,
+            "best_week_points": 21.4
           }
         ],
         "champion_team_id": 6,
@@ -6718,7 +6723,8 @@
             "Jonathan Coopersmith"
           ],
           "starting_points": 129.1,
-          "games_started": 5
+          "games_started": 5,
+          "best_week_points": 34.92
         },
         "runners_up": [
           {
@@ -6734,7 +6740,8 @@
               "Jonathan Coopersmith"
             ],
             "starting_points": 82.2,
-            "games_started": 3
+            "games_started": 3,
+            "best_week_points": 27.4
           },
           {
             "player_id": 2576925,
@@ -6749,7 +6756,8 @@
               "Jonathan Coopersmith"
             ],
             "starting_points": 77.6,
-            "games_started": 5
+            "games_started": 5,
+            "best_week_points": 25.5
           },
           {
             "player_id": 3116406,
@@ -6764,7 +6772,8 @@
               "Jonathan Coopersmith"
             ],
             "starting_points": 64.5,
-            "games_started": 5
+            "games_started": 5,
+            "best_week_points": 24.6
           },
           {
             "player_id": 3025433,
@@ -6779,7 +6788,8 @@
               "Jonathan Coopersmith"
             ],
             "starting_points": 57.3,
-            "games_started": 5
+            "games_started": 5,
+            "best_week_points": 23.8
           }
         ],
         "champion_team_id": 5,
@@ -6915,7 +6925,8 @@
             "Stefan Lachkar"
           ],
           "starting_points": 63.1,
-          "games_started": 4
+          "games_started": 4,
+          "best_week_points": 21.5
         },
         "runners_up": [
           {
@@ -6931,7 +6942,8 @@
               "Stefan Lachkar"
             ],
             "starting_points": 58.56,
-            "games_started": 2
+            "games_started": 2,
+            "best_week_points": 34.4
           },
           {
             "player_id": 4262921,
@@ -6946,7 +6958,8 @@
               "Stefan Lachkar"
             ],
             "starting_points": 53.6,
-            "games_started": 4
+            "games_started": 4,
+            "best_week_points": 25.3
           },
           {
             "player_id": 4047365,
@@ -6961,7 +6974,8 @@
               "Stefan Lachkar"
             ],
             "starting_points": 52.5,
-            "games_started": 4
+            "games_started": 4,
+            "best_week_points": 17.5
           },
           {
             "player_id": 15847,
@@ -6976,7 +6990,8 @@
               "Stefan Lachkar"
             ],
             "starting_points": 45.4,
-            "games_started": 4
+            "games_started": 4,
+            "best_week_points": 15.5
           }
         ],
         "champion_team_id": 3,
@@ -7112,7 +7127,8 @@
             "Ryan Vader"
           ],
           "starting_points": 96.6,
-          "games_started": 4
+          "games_started": 4,
+          "best_week_points": 29.1
         },
         "runners_up": [
           {
@@ -7128,7 +7144,8 @@
               "Ryan Vader"
             ],
             "starting_points": 86.46,
-            "games_started": 4
+            "games_started": 4,
+            "best_week_points": 25.98
           },
           {
             "player_id": 3117251,
@@ -7143,7 +7160,8 @@
               "Ryan Vader"
             ],
             "starting_points": 83.5,
-            "games_started": 4
+            "games_started": 4,
+            "best_week_points": 39.2
           },
           {
             "player_id": 4362249,
@@ -7158,7 +7176,8 @@
               "Ryan Vader"
             ],
             "starting_points": 62.0,
-            "games_started": 4
+            "games_started": 4,
+            "best_week_points": 23.9
           },
           {
             "player_id": -16002,
@@ -7173,7 +7192,8 @@
               "Ryan Vader"
             ],
             "starting_points": 38.0,
-            "games_started": 2
+            "games_started": 2,
+            "best_week_points": 19.0
           }
         ],
         "champion_team_id": 12,
@@ -7311,7 +7331,8 @@
             "Ryan Vader"
           ],
           "starting_points": 80.32,
-          "games_started": 3
+          "games_started": 3,
+          "best_week_points": 29.42
         },
         "runners_up": [
           {
@@ -7327,7 +7348,8 @@
               "Ryan Vader"
             ],
             "starting_points": 69.9,
-            "games_started": 3
+            "games_started": 3,
+            "best_week_points": 23.3
           },
           {
             "player_id": 4430737,
@@ -7342,7 +7364,8 @@
               "Ryan Vader"
             ],
             "starting_points": 48.8,
-            "games_started": 3
+            "games_started": 3,
+            "best_week_points": 19.4
           },
           {
             "player_id": 4379399,
@@ -7357,7 +7380,8 @@
               "Ryan Vader"
             ],
             "starting_points": 48.7,
-            "games_started": 3
+            "games_started": 3,
+            "best_week_points": 26.1
           },
           {
             "player_id": 3040151,
@@ -7372,7 +7396,8 @@
               "Ryan Vader"
             ],
             "starting_points": 45.0,
-            "games_started": 3
+            "games_started": 3,
+            "best_week_points": 15.2
           }
         ],
         "champion_team_id": 12,
@@ -7508,7 +7533,8 @@
             "Jonathan Coopersmith"
           ],
           "starting_points": 133.94,
-          "games_started": 4
+          "games_started": 4,
+          "best_week_points": 37.92
         },
         "runners_up": [
           {
@@ -7524,7 +7550,8 @@
               "Jonathan Coopersmith"
             ],
             "starting_points": 90.3,
-            "games_started": 4
+            "games_started": 4,
+            "best_week_points": 40.5
           },
           {
             "player_id": 4568490,
@@ -7539,7 +7566,8 @@
               "Jonathan Coopersmith"
             ],
             "starting_points": 62.8,
-            "games_started": 4
+            "games_started": 4,
+            "best_week_points": 20.1
           },
           {
             "player_id": 4429160,
@@ -7554,7 +7582,8 @@
               "Jonathan Coopersmith"
             ],
             "starting_points": 57.6,
-            "games_started": 4
+            "games_started": 4,
+            "best_week_points": 16.5
           },
           {
             "player_id": 4685278,
@@ -7569,7 +7598,8 @@
               "Jonathan Coopersmith"
             ],
             "starting_points": 47.6,
-            "games_started": 2
+            "games_started": 2,
+            "best_week_points": 23.8
           }
         ],
         "champion_team_id": 5,

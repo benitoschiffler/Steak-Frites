@@ -161,32 +161,43 @@ function MvpCell({
               </>
             )}
           </div>
-          <div className="mt-3 grid grid-cols-3 gap-2 text-xs">
+          <div className="mt-3 grid grid-cols-2 gap-2 text-xs">
             {variant === "regular" ? (
               <>
+                <Stat label="MVP Score" value={String(mvp.mvp_score?.toFixed(1) ?? "—")} accent />
                 <Stat label="Total PF" value={fmt.pts(mvp.starting_points)} />
                 <Stat label="PPG" value={fmt.pts(mvp.ppg_started ?? 0)} />
                 <Stat
-                  label="Team"
+                  label="Team Record"
                   value={`${mvp.team_wins ?? 0}-${(mvp.team_games ?? 0) - (mvp.team_wins ?? 0)}`}
                 />
-                <Stat label="MVP Score" value={String(mvp.mvp_score?.toFixed(1) ?? "—")} accent />
-                <Stat label="Win share" value={String((mvp.team_winning_share_sum ?? 0).toFixed(2))} />
-                <Stat label="Starts" value={String(mvp.games_started)} />
               </>
             ) : (
               <>
                 <Stat label="Playoff PF" value={fmt.pts(mvp.starting_points)} accent />
+                <Stat
+                  label="Best Week"
+                  value={mvp.best_week_points != null ? fmt.pts(mvp.best_week_points) : "—"}
+                />
+                <Stat
+                  label="PPG"
+                  value={fmt.pts(mvp.starting_points / Math.max(mvp.games_started, 1))}
+                />
                 <Stat label="Games" value={String(mvp.games_started)} />
-                <Stat label="PPG" value={fmt.pts(mvp.starting_points / Math.max(mvp.games_started, 1))} />
               </>
             )}
           </div>
-          {variant === "playoff" && championTeam && (
-            <div className="mt-2 text-[11px] font-semibold text-[#9a907f]">
-              On the {championTeam} championship run.
-            </div>
-          )}
+          {/* Secondary stats - one-line metadata strip so the visual stays a 2x2 grid */}
+          <div className="mt-3 text-[11px] font-medium leading-5 text-[#766d61]">
+            {variant === "regular" ? (
+              <>
+                {mvp.games_started} starts · winning share {(mvp.team_winning_share_sum ?? 0).toFixed(2)} ·{" "}
+                team {fmt.pct(mvp.team_win_rate ?? 0)} regular-season win rate
+              </>
+            ) : (
+              championTeam && <>On the {championTeam} championship run.</>
+            )}
+          </div>
           {runners.length > 0 && (
             <div className="mt-3 border-t border-black/5 pt-2">
               <div className="text-[10px] font-bold uppercase tracking-[0.14em] text-[#9a907f]">

@@ -13,11 +13,17 @@
       "home_owners": [
         "Jake Fischer"
       ],
+      "home_owner_ids": [
+        "{4F3E4D57-5F87-4D74-92C0-40815B7DFD51}"
+      ],
       "home_score": 188.7,
       "away_team_id": 5,
       "away_team": "Team Kirschner",
       "away_owners": [
         "Lane Kirschner"
+      ],
+      "away_owner_ids": [
+        "{600CAC49-2450-42EF-ABF1-33E7F0327DE9}"
       ],
       "away_score": 121.04,
       "winner_team_id": 2,
@@ -29,11 +35,17 @@
       "owners": [
         "Jake Fischer"
       ],
+      "owner_ids": [
+        "{4F3E4D57-5F87-4D74-92C0-40815B7DFD51}"
+      ],
       "score": 188.7,
       "opp_team_id": 5,
       "opp_team": "Team Kirschner",
       "opp_owners": [
         "Lane Kirschner"
+      ],
+      "opp_owner_ids": [
+        "{600CAC49-2450-42EF-ABF1-33E7F0327DE9}"
       ],
       "opp_score": 121.04
     },
@@ -47,11 +59,17 @@
       "home_owners": [
         "Jake Fischer"
       ],
+      "home_owner_ids": [
+        "{4F3E4D57-5F87-4D74-92C0-40815B7DFD51}"
+      ],
       "home_score": 105.3,
       "away_team_id": 11,
       "away_team": "E Bo Nix",
       "away_owners": [
         "Jules Salkind"
+      ],
+      "away_owner_ids": [
+        "{93FE02E3-D523-4B1D-AC57-E31C8D235433}"
       ],
       "away_score": 185.96,
       "winner_team_id": 11,
@@ -63,11 +81,17 @@
       "owners": [
         "Jules Salkind"
       ],
+      "owner_ids": [
+        "{93FE02E3-D523-4B1D-AC57-E31C8D235433}"
+      ],
       "score": 185.96,
       "opp_team_id": 2,
       "opp_team": "Jake and Seth",
       "opp_owners": [
         "Jake Fischer"
+      ],
+      "opp_owner_ids": [
+        "{4F3E4D57-5F87-4D74-92C0-40815B7DFD51}"
       ],
       "opp_score": 105.3
     },
@@ -81,11 +105,17 @@
       "home_owners": [
         "Ryan Vader"
       ],
+      "home_owner_ids": [
+        "{B792F7C9-61CE-4E29-940C-DC1C5E6C4208}"
+      ],
       "home_score": 185.5,
       "away_team_id": 2,
       "away_team": "Process Trusters",
       "away_owners": [
         "Jake Fischer"
+      ],
+      "away_owner_ids": [
+        "{4F3E4D57-5F87-4D74-92C0-40815B7DFD51}"
       ],
       "away_score": 156.22,
       "winner_team_id": 12,
@@ -97,11 +127,17 @@
       "owners": [
         "Ryan Vader"
       ],
+      "owner_ids": [
+        "{B792F7C9-61CE-4E29-940C-DC1C5E6C4208}"
+      ],
       "score": 185.5,
       "opp_team_id": 2,
       "opp_team": "Process Trusters",
       "opp_owners": [
         "Jake Fischer"
+      ],
+      "opp_owner_ids": [
+        "{4F3E4D57-5F87-4D74-92C0-40815B7DFD51}"
       ],
       "opp_score": 156.22
     },
@@ -115,11 +151,17 @@
       "home_owners": [
         "Ryan Vader"
       ],
+      "home_owner_ids": [
+        "{B792F7C9-61CE-4E29-940C-DC1C5E6C4208}"
+      ],
       "home_score": 177.16,
       "away_team_id": 5,
       "away_team": "Bijan Mustard",
       "away_owners": [
         "Jonathan Coopersmith"
+      ],
+      "away_owner_ids": [
+        "{BDC02B8B-DDC4-464E-B2E9-065DF145DDBB}"
       ],
       "away_score": 108.84,
       "winner_team_id": 12,
@@ -131,11 +173,17 @@
       "owners": [
         "Ryan Vader"
       ],
+      "owner_ids": [
+        "{B792F7C9-61CE-4E29-940C-DC1C5E6C4208}"
+      ],
       "score": 177.16,
       "opp_team_id": 5,
       "opp_team": "Bijan Mustard",
       "opp_owners": [
         "Jonathan Coopersmith"
+      ],
+      "opp_owner_ids": [
+        "{BDC02B8B-DDC4-464E-B2E9-065DF145DDBB}"
       ],
       "opp_score": 108.84
     },
@@ -149,11 +197,17 @@
       "home_owners": [
         "Bennett Schiff"
       ],
+      "home_owner_ids": [
+        "{3A1A4E24-2A98-4038-9A4E-242A98803865}"
+      ],
       "home_score": 176.28,
       "away_team_id": 11,
       "away_team": "50 Feet  Of Crap",
       "away_owners": [
         "Dylan Campbell"
+      ],
+      "away_owner_ids": [
+        "{5431883D-E365-4401-97B9-DAD7EC2156AD}"
       ],
       "away_score": 135.08,
       "winner_team_id": 1,
@@ -165,11 +219,17 @@
       "owners": [
         "Bennett Schiff"
       ],
+      "owner_ids": [
+        "{3A1A4E24-2A98-4038-9A4E-242A98803865}"
+      ],
       "score": 176.28,
       "opp_team_id": 11,
       "opp_team": "50 Feet  Of Crap",
       "opp_owners": [
         "Dylan Campbell"
+      ],
+      "opp_owner_ids": [
+        "{5431883D-E365-4401-97B9-DAD7EC2156AD}"
       ],
       "opp_score": 135.08
     },
@@ -183,11 +243,17 @@
       "home_owners": [
         "Bennett Schiff"
       ],
+      "home_owner_ids": [
+        "{3A1A4E24-2A98-4038-9A4E-242A98803865}"
+      ],
       "home_score": 176.28,
       "away_team_id": 11,
       "away_team": "50 Feet  Of Crap",
       "away_owners": [
         "Dylan Campbell"
+      ],
+      "away_owner_ids": [
+        "{5431883D-E365-4401-97B9-DAD7EC2156AD}"
       ],
       "away_score": 135.08,
       "winner_team_id": 1,
@@ -199,11 +265,17 @@
       "owners": [
         "Bennett Schiff"
       ],
+      "owner_ids": [
+        "{3A1A4E24-2A98-4038-9A4E-242A98803865}"
+      ],
       "score": 176.28,
       "opp_team_id": 11,
       "opp_team": "50 Feet  Of Crap",
       "opp_owners": [
         "Dylan Campbell"
+      ],
+      "opp_owner_ids": [
+        "{5431883D-E365-4401-97B9-DAD7EC2156AD}"
       ],
       "opp_score": 135.08
     },
@@ -217,11 +289,17 @@
       "home_owners": [
         "Bennett Schiff"
       ],
+      "home_owner_ids": [
+        "{3A1A4E24-2A98-4038-9A4E-242A98803865}"
+      ],
       "home_score": 176.28,
       "away_team_id": 11,
       "away_team": "50 Feet  Of Crap",
       "away_owners": [
         "Dylan Campbell"
+      ],
+      "away_owner_ids": [
+        "{5431883D-E365-4401-97B9-DAD7EC2156AD}"
       ],
       "away_score": 135.08,
       "winner_team_id": 1,
@@ -233,11 +311,17 @@
       "owners": [
         "Bennett Schiff"
       ],
+      "owner_ids": [
+        "{3A1A4E24-2A98-4038-9A4E-242A98803865}"
+      ],
       "score": 176.28,
       "opp_team_id": 11,
       "opp_team": "50 Feet  Of Crap",
       "opp_owners": [
         "Dylan Campbell"
+      ],
+      "opp_owner_ids": [
+        "{5431883D-E365-4401-97B9-DAD7EC2156AD}"
       ],
       "opp_score": 135.08
     },
@@ -251,11 +335,17 @@
       "home_owners": [
         "Ben Wolbransky"
       ],
+      "home_owner_ids": [
+        "{429F0506-3667-4F0B-A2ED-1761D0A3F682}"
+      ],
       "home_score": 174.58,
       "away_team_id": 5,
       "away_team": "Wraith Talk",
       "away_owners": [
         "Jonathan Coopersmith"
+      ],
+      "away_owner_ids": [
+        "{BDC02B8B-DDC4-464E-B2E9-065DF145DDBB}"
       ],
       "away_score": 91.0,
       "winner_team_id": 6,
@@ -267,11 +357,17 @@
       "owners": [
         "Ben Wolbransky"
       ],
+      "owner_ids": [
+        "{429F0506-3667-4F0B-A2ED-1761D0A3F682}"
+      ],
       "score": 174.58,
       "opp_team_id": 5,
       "opp_team": "Wraith Talk",
       "opp_owners": [
         "Jonathan Coopersmith"
+      ],
+      "opp_owner_ids": [
+        "{BDC02B8B-DDC4-464E-B2E9-065DF145DDBB}"
       ],
       "opp_score": 91.0
     },
@@ -285,11 +381,17 @@
       "home_owners": [
         "Ben Wolbransky"
       ],
+      "home_owner_ids": [
+        "{429F0506-3667-4F0B-A2ED-1761D0A3F682}"
+      ],
       "home_score": 171.42,
       "away_team_id": 9,
       "away_team": "Saquads squad  Ship",
       "away_owners": [
         "Adam Heckelman"
+      ],
+      "away_owner_ids": [
+        "{8D1E7E24-92F1-49FC-ADF1-C8193EA1C44E}"
       ],
       "away_score": 138.32,
       "winner_team_id": 6,
@@ -301,11 +403,17 @@
       "owners": [
         "Ben Wolbransky"
       ],
+      "owner_ids": [
+        "{429F0506-3667-4F0B-A2ED-1761D0A3F682}"
+      ],
       "score": 171.42,
       "opp_team_id": 9,
       "opp_team": "Saquads squad  Ship",
       "opp_owners": [
         "Adam Heckelman"
+      ],
+      "opp_owner_ids": [
+        "{8D1E7E24-92F1-49FC-ADF1-C8193EA1C44E}"
       ],
       "opp_score": 138.32
     },
@@ -319,11 +427,17 @@
       "home_owners": [
         "Ben katz"
       ],
+      "home_owner_ids": [
+        "{ECD9E4C2-4E30-4915-AC59-6C1700E34A69}"
+      ],
       "home_score": 171.0,
       "away_team_id": 9,
       "away_team": "Need Based",
       "away_owners": [
         "Jonathan Coopersmith"
+      ],
+      "away_owner_ids": [
+        "{BDC02B8B-DDC4-464E-B2E9-065DF145DDBB}"
       ],
       "away_score": 76.5,
       "winner_team_id": 11,
@@ -335,11 +449,17 @@
       "owners": [
         "Ben katz"
       ],
+      "owner_ids": [
+        "{ECD9E4C2-4E30-4915-AC59-6C1700E34A69}"
+      ],
       "score": 171.0,
       "opp_team_id": 9,
       "opp_team": "Need Based",
       "opp_owners": [
         "Jonathan Coopersmith"
+      ],
+      "opp_owner_ids": [
+        "{BDC02B8B-DDC4-464E-B2E9-065DF145DDBB}"
       ],
       "opp_score": 76.5
     },
@@ -353,11 +473,17 @@
       "home_owners": [
         "Ben katz"
       ],
+      "home_owner_ids": [
+        "{ECD9E4C2-4E30-4915-AC59-6C1700E34A69}"
+      ],
       "home_score": 169.76,
       "away_team_id": 2,
       "away_team": "Process Trusters",
       "away_owners": [
         "Jake Fischer"
+      ],
+      "away_owner_ids": [
+        "{4F3E4D57-5F87-4D74-92C0-40815B7DFD51}"
       ],
       "away_score": 153.72,
       "winner_team_id": 7,
@@ -369,11 +495,17 @@
       "owners": [
         "Ben katz"
       ],
+      "owner_ids": [
+        "{ECD9E4C2-4E30-4915-AC59-6C1700E34A69}"
+      ],
       "score": 169.76,
       "opp_team_id": 2,
       "opp_team": "Process Trusters",
       "opp_owners": [
         "Jake Fischer"
+      ],
+      "opp_owner_ids": [
+        "{4F3E4D57-5F87-4D74-92C0-40815B7DFD51}"
       ],
       "opp_score": 153.72
     },
@@ -387,11 +519,17 @@
       "home_owners": [
         "Stefan Lachkar"
       ],
+      "home_owner_ids": [
+        "{6EB109A3-B9E1-4D2D-B109-A3B9E10D2D41}"
+      ],
       "home_score": 169.3,
       "away_team_id": 5,
       "away_team": "Team Kirschner",
       "away_owners": [
         "Lane Kirschner"
+      ],
+      "away_owner_ids": [
+        "{600CAC49-2450-42EF-ABF1-33E7F0327DE9}"
       ],
       "away_score": 106.54,
       "winner_team_id": 3,
@@ -403,11 +541,17 @@
       "owners": [
         "Stefan Lachkar"
       ],
+      "owner_ids": [
+        "{6EB109A3-B9E1-4D2D-B109-A3B9E10D2D41}"
+      ],
       "score": 169.3,
       "opp_team_id": 5,
       "opp_team": "Team Kirschner",
       "opp_owners": [
         "Lane Kirschner"
+      ],
+      "opp_owner_ids": [
+        "{600CAC49-2450-42EF-ABF1-33E7F0327DE9}"
       ],
       "opp_score": 106.54
     },
@@ -421,11 +565,17 @@
       "home_owners": [
         "Ben katz"
       ],
+      "home_owner_ids": [
+        "{ECD9E4C2-4E30-4915-AC59-6C1700E34A69}"
+      ],
       "home_score": 86.74,
       "away_team_id": 6,
       "away_team": "Nude Egg",
       "away_owners": [
         "Ben Wolbransky"
+      ],
+      "away_owner_ids": [
+        "{429F0506-3667-4F0B-A2ED-1761D0A3F682}"
       ],
       "away_score": 169.3,
       "winner_team_id": 6,
@@ -437,11 +587,17 @@
       "owners": [
         "Ben Wolbransky"
       ],
+      "owner_ids": [
+        "{429F0506-3667-4F0B-A2ED-1761D0A3F682}"
+      ],
       "score": 169.3,
       "opp_team_id": 7,
       "opp_team": "Los Peloteros De Katz",
       "opp_owners": [
         "Ben katz"
+      ],
+      "opp_owner_ids": [
+        "{ECD9E4C2-4E30-4915-AC59-6C1700E34A69}"
       ],
       "opp_score": 86.74
     },
@@ -455,11 +611,17 @@
       "home_owners": [
         "Ben Wolbransky"
       ],
+      "home_owner_ids": [
+        "{429F0506-3667-4F0B-A2ED-1761D0A3F682}"
+      ],
       "home_score": 84.26,
       "away_team_id": 5,
       "away_team": "CeeDeez Nuts",
       "away_owners": [
         "Jonathan Coopersmith"
+      ],
+      "away_owner_ids": [
+        "{BDC02B8B-DDC4-464E-B2E9-065DF145DDBB}"
       ],
       "away_score": 167.56,
       "winner_team_id": 5,
@@ -471,11 +633,17 @@
       "owners": [
         "Jonathan Coopersmith"
       ],
+      "owner_ids": [
+        "{BDC02B8B-DDC4-464E-B2E9-065DF145DDBB}"
+      ],
       "score": 167.56,
       "opp_team_id": 6,
       "opp_team": "Nude Egg",
       "opp_owners": [
         "Ben Wolbransky"
+      ],
+      "opp_owner_ids": [
+        "{429F0506-3667-4F0B-A2ED-1761D0A3F682}"
       ],
       "opp_score": 84.26
     },
@@ -489,11 +657,17 @@
       "home_owners": [
         "Stefan Lachkar"
       ],
+      "home_owner_ids": [
+        "{6EB109A3-B9E1-4D2D-B109-A3B9E10D2D41}"
+      ],
       "home_score": 167.18,
       "away_team_id": 7,
       "away_team": "Los Peloteros De Katz",
       "away_owners": [
         "Ben katz"
+      ],
+      "away_owner_ids": [
+        "{ECD9E4C2-4E30-4915-AC59-6C1700E34A69}"
       ],
       "away_score": 113.52,
       "winner_team_id": 3,
@@ -505,11 +679,17 @@
       "owners": [
         "Stefan Lachkar"
       ],
+      "owner_ids": [
+        "{6EB109A3-B9E1-4D2D-B109-A3B9E10D2D41}"
+      ],
       "score": 167.18,
       "opp_team_id": 7,
       "opp_team": "Los Peloteros De Katz",
       "opp_owners": [
         "Ben katz"
+      ],
+      "opp_owner_ids": [
+        "{ECD9E4C2-4E30-4915-AC59-6C1700E34A69}"
       ],
       "opp_score": 113.52
     },
@@ -523,11 +703,17 @@
       "home_owners": [
         "Adam Heckelman"
       ],
+      "home_owner_ids": [
+        "{8D1E7E24-92F1-49FC-ADF1-C8193EA1C44E}"
+      ],
       "home_score": 95.9,
       "away_team_id": 12,
       "away_team": "2 Browns 2 Felonies",
       "away_owners": [
         "Ryan Vader"
+      ],
+      "away_owner_ids": [
+        "{B792F7C9-61CE-4E29-940C-DC1C5E6C4208}"
       ],
       "away_score": 166.74,
       "winner_team_id": 12,
@@ -539,11 +725,17 @@
       "owners": [
         "Ryan Vader"
       ],
+      "owner_ids": [
+        "{B792F7C9-61CE-4E29-940C-DC1C5E6C4208}"
+      ],
       "score": 166.74,
       "opp_team_id": 9,
       "opp_team": "Saquads squad  Ship",
       "opp_owners": [
         "Adam Heckelman"
+      ],
+      "opp_owner_ids": [
+        "{8D1E7E24-92F1-49FC-ADF1-C8193EA1C44E}"
       ],
       "opp_score": 95.9
     },
@@ -557,11 +749,17 @@
       "home_owners": [
         "Stefan Lachkar"
       ],
+      "home_owner_ids": [
+        "{6EB109A3-B9E1-4D2D-B109-A3B9E10D2D41}"
+      ],
       "home_score": 166.5,
       "away_team_id": 12,
       "away_team": "Kentucky Buckets",
       "away_owners": [
         "Ryan Vader"
+      ],
+      "away_owner_ids": [
+        "{B792F7C9-61CE-4E29-940C-DC1C5E6C4208}"
       ],
       "away_score": 107.56,
       "winner_team_id": 6,
@@ -573,11 +771,17 @@
       "owners": [
         "Stefan Lachkar"
       ],
+      "owner_ids": [
+        "{6EB109A3-B9E1-4D2D-B109-A3B9E10D2D41}"
+      ],
       "score": 166.5,
       "opp_team_id": 12,
       "opp_team": "Kentucky Buckets",
       "opp_owners": [
         "Ryan Vader"
+      ],
+      "opp_owner_ids": [
+        "{B792F7C9-61CE-4E29-940C-DC1C5E6C4208}"
       ],
       "opp_score": 107.56
     },
@@ -591,11 +795,17 @@
       "home_owners": [
         "Ben Goldstein"
       ],
+      "home_owner_ids": [
+        "{CBF6473A-C5A3-46D7-8EF8-BFAF0D868891}"
+      ],
       "home_score": 107.26,
       "away_team_id": 1,
       "away_team": "WILD 'N OUT",
       "away_owners": [
         "Bennett Schiff"
+      ],
+      "away_owner_ids": [
+        "{3A1A4E24-2A98-4038-9A4E-242A98803865}"
       ],
       "away_score": 166.46,
       "winner_team_id": 1,
@@ -607,11 +817,17 @@
       "owners": [
         "Bennett Schiff"
       ],
+      "owner_ids": [
+        "{3A1A4E24-2A98-4038-9A4E-242A98803865}"
+      ],
       "score": 166.46,
       "opp_team_id": 10,
       "opp_team": "Team Goldstein",
       "opp_owners": [
         "Ben Goldstein"
+      ],
+      "opp_owner_ids": [
+        "{CBF6473A-C5A3-46D7-8EF8-BFAF0D868891}"
       ],
       "opp_score": 107.26
     },
@@ -625,11 +841,17 @@
       "home_owners": [
         "Ben Goldstein"
       ],
+      "home_owner_ids": [
+        "{CBF6473A-C5A3-46D7-8EF8-BFAF0D868891}"
+      ],
       "home_score": 127.36,
       "away_team_id": 9,
       "away_team": "Saquads squad  Ship",
       "away_owners": [
         "Adam Heckelman"
+      ],
+      "away_owner_ids": [
+        "{8D1E7E24-92F1-49FC-ADF1-C8193EA1C44E}"
       ],
       "away_score": 166.26,
       "winner_team_id": 9,
@@ -641,11 +863,17 @@
       "owners": [
         "Adam Heckelman"
       ],
+      "owner_ids": [
+        "{8D1E7E24-92F1-49FC-ADF1-C8193EA1C44E}"
+      ],
       "score": 166.26,
       "opp_team_id": 10,
       "opp_team": "Team Goldstein",
       "opp_owners": [
         "Ben Goldstein"
+      ],
+      "opp_owner_ids": [
+        "{CBF6473A-C5A3-46D7-8EF8-BFAF0D868891}"
       ],
       "opp_score": 127.36
     },
@@ -659,11 +887,17 @@
       "home_owners": [
         "Jules Salkind"
       ],
+      "home_owner_ids": [
+        "{93FE02E3-D523-4B1D-AC57-E31C8D235433}"
+      ],
       "home_score": 165.4,
       "away_team_id": 10,
       "away_team": "Team Goldstein",
       "away_owners": [
         "Ben Goldstein"
+      ],
+      "away_owner_ids": [
+        "{CBF6473A-C5A3-46D7-8EF8-BFAF0D868891}"
       ],
       "away_score": 126.6,
       "winner_team_id": 11,
@@ -675,11 +909,17 @@
       "owners": [
         "Jules Salkind"
       ],
+      "owner_ids": [
+        "{93FE02E3-D523-4B1D-AC57-E31C8D235433}"
+      ],
       "score": 165.4,
       "opp_team_id": 10,
       "opp_team": "Team Goldstein",
       "opp_owners": [
         "Ben Goldstein"
+      ],
+      "opp_owner_ids": [
+        "{CBF6473A-C5A3-46D7-8EF8-BFAF0D868891}"
       ],
       "opp_score": 126.6
     }
@@ -695,11 +935,17 @@
       "home_owners": [
         "Ben Wolbransky"
       ],
+      "home_owner_ids": [
+        "{429F0506-3667-4F0B-A2ED-1761D0A3F682}"
+      ],
       "home_score": 69.22,
       "away_team_id": 9,
       "away_team": "Saquads squad  Ship",
       "away_owners": [
         "Adam Heckelman"
+      ],
+      "away_owner_ids": [
+        "{8D1E7E24-92F1-49FC-ADF1-C8193EA1C44E}"
       ],
       "away_score": 30.0,
       "winner_team_id": 6,
@@ -711,11 +957,17 @@
       "owners": [
         "Adam Heckelman"
       ],
+      "owner_ids": [
+        "{8D1E7E24-92F1-49FC-ADF1-C8193EA1C44E}"
+      ],
       "score": 30.0,
       "opp_team_id": 6,
       "opp_team": "Hambone Fake Namingtons",
       "opp_owners": [
         "Ben Wolbransky"
+      ],
+      "opp_owner_ids": [
+        "{429F0506-3667-4F0B-A2ED-1761D0A3F682}"
       ],
       "opp_score": 69.22
     },
@@ -729,11 +981,17 @@
       "home_owners": [
         "Ben Wolbransky"
       ],
+      "home_owner_ids": [
+        "{429F0506-3667-4F0B-A2ED-1761D0A3F682}"
+      ],
       "home_score": 69.22,
       "away_team_id": 9,
       "away_team": "Saquads squad  Ship",
       "away_owners": [
         "Adam Heckelman"
+      ],
+      "away_owner_ids": [
+        "{8D1E7E24-92F1-49FC-ADF1-C8193EA1C44E}"
       ],
       "away_score": 30.0,
       "winner_team_id": 6,
@@ -745,11 +1003,17 @@
       "owners": [
         "Adam Heckelman"
       ],
+      "owner_ids": [
+        "{8D1E7E24-92F1-49FC-ADF1-C8193EA1C44E}"
+      ],
       "score": 30.0,
       "opp_team_id": 6,
       "opp_team": "Hambone Fake Namingtons",
       "opp_owners": [
         "Ben Wolbransky"
+      ],
+      "opp_owner_ids": [
+        "{429F0506-3667-4F0B-A2ED-1761D0A3F682}"
       ],
       "opp_score": 69.22
     },
@@ -763,11 +1027,17 @@
       "home_owners": [
         "Jeremy Isaacs"
       ],
+      "home_owner_ids": [
+        "{96349FBC-DBBD-4841-B49F-BCDBBD9841B6}"
+      ],
       "home_score": 40.78,
       "away_team_id": 3,
       "away_team": "Running The Table",
       "away_owners": [
         "Stefan Lachkar"
+      ],
+      "away_owner_ids": [
+        "{6EB109A3-B9E1-4D2D-B109-A3B9E10D2D41}"
       ],
       "away_score": 105.32,
       "winner_team_id": 3,
@@ -779,11 +1049,17 @@
       "owners": [
         "Jeremy Isaacs"
       ],
+      "owner_ids": [
+        "{96349FBC-DBBD-4841-B49F-BCDBBD9841B6}"
+      ],
       "score": 40.78,
       "opp_team_id": 3,
       "opp_team": "Running The Table",
       "opp_owners": [
         "Stefan Lachkar"
+      ],
+      "opp_owner_ids": [
+        "{6EB109A3-B9E1-4D2D-B109-A3B9E10D2D41}"
       ],
       "opp_score": 105.32
     },
@@ -797,11 +1073,17 @@
       "home_owners": [
         "sam hymes"
       ],
+      "home_owner_ids": [
+        "{92775292-B9FA-4B38-B752-92B9FADB38B0}"
+      ],
       "home_score": 97.5,
       "away_team_id": 10,
       "away_team": "Team Kohn",
       "away_owners": [
         "Skyler Kohn"
+      ],
+      "away_owner_ids": [
+        "{E66E0E46-40EF-4FDA-B0AB-3C6FABB395F8}"
       ],
       "away_score": 47.5,
       "winner_team_id": 8,
@@ -813,11 +1095,17 @@
       "owners": [
         "Skyler Kohn"
       ],
+      "owner_ids": [
+        "{E66E0E46-40EF-4FDA-B0AB-3C6FABB395F8}"
+      ],
       "score": 47.5,
       "opp_team_id": 8,
       "opp_team": "Team Schuss",
       "opp_owners": [
         "sam hymes"
+      ],
+      "opp_owner_ids": [
+        "{92775292-B9FA-4B38-B752-92B9FADB38B0}"
       ],
       "opp_score": 97.5
     },
@@ -831,11 +1119,17 @@
       "home_owners": [
         "Jonathan Coopersmith"
       ],
+      "home_owner_ids": [
+        "{BDC02B8B-DDC4-464E-B2E9-065DF145DDBB}"
+      ],
       "home_score": 113.52,
       "away_team_id": 8,
       "away_team": "Commes des Gar\u00c3\u00a7on",
       "away_owners": [
         "sam hymes"
+      ],
+      "away_owner_ids": [
+        "{92775292-B9FA-4B38-B752-92B9FADB38B0}"
       ],
       "away_score": 52.68,
       "winner_team_id": 9,
@@ -847,11 +1141,17 @@
       "owners": [
         "sam hymes"
       ],
+      "owner_ids": [
+        "{92775292-B9FA-4B38-B752-92B9FADB38B0}"
+      ],
       "score": 52.68,
       "opp_team_id": 9,
       "opp_team": "Need Based",
       "opp_owners": [
         "Jonathan Coopersmith"
+      ],
+      "opp_owner_ids": [
+        "{BDC02B8B-DDC4-464E-B2E9-065DF145DDBB}"
       ],
       "opp_score": 113.52
     },
@@ -865,11 +1165,17 @@
       "home_owners": [
         "Dylan Campbell"
       ],
+      "home_owner_ids": [
+        "{5431883D-E365-4401-97B9-DAD7EC2156AD}"
+      ],
       "home_score": 81.92,
       "away_team_id": 7,
       "away_team": "Paper Boy",
       "away_owners": [
         "Steven Hafif"
+      ],
+      "away_owner_ids": [
+        "{61CFF49A-6ECD-4466-8FF4-9A6ECD9466D1}"
       ],
       "away_score": 53.44,
       "winner_team_id": 3,
@@ -881,11 +1187,17 @@
       "owners": [
         "Steven Hafif"
       ],
+      "owner_ids": [
+        "{61CFF49A-6ECD-4466-8FF4-9A6ECD9466D1}"
+      ],
       "score": 53.44,
       "opp_team_id": 3,
       "opp_team": "The Laptop Squad",
       "opp_owners": [
         "Dylan Campbell"
+      ],
+      "opp_owner_ids": [
+        "{5431883D-E365-4401-97B9-DAD7EC2156AD}"
       ],
       "opp_score": 81.92
     },
@@ -899,11 +1211,17 @@
       "home_owners": [
         "Ryan Vader"
       ],
+      "home_owner_ids": [
+        "{B792F7C9-61CE-4E29-940C-DC1C5E6C4208}"
+      ],
       "home_score": 96.38,
       "away_team_id": 10,
       "away_team": "Team Goldstein",
       "away_owners": [
         "Ben Goldstein"
+      ],
+      "away_owner_ids": [
+        "{CBF6473A-C5A3-46D7-8EF8-BFAF0D868891}"
       ],
       "away_score": 54.54,
       "winner_team_id": 12,
@@ -915,11 +1233,17 @@
       "owners": [
         "Ben Goldstein"
       ],
+      "owner_ids": [
+        "{CBF6473A-C5A3-46D7-8EF8-BFAF0D868891}"
+      ],
       "score": 54.54,
       "opp_team_id": 12,
       "opp_team": "Where is Tyreeks Neck",
       "opp_owners": [
         "Ryan Vader"
+      ],
+      "opp_owner_ids": [
+        "{B792F7C9-61CE-4E29-940C-DC1C5E6C4208}"
       ],
       "opp_score": 96.38
     },
@@ -933,11 +1257,17 @@
       "home_owners": [
         "Stefan Lachkar"
       ],
+      "home_owner_ids": [
+        "{6EB109A3-B9E1-4D2D-B109-A3B9E10D2D41}"
+      ],
       "home_score": 154.72,
       "away_team_id": 5,
       "away_team": "Why In Such  A Murray? ",
       "away_owners": [
         "Yogev Almog"
+      ],
+      "away_owner_ids": [
+        "{4F5F2872-3868-445B-A9B7-97762020CC26}"
       ],
       "away_score": 55.26,
       "winner_team_id": 6,
@@ -949,11 +1279,17 @@
       "owners": [
         "Yogev Almog"
       ],
+      "owner_ids": [
+        "{4F5F2872-3868-445B-A9B7-97762020CC26}"
+      ],
       "score": 55.26,
       "opp_team_id": 6,
       "opp_team": "2017 Fantasy   Champ FTL",
       "opp_owners": [
         "Stefan Lachkar"
+      ],
+      "opp_owner_ids": [
+        "{6EB109A3-B9E1-4D2D-B109-A3B9E10D2D41}"
       ],
       "opp_score": 154.72
     },
@@ -967,11 +1303,17 @@
       "home_owners": [
         "Yogev Almog"
       ],
+      "home_owner_ids": [
+        "{4F5F2872-3868-445B-A9B7-97762020CC26}"
+      ],
       "home_score": 56.5,
       "away_team_id": 4,
       "away_team": "How's Business? Boomin'",
       "away_owners": [
         "Ben Wolbransky"
+      ],
+      "away_owner_ids": [
+        "{429F0506-3667-4F0B-A2ED-1761D0A3F682}"
       ],
       "away_score": 88.5,
       "winner_team_id": 4,
@@ -983,11 +1325,17 @@
       "owners": [
         "Yogev Almog"
       ],
+      "owner_ids": [
+        "{4F5F2872-3868-445B-A9B7-97762020CC26}"
+      ],
       "score": 56.5,
       "opp_team_id": 4,
       "opp_team": "How's Business? Boomin'",
       "opp_owners": [
         "Ben Wolbransky"
+      ],
+      "opp_owner_ids": [
+        "{429F0506-3667-4F0B-A2ED-1761D0A3F682}"
       ],
       "opp_score": 88.5
     },
@@ -1001,11 +1349,17 @@
       "home_owners": [
         "Jake Fischer"
       ],
+      "home_owner_ids": [
+        "{4F3E4D57-5F87-4D74-92C0-40815B7DFD51}"
+      ],
       "home_score": 88.6,
       "away_team_id": 1,
       "away_team": "I Am Inevitable",
       "away_owners": [
         "Bennett Schiff"
+      ],
+      "away_owner_ids": [
+        "{3A1A4E24-2A98-4038-9A4E-242A98803865}"
       ],
       "away_score": 57.48,
       "winner_team_id": 2,
@@ -1017,11 +1371,17 @@
       "owners": [
         "Bennett Schiff"
       ],
+      "owner_ids": [
+        "{3A1A4E24-2A98-4038-9A4E-242A98803865}"
+      ],
       "score": 57.48,
       "opp_team_id": 2,
       "opp_team": "Process Trusters",
       "opp_owners": [
         "Jake Fischer"
+      ],
+      "opp_owner_ids": [
+        "{4F3E4D57-5F87-4D74-92C0-40815B7DFD51}"
       ],
       "opp_score": 88.6
     },
@@ -1035,11 +1395,17 @@
       "home_owners": [
         "Jake Fischer"
       ],
+      "home_owner_ids": [
+        "{4F3E4D57-5F87-4D74-92C0-40815B7DFD51}"
+      ],
       "home_score": 88.6,
       "away_team_id": 1,
       "away_team": "I Am Inevitable",
       "away_owners": [
         "Bennett Schiff"
+      ],
+      "away_owner_ids": [
+        "{3A1A4E24-2A98-4038-9A4E-242A98803865}"
       ],
       "away_score": 57.48,
       "winner_team_id": 2,
@@ -1051,11 +1417,17 @@
       "owners": [
         "Bennett Schiff"
       ],
+      "owner_ids": [
+        "{3A1A4E24-2A98-4038-9A4E-242A98803865}"
+      ],
       "score": 57.48,
       "opp_team_id": 2,
       "opp_team": "Process Trusters",
       "opp_owners": [
         "Jake Fischer"
+      ],
+      "opp_owner_ids": [
+        "{4F3E4D57-5F87-4D74-92C0-40815B7DFD51}"
       ],
       "opp_score": 88.6
     },
@@ -1069,11 +1441,17 @@
       "home_owners": [
         "Lane Kirschner"
       ],
+      "home_owner_ids": [
+        "{600CAC49-2450-42EF-ABF1-33E7F0327DE9}"
+      ],
       "home_score": 123.5,
       "away_team_id": 9,
       "away_team": "Need Based",
       "away_owners": [
         "Jonathan Coopersmith"
+      ],
+      "away_owner_ids": [
+        "{BDC02B8B-DDC4-464E-B2E9-065DF145DDBB}"
       ],
       "away_score": 58.5,
       "winner_team_id": 2,
@@ -1085,11 +1463,17 @@
       "owners": [
         "Jonathan Coopersmith"
       ],
+      "owner_ids": [
+        "{BDC02B8B-DDC4-464E-B2E9-065DF145DDBB}"
+      ],
       "score": 58.5,
       "opp_team_id": 2,
       "opp_team": "Chronic  Masterdeflater",
       "opp_owners": [
         "Lane Kirschner"
+      ],
+      "opp_owner_ids": [
+        "{600CAC49-2450-42EF-ABF1-33E7F0327DE9}"
       ],
       "opp_score": 123.5
     },
@@ -1103,11 +1487,17 @@
       "home_owners": [
         "Ryan Vader"
       ],
+      "home_owner_ids": [
+        "{B792F7C9-61CE-4E29-940C-DC1C5E6C4208}"
+      ],
       "home_score": 82.0,
       "away_team_id": 8,
       "away_team": "Team Schuss",
       "away_owners": [
         "sam hymes"
+      ],
+      "away_owner_ids": [
+        "{92775292-B9FA-4B38-B752-92B9FADB38B0}"
       ],
       "away_score": 58.5,
       "winner_team_id": 12,
@@ -1119,11 +1509,17 @@
       "owners": [
         "sam hymes"
       ],
+      "owner_ids": [
+        "{92775292-B9FA-4B38-B752-92B9FADB38B0}"
+      ],
       "score": 58.5,
       "opp_team_id": 12,
       "opp_team": "Kentucky Buckets",
       "opp_owners": [
         "Ryan Vader"
+      ],
+      "opp_owner_ids": [
+        "{B792F7C9-61CE-4E29-940C-DC1C5E6C4208}"
       ],
       "opp_score": 82.0
     },
@@ -1137,11 +1533,17 @@
       "home_owners": [
         "Adam Heckelman"
       ],
+      "home_owner_ids": [
+        "{8D1E7E24-92F1-49FC-ADF1-C8193EA1C44E}"
+      ],
       "home_score": 58.5,
       "away_team_id": 3,
       "away_team": "3CHI Robby Hootz",
       "away_owners": [
         "Stefan Lachkar"
+      ],
+      "away_owner_ids": [
+        "{6EB109A3-B9E1-4D2D-B109-A3B9E10D2D41}"
       ],
       "away_score": 98.82,
       "winner_team_id": 3,
@@ -1153,11 +1555,17 @@
       "owners": [
         "Adam Heckelman"
       ],
+      "owner_ids": [
+        "{8D1E7E24-92F1-49FC-ADF1-C8193EA1C44E}"
+      ],
       "score": 58.5,
       "opp_team_id": 3,
       "opp_team": "3CHI Robby Hootz",
       "opp_owners": [
         "Stefan Lachkar"
+      ],
+      "opp_owner_ids": [
+        "{6EB109A3-B9E1-4D2D-B109-A3B9E10D2D41}"
       ],
       "opp_score": 98.82
     },
@@ -1171,11 +1579,17 @@
       "home_owners": [
         "Ben Goldstein"
       ],
+      "home_owner_ids": [
+        "{CBF6473A-C5A3-46D7-8EF8-BFAF0D868891}"
+      ],
       "home_score": 58.7,
       "away_team_id": 9,
       "away_team": "Saquads squad  Ship",
       "away_owners": [
         "Adam Heckelman"
+      ],
+      "away_owner_ids": [
+        "{8D1E7E24-92F1-49FC-ADF1-C8193EA1C44E}"
       ],
       "away_score": 115.22,
       "winner_team_id": 9,
@@ -1187,11 +1601,17 @@
       "owners": [
         "Ben Goldstein"
       ],
+      "owner_ids": [
+        "{CBF6473A-C5A3-46D7-8EF8-BFAF0D868891}"
+      ],
       "score": 58.7,
       "opp_team_id": 9,
       "opp_team": "Saquads squad  Ship",
       "opp_owners": [
         "Adam Heckelman"
+      ],
+      "opp_owner_ids": [
+        "{8D1E7E24-92F1-49FC-ADF1-C8193EA1C44E}"
       ],
       "opp_score": 115.22
     },
@@ -1205,11 +1625,17 @@
       "home_owners": [
         "Jonathan Coopersmith"
       ],
+      "home_owner_ids": [
+        "{BDC02B8B-DDC4-464E-B2E9-065DF145DDBB}"
+      ],
       "home_score": 143.0,
       "away_team_id": 8,
       "away_team": "Team Schuss",
       "away_owners": [
         "sam hymes"
+      ],
+      "away_owner_ids": [
+        "{92775292-B9FA-4B38-B752-92B9FADB38B0}"
       ],
       "away_score": 59.5,
       "winner_team_id": 9,
@@ -1221,11 +1647,17 @@
       "owners": [
         "sam hymes"
       ],
+      "owner_ids": [
+        "{92775292-B9FA-4B38-B752-92B9FADB38B0}"
+      ],
       "score": 59.5,
       "opp_team_id": 9,
       "opp_team": "Need Based",
       "opp_owners": [
         "Jonathan Coopersmith"
+      ],
+      "opp_owner_ids": [
+        "{BDC02B8B-DDC4-464E-B2E9-065DF145DDBB}"
       ],
       "opp_score": 143.0
     },
@@ -1239,11 +1671,17 @@
       "home_owners": [
         "Yogev Almog"
       ],
+      "home_owner_ids": [
+        "{4F5F2872-3868-445B-A9B7-97762020CC26}"
+      ],
       "home_score": 91.24,
       "away_team_id": 7,
       "away_team": "Paper Boy",
       "away_owners": [
         "Steven Hafif"
+      ],
+      "away_owner_ids": [
+        "{61CFF49A-6ECD-4466-8FF4-9A6ECD9466D1}"
       ],
       "away_score": 59.58,
       "winner_team_id": 5,
@@ -1255,11 +1693,17 @@
       "owners": [
         "Steven Hafif"
       ],
+      "owner_ids": [
+        "{61CFF49A-6ECD-4466-8FF4-9A6ECD9466D1}"
+      ],
       "score": 59.58,
       "opp_team_id": 5,
       "opp_team": "Why In Such  A Murray? ",
       "opp_owners": [
         "Yogev Almog"
+      ],
+      "opp_owner_ids": [
+        "{4F5F2872-3868-445B-A9B7-97762020CC26}"
       ],
       "opp_score": 91.24
     },
@@ -1273,11 +1717,17 @@
       "home_owners": [
         "Dylan Campbell"
       ],
+      "home_owner_ids": [
+        "{5431883D-E365-4401-97B9-DAD7EC2156AD}"
+      ],
       "home_score": 60.5,
       "away_team_id": 1,
       "away_team": "Wilfork on First Date",
       "away_owners": [
         "Bennett Schiff"
+      ],
+      "away_owner_ids": [
+        "{3A1A4E24-2A98-4038-9A4E-242A98803865}"
       ],
       "away_score": 69.0,
       "winner_team_id": 1,
@@ -1289,11 +1739,17 @@
       "owners": [
         "Dylan Campbell"
       ],
+      "owner_ids": [
+        "{5431883D-E365-4401-97B9-DAD7EC2156AD}"
+      ],
       "score": 60.5,
       "opp_team_id": 1,
       "opp_team": "Wilfork on First Date",
       "opp_owners": [
         "Bennett Schiff"
+      ],
+      "opp_owner_ids": [
+        "{3A1A4E24-2A98-4038-9A4E-242A98803865}"
       ],
       "opp_score": 69.0
     },
@@ -1307,11 +1763,17 @@
       "home_owners": [
         "Bennett Schiff"
       ],
+      "home_owner_ids": [
+        "{3A1A4E24-2A98-4038-9A4E-242A98803865}"
+      ],
       "home_score": 121.0,
       "away_team_id": 8,
       "away_team": "Team Schuss",
       "away_owners": [
         "sam hymes"
+      ],
+      "away_owner_ids": [
+        "{92775292-B9FA-4B38-B752-92B9FADB38B0}"
       ],
       "away_score": 61.0,
       "winner_team_id": 1,
@@ -1323,11 +1785,17 @@
       "owners": [
         "sam hymes"
       ],
+      "owner_ids": [
+        "{92775292-B9FA-4B38-B752-92B9FADB38B0}"
+      ],
       "score": 61.0,
       "opp_team_id": 1,
       "opp_team": "Wilfork on First Date",
       "opp_owners": [
         "Bennett Schiff"
+      ],
+      "opp_owner_ids": [
+        "{3A1A4E24-2A98-4038-9A4E-242A98803865}"
       ],
       "opp_score": 121.0
     },
@@ -1341,11 +1809,17 @@
       "home_owners": [
         "Adam Heckelman"
       ],
+      "home_owner_ids": [
+        "{8D1E7E24-92F1-49FC-ADF1-C8193EA1C44E}"
+      ],
       "home_score": 95.64,
       "away_team_id": 11,
       "away_team": "Finna Win This  Year Ya Diggs?",
       "away_owners": [
         "Jeremy Isaacs"
+      ],
+      "away_owner_ids": [
+        "{96349FBC-DBBD-4841-B49F-BCDBBD9841B6}"
       ],
       "away_score": 61.1,
       "winner_team_id": 9,
@@ -1357,11 +1831,17 @@
       "owners": [
         "Jeremy Isaacs"
       ],
+      "owner_ids": [
+        "{96349FBC-DBBD-4841-B49F-BCDBBD9841B6}"
+      ],
       "score": 61.1,
       "opp_team_id": 9,
       "opp_team": "Saquads squad  Ship",
       "opp_owners": [
         "Adam Heckelman"
+      ],
+      "opp_owner_ids": [
+        "{8D1E7E24-92F1-49FC-ADF1-C8193EA1C44E}"
       ],
       "opp_score": 95.64
     }
@@ -1377,11 +1857,17 @@
       "home_owners": [
         "Stefan Lachkar"
       ],
+      "home_owner_ids": [
+        "{6EB109A3-B9E1-4D2D-B109-A3B9E10D2D41}"
+      ],
       "home_score": 154.72,
       "away_team_id": 5,
       "away_team": "Why In Such  A Murray? ",
       "away_owners": [
         "Yogev Almog"
+      ],
+      "away_owner_ids": [
+        "{4F5F2872-3868-445B-A9B7-97762020CC26}"
       ],
       "away_score": 55.26,
       "winner_team_id": 6,
@@ -1399,11 +1885,17 @@
       "home_owners": [
         "Ben katz"
       ],
+      "home_owner_ids": [
+        "{ECD9E4C2-4E30-4915-AC59-6C1700E34A69}"
+      ],
       "home_score": 171.0,
       "away_team_id": 9,
       "away_team": "Need Based",
       "away_owners": [
         "Jonathan Coopersmith"
+      ],
+      "away_owner_ids": [
+        "{BDC02B8B-DDC4-464E-B2E9-065DF145DDBB}"
       ],
       "away_score": 76.5,
       "winner_team_id": 11,
@@ -1421,11 +1913,17 @@
       "home_owners": [
         "Bennett Schiff"
       ],
+      "home_owner_ids": [
+        "{3A1A4E24-2A98-4038-9A4E-242A98803865}"
+      ],
       "home_score": 159.6,
       "away_team_id": 9,
       "away_team": "Saquads squad  Ship",
       "away_owners": [
         "Adam Heckelman"
+      ],
+      "away_owner_ids": [
+        "{8D1E7E24-92F1-49FC-ADF1-C8193EA1C44E}"
       ],
       "away_score": 72.58,
       "winner_team_id": 1,
@@ -1443,11 +1941,17 @@
       "home_owners": [
         "Ben Wolbransky"
       ],
+      "home_owner_ids": [
+        "{429F0506-3667-4F0B-A2ED-1761D0A3F682}"
+      ],
       "home_score": 174.58,
       "away_team_id": 5,
       "away_team": "Wraith Talk",
       "away_owners": [
         "Jonathan Coopersmith"
+      ],
+      "away_owner_ids": [
+        "{BDC02B8B-DDC4-464E-B2E9-065DF145DDBB}"
       ],
       "away_score": 91.0,
       "winner_team_id": 6,
@@ -1465,11 +1969,17 @@
       "home_owners": [
         "Jonathan Coopersmith"
       ],
+      "home_owner_ids": [
+        "{BDC02B8B-DDC4-464E-B2E9-065DF145DDBB}"
+      ],
       "home_score": 143.0,
       "away_team_id": 8,
       "away_team": "Team Schuss",
       "away_owners": [
         "sam hymes"
+      ],
+      "away_owner_ids": [
+        "{92775292-B9FA-4B38-B752-92B9FADB38B0}"
       ],
       "away_score": 59.5,
       "winner_team_id": 9,
@@ -1487,11 +1997,17 @@
       "home_owners": [
         "Ben Wolbransky"
       ],
+      "home_owner_ids": [
+        "{429F0506-3667-4F0B-A2ED-1761D0A3F682}"
+      ],
       "home_score": 84.26,
       "away_team_id": 5,
       "away_team": "CeeDeez Nuts",
       "away_owners": [
         "Jonathan Coopersmith"
+      ],
+      "away_owner_ids": [
+        "{BDC02B8B-DDC4-464E-B2E9-065DF145DDBB}"
       ],
       "away_score": 167.56,
       "winner_team_id": 5,
@@ -1509,11 +2025,17 @@
       "home_owners": [
         "Ryan Vader"
       ],
+      "home_owner_ids": [
+        "{B792F7C9-61CE-4E29-940C-DC1C5E6C4208}"
+      ],
       "home_score": 148.78,
       "away_team_id": 5,
       "away_team": "McConkey Kong",
       "away_owners": [
         "Jonathan Coopersmith"
+      ],
+      "away_owner_ids": [
+        "{BDC02B8B-DDC4-464E-B2E9-065DF145DDBB}"
       ],
       "away_score": 65.92,
       "winner_team_id": 12,
@@ -1531,11 +2053,17 @@
       "home_owners": [
         "Ben katz"
       ],
+      "home_owner_ids": [
+        "{ECD9E4C2-4E30-4915-AC59-6C1700E34A69}"
+      ],
       "home_score": 86.74,
       "away_team_id": 6,
       "away_team": "Nude Egg",
       "away_owners": [
         "Ben Wolbransky"
+      ],
+      "away_owner_ids": [
+        "{429F0506-3667-4F0B-A2ED-1761D0A3F682}"
       ],
       "away_score": 169.3,
       "winner_team_id": 6,
@@ -1553,11 +2081,17 @@
       "home_owners": [
         "Jake Fischer"
       ],
+      "home_owner_ids": [
+        "{4F3E4D57-5F87-4D74-92C0-40815B7DFD51}"
+      ],
       "home_score": 105.3,
       "away_team_id": 11,
       "away_team": "E Bo Nix",
       "away_owners": [
         "Jules Salkind"
+      ],
+      "away_owner_ids": [
+        "{93FE02E3-D523-4B1D-AC57-E31C8D235433}"
       ],
       "away_score": 185.96,
       "winner_team_id": 11,
@@ -1575,11 +2109,17 @@
       "home_owners": [
         "Ryan Vader"
       ],
+      "home_owner_ids": [
+        "{B792F7C9-61CE-4E29-940C-DC1C5E6C4208}"
+      ],
       "home_score": 159.9,
       "away_team_id": 9,
       "away_team": "Saquads squad  Ship",
       "away_owners": [
         "Adam Heckelman"
+      ],
+      "away_owner_ids": [
+        "{8D1E7E24-92F1-49FC-ADF1-C8193EA1C44E}"
       ],
       "away_score": 79.64,
       "winner_team_id": 12,
@@ -1597,11 +2137,17 @@
       "home_owners": [
         "Ben katz"
       ],
+      "home_owner_ids": [
+        "{ECD9E4C2-4E30-4915-AC59-6C1700E34A69}"
+      ],
       "home_score": 81.36,
       "away_team_id": 6,
       "away_team": "2017 Fantasy   Champ FTL",
       "away_owners": [
         "Stefan Lachkar"
+      ],
+      "away_owner_ids": [
+        "{6EB109A3-B9E1-4D2D-B109-A3B9E10D2D41}"
       ],
       "away_score": 159.76,
       "winner_team_id": 6,
@@ -1619,11 +2165,17 @@
       "home_owners": [
         "Adam Heckelman"
       ],
+      "home_owner_ids": [
+        "{8D1E7E24-92F1-49FC-ADF1-C8193EA1C44E}"
+      ],
       "home_score": 66.96,
       "away_team_id": 1,
       "away_team": "Started From The Bottom",
       "away_owners": [
         "Bennett Schiff"
+      ],
+      "away_owner_ids": [
+        "{3A1A4E24-2A98-4038-9A4E-242A98803865}"
       ],
       "away_score": 144.78,
       "winner_team_id": 1,
@@ -1641,11 +2193,17 @@
       "home_owners": [
         "Stefan Lachkar"
       ],
+      "home_owner_ids": [
+        "{6EB109A3-B9E1-4D2D-B109-A3B9E10D2D41}"
+      ],
       "home_score": 144.3,
       "away_team_id": 7,
       "away_team": "Los Peloteros De Katz",
       "away_owners": [
         "Ben katz"
+      ],
+      "away_owner_ids": [
+        "{ECD9E4C2-4E30-4915-AC59-6C1700E34A69}"
       ],
       "away_score": 67.26,
       "winner_team_id": 3,
@@ -1663,11 +2221,17 @@
       "home_owners": [
         "Ryan Vader"
       ],
+      "home_owner_ids": [
+        "{B792F7C9-61CE-4E29-940C-DC1C5E6C4208}"
+      ],
       "home_score": 79.1,
       "away_team_id": 6,
       "away_team": "The Turbo Team",
       "away_owners": [
         "Ben Wolbransky"
+      ],
+      "away_owner_ids": [
+        "{429F0506-3667-4F0B-A2ED-1761D0A3F682}"
       ],
       "away_score": 155.88,
       "winner_team_id": 6,
@@ -1685,11 +2249,17 @@
       "home_owners": [
         "Ryan Vader"
       ],
+      "home_owner_ids": [
+        "{B792F7C9-61CE-4E29-940C-DC1C5E6C4208}"
+      ],
       "home_score": 79.1,
       "away_team_id": 6,
       "away_team": "The Turbo Team",
       "away_owners": [
         "Ben Wolbransky"
+      ],
+      "away_owner_ids": [
+        "{429F0506-3667-4F0B-A2ED-1761D0A3F682}"
       ],
       "away_score": 155.88,
       "winner_team_id": 6,
@@ -1707,11 +2277,17 @@
       "home_owners": [
         "Ryan Vader"
       ],
+      "home_owner_ids": [
+        "{B792F7C9-61CE-4E29-940C-DC1C5E6C4208}"
+      ],
       "home_score": 79.1,
       "away_team_id": 6,
       "away_team": "The Turbo Team",
       "away_owners": [
         "Ben Wolbransky"
+      ],
+      "away_owner_ids": [
+        "{429F0506-3667-4F0B-A2ED-1761D0A3F682}"
       ],
       "away_score": 155.88,
       "winner_team_id": 6,
@@ -1729,11 +2305,17 @@
       "home_owners": [
         "Bennett Schiff"
       ],
+      "home_owner_ids": [
+        "{3A1A4E24-2A98-4038-9A4E-242A98803865}"
+      ],
       "home_score": 143.84,
       "away_team_id": 5,
       "away_team": "Wraith Talk",
       "away_owners": [
         "Jonathan Coopersmith"
+      ],
+      "away_owner_ids": [
+        "{BDC02B8B-DDC4-464E-B2E9-065DF145DDBB}"
       ],
       "away_score": 67.16,
       "winner_team_id": 1,
@@ -1751,11 +2333,17 @@
       "home_owners": [
         "Ben Goldstein"
       ],
+      "home_owner_ids": [
+        "{CBF6473A-C5A3-46D7-8EF8-BFAF0D868891}"
+      ],
       "home_score": 71.48,
       "away_team_id": 12,
       "away_team": "Pls Trade Me Thick Necks",
       "away_owners": [
         "Ryan Vader"
+      ],
+      "away_owner_ids": [
+        "{B792F7C9-61CE-4E29-940C-DC1C5E6C4208}"
       ],
       "away_score": 145.84,
       "winner_team_id": 12,
@@ -1773,11 +2361,17 @@
       "home_owners": [
         "Jonathan Coopersmith"
       ],
+      "home_owner_ids": [
+        "{BDC02B8B-DDC4-464E-B2E9-065DF145DDBB}"
+      ],
       "home_score": 136.52,
       "away_team_id": 11,
       "away_team": "Finna Win This  Year Ya Diggs?",
       "away_owners": [
         "Jeremy Isaacs"
+      ],
+      "away_owner_ids": [
+        "{96349FBC-DBBD-4841-B49F-BCDBBD9841B6}"
       ],
       "away_score": 63.76,
       "winner_team_id": 5,
@@ -1795,11 +2389,17 @@
       "home_owners": [
         "Jonathan Coopersmith"
       ],
+      "home_owner_ids": [
+        "{BDC02B8B-DDC4-464E-B2E9-065DF145DDBB}"
+      ],
       "home_score": 136.52,
       "away_team_id": 11,
       "away_team": "Finna Win This  Year Ya Diggs?",
       "away_owners": [
         "Jeremy Isaacs"
+      ],
+      "away_owner_ids": [
+        "{96349FBC-DBBD-4841-B49F-BCDBBD9841B6}"
       ],
       "away_score": 63.76,
       "winner_team_id": 5,
@@ -1819,11 +2419,17 @@
       "home_owners": [
         "Stefan Lachkar"
       ],
+      "home_owner_ids": [
+        "{6EB109A3-B9E1-4D2D-B109-A3B9E10D2D41}"
+      ],
       "home_score": 113.02,
       "away_team_id": 2,
       "away_team": "Jake and Seth",
       "away_owners": [
         "Jake Fischer"
+      ],
+      "away_owner_ids": [
+        "{4F3E4D57-5F87-4D74-92C0-40815B7DFD51}"
       ],
       "away_score": 112.98,
       "winner_team_id": 3,
@@ -1841,11 +2447,17 @@
       "home_owners": [
         "Ben Goldstein"
       ],
+      "home_owner_ids": [
+        "{CBF6473A-C5A3-46D7-8EF8-BFAF0D868891}"
+      ],
       "home_score": 95.46,
       "away_team_id": 9,
       "away_team": "Need Based",
       "away_owners": [
         "Jonathan Coopersmith"
+      ],
+      "away_owner_ids": [
+        "{BDC02B8B-DDC4-464E-B2E9-065DF145DDBB}"
       ],
       "away_score": 95.72,
       "winner_team_id": 9,
@@ -1863,11 +2475,17 @@
       "home_owners": [
         "Ben Wolbransky"
       ],
+      "home_owner_ids": [
+        "{429F0506-3667-4F0B-A2ED-1761D0A3F682}"
+      ],
       "home_score": 111.62,
       "away_team_id": 7,
       "away_team": "Team Katz",
       "away_owners": [
         "Ben katz"
+      ],
+      "away_owner_ids": [
+        "{ECD9E4C2-4E30-4915-AC59-6C1700E34A69}"
       ],
       "away_score": 111.9,
       "winner_team_id": 7,
@@ -1885,11 +2503,17 @@
       "home_owners": [
         "Bennett Schiff"
       ],
+      "home_owner_ids": [
+        "{3A1A4E24-2A98-4038-9A4E-242A98803865}"
+      ],
       "home_score": 105.36,
       "away_team_id": 5,
       "away_team": "Why In Such  A Murray? ",
       "away_owners": [
         "Yogev Almog"
+      ],
+      "away_owner_ids": [
+        "{4F5F2872-3868-445B-A9B7-97762020CC26}"
       ],
       "away_score": 105.66,
       "winner_team_id": 5,
@@ -1907,11 +2531,17 @@
       "home_owners": [
         "Ben katz"
       ],
+      "home_owner_ids": [
+        "{ECD9E4C2-4E30-4915-AC59-6C1700E34A69}"
+      ],
       "home_score": 113.16,
       "away_team_id": 1,
       "away_team": "WILD 'N OUT",
       "away_owners": [
         "Bennett Schiff"
+      ],
+      "away_owner_ids": [
+        "{3A1A4E24-2A98-4038-9A4E-242A98803865}"
       ],
       "away_score": 112.86,
       "winner_team_id": 7,
@@ -1929,11 +2559,17 @@
       "home_owners": [
         "Ben Wolbransky"
       ],
+      "home_owner_ids": [
+        "{429F0506-3667-4F0B-A2ED-1761D0A3F682}"
+      ],
       "home_score": 94.94,
       "away_team_id": 5,
       "away_team": "Team Kirschner",
       "away_owners": [
         "Lane Kirschner"
+      ],
+      "away_owner_ids": [
+        "{600CAC49-2450-42EF-ABF1-33E7F0327DE9}"
       ],
       "away_score": 95.28,
       "winner_team_id": 5,
@@ -1951,11 +2587,17 @@
       "home_owners": [
         "Bennett Schiff"
       ],
+      "home_owner_ids": [
+        "{3A1A4E24-2A98-4038-9A4E-242A98803865}"
+      ],
       "home_score": 109.54,
       "away_team_id": 6,
       "away_team": "2017 Fantasy   Champ FTL",
       "away_owners": [
         "Stefan Lachkar"
+      ],
+      "away_owner_ids": [
+        "{6EB109A3-B9E1-4D2D-B109-A3B9E10D2D41}"
       ],
       "away_score": 109.16,
       "winner_team_id": 1,
@@ -1973,11 +2615,17 @@
       "home_owners": [
         "Ben Wolbransky"
       ],
+      "home_owner_ids": [
+        "{429F0506-3667-4F0B-A2ED-1761D0A3F682}"
+      ],
       "home_score": 97.18,
       "away_team_id": 1,
       "away_team": "WILD 'N OUT",
       "away_owners": [
         "Bennett Schiff"
+      ],
+      "away_owner_ids": [
+        "{3A1A4E24-2A98-4038-9A4E-242A98803865}"
       ],
       "away_score": 97.58,
       "winner_team_id": 1,
@@ -1995,11 +2643,17 @@
       "home_owners": [
         "Yogev Almog"
       ],
+      "home_owner_ids": [
+        "{4F5F2872-3868-445B-A9B7-97762020CC26}"
+      ],
       "home_score": 92.5,
       "away_team_id": 4,
       "away_team": "How's Business? Boomin'",
       "away_owners": [
         "Ben Wolbransky"
+      ],
+      "away_owner_ids": [
+        "{429F0506-3667-4F0B-A2ED-1761D0A3F682}"
       ],
       "away_score": 93.0,
       "winner_team_id": 4,
@@ -2017,11 +2671,17 @@
       "home_owners": [
         "Ben Wolbransky"
       ],
+      "home_owner_ids": [
+        "{429F0506-3667-4F0B-A2ED-1761D0A3F682}"
+      ],
       "home_score": 68.38,
       "away_team_id": 5,
       "away_team": "Bijan Mustard",
       "away_owners": [
         "Jonathan Coopersmith"
+      ],
+      "away_owner_ids": [
+        "{BDC02B8B-DDC4-464E-B2E9-065DF145DDBB}"
       ],
       "away_score": 69.02,
       "winner_team_id": 5,
@@ -2039,11 +2699,17 @@
       "home_owners": [
         "Jonathan Coopersmith"
       ],
+      "home_owner_ids": [
+        "{BDC02B8B-DDC4-464E-B2E9-065DF145DDBB}"
+      ],
       "home_score": 83.5,
       "away_team_id": 10,
       "away_team": "Hunting for the Win",
       "away_owners": [
         "Ben Goldstein"
+      ],
+      "away_owner_ids": [
+        "{CBF6473A-C5A3-46D7-8EF8-BFAF0D868891}"
       ],
       "away_score": 84.16,
       "winner_team_id": 10,
@@ -2061,11 +2727,17 @@
       "home_owners": [
         "Stefan Lachkar"
       ],
+      "home_owner_ids": [
+        "{6EB109A3-B9E1-4D2D-B109-A3B9E10D2D41}"
+      ],
       "home_score": 138.22,
       "away_team_id": 7,
       "away_team": "Los Peloteros De Katz",
       "away_owners": [
         "Ben katz"
+      ],
+      "away_owner_ids": [
+        "{ECD9E4C2-4E30-4915-AC59-6C1700E34A69}"
       ],
       "away_score": 137.56,
       "winner_team_id": 3,
@@ -2083,11 +2755,17 @@
       "home_owners": [
         "Dylan Campbell"
       ],
+      "home_owner_ids": [
+        "{5431883D-E365-4401-97B9-DAD7EC2156AD}"
+      ],
       "home_score": 77.12,
       "away_team_id": 3,
       "away_team": "3CHI Robby Hootz",
       "away_owners": [
         "Stefan Lachkar"
+      ],
+      "away_owner_ids": [
+        "{6EB109A3-B9E1-4D2D-B109-A3B9E10D2D41}"
       ],
       "away_score": 76.44,
       "winner_team_id": 11,
@@ -2105,11 +2783,17 @@
       "home_owners": [
         "Bennett Schiff"
       ],
+      "home_owner_ids": [
+        "{3A1A4E24-2A98-4038-9A4E-242A98803865}"
+      ],
       "home_score": 125.2,
       "away_team_id": 5,
       "away_team": "Wraith Talk",
       "away_owners": [
         "Jonathan Coopersmith"
+      ],
+      "away_owner_ids": [
+        "{BDC02B8B-DDC4-464E-B2E9-065DF145DDBB}"
       ],
       "away_score": 125.9,
       "winner_team_id": 5,
@@ -2127,11 +2811,17 @@
       "home_owners": [
         "Ben katz"
       ],
+      "home_owner_ids": [
+        "{ECD9E4C2-4E30-4915-AC59-6C1700E34A69}"
+      ],
       "home_score": 122.46,
       "away_team_id": 12,
       "away_team": "Pls Trade Me Thick Necks",
       "away_owners": [
         "Ryan Vader"
+      ],
+      "away_owner_ids": [
+        "{B792F7C9-61CE-4E29-940C-DC1C5E6C4208}"
       ],
       "away_score": 121.7,
       "winner_team_id": 7,
@@ -2149,11 +2839,17 @@
       "home_owners": [
         "Ben katz"
       ],
+      "home_owner_ids": [
+        "{ECD9E4C2-4E30-4915-AC59-6C1700E34A69}"
+      ],
       "home_score": 119.5,
       "away_team_id": 4,
       "away_team": "Barkers Bark",
       "away_owners": [
         "Dylan Lowndes"
+      ],
+      "away_owner_ids": [
+        "{F6405BA0-4462-458F-805B-A04462258FE9}"
       ],
       "away_score": 118.74,
       "winner_team_id": 11,
@@ -2171,11 +2867,17 @@
       "home_owners": [
         "Ben Goldstein"
       ],
+      "home_owner_ids": [
+        "{CBF6473A-C5A3-46D7-8EF8-BFAF0D868891}"
+      ],
       "home_score": 86.06,
       "away_team_id": 11,
       "away_team": "Finna Win This  Year Ya Diggs?",
       "away_owners": [
         "Jeremy Isaacs"
+      ],
+      "away_owner_ids": [
+        "{96349FBC-DBBD-4841-B49F-BCDBBD9841B6}"
       ],
       "away_score": 85.3,
       "winner_team_id": 10,
@@ -2193,11 +2895,17 @@
       "home_owners": [
         "Bennett Schiff"
       ],
+      "home_owner_ids": [
+        "{3A1A4E24-2A98-4038-9A4E-242A98803865}"
+      ],
       "home_score": 136.66,
       "away_team_id": 5,
       "away_team": "McConkey Kong",
       "away_owners": [
         "Jonathan Coopersmith"
+      ],
+      "away_owner_ids": [
+        "{BDC02B8B-DDC4-464E-B2E9-065DF145DDBB}"
       ],
       "away_score": 137.44,
       "winner_team_id": 5,
@@ -2215,11 +2923,17 @@
       "home_owners": [
         "Ryan Vader"
       ],
+      "home_owner_ids": [
+        "{B792F7C9-61CE-4E29-940C-DC1C5E6C4208}"
+      ],
       "home_score": 95.58,
       "away_team_id": 3,
       "away_team": "Ridley's  Bookie",
       "away_owners": [
         "Stefan Lachkar"
+      ],
+      "away_owner_ids": [
+        "{6EB109A3-B9E1-4D2D-B109-A3B9E10D2D41}"
       ],
       "away_score": 96.4,
       "winner_team_id": 3,
@@ -2237,11 +2951,17 @@
       "home_owners": [
         "Ben katz"
       ],
+      "home_owner_ids": [
+        "{ECD9E4C2-4E30-4915-AC59-6C1700E34A69}"
+      ],
       "home_score": 111.96,
       "away_team_id": 2,
       "away_team": "Process Trusters",
       "away_owners": [
         "Jake Fischer"
+      ],
+      "away_owner_ids": [
+        "{4F3E4D57-5F87-4D74-92C0-40815B7DFD51}"
       ],
       "away_score": 112.9,
       "winner_team_id": 2,
@@ -2261,11 +2981,17 @@
       "home_owners": [
         "Ryan Vader"
       ],
+      "home_owner_ids": [
+        "{B792F7C9-61CE-4E29-940C-DC1C5E6C4208}"
+      ],
       "home_score": 185.5,
       "away_team_id": 2,
       "away_team": "Process Trusters",
       "away_owners": [
         "Jake Fischer"
+      ],
+      "away_owner_ids": [
+        "{4F3E4D57-5F87-4D74-92C0-40815B7DFD51}"
       ],
       "away_score": 156.22,
       "winner_team_id": 12,
@@ -2283,11 +3009,17 @@
       "home_owners": [
         "Ben katz"
       ],
+      "home_owner_ids": [
+        "{ECD9E4C2-4E30-4915-AC59-6C1700E34A69}"
+      ],
       "home_score": 169.76,
       "away_team_id": 2,
       "away_team": "Process Trusters",
       "away_owners": [
         "Jake Fischer"
+      ],
+      "away_owner_ids": [
+        "{4F3E4D57-5F87-4D74-92C0-40815B7DFD51}"
       ],
       "away_score": 153.72,
       "winner_team_id": 7,
@@ -2305,11 +3037,17 @@
       "home_owners": [
         "Ben katz"
       ],
+      "home_owner_ids": [
+        "{ECD9E4C2-4E30-4915-AC59-6C1700E34A69}"
+      ],
       "home_score": 153.14,
       "away_team_id": 1,
       "away_team": "I Am Inevitable",
       "away_owners": [
         "Bennett Schiff"
+      ],
+      "away_owner_ids": [
+        "{3A1A4E24-2A98-4038-9A4E-242A98803865}"
       ],
       "away_score": 164.1,
       "winner_team_id": 1,
@@ -2327,11 +3065,17 @@
       "home_owners": [
         "Ryan Vader"
       ],
+      "home_owner_ids": [
+        "{B792F7C9-61CE-4E29-940C-DC1C5E6C4208}"
+      ],
       "home_score": 153.92,
       "away_team_id": 5,
       "away_team": "McConkey Kong",
       "away_owners": [
         "Jonathan Coopersmith"
+      ],
+      "away_owner_ids": [
+        "{BDC02B8B-DDC4-464E-B2E9-065DF145DDBB}"
       ],
       "away_score": 161.0,
       "winner_team_id": 5,
@@ -2349,11 +3093,17 @@
       "home_owners": [
         "Bennett Schiff"
       ],
+      "home_owner_ids": [
+        "{3A1A4E24-2A98-4038-9A4E-242A98803865}"
+      ],
       "home_score": 176.28,
       "away_team_id": 11,
       "away_team": "50 Feet  Of Crap",
       "away_owners": [
         "Dylan Campbell"
+      ],
+      "away_owner_ids": [
+        "{5431883D-E365-4401-97B9-DAD7EC2156AD}"
       ],
       "away_score": 135.08,
       "winner_team_id": 1,
@@ -2371,11 +3121,17 @@
       "home_owners": [
         "Bennett Schiff"
       ],
+      "home_owner_ids": [
+        "{3A1A4E24-2A98-4038-9A4E-242A98803865}"
+      ],
       "home_score": 176.28,
       "away_team_id": 11,
       "away_team": "50 Feet  Of Crap",
       "away_owners": [
         "Dylan Campbell"
+      ],
+      "away_owner_ids": [
+        "{5431883D-E365-4401-97B9-DAD7EC2156AD}"
       ],
       "away_score": 135.08,
       "winner_team_id": 1,
@@ -2393,11 +3149,17 @@
       "home_owners": [
         "Bennett Schiff"
       ],
+      "home_owner_ids": [
+        "{3A1A4E24-2A98-4038-9A4E-242A98803865}"
+      ],
       "home_score": 176.28,
       "away_team_id": 11,
       "away_team": "50 Feet  Of Crap",
       "away_owners": [
         "Dylan Campbell"
+      ],
+      "away_owner_ids": [
+        "{5431883D-E365-4401-97B9-DAD7EC2156AD}"
       ],
       "away_score": 135.08,
       "winner_team_id": 1,
@@ -2415,11 +3177,17 @@
       "home_owners": [
         "Jake Fischer"
       ],
+      "home_owner_ids": [
+        "{4F3E4D57-5F87-4D74-92C0-40815B7DFD51}"
+      ],
       "home_score": 188.7,
       "away_team_id": 5,
       "away_team": "Team Kirschner",
       "away_owners": [
         "Lane Kirschner"
+      ],
+      "away_owner_ids": [
+        "{600CAC49-2450-42EF-ABF1-33E7F0327DE9}"
       ],
       "away_score": 121.04,
       "winner_team_id": 2,
@@ -2437,11 +3205,17 @@
       "home_owners": [
         "Ben Wolbransky"
       ],
+      "home_owner_ids": [
+        "{429F0506-3667-4F0B-A2ED-1761D0A3F682}"
+      ],
       "home_score": 171.42,
       "away_team_id": 9,
       "away_team": "Saquads squad  Ship",
       "away_owners": [
         "Adam Heckelman"
+      ],
+      "away_owner_ids": [
+        "{8D1E7E24-92F1-49FC-ADF1-C8193EA1C44E}"
       ],
       "away_score": 138.32,
       "winner_team_id": 6,
@@ -2459,11 +3233,17 @@
       "home_owners": [
         "Stefan Lachkar"
       ],
+      "home_owner_ids": [
+        "{6EB109A3-B9E1-4D2D-B109-A3B9E10D2D41}"
+      ],
       "home_score": 163.76,
       "away_team_id": 10,
       "away_team": "Team Goldstein",
       "away_owners": [
         "Ben Goldstein"
+      ],
+      "away_owner_ids": [
+        "{CBF6473A-C5A3-46D7-8EF8-BFAF0D868891}"
       ],
       "away_score": 143.58,
       "winner_team_id": 3,
@@ -2481,11 +3261,17 @@
       "home_owners": [
         "Stefan Lachkar"
       ],
+      "home_owner_ids": [
+        "{6EB109A3-B9E1-4D2D-B109-A3B9E10D2D41}"
+      ],
       "home_score": 158.54,
       "away_team_id": 9,
       "away_team": "Saquads squad  Ship",
       "away_owners": [
         "Adam Heckelman"
+      ],
+      "away_owner_ids": [
+        "{8D1E7E24-92F1-49FC-ADF1-C8193EA1C44E}"
       ],
       "away_score": 142.28,
       "winner_team_id": 3,
@@ -2503,11 +3289,17 @@
       "home_owners": [
         "Ben katz"
       ],
+      "home_owner_ids": [
+        "{ECD9E4C2-4E30-4915-AC59-6C1700E34A69}"
+      ],
       "home_score": 136.08,
       "away_team_id": 2,
       "away_team": "Jake and Seth",
       "away_owners": [
         "Jake Fischer"
+      ],
+      "away_owner_ids": [
+        "{4F3E4D57-5F87-4D74-92C0-40815B7DFD51}"
       ],
       "away_score": 164.48,
       "winner_team_id": 2,
@@ -2525,11 +3317,17 @@
       "home_owners": [
         "Ben katz"
       ],
+      "home_owner_ids": [
+        "{ECD9E4C2-4E30-4915-AC59-6C1700E34A69}"
+      ],
       "home_score": 136.08,
       "away_team_id": 2,
       "away_team": "Jake and Seth",
       "away_owners": [
         "Jake Fischer"
+      ],
+      "away_owner_ids": [
+        "{4F3E4D57-5F87-4D74-92C0-40815B7DFD51}"
       ],
       "away_score": 164.48,
       "winner_team_id": 2,
@@ -2547,11 +3345,17 @@
       "home_owners": [
         "Ben katz"
       ],
+      "home_owner_ids": [
+        "{ECD9E4C2-4E30-4915-AC59-6C1700E34A69}"
+      ],
       "home_score": 160.8,
       "away_team_id": 10,
       "away_team": "Team Goldstein",
       "away_owners": [
         "Ben Goldstein"
+      ],
+      "away_owner_ids": [
+        "{CBF6473A-C5A3-46D7-8EF8-BFAF0D868891}"
       ],
       "away_score": 137.2,
       "winner_team_id": 7,
@@ -2569,11 +3373,17 @@
       "home_owners": [
         "Ryan Vader"
       ],
+      "home_owner_ids": [
+        "{B792F7C9-61CE-4E29-940C-DC1C5E6C4208}"
+      ],
       "home_score": 157.38,
       "away_team_id": 10,
       "away_team": "Team Goldstein",
       "away_owners": [
         "Ben Goldstein"
+      ],
+      "away_owner_ids": [
+        "{CBF6473A-C5A3-46D7-8EF8-BFAF0D868891}"
       ],
       "away_score": 139.5,
       "winner_team_id": 12,
@@ -2591,11 +3401,17 @@
       "home_owners": [
         "Ben Goldstein"
       ],
+      "home_owner_ids": [
+        "{CBF6473A-C5A3-46D7-8EF8-BFAF0D868891}"
+      ],
       "home_score": 131.88,
       "away_team_id": 2,
       "away_team": "Jake and Seth",
       "away_owners": [
         "Jake Fischer"
+      ],
+      "away_owner_ids": [
+        "{4F3E4D57-5F87-4D74-92C0-40815B7DFD51}"
       ],
       "away_score": 164.64,
       "winner_team_id": 2,
@@ -2613,11 +3429,17 @@
       "home_owners": [
         "Ben katz"
       ],
+      "home_owner_ids": [
+        "{ECD9E4C2-4E30-4915-AC59-6C1700E34A69}"
+      ],
       "home_score": 142.3,
       "away_team_id": 5,
       "away_team": "CeeDeez Nuts",
       "away_owners": [
         "Jonathan Coopersmith"
+      ],
+      "away_owner_ids": [
+        "{BDC02B8B-DDC4-464E-B2E9-065DF145DDBB}"
       ],
       "away_score": 152.52,
       "winner_team_id": 5,
@@ -2635,11 +3457,17 @@
       "home_owners": [
         "Ben Goldstein"
       ],
+      "home_owner_ids": [
+        "{CBF6473A-C5A3-46D7-8EF8-BFAF0D868891}"
+      ],
       "home_score": 127.36,
       "away_team_id": 9,
       "away_team": "Saquads squad  Ship",
       "away_owners": [
         "Adam Heckelman"
+      ],
+      "away_owner_ids": [
+        "{8D1E7E24-92F1-49FC-ADF1-C8193EA1C44E}"
       ],
       "away_score": 166.26,
       "winner_team_id": 9,
@@ -2657,11 +3485,17 @@
       "home_owners": [
         "Jonathan Coopersmith"
       ],
+      "home_owner_ids": [
+        "{BDC02B8B-DDC4-464E-B2E9-065DF145DDBB}"
+      ],
       "home_score": 160.84,
       "away_team_id": 7,
       "away_team": "Los Peloteros De Katz",
       "away_owners": [
         "Ben katz"
+      ],
+      "away_owner_ids": [
+        "{ECD9E4C2-4E30-4915-AC59-6C1700E34A69}"
       ],
       "away_score": 132.56,
       "winner_team_id": 5,
@@ -2679,11 +3513,17 @@
       "home_owners": [
         "Ryan Vader"
       ],
+      "home_owner_ids": [
+        "{B792F7C9-61CE-4E29-940C-DC1C5E6C4208}"
+      ],
       "home_score": 151.98,
       "away_team_id": 10,
       "away_team": "Team Goldstein",
       "away_owners": [
         "Ben Goldstein"
+      ],
+      "away_owner_ids": [
+        "{CBF6473A-C5A3-46D7-8EF8-BFAF0D868891}"
       ],
       "away_score": 141.12,
       "winner_team_id": 12,
@@ -2703,11 +3543,17 @@
       "home_owners": [
         "Ben Wolbransky"
       ],
+      "home_owner_ids": [
+        "{429F0506-3667-4F0B-A2ED-1761D0A3F682}"
+      ],
       "home_score": 69.22,
       "away_team_id": 9,
       "away_team": "Saquads squad  Ship",
       "away_owners": [
         "Adam Heckelman"
+      ],
+      "away_owner_ids": [
+        "{8D1E7E24-92F1-49FC-ADF1-C8193EA1C44E}"
       ],
       "away_score": 30.0,
       "winner_team_id": 6,
@@ -2725,11 +3571,17 @@
       "home_owners": [
         "Ben Wolbransky"
       ],
+      "home_owner_ids": [
+        "{429F0506-3667-4F0B-A2ED-1761D0A3F682}"
+      ],
       "home_score": 69.22,
       "away_team_id": 9,
       "away_team": "Saquads squad  Ship",
       "away_owners": [
         "Adam Heckelman"
+      ],
+      "away_owner_ids": [
+        "{8D1E7E24-92F1-49FC-ADF1-C8193EA1C44E}"
       ],
       "away_score": 30.0,
       "winner_team_id": 6,
@@ -2747,11 +3599,17 @@
       "home_owners": [
         "Dylan Campbell"
       ],
+      "home_owner_ids": [
+        "{5431883D-E365-4401-97B9-DAD7EC2156AD}"
+      ],
       "home_score": 60.5,
       "away_team_id": 1,
       "away_team": "Wilfork on First Date",
       "away_owners": [
         "Bennett Schiff"
+      ],
+      "away_owner_ids": [
+        "{3A1A4E24-2A98-4038-9A4E-242A98803865}"
       ],
       "away_score": 69.0,
       "winner_team_id": 1,
@@ -2769,11 +3627,17 @@
       "home_owners": [
         "Dylan Campbell"
       ],
+      "home_owner_ids": [
+        "{5431883D-E365-4401-97B9-DAD7EC2156AD}"
+      ],
       "home_score": 81.92,
       "away_team_id": 7,
       "away_team": "Paper Boy",
       "away_owners": [
         "Steven Hafif"
+      ],
+      "away_owner_ids": [
+        "{61CFF49A-6ECD-4466-8FF4-9A6ECD9466D1}"
       ],
       "away_score": 53.44,
       "winner_team_id": 3,
@@ -2791,11 +3655,17 @@
       "home_owners": [
         "Ben Wolbransky"
       ],
+      "home_owner_ids": [
+        "{429F0506-3667-4F0B-A2ED-1761D0A3F682}"
+      ],
       "home_score": 68.38,
       "away_team_id": 5,
       "away_team": "Bijan Mustard",
       "away_owners": [
         "Jonathan Coopersmith"
+      ],
+      "away_owner_ids": [
+        "{BDC02B8B-DDC4-464E-B2E9-065DF145DDBB}"
       ],
       "away_score": 69.02,
       "winner_team_id": 5,
@@ -2813,11 +3683,17 @@
       "home_owners": [
         "Steven Hafif"
       ],
+      "home_owner_ids": [
+        "{61CFF49A-6ECD-4466-8FF4-9A6ECD9466D1}"
+      ],
       "home_score": 74.72,
       "away_team_id": 8,
       "away_team": "Commes des Gar\u00c3\u00a7on",
       "away_owners": [
         "sam hymes"
+      ],
+      "away_owner_ids": [
+        "{92775292-B9FA-4B38-B752-92B9FADB38B0}"
       ],
       "away_score": 63.02,
       "winner_team_id": 7,
@@ -2835,11 +3711,17 @@
       "home_owners": [
         "Ryan Vader"
       ],
+      "home_owner_ids": [
+        "{B792F7C9-61CE-4E29-940C-DC1C5E6C4208}"
+      ],
       "home_score": 82.0,
       "away_team_id": 8,
       "away_team": "Team Schuss",
       "away_owners": [
         "sam hymes"
+      ],
+      "away_owner_ids": [
+        "{92775292-B9FA-4B38-B752-92B9FADB38B0}"
       ],
       "away_score": 58.5,
       "winner_team_id": 12,
@@ -2857,11 +3739,17 @@
       "home_owners": [
         "Lane Kirschner"
       ],
+      "home_owner_ids": [
+        "{600CAC49-2450-42EF-ABF1-33E7F0327DE9}"
+      ],
       "home_score": 71.0,
       "away_team_id": 12,
       "away_team": "Kentucky Buckets",
       "away_owners": [
         "Ryan Vader"
+      ],
+      "away_owner_ids": [
+        "{B792F7C9-61CE-4E29-940C-DC1C5E6C4208}"
       ],
       "away_score": 70.0,
       "winner_team_id": 2,
@@ -2879,11 +3767,17 @@
       "home_owners": [
         "sam hymes"
       ],
+      "home_owner_ids": [
+        "{92775292-B9FA-4B38-B752-92B9FADB38B0}"
+      ],
       "home_score": 64.2,
       "away_team_id": 5,
       "away_team": "Why In Such  A Murray? ",
       "away_owners": [
         "Yogev Almog"
+      ],
+      "away_owner_ids": [
+        "{4F5F2872-3868-445B-A9B7-97762020CC26}"
       ],
       "away_score": 77.72,
       "winner_team_id": 5,
@@ -2901,11 +3795,17 @@
       "home_owners": [
         "sam hymes"
       ],
+      "home_owner_ids": [
+        "{92775292-B9FA-4B38-B752-92B9FADB38B0}"
+      ],
       "home_score": 97.5,
       "away_team_id": 10,
       "away_team": "Team Kohn",
       "away_owners": [
         "Skyler Kohn"
+      ],
+      "away_owner_ids": [
+        "{E66E0E46-40EF-4FDA-B0AB-3C6FABB395F8}"
       ],
       "away_score": 47.5,
       "winner_team_id": 8,
@@ -2923,11 +3823,17 @@
       "home_owners": [
         "Yogev Almog"
       ],
+      "home_owner_ids": [
+        "{4F5F2872-3868-445B-A9B7-97762020CC26}"
+      ],
       "home_score": 56.5,
       "away_team_id": 4,
       "away_team": "How's Business? Boomin'",
       "away_owners": [
         "Ben Wolbransky"
+      ],
+      "away_owner_ids": [
+        "{429F0506-3667-4F0B-A2ED-1761D0A3F682}"
       ],
       "away_score": 88.5,
       "winner_team_id": 4,
@@ -2945,11 +3851,17 @@
       "home_owners": [
         "Ben Wolbransky"
       ],
+      "home_owner_ids": [
+        "{429F0506-3667-4F0B-A2ED-1761D0A3F682}"
+      ],
       "home_score": 82.86,
       "away_team_id": 9,
       "away_team": "Saquads squad  Ship",
       "away_owners": [
         "Adam Heckelman"
+      ],
+      "away_owner_ids": [
+        "{8D1E7E24-92F1-49FC-ADF1-C8193EA1C44E}"
       ],
       "away_score": 63.08,
       "winner_team_id": 6,
@@ -2967,11 +3879,17 @@
       "home_owners": [
         "Bennett Schiff"
       ],
+      "home_owner_ids": [
+        "{3A1A4E24-2A98-4038-9A4E-242A98803865}"
+      ],
       "home_score": 75.3,
       "away_team_id": 6,
       "away_team": "Hambone Fake Namingtons",
       "away_owners": [
         "Ben Wolbransky"
+      ],
+      "away_owner_ids": [
+        "{429F0506-3667-4F0B-A2ED-1761D0A3F682}"
       ],
       "away_score": 70.7,
       "winner_team_id": 1,
@@ -2989,11 +3907,17 @@
       "home_owners": [
         "Jake Fischer"
       ],
+      "home_owner_ids": [
+        "{4F3E4D57-5F87-4D74-92C0-40815B7DFD51}"
+      ],
       "home_score": 88.6,
       "away_team_id": 1,
       "away_team": "I Am Inevitable",
       "away_owners": [
         "Bennett Schiff"
+      ],
+      "away_owner_ids": [
+        "{3A1A4E24-2A98-4038-9A4E-242A98803865}"
       ],
       "away_score": 57.48,
       "winner_team_id": 2,
@@ -3011,11 +3935,17 @@
       "home_owners": [
         "Jake Fischer"
       ],
+      "home_owner_ids": [
+        "{4F3E4D57-5F87-4D74-92C0-40815B7DFD51}"
+      ],
       "home_score": 88.6,
       "away_team_id": 1,
       "away_team": "I Am Inevitable",
       "away_owners": [
         "Bennett Schiff"
+      ],
+      "away_owner_ids": [
+        "{3A1A4E24-2A98-4038-9A4E-242A98803865}"
       ],
       "away_score": 57.48,
       "winner_team_id": 2,
@@ -3033,11 +3963,17 @@
       "home_owners": [
         "Jeremy Isaacs"
       ],
+      "home_owner_ids": [
+        "{96349FBC-DBBD-4841-B49F-BCDBBD9841B6}"
+      ],
       "home_score": 40.78,
       "away_team_id": 3,
       "away_team": "Running The Table",
       "away_owners": [
         "Stefan Lachkar"
+      ],
+      "away_owner_ids": [
+        "{6EB109A3-B9E1-4D2D-B109-A3B9E10D2D41}"
       ],
       "away_score": 105.32,
       "winner_team_id": 3,
@@ -3055,11 +3991,17 @@
       "home_owners": [
         "Dylan Campbell"
       ],
+      "home_owner_ids": [
+        "{5431883D-E365-4401-97B9-DAD7EC2156AD}"
+      ],
       "home_score": 79.1,
       "away_team_id": 2,
       "away_team": "Traded James Harden!",
       "away_owners": [
         "Jake Fischer"
+      ],
+      "away_owner_ids": [
+        "{4F3E4D57-5F87-4D74-92C0-40815B7DFD51}"
       ],
       "away_score": 69.62,
       "winner_team_id": 11,
@@ -3077,11 +4019,17 @@
       "home_owners": [
         "Dylan Campbell"
       ],
+      "home_owner_ids": [
+        "{5431883D-E365-4401-97B9-DAD7EC2156AD}"
+      ],
       "home_score": 79.1,
       "away_team_id": 2,
       "away_team": "Traded James Harden!",
       "away_owners": [
         "Jake Fischer"
+      ],
+      "away_owner_ids": [
+        "{4F3E4D57-5F87-4D74-92C0-40815B7DFD51}"
       ],
       "away_score": 69.62,
       "winner_team_id": 11,
@@ -3099,11 +4047,17 @@
       "home_owners": [
         "Jonathan Coopersmith"
       ],
+      "home_owner_ids": [
+        "{BDC02B8B-DDC4-464E-B2E9-065DF145DDBB}"
+      ],
       "home_score": 79.5,
       "away_team_id": 8,
       "away_team": "Team Schuss",
       "away_owners": [
         "sam hymes"
+      ],
+      "away_owner_ids": [
+        "{92775292-B9FA-4B38-B752-92B9FADB38B0}"
       ],
       "away_score": 70.5,
       "winner_team_id": 9,
@@ -3121,11 +4075,17 @@
       "home_owners": [
         "Skyler Kohn"
       ],
+      "home_owner_ids": [
+        "{E66E0E46-40EF-4FDA-B0AB-3C6FABB395F8}"
+      ],
       "home_score": 74.0,
       "away_team_id": 9,
       "away_team": "Need Based",
       "away_owners": [
         "Jonathan Coopersmith"
+      ],
+      "away_owner_ids": [
+        "{BDC02B8B-DDC4-464E-B2E9-065DF145DDBB}"
       ],
       "away_score": 76.5,
       "winner_team_id": 9,
@@ -8680,11 +9640,17 @@
       "home_owners": [
         "Jake Fischer"
       ],
+      "home_owner_ids": [
+        "{4F3E4D57-5F87-4D74-92C0-40815B7DFD51}"
+      ],
       "home_score": 188.7,
       "away_team_id": 5,
       "away_team": "Team Kirschner",
       "away_owners": [
         "Lane Kirschner"
+      ],
+      "away_owner_ids": [
+        "{600CAC49-2450-42EF-ABF1-33E7F0327DE9}"
       ],
       "away_score": 121.04,
       "winner_team_id": 2,
@@ -8696,11 +9662,17 @@
       "owners": [
         "Jake Fischer"
       ],
+      "owner_ids": [
+        "{4F3E4D57-5F87-4D74-92C0-40815B7DFD51}"
+      ],
       "score": 188.7,
       "opp_team_id": 5,
       "opp_team": "Team Kirschner",
       "opp_owners": [
         "Lane Kirschner"
+      ],
+      "opp_owner_ids": [
+        "{600CAC49-2450-42EF-ABF1-33E7F0327DE9}"
       ],
       "opp_score": 121.04
     },
@@ -8714,11 +9686,17 @@
       "home_owners": [
         "Jake Fischer"
       ],
+      "home_owner_ids": [
+        "{4F3E4D57-5F87-4D74-92C0-40815B7DFD51}"
+      ],
       "home_score": 105.3,
       "away_team_id": 11,
       "away_team": "E Bo Nix",
       "away_owners": [
         "Jules Salkind"
+      ],
+      "away_owner_ids": [
+        "{93FE02E3-D523-4B1D-AC57-E31C8D235433}"
       ],
       "away_score": 185.96,
       "winner_team_id": 11,
@@ -8730,11 +9708,17 @@
       "owners": [
         "Jules Salkind"
       ],
+      "owner_ids": [
+        "{93FE02E3-D523-4B1D-AC57-E31C8D235433}"
+      ],
       "score": 185.96,
       "opp_team_id": 2,
       "opp_team": "Jake and Seth",
       "opp_owners": [
         "Jake Fischer"
+      ],
+      "opp_owner_ids": [
+        "{4F3E4D57-5F87-4D74-92C0-40815B7DFD51}"
       ],
       "opp_score": 105.3
     },
@@ -8748,11 +9732,17 @@
       "home_owners": [
         "Ryan Vader"
       ],
+      "home_owner_ids": [
+        "{B792F7C9-61CE-4E29-940C-DC1C5E6C4208}"
+      ],
       "home_score": 185.5,
       "away_team_id": 2,
       "away_team": "Process Trusters",
       "away_owners": [
         "Jake Fischer"
+      ],
+      "away_owner_ids": [
+        "{4F3E4D57-5F87-4D74-92C0-40815B7DFD51}"
       ],
       "away_score": 156.22,
       "winner_team_id": 12,
@@ -8764,11 +9754,17 @@
       "owners": [
         "Ryan Vader"
       ],
+      "owner_ids": [
+        "{B792F7C9-61CE-4E29-940C-DC1C5E6C4208}"
+      ],
       "score": 185.5,
       "opp_team_id": 2,
       "opp_team": "Process Trusters",
       "opp_owners": [
         "Jake Fischer"
+      ],
+      "opp_owner_ids": [
+        "{4F3E4D57-5F87-4D74-92C0-40815B7DFD51}"
       ],
       "opp_score": 156.22
     },
@@ -8782,11 +9778,17 @@
       "home_owners": [
         "Ryan Vader"
       ],
+      "home_owner_ids": [
+        "{B792F7C9-61CE-4E29-940C-DC1C5E6C4208}"
+      ],
       "home_score": 177.16,
       "away_team_id": 5,
       "away_team": "Bijan Mustard",
       "away_owners": [
         "Jonathan Coopersmith"
+      ],
+      "away_owner_ids": [
+        "{BDC02B8B-DDC4-464E-B2E9-065DF145DDBB}"
       ],
       "away_score": 108.84,
       "winner_team_id": 12,
@@ -8798,11 +9800,17 @@
       "owners": [
         "Ryan Vader"
       ],
+      "owner_ids": [
+        "{B792F7C9-61CE-4E29-940C-DC1C5E6C4208}"
+      ],
       "score": 177.16,
       "opp_team_id": 5,
       "opp_team": "Bijan Mustard",
       "opp_owners": [
         "Jonathan Coopersmith"
+      ],
+      "opp_owner_ids": [
+        "{BDC02B8B-DDC4-464E-B2E9-065DF145DDBB}"
       ],
       "opp_score": 108.84
     },
@@ -8816,11 +9824,17 @@
       "home_owners": [
         "Bennett Schiff"
       ],
+      "home_owner_ids": [
+        "{3A1A4E24-2A98-4038-9A4E-242A98803865}"
+      ],
       "home_score": 176.28,
       "away_team_id": 11,
       "away_team": "50 Feet  Of Crap",
       "away_owners": [
         "Dylan Campbell"
+      ],
+      "away_owner_ids": [
+        "{5431883D-E365-4401-97B9-DAD7EC2156AD}"
       ],
       "away_score": 135.08,
       "winner_team_id": 1,
@@ -8832,11 +9846,17 @@
       "owners": [
         "Bennett Schiff"
       ],
+      "owner_ids": [
+        "{3A1A4E24-2A98-4038-9A4E-242A98803865}"
+      ],
       "score": 176.28,
       "opp_team_id": 11,
       "opp_team": "50 Feet  Of Crap",
       "opp_owners": [
         "Dylan Campbell"
+      ],
+      "opp_owner_ids": [
+        "{5431883D-E365-4401-97B9-DAD7EC2156AD}"
       ],
       "opp_score": 135.08
     }
@@ -8852,11 +9872,17 @@
       "home_owners": [
         "Ben Wolbransky"
       ],
+      "home_owner_ids": [
+        "{429F0506-3667-4F0B-A2ED-1761D0A3F682}"
+      ],
       "home_score": 69.22,
       "away_team_id": 9,
       "away_team": "Saquads squad  Ship",
       "away_owners": [
         "Adam Heckelman"
+      ],
+      "away_owner_ids": [
+        "{8D1E7E24-92F1-49FC-ADF1-C8193EA1C44E}"
       ],
       "away_score": 30.0,
       "winner_team_id": 6,
@@ -8868,11 +9894,17 @@
       "owners": [
         "Adam Heckelman"
       ],
+      "owner_ids": [
+        "{8D1E7E24-92F1-49FC-ADF1-C8193EA1C44E}"
+      ],
       "score": 30.0,
       "opp_team_id": 6,
       "opp_team": "Hambone Fake Namingtons",
       "opp_owners": [
         "Ben Wolbransky"
+      ],
+      "opp_owner_ids": [
+        "{429F0506-3667-4F0B-A2ED-1761D0A3F682}"
       ],
       "opp_score": 69.22
     },
@@ -8886,11 +9918,17 @@
       "home_owners": [
         "Ben Wolbransky"
       ],
+      "home_owner_ids": [
+        "{429F0506-3667-4F0B-A2ED-1761D0A3F682}"
+      ],
       "home_score": 69.22,
       "away_team_id": 9,
       "away_team": "Saquads squad  Ship",
       "away_owners": [
         "Adam Heckelman"
+      ],
+      "away_owner_ids": [
+        "{8D1E7E24-92F1-49FC-ADF1-C8193EA1C44E}"
       ],
       "away_score": 30.0,
       "winner_team_id": 6,
@@ -8902,11 +9940,17 @@
       "owners": [
         "Adam Heckelman"
       ],
+      "owner_ids": [
+        "{8D1E7E24-92F1-49FC-ADF1-C8193EA1C44E}"
+      ],
       "score": 30.0,
       "opp_team_id": 6,
       "opp_team": "Hambone Fake Namingtons",
       "opp_owners": [
         "Ben Wolbransky"
+      ],
+      "opp_owner_ids": [
+        "{429F0506-3667-4F0B-A2ED-1761D0A3F682}"
       ],
       "opp_score": 69.22
     },
@@ -8920,11 +9964,17 @@
       "home_owners": [
         "Jeremy Isaacs"
       ],
+      "home_owner_ids": [
+        "{96349FBC-DBBD-4841-B49F-BCDBBD9841B6}"
+      ],
       "home_score": 40.78,
       "away_team_id": 3,
       "away_team": "Running The Table",
       "away_owners": [
         "Stefan Lachkar"
+      ],
+      "away_owner_ids": [
+        "{6EB109A3-B9E1-4D2D-B109-A3B9E10D2D41}"
       ],
       "away_score": 105.32,
       "winner_team_id": 3,
@@ -8936,11 +9986,17 @@
       "owners": [
         "Jeremy Isaacs"
       ],
+      "owner_ids": [
+        "{96349FBC-DBBD-4841-B49F-BCDBBD9841B6}"
+      ],
       "score": 40.78,
       "opp_team_id": 3,
       "opp_team": "Running The Table",
       "opp_owners": [
         "Stefan Lachkar"
+      ],
+      "opp_owner_ids": [
+        "{6EB109A3-B9E1-4D2D-B109-A3B9E10D2D41}"
       ],
       "opp_score": 105.32
     },
@@ -8954,11 +10010,17 @@
       "home_owners": [
         "sam hymes"
       ],
+      "home_owner_ids": [
+        "{92775292-B9FA-4B38-B752-92B9FADB38B0}"
+      ],
       "home_score": 97.5,
       "away_team_id": 10,
       "away_team": "Team Kohn",
       "away_owners": [
         "Skyler Kohn"
+      ],
+      "away_owner_ids": [
+        "{E66E0E46-40EF-4FDA-B0AB-3C6FABB395F8}"
       ],
       "away_score": 47.5,
       "winner_team_id": 8,
@@ -8970,11 +10032,17 @@
       "owners": [
         "Skyler Kohn"
       ],
+      "owner_ids": [
+        "{E66E0E46-40EF-4FDA-B0AB-3C6FABB395F8}"
+      ],
       "score": 47.5,
       "opp_team_id": 8,
       "opp_team": "Team Schuss",
       "opp_owners": [
         "sam hymes"
+      ],
+      "opp_owner_ids": [
+        "{92775292-B9FA-4B38-B752-92B9FADB38B0}"
       ],
       "opp_score": 97.5
     },
@@ -8988,11 +10056,17 @@
       "home_owners": [
         "Jonathan Coopersmith"
       ],
+      "home_owner_ids": [
+        "{BDC02B8B-DDC4-464E-B2E9-065DF145DDBB}"
+      ],
       "home_score": 113.52,
       "away_team_id": 8,
       "away_team": "Commes des Gar\u00c3\u00a7on",
       "away_owners": [
         "sam hymes"
+      ],
+      "away_owner_ids": [
+        "{92775292-B9FA-4B38-B752-92B9FADB38B0}"
       ],
       "away_score": 52.68,
       "winner_team_id": 9,
@@ -9004,11 +10078,17 @@
       "owners": [
         "sam hymes"
       ],
+      "owner_ids": [
+        "{92775292-B9FA-4B38-B752-92B9FADB38B0}"
+      ],
       "score": 52.68,
       "opp_team_id": 9,
       "opp_team": "Need Based",
       "opp_owners": [
         "Jonathan Coopersmith"
+      ],
+      "opp_owner_ids": [
+        "{BDC02B8B-DDC4-464E-B2E9-065DF145DDBB}"
       ],
       "opp_score": 113.52
     }

@@ -78,10 +78,28 @@ export default async function SeasonPage(props: PageProps<"/seasons/[year]">) {
       </header>
 
       {excludedNote && (
-        <div className="rounded-lg border border-[#c8962d]/30 bg-[#f1dfaa]/45 px-4 py-3 text-sm font-medium text-[#5e3f06]">
-          <strong>Sleeper season.</strong> The league used a different platform this year — ESPN&apos;s data
-          for {year} is not authoritative. This season is excluded from all-time records, leaderboards, and
-          head-to-head aggregates. {excludedNote}
+        <div className="premium-panel overflow-hidden rounded-xl">
+          <div className="flex items-stretch">
+            <div className="flex w-2 shrink-0 bg-gradient-to-b from-[#c8962d] to-[#7d1d1d]" aria-hidden />
+            <div className="flex-1 p-5">
+              <div className="flex items-center gap-2">
+                <span className="text-2xl">🏖️</span>
+                <span className="badge badge-gold">Lost Season · {year}</span>
+              </div>
+              <h2 className="mt-3 text-2xl font-black tracking-tight">
+                This season was played on Sleeper.
+              </h2>
+              <p className="mt-2 max-w-2xl text-sm leading-6 text-[#6f6a60]">
+                The league migrated platforms for {year} and ESPN&apos;s record for the year is essentially
+                placeholder data — incorrect champions, incorrect scores, and only partial standings. Anything
+                you see below should be treated as folklore, not fact.
+              </p>
+              <p className="mt-3 max-w-2xl text-sm font-semibold leading-6 text-[#3b3328]">
+                {year} is excluded from every all-time leaderboard, record, head-to-head matrix, and streak on
+                this site. {excludedNote}
+              </p>
+            </div>
+          </div>
         </div>
       )}
 

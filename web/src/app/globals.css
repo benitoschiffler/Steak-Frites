@@ -75,7 +75,7 @@ body {
 }
 
 .table-shell tbody tr:hover {
-  background: rgba(200, 150, 45, 0.08);
+  background: rgba(200, 150, 45, 0.14);
 }
 
 .kicker {

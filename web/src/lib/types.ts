@@ -113,10 +113,12 @@ export type SingleTeamGame = {
   team_id: number;
   team: string;
   owners: string[];
+  owner_ids: string[];
   score: number;
   opp_team_id: number;
   opp_team: string;
   opp_owners: string[];
+  opp_owner_ids: string[];
   opp_score: number;
   margin: number;
   combined: number;
@@ -130,10 +132,12 @@ export type MatchupGame = {
   home_team_id: number;
   home_team: string;
   home_owners: string[];
+  home_owner_ids: string[];
   home_score: number;
   away_team_id: number;
   away_team: string;
   away_owners: string[];
+  away_owner_ids: string[];
   away_score: number;
   winner_team_id: number | null;
   loser_team_id: number | null;

@@ -28,11 +28,10 @@ export default function KeepersPage() {
   const currentYearKeepers = keepers.keepers_by_year[String(meta.current_year)] ?? [];
   const teamById = new Map(currentSeason.teams.map((t) => [t.team_id, t]));
 
-  // Past keepers timeline
-  const allYears = Object.keys(keepers.keepers_by_year)
-    .map(Number)
-    .filter((y) => keepers.keepers_by_year[String(y)].length > 0)
-    .sort((a, b) => b - a);
+  // Past keepers timeline — include every season we have data for (even if no keepers
+  // were recorded that year), so the gap is explicit instead of invisible.
+  const allYears = meta.years.slice().sort((a, b) => b - a);
+  const excludedYears = meta.excluded_record_years ?? {};
 
   return (
     <div className="space-y-10">
@@ -99,32 +98,50 @@ export default function KeepersPage() {
 
       <Section
         title="Historical keepers"
-        subtitle="Tracked by ESPN's keeper flag. Years with sparse data may reflect informal keepers that weren't recorded on ESPN."
+        subtitle="ESPN started reliably tracking the keeper flag in 2024. Earlier seasons used keepers informally without recording them in ESPN — the years are still listed so the history is honest about its gaps."
       >
         <div className="space-y-4">
           {allYears.map((year) => {
             const list = keepers.keepers_by_year[String(year)] ?? [];
+            const excluded = excludedYears[String(year)];
+            const isEmpty = list.length === 0;
             return (
               <div key={year} className="premium-panel overflow-hidden rounded-lg">
                 <div className="flex items-baseline justify-between border-b border-black/10 bg-[#123d35]/[0.06] px-3 py-3">
-                  <Link href={`/seasons/${year}`} className="font-black hover:underline">
+                  <Link href={`/seasons/${year}`} className="font-black hover:underline hover:text-[#123d35]">
                     {year}
                   </Link>
-                  <span className="badge">{list.length} keepers</span>
+                  {excluded ? (
+                    <span className="badge badge-gold">Sleeper season · not tracked</span>
+                  ) : isEmpty ? (
+                    <span className="badge text-[#766d61]">Not recorded in ESPN</span>
+                  ) : (
+                    <span className="badge badge-green">{list.length} keepers</span>
+                  )}
                 </div>
-                <ul className="divide-y divide-black/5 text-sm">
-                  {list
-                    .sort((a, b) => (a.kept_round_this_year ?? 0) - (b.kept_round_this_year ?? 0))
-                    .map((k, i) => (
-                      <li key={i} className="flex items-center gap-2 px-3 py-2.5">
-                        <span className="badge badge-gold w-12 justify-center py-1">R{k.kept_round_this_year ?? "?"}</span>
-                        <span className="flex-1 font-bold">{k.player_name ?? "—"}</span>
-                        <span className="text-xs font-medium text-[#766d61]">
-                          {k.consecutive_keeper_years > 1 && `· streak ${k.consecutive_keeper_years}`}
-                        </span>
-                      </li>
-                    ))}
-                </ul>
+                {isEmpty ? (
+                  <div className="px-3 py-4 text-sm text-[#766d61]">
+                    {excluded
+                      ? "League ran on Sleeper this season — ESPN has no keeper data."
+                      : "No keepers flagged in ESPN. The league may have used keepers informally this year."}
+                  </div>
+                ) : (
+                  <ul className="divide-y divide-black/5 text-sm">
+                    {list
+                      .sort((a, b) => (a.kept_round_this_year ?? 0) - (b.kept_round_this_year ?? 0))
+                      .map((k, i) => (
+                        <li key={i} className="flex items-center gap-2 px-3 py-2.5">
+                          <span className="badge badge-gold w-12 justify-center py-1">R{k.kept_round_this_year ?? "?"}</span>
+                          <span className="flex-1 font-bold">{k.player_name ?? "—"}</span>
+                          {k.consecutive_keeper_years > 1 && (
+                            <span className="badge badge-green py-1 text-[10px]" title={`Kept ${k.consecutive_keeper_years} years in a row`}>
+                              Kept {k.consecutive_keeper_years}× in a row
+                            </span>
+                          )}
+                        </li>
+                      ))}
+                  </ul>
+                )}
               </div>
             );
           })}

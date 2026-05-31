@@ -47,6 +47,17 @@ def compute() -> dict:
         # Fall back to whatever names the team has if id lookups produced nothing.
         return out or list(team.get("owner_names", []))
 
+    def _team_owner_ids(team) -> list[str]:
+        """Return de-duped canonical owner ids for a team (parallel to _team_owner_names)."""
+        seen = set()
+        out = []
+        for oid in team.get("owner_ids", []):
+            if not oid or oid in seen:
+                continue
+            seen.add(oid)
+            out.append(oid)
+        return out
+
     # ─── Single-game records ──────────────────────────────────────────────
     games = []
     for s in seasons:
@@ -70,10 +81,12 @@ def compute() -> dict:
                 "home_team_id": hid,
                 "home_team": home_team["name"],
                 "home_owners": _team_owner_names(home_team),
+                "home_owner_ids": _team_owner_ids(home_team),
                 "home_score": m["home_score"],
                 "away_team_id": aid,
                 "away_team": away_team["name"],
                 "away_owners": _team_owner_names(away_team),
+                "away_owner_ids": _team_owner_ids(away_team),
                 "away_score": m["away_score"],
                 "winner_team_id": hid if m["home_score"] > m["away_score"] else (aid if m["away_score"] > m["home_score"] else None),
                 "loser_team_id": aid if m["home_score"] > m["away_score"] else (hid if m["away_score"] > m["home_score"] else None),
@@ -86,16 +99,20 @@ def compute() -> dict:
     for g in games:
         team_games.append({
             **g,
-            "team_id": g["home_team_id"], "team": g["home_team"], "owners": g["home_owners"],
+            "team_id": g["home_team_id"], "team": g["home_team"],
+            "owners": g["home_owners"], "owner_ids": g["home_owner_ids"],
             "score": g["home_score"],
-            "opp_team_id": g["away_team_id"], "opp_team": g["away_team"], "opp_owners": g["away_owners"],
+            "opp_team_id": g["away_team_id"], "opp_team": g["away_team"],
+            "opp_owners": g["away_owners"], "opp_owner_ids": g["away_owner_ids"],
             "opp_score": g["away_score"],
         })
         team_games.append({
             **g,
-            "team_id": g["away_team_id"], "team": g["away_team"], "owners": g["away_owners"],
+            "team_id": g["away_team_id"], "team": g["away_team"],
+            "owners": g["away_owners"], "owner_ids": g["away_owner_ids"],
             "score": g["away_score"],
-            "opp_team_id": g["home_team_id"], "opp_team": g["home_team"], "opp_owners": g["home_owners"],
+            "opp_team_id": g["home_team_id"], "opp_team": g["home_team"],
+            "opp_owners": g["home_owners"], "opp_owner_ids": g["home_owner_ids"],
             "opp_score": g["home_score"],
         })
 

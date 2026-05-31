@@ -29,6 +29,15 @@ type ColumnDef = {
   sortValue: (o: OwnerAllTime) => number | string;
   /** Returns the displayed cell value (no extra formatting like links). */
   cell: (o: OwnerAllTime) => React.ReactNode;
+  /** Tailwind viewport prefix below which the column is hidden. */
+  hideUnder?: "sm" | "md" | "lg";
+};
+
+/** Maps `hideUnder` to the Tailwind class that hides on smaller, shows at >=. */
+const HIDE_CLASS: Record<NonNullable<ColumnDef["hideUnder"]>, string> = {
+  sm: "hidden sm:table-cell",
+  md: "hidden md:table-cell",
+  lg: "hidden lg:table-cell",
 };
 
 const COLS: Record<ColKey, ColumnDef> = {
@@ -47,6 +56,7 @@ const COLS: Record<ColKey, ColumnDef> = {
     defaultDir: "desc",
     sortValue: (o) => o.seasons,
     cell: (o) => o.seasons,
+    hideUnder: "md",
   },
   record: {
     key: "record",
@@ -76,10 +86,10 @@ const COLS: Record<ColKey, ColumnDef> = {
     key: "points_against",
     label: "PA",
     align: "right",
-    // Default to ASC: lower PA means luckier schedule / opponents scored less.
     defaultDir: "asc",
     sortValue: (o) => o.points_against,
     cell: (o) => fmt.pts(o.points_against),
+    hideUnder: "md",
   },
   ppg: {
     key: "ppg",
@@ -88,6 +98,7 @@ const COLS: Record<ColKey, ColumnDef> = {
     defaultDir: "desc",
     sortValue: (o) => o.ppg,
     cell: (o) => fmt.pts(o.ppg),
+    hideUnder: "md",
   },
   championships: {
     key: "championships",
@@ -104,6 +115,7 @@ const COLS: Record<ColKey, ColumnDef> = {
     defaultDir: "desc",
     sortValue: (o) => o.runner_ups,
     cell: (o) => o.runner_ups || "—",
+    hideUnder: "lg",
   },
   third_place_finishes: {
     key: "third_place_finishes",
@@ -112,6 +124,7 @@ const COLS: Record<ColKey, ColumnDef> = {
     defaultDir: "desc",
     sortValue: (o) => o.third_place_finishes,
     cell: (o) => o.third_place_finishes || "—",
+    hideUnder: "lg",
   },
   playoff_appearances: {
     key: "playoff_appearances",
@@ -120,6 +133,7 @@ const COLS: Record<ColKey, ColumnDef> = {
     defaultDir: "desc",
     sortValue: (o) => o.playoff_appearances,
     cell: (o) => o.playoff_appearances,
+    hideUnder: "lg",
   },
 };
 
@@ -171,10 +185,11 @@ export default function OwnerLeaderboard({
             {columns.map((k) => {
               const c = COLS[k];
               const isSorted = c.key === sortKey;
+              const hideClass = c.hideUnder ? HIDE_CLASS[c.hideUnder] : "";
               return (
                 <th
                   key={c.key}
-                  className={`cursor-pointer select-none px-3 py-3 text-xs font-black uppercase tracking-[0.14em] hover:text-[#123d35] ${
+                  className={`cursor-pointer select-none px-3 py-3 text-xs font-black uppercase tracking-[0.14em] hover:text-[#123d35] ${hideClass} ${
                     c.align === "right" ? "text-right" : ""
                   } ${isSorted ? "text-[#123d35]" : ""}`}
                   onClick={() => handleHeaderClick(c.key)}
@@ -195,12 +210,13 @@ export default function OwnerLeaderboard({
         </thead>
         <tbody>
           {sorted.map((o, i) => (
-            <tr key={o.owner_id} className="border-t border-black/5">
+            <tr key={o.owner_id} className="border-t border-black/5 transition-colors hover:bg-[#c8962d]/[0.12]">
               <td className="px-3 py-2.5 text-[#766d61]">
                 <span className="rank-medal" data-rank={i + 1}>{i + 1}</span>
               </td>
               {columns.map((k) => {
                 const c = COLS[k];
+                const hideClass = c.hideUnder ? HIDE_CLASS[c.hideUnder] : "";
                 if (k === "owner") {
                   const isActive = activeSet.has(o.owner_id);
                   const coOwners = coOwnerNamesById?.[o.owner_id] ?? [];
@@ -229,7 +245,7 @@ export default function OwnerLeaderboard({
                 return (
                   <td
                     key={k}
-                    className={`px-3 py-2.5 font-semibold text-[#3b3328] ${c.align === "right" ? "text-right tabular-nums" : ""}`}
+                    className={`px-3 py-2.5 font-semibold text-[#3b3328] ${hideClass} ${c.align === "right" ? "text-right tabular-nums" : ""}`}
                   >
                     {c.cell(o)}
                   </td>

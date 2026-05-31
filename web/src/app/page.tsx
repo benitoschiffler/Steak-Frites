@@ -43,24 +43,45 @@ export default function HomePage() {
             </div>
             <div className="grid grid-cols-2 gap-3 sm:grid-cols-4">
               <HeroMetric label="Seasons" value={String(meta.current_year - meta.years[0] + 1)} />
-              <HeroMetric label="Owners" value={String(owners.length)} />
-              <HeroMetric label="Active" value={String(activeOwners)} />
-              <HeroMetric label="Games" value={fmt.pts0(gamesTracked)} />
+              <HeroMetric
+                label="Owners"
+                value={String(owners.length)}
+                sub={`${activeOwners} active today`}
+              />
+              <HeroMetric label="Games Played" value={fmt.pts0(gamesTracked)} />
+              <HeroMetric label="Champions Crowned" value={String(recentChamps.length)} />
             </div>
           </div>
           <div className="rounded-lg border border-white/15 bg-white/8 p-5">
-            <div className="badge badge-gold">Current Champion</div>
-            <div className="mt-5 text-4xl font-black leading-tight">{recentChamps[0]?.team ?? "TBD"}</div>
-            <div className="mt-2 text-sm font-semibold text-[#f7edda]/72">
-              {recentChamps[0]?.year ?? meta.current_year} · {(recentChamps[0]?.owner_names ?? []).join(", ")}
+            <div className="flex items-center gap-2">
+              <span className="text-2xl">🏆</span>
+              <div className="badge badge-gold">Reigning Champion · {recentChamps[0]?.year ?? meta.current_year}</div>
             </div>
-            <div className="mt-8 border-t border-white/12 pt-5">
-              <div className="text-xs font-bold uppercase tracking-[0.18em] text-[#f7d77d]">
-                Best Season PF
+            <div className="mt-5 text-3xl font-black leading-tight">
+              {(recentChamps[0]?.owner_names ?? []).join(" & ") || "TBD"}
+            </div>
+            <div className="mt-1 text-base font-semibold text-[#f7edda]/72">
+              {recentChamps[0]?.team ?? "—"}
+            </div>
+            {recentChamps[0] && (
+              <div className="mt-3 text-xs font-semibold text-[#f7edda]/70">
+                {fmt.record(recentChamps[0].wins, recentChamps[0].losses, recentChamps[0].ties)} · {fmt.pts(recentChamps[0].points_for)} PF
               </div>
-              <div className="mt-2 text-2xl font-black">{fmt.pts(topSeason?.points_for)}</div>
-              <div className="mt-1 text-sm text-[#f7edda]/70">
-                {topSeason?.year}: {topSeason?.team}
+            )}
+            <div className="mt-6 grid grid-cols-2 gap-3 border-t border-white/12 pt-5">
+              <div>
+                <div className="text-[10px] font-bold uppercase tracking-[0.16em] text-[#f7d77d]">Best Season PF</div>
+                <div className="mt-1 text-xl font-black tabular-nums">{fmt.pts(topSeason?.points_for)}</div>
+                <div className="mt-0.5 text-[11px] text-[#f7edda]/70 line-clamp-1">
+                  {topSeason?.year}: {topSeason?.team}
+                </div>
+              </div>
+              <div>
+                <div className="text-[10px] font-bold uppercase tracking-[0.16em] text-[#f7d77d]">Biggest Blowout</div>
+                <div className="mt-1 text-xl font-black tabular-nums">{fmt.pts(topBlowout?.margin)}</div>
+                <div className="mt-0.5 text-[11px] text-[#f7edda]/70 line-clamp-1">
+                  {topBlowout?.year} W{topBlowout?.week}
+                </div>
               </div>
             </div>
           </div>
@@ -162,11 +183,12 @@ function FactCard({ label, value, sub }: { label: string; value: string; sub: st
   );
 }
 
-function HeroMetric({ label, value }: { label: string; value: string }) {
+function HeroMetric({ label, value, sub }: { label: string; value: string; sub?: string }) {
   return (
     <div className="rounded-lg border border-white/12 bg-white/8 p-3">
       <div className="text-2xl font-black tabular-nums">{value}</div>
       <div className="mt-1 text-[11px] font-bold uppercase tracking-[0.16em] text-[#f7d77d]">{label}</div>
+      {sub && <div className="mt-0.5 text-[10px] font-semibold text-[#f7edda]/70">{sub}</div>}
     </div>
   );
 }

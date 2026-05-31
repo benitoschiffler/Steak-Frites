@@ -36,12 +36,16 @@ MERGES: dict[str, str] = {**CO_OWNER_MERGES, **ALIAS_MERGES}
 # isn't reliable.
 CO_OWNER_SOURCE_NAMES: set[str] = {
     "Jordan Klein",
-    "seth taratoot",
+    "seth taratoot",      # historical lowercase form (kept for legacy data)
+    "Seth Taratoot",      # canonical proper-case form (post-rename)
 }
 # Kept for backward-compat callers; same semantics as CO_OWNER_SOURCE_NAMES.
 MERGE_SOURCE_NAMES = CO_OWNER_SOURCE_NAMES
 
 # Override an owner's display name (applies to the canonical owner profile).
+# Use this to fix typos, capitalization, or name changes that ESPN recorded
+# inconsistently. The override applies to BOTH the owner profile and the
+# owner_names array on every team they appeared on (via canonical_name()).
 DISPLAY_NAME_OVERRIDES: dict[str, str] = {
     # 2016 ESPN account's name rewrite. Applied at apply_overrides_to_team time
     # so the 2016 team's owner_names array reads "Ben Wolbransky" everywhere.
@@ -49,6 +53,13 @@ DISPLAY_NAME_OVERRIDES: dict[str, str] = {
     # Display the merged Wolby/Wolbransky profile as "Ben Wolbransky" (the
     # name the user goes by today).
     "{429F0506-3667-4F0B-A2ED-1761D0A3F682}": "Ben Wolbransky",
+    # ESPN had "alan katz" on Ben katz's account for the 2016 season (and the
+    # current display still has a lowercase "k"). Same human throughout —
+    # normalize the display name on every season.
+    "{ECD9E4C2-4E30-4915-AC59-6C1700E34A69}": "Ben Katz",
+    # Lowercase names ESPN recorded as-is — proper-case them for the archive.
+    "{92775292-B9FA-4B38-B752-92B9FADB38B0}": "Sam Hymes",
+    "{8B6D12FA-18EA-40A3-8CC7-F8EBF4D1BAB0}": "Seth Taratoot",
 }
 
 
@@ -59,10 +70,26 @@ def canonical_id(owner_id: str | None) -> str | None:
     return MERGES.get(owner_id, owner_id)
 
 
+# Name-based fallback for cases where the original owner_id is lost — e.g.,
+# co-owner merges that ran before `owner_original_ids` was introduced. If we
+# see one of these stale lowercase strings on a team's owner_names array, we
+# rewrite it. Mostly a one-shot cleanup; new merges go through the id path.
+NAME_RENAMES: dict[str, str] = {
+    "seth taratoot": "Seth Taratoot",
+    "alan katz": "Ben Katz",
+    "Ben katz": "Ben Katz",
+    "sam hymes": "Sam Hymes",
+    "Ben Woolybinski": "Ben Wolbransky",
+}
+
+
 def canonical_name(owner_id: str | None, original: str | None) -> str | None:
-    """Resolve display name: if there's an override, use it; else use original."""
+    """Resolve display name: id-keyed override wins; then name-based rename;
+    then the raw original ESPN string."""
     if owner_id and owner_id in DISPLAY_NAME_OVERRIDES:
         return DISPLAY_NAME_OVERRIDES[owner_id]
+    if original and original in NAME_RENAMES:
+        return NAME_RENAMES[original]
     return original
 
 

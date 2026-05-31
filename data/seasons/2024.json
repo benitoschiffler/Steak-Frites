@@ -28,7 +28,7 @@
     },
     {
       "id": "{8B6D12FA-18EA-40A3-8CC7-F8EBF4D1BAB0}",
-      "name": "seth taratoot"
+      "name": "Seth Taratoot"
     },
     {
       "id": "{8D1E7E24-92F1-49FC-ADF1-C8193EA1C44E}",
@@ -52,7 +52,7 @@
     },
     {
       "id": "{ECD9E4C2-4E30-4915-AC59-6C1700E34A69}",
-      "name": "Ben katz"
+      "name": "Ben Katz"
     }
   ],
   "teams": [
@@ -92,7 +92,7 @@
       ],
       "owner_names": [
         "Jake Fischer",
-        "seth taratoot"
+        "Seth Taratoot"
       ],
       "wins": 7,
       "losses": 7,
@@ -197,7 +197,7 @@
         "{ECD9E4C2-4E30-4915-AC59-6C1700E34A69}"
       ],
       "owner_names": [
-        "Ben katz"
+        "Ben Katz"
       ],
       "wins": 9,
       "losses": 5,

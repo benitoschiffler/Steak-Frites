@@ -1,12 +1,10 @@
 import Link from "next/link";
 import { loadRecords } from "@/lib/data";
-import { fmt } from "@/lib/format";
 import { Section } from "@/components/Section";
 import TeamGameTable from "@/components/records/TeamGameTable";
 import MatchupTable from "@/components/records/MatchupTable";
 import SeasonTable from "@/components/records/SeasonTable";
 import StreakTable from "@/components/records/StreakTable";
-import type { SeasonTeamRow } from "@/lib/types";
 
 export const metadata = { title: "Records — Steak Frites" };
 
@@ -68,44 +66,19 @@ export default function RecordsPage() {
         </div>
       </Section>
 
-      <Section eyebrow="Trophy Shelf" title="Championship history">
-        <div className="grid md:grid-cols-3 gap-4">
-          <PodiumColumn title="🥇 Champions" rows={r.champions} />
-          <PodiumColumn title="🥈 Runners-up" rows={r.runners_up} />
-          <PodiumColumn title="🥉 Third place" rows={r.third_place} />
+      <Link
+        href="/champions"
+        className="group flex items-center justify-between gap-4 rounded-xl border border-[#123d35]/20 bg-gradient-to-r from-[#123d35] to-[#1b5a4d] px-6 py-5 text-white shadow-sm transition hover:shadow-lg hover:from-[#0e3128] hover:to-[#17483e]"
+      >
+        <div>
+          <div className="text-xs font-bold uppercase tracking-[0.18em] text-[#f7d77d]">Looking for the trophy shelf?</div>
+          <div className="mt-1 text-xl font-black">Champions, Runners-up & Bronze →</div>
+          <div className="mt-1 text-sm text-white/75">Year-by-year podium with championship counts per owner.</div>
         </div>
-      </Section>
-    </div>
-  );
-}
-
-function PodiumColumn({ title, rows }: { title: string; rows: SeasonTeamRow[] }) {
-  return (
-    <div className="premium-panel overflow-hidden rounded-lg">
-      <div className="border-b border-black/10 bg-[#123d35]/[0.06] px-3 py-3 text-sm font-black">{title}</div>
-      <ul className="divide-y divide-black/5">
-        {[...rows].reverse().map((c) => (
-          <li key={c.year} className="px-3 py-3 text-sm">
-            <span className="badge badge-gold mr-2">{c.year}</span>
-            <span className="font-black">{c.team}</span>
-            <div className="mt-1 text-xs font-medium text-[#766d61]">
-              {(c.owner_names ?? []).map((n, i) => {
-                const id = c.owner_ids?.[i];
-                return (
-                  <span key={`${id ?? n}-${i}`}>
-                    {i > 0 && ", "}
-                    {id ? (
-                      <Link href={`/teams/${encodeURIComponent(id)}`} className="hover:underline hover:text-[#123d35]">{n}</Link>
-                    ) : n}
-                  </span>
-                );
-              })}
-              {" · "}
-              {fmt.record(c.wins, c.losses, c.ties)} · {fmt.pts(c.points_for)} PF
-            </div>
-          </li>
-        ))}
-      </ul>
+        <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-[#f7d77d] text-2xl font-black text-[#123d35] transition group-hover:translate-x-1">
+          →
+        </span>
+      </Link>
     </div>
   );
 }

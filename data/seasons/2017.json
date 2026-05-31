@@ -32,7 +32,7 @@
     },
     {
       "id": "{92775292-B9FA-4B38-B752-92B9FADB38B0}",
-      "name": "sam hymes"
+      "name": "Sam Hymes"
     },
     {
       "id": "{B792F7C9-61CE-4E29-940C-DC1C5E6C4208}",
@@ -52,7 +52,7 @@
     },
     {
       "id": "{ECD9E4C2-4E30-4915-AC59-6C1700E34A69}",
-      "name": "alan katz"
+      "name": "Ben Katz"
     },
     {
       "id": "{F6405BA0-4462-458F-805B-A04462258FE9}",
@@ -250,7 +250,7 @@
         "{92775292-B9FA-4B38-B752-92B9FADB38B0}"
       ],
       "owner_names": [
-        "sam hymes"
+        "Sam Hymes"
       ],
       "wins": 5,
       "losses": 8,
@@ -328,7 +328,7 @@
         "{ECD9E4C2-4E30-4915-AC59-6C1700E34A69}"
       ],
       "owner_names": [
-        "alan katz"
+        "Ben Katz"
       ],
       "wins": 6,
       "losses": 7,

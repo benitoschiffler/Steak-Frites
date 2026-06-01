@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { loadMeta, loadOwners, loadRecords } from "@/lib/data";
+import { loadMeta, loadOwners, loadPlayers, loadRecords } from "@/lib/data";
 import { fmt } from "@/lib/format";
 import OwnerLeaderboard from "@/components/OwnerLeaderboard";
 import { Section } from "@/components/Section";
@@ -8,9 +8,12 @@ export default function HomePage() {
   const meta = loadMeta();
   const records = loadRecords();
   const owners = loadOwners();
+  const players = loadPlayers();
 
   const champs = [...records.champions].sort((a, b) => b.year - a.year);
   const reigning = champs[0];
+  const reigningPlayoffMvp =
+    reigning && players.mvps_by_season[String(reigning.year)]?.playoff?.mvp;
   const topBlowout = records.biggest_blowouts[0];
   const topScore = records.highest_single_game[0];
   const topSeason = records.highest_season_pf[0];
@@ -71,9 +74,17 @@ export default function HomePage() {
                 />
                 <ChampStat label="Points For" value={fmt.pts(reigning.points_for)} />
                 <ChampStat
-                  label="Champion #"
-                  value={`${champs.length} of ${champs.length}`}
-                  sub={`${champs.length}th title in ${seasons} seasons`}
+                  label="Playoff MVP"
+                  value={reigningPlayoffMvp?.player_name ?? "—"}
+                  sub={
+                    reigningPlayoffMvp
+                      ? `${reigningPlayoffMvp.position ?? ""}${
+                          reigningPlayoffMvp.starting_points
+                            ? ` · ${fmt.pts(reigningPlayoffMvp.starting_points)} playoff pts`
+                            : ""
+                        }`
+                      : undefined
+                  }
                 />
               </div>
             )}

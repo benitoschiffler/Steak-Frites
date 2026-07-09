@@ -29,8 +29,7 @@ const NAV = [
   { href: "/seasons", label: "Seasons" },
   { href: "/teams", label: "Owners" },
   { href: "/keepers", label: "Keepers" },
-  // Static standalone page in /public — use a plain anchor, not next/link.
-  { href: "/draft-lottery.html", label: "Draft Lottery", external: true },
+  { href: "/draft", label: "Draft Lottery" },
 ];
 
 function relativeTime(iso: string): string {
@@ -75,25 +74,15 @@ export default function RootLayout({
               </span>
             </Link>
             <nav className="flex flex-wrap gap-2 text-sm md:gap-1">
-              {NAV.map((n) =>
-                n.external ? (
-                  <a
-                    key={n.href}
-                    href={n.href}
-                    className="rounded-full px-3 py-1.5 font-semibold text-[#5c5549] transition hover:bg-[#123d35]/10 hover:text-[#123d35]"
-                  >
-                    {n.label}
-                  </a>
-                ) : (
-                  <Link
-                    key={n.href}
-                    href={n.href}
-                    className="rounded-full px-3 py-1.5 font-semibold text-[#5c5549] transition hover:bg-[#123d35]/10 hover:text-[#123d35]"
-                  >
-                    {n.label}
-                  </Link>
-                )
-              )}
+              {NAV.map((n) => (
+                <Link
+                  key={n.href}
+                  href={n.href}
+                  className="rounded-full px-3 py-1.5 font-semibold text-[#5c5549] transition hover:bg-[#123d35]/10 hover:text-[#123d35]"
+                >
+                  {n.label}
+                </Link>
+              ))}
             </nav>
             <span className="badge badge-green md:ml-auto" title={new Date(meta.updated_at).toLocaleString()}>
               {meta.years[0]}–{meta.current_year} · Updated {relativeTime(meta.updated_at)}

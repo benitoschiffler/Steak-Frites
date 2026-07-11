@@ -1,0 +1,440 @@
+{
+  "publication": "Newsroom",
+  "season": 2026,
+  "phase": "offseason",
+  "issue_id": "2026-offseason-1",
+  "issue_label": "2026 Offseason \u00b7 Keeper Watch",
+  "generated_at": "2026-07-11T17:53:34.507240+00:00",
+  "generation": "deterministic",
+  "reporters": [
+    {
+      "id": "anna-bortion",
+      "name": "Anna Bortion",
+      "role": "Senior NFL Insider",
+      "desk": "Keepers & Breaking News",
+      "tone": "serious"
+    },
+    {
+      "id": "edith-puthy",
+      "name": "Edith Puthy",
+      "role": "National Columnist",
+      "desk": "Power & Legacy",
+      "tone": "serious"
+    },
+    {
+      "id": "ben-n-syder",
+      "name": "Ben N. Syder",
+      "role": "Analytics Editor",
+      "desk": "Rankings & Forecasting",
+      "tone": "serious"
+    },
+    {
+      "id": "buster-hymen",
+      "name": "Buster Hymen",
+      "role": "Senior Beat Writer",
+      "desk": "Roster Construction",
+      "tone": "serious"
+    },
+    {
+      "id": "clee-torres",
+      "name": "Clee Torres",
+      "role": "Investigative Reporter",
+      "desk": "Trade Market",
+      "tone": "serious"
+    },
+    {
+      "id": "harry-weiner",
+      "name": "Harry Weiner",
+      "role": "Back Page Columnist",
+      "desk": "Rumors & Overreactions",
+      "tone": "playful"
+    },
+    {
+      "id": "heidi-salami",
+      "name": "Heidi Salami",
+      "role": "Features Writer",
+      "desk": "Rivalries & Culture",
+      "tone": "serious"
+    },
+    {
+      "id": "issac-cox",
+      "name": "Issac Cox",
+      "role": "Matchup Analyst",
+      "desk": "Weekly Film Room",
+      "tone": "serious"
+    },
+    {
+      "id": "mike-oxsbig",
+      "name": "Mike Oxsbig",
+      "role": "Tabloid Correspondent",
+      "desk": "Chaos Desk",
+      "tone": "playful"
+    },
+    {
+      "id": "eileen-ulick",
+      "name": "Eileen Ulick",
+      "role": "Deputy Editor",
+      "desk": "Playoffs & Championships",
+      "tone": "serious"
+    }
+  ],
+  "articles": [
+    {
+      "id": "2026-keeper-1",
+      "kind": "keeper",
+      "label": "Keeper Intel",
+      "status": "projected",
+      "headline": "Dallas Goedert and Chris Olave lead the keeper board for Lily Phillips",
+      "dek": "Bennett Schiff enter the offseason with a projected pairing built on legal cost and proven production.",
+      "body": "The Newsroom model currently favors Dallas Goedert and Chris Olave. This is a projection\u2014not a report of a submitted decision\u2014and it will move with ADP, injuries and official keeper declarations.",
+      "reporter_id": "anna-bortion",
+      "team_ids": [
+        1
+      ],
+      "confidence": 0.88,
+      "evidence": [
+        "Dallas Goedert (Round 16, free agent)",
+        "Chris Olave (Round 7, draft)",
+        "Dallas Goedert: 87.0 lineup points in 2025",
+        "Chris Olave: 191.2 lineup points in 2025"
+      ],
+      "published_at": "2026-07-11T17:53:34.507240+00:00"
+    },
+    {
+      "id": "2026-keeper-2",
+      "kind": "keeper",
+      "label": "Keeper Intel",
+      "status": "projected",
+      "headline": "Travis Etienne Jr. and Justin Herbert lead the keeper board for Jake and Seth",
+      "dek": "Jake Fischer, Seth Taratoot enter the offseason with a projected pairing built on legal cost and proven production.",
+      "body": "The Newsroom model currently favors Travis Etienne Jr. and Justin Herbert. This is a projection\u2014not a report of a submitted decision\u2014and it will move with ADP, injuries and official keeper declarations.",
+      "reporter_id": "edith-puthy",
+      "team_ids": [
+        2
+      ],
+      "confidence": 0.94,
+      "evidence": [
+        "Travis Etienne Jr. (Round 9, draft)",
+        "Justin Herbert (Round 16, free agent)",
+        "Travis Etienne Jr.: 212.6 lineup points in 2025",
+        "Justin Herbert: 181.2 lineup points in 2025"
+      ],
+      "published_at": "2026-07-11T17:53:34.507240+00:00"
+    },
+    {
+      "id": "2026-keeper-3",
+      "kind": "keeper",
+      "label": "Keeper Intel",
+      "status": "projected",
+      "headline": "Rico Dowdle and Matthew Stafford lead the keeper board for Diggs in a Blankets",
+      "dek": "Stefan Lachkar enter the offseason with a projected pairing built on legal cost and proven production.",
+      "body": "The Newsroom model currently favors Rico Dowdle and Matthew Stafford. This is a projection\u2014not a report of a submitted decision\u2014and it will move with ADP, injuries and official keeper declarations.",
+      "reporter_id": "ben-n-syder",
+      "team_ids": [
+        3
+      ],
+      "confidence": 0.94,
+      "evidence": [
+        "Rico Dowdle (Round 16, free agent)",
+        "Matthew Stafford (Round 16, free agent)",
+        "Rico Dowdle: 176.0 lineup points in 2025",
+        "Matthew Stafford: 164.4 lineup points in 2025"
+      ],
+      "published_at": "2026-07-11T17:53:34.507240+00:00"
+    },
+    {
+      "id": "2026-keeper-5",
+      "kind": "keeper",
+      "label": "Keeper Intel",
+      "status": "projected",
+      "headline": "Chase McLaughlin and Harold Fannin Jr. lead the keeper board for McConkey Kong",
+      "dek": "Jonathan Coopersmith enter the offseason with a projected pairing built on legal cost and proven production.",
+      "body": "The Newsroom model currently favors Chase McLaughlin and Harold Fannin Jr.. This is a projection\u2014not a report of a submitted decision\u2014and it will move with ADP, injuries and official keeper declarations.",
+      "reporter_id": "buster-hymen",
+      "team_ids": [
+        5
+      ],
+      "confidence": 0.91,
+      "evidence": [
+        "Chase McLaughlin (Round 14, draft)",
+        "Harold Fannin Jr. (Round 16, free agent)",
+        "Chase McLaughlin: 141.0 lineup points in 2025",
+        "Harold Fannin Jr.: 109.8 lineup points in 2025"
+      ],
+      "published_at": "2026-07-11T17:53:34.507240+00:00"
+    },
+    {
+      "id": "2026-keeper-6",
+      "kind": "keeper",
+      "label": "Keeper Intel",
+      "status": "projected",
+      "headline": "Drake Maye and Seahawks D/ST lead the keeper board for Nude Egg",
+      "dek": "Ben Wolbransky enter the offseason with a projected pairing built on legal cost and proven production.",
+      "body": "The Newsroom model currently favors Drake Maye and Seahawks D/ST. This is a projection\u2014not a report of a submitted decision\u2014and it will move with ADP, injuries and official keeper declarations.",
+      "reporter_id": "clee-torres",
+      "team_ids": [
+        6
+      ],
+      "confidence": 0.94,
+      "evidence": [
+        "Drake Maye (Round 12, draft)",
+        "Seahawks D/ST (Round 16, free agent)",
+        "Drake Maye: 343.7 lineup points in 2025",
+        "Seahawks D/ST: 150.0 lineup points in 2025"
+      ],
+      "published_at": "2026-07-11T17:53:34.507240+00:00"
+    },
+    {
+      "id": "2026-keeper-7",
+      "kind": "keeper",
+      "label": "Keeper Intel",
+      "status": "projected",
+      "headline": "Javonte Williams and Eddy Pineiro lead the keeper board for Los Peloteros De Katz",
+      "dek": "Ben Katz enter the offseason with a projected pairing built on legal cost and proven production.",
+      "body": "The Newsroom model currently favors Javonte Williams and Eddy Pineiro. This is a projection\u2014not a report of a submitted decision\u2014and it will move with ADP, injuries and official keeper declarations.",
+      "reporter_id": "heidi-salami",
+      "team_ids": [
+        7
+      ],
+      "confidence": 0.91,
+      "evidence": [
+        "Javonte Williams (Round 9, draft)",
+        "Eddy Pineiro (Round 16, free agent)",
+        "Javonte Williams: 205.9 lineup points in 2025",
+        "Eddy Pineiro: 89.0 lineup points in 2025"
+      ],
+      "published_at": "2026-07-11T17:53:34.507240+00:00"
+    },
+    {
+      "id": "2026-keeper-9",
+      "kind": "keeper",
+      "label": "Keeper Intel",
+      "status": "projected",
+      "headline": "Jalen Hurts and Kyle Pitts Sr. lead the keeper board for Saquads squad  Ship",
+      "dek": "Adam Heckelman enter the offseason with a projected pairing built on legal cost and proven production.",
+      "body": "The Newsroom model currently favors Jalen Hurts and Kyle Pitts Sr.. This is a projection\u2014not a report of a submitted decision\u2014and it will move with ADP, injuries and official keeper declarations.",
+      "reporter_id": "issac-cox",
+      "team_ids": [
+        9
+      ],
+      "confidence": 0.94,
+      "evidence": [
+        "Jalen Hurts (Round 4, draft)",
+        "Kyle Pitts Sr. (Round 15, draft)",
+        "Jalen Hurts: 293.0 lineup points in 2025",
+        "Kyle Pitts Sr.: 148.6 lineup points in 2025"
+      ],
+      "published_at": "2026-07-11T17:53:34.507240+00:00"
+    },
+    {
+      "id": "2026-keeper-10",
+      "kind": "keeper",
+      "label": "Keeper Intel",
+      "status": "projected",
+      "headline": "George Pickens and Caleb Williams lead the keeper board for Team Goldstein",
+      "dek": "Jordan Klein, Ben Goldstein enter the offseason with a projected pairing built on legal cost and proven production.",
+      "body": "The Newsroom model currently favors George Pickens and Caleb Williams. This is a projection\u2014not a report of a submitted decision\u2014and it will move with ADP, injuries and official keeper declarations.",
+      "reporter_id": "eileen-ulick",
+      "team_ids": [
+        10
+      ],
+      "confidence": 0.94,
+      "evidence": [
+        "George Pickens (Round 6, draft)",
+        "Caleb Williams (Round 13, draft)",
+        "George Pickens: 244.0 lineup points in 2025",
+        "Caleb Williams: 222.5 lineup points in 2025"
+      ],
+      "published_at": "2026-07-11T17:53:34.507240+00:00"
+    },
+    {
+      "id": "2026-keeper-11",
+      "kind": "keeper",
+      "label": "Keeper Intel",
+      "status": "projected",
+      "headline": "Jason Myers and Michael Wilson lead the keeper board for E Bo Nix",
+      "dek": "Jules Salkind enter the offseason with a projected pairing built on legal cost and proven production.",
+      "body": "The Newsroom model currently favors Jason Myers and Michael Wilson. This is a projection\u2014not a report of a submitted decision\u2014and it will move with ADP, injuries and official keeper declarations.",
+      "reporter_id": "anna-bortion",
+      "team_ids": [
+        11
+      ],
+      "confidence": 0.91,
+      "evidence": [
+        "Jason Myers (Round 16, free agent)",
+        "Michael Wilson (Round 16, free agent)",
+        "Jason Myers: 129.0 lineup points in 2025",
+        "Michael Wilson: 97.1 lineup points in 2025"
+      ],
+      "published_at": "2026-07-11T17:53:34.507240+00:00"
+    },
+    {
+      "id": "2026-keeper-12",
+      "kind": "keeper",
+      "label": "Keeper Intel",
+      "status": "projected",
+      "headline": "Jake Ferguson and Dak Prescott lead the keeper board for 2 Browns 2 Felonies",
+      "dek": "Ryan Vader enter the offseason with a projected pairing built on legal cost and proven production.",
+      "body": "The Newsroom model currently favors Jake Ferguson and Dak Prescott. This is a projection\u2014not a report of a submitted decision\u2014and it will move with ADP, injuries and official keeper declarations.",
+      "reporter_id": "edith-puthy",
+      "team_ids": [
+        12
+      ],
+      "confidence": 0.94,
+      "evidence": [
+        "Jake Ferguson (Round 16, free agent)",
+        "Dak Prescott (Round 16, free agent)",
+        "Jake Ferguson: 103.9 lineup points in 2025",
+        "Dak Prescott: 179.7 lineup points in 2025"
+      ],
+      "published_at": "2026-07-11T17:53:34.507240+00:00"
+    },
+    {
+      "id": "2026-keeper-market",
+      "kind": "feature",
+      "label": "Leaguewide Analysis",
+      "status": "analysis",
+      "headline": "The 2026 keeper market is officially taking shape",
+      "dek": "Ten rosters, two keeper slots each and no shortage of decisions that will age loudly.",
+      "body": "The first Newsroom board evaluates every legal pairing using keeper cost and prior lineup production. Official decisions will replace projections as ESPN records them.",
+      "reporter_id": "harry-weiner",
+      "team_ids": [],
+      "confidence": null,
+      "evidence": [
+        "166 final-roster candidates evaluated",
+        "Rounds 1-3 excluded",
+        "Round-band limits enforced"
+      ],
+      "published_at": "2026-07-11T17:53:34.507240+00:00"
+    }
+  ],
+  "power_rankings": [
+    {
+      "rank": 1,
+      "previous_rank": null,
+      "team_id": 12,
+      "team_name": "2 Browns 2 Felonies",
+      "owners": [
+        "Ryan Vader"
+      ],
+      "score": 90.2,
+      "record": "12-2",
+      "explanation": "133.3 points per game with a 149.9 average across the latest three scored matchups."
+    },
+    {
+      "rank": 2,
+      "previous_rank": null,
+      "team_id": 11,
+      "team_name": "E Bo Nix",
+      "owners": [
+        "Jules Salkind"
+      ],
+      "score": 85.7,
+      "record": "11-3",
+      "explanation": "136.2 points per game with a 129.1 average across the latest three scored matchups."
+    },
+    {
+      "rank": 3,
+      "previous_rank": null,
+      "team_id": 3,
+      "team_name": "Diggs in a Blankets",
+      "owners": [
+        "Stefan Lachkar"
+      ],
+      "score": 72.7,
+      "record": "10-4",
+      "explanation": "130.4 points per game with a 124.4 average across the latest three scored matchups."
+    },
+    {
+      "rank": 4,
+      "previous_rank": null,
+      "team_id": 5,
+      "team_name": "McConkey Kong",
+      "owners": [
+        "Jonathan Coopersmith"
+      ],
+      "score": 51.4,
+      "record": "6-8",
+      "explanation": "116.4 points per game with a 144.0 average across the latest three scored matchups."
+    },
+    {
+      "rank": 5,
+      "previous_rank": null,
+      "team_id": 6,
+      "team_name": "Nude Egg",
+      "owners": [
+        "Ben Wolbransky"
+      ],
+      "score": 44.0,
+      "record": "9-5",
+      "explanation": "118.8 points per game with a 106.3 average across the latest three scored matchups."
+    },
+    {
+      "rank": 6,
+      "previous_rank": null,
+      "team_id": 2,
+      "team_name": "Jake and Seth",
+      "owners": [
+        "Jake Fischer",
+        "Seth Taratoot"
+      ],
+      "score": 42.9,
+      "record": "6-8",
+      "explanation": "114.3 points per game with a 127.0 average across the latest three scored matchups."
+    },
+    {
+      "rank": 7,
+      "previous_rank": null,
+      "team_id": 7,
+      "team_name": "Los Peloteros De Katz",
+      "owners": [
+        "Ben Katz"
+      ],
+      "score": 26.5,
+      "record": "5-9",
+      "explanation": "114.9 points per game with a 102.2 average across the latest three scored matchups."
+    },
+    {
+      "rank": 8,
+      "previous_rank": null,
+      "team_id": 10,
+      "team_name": "Team Goldstein",
+      "owners": [
+        "Jordan Klein",
+        "Ben Goldstein"
+      ],
+      "score": 20.9,
+      "record": "5-9",
+      "explanation": "110.1 points per game with a 86.0 average across the latest three scored matchups."
+    },
+    {
+      "rank": 9,
+      "previous_rank": null,
+      "team_id": 1,
+      "team_name": "Lily Phillips ",
+      "owners": [
+        "Bennett Schiff"
+      ],
+      "score": 18.4,
+      "record": "2-12",
+      "explanation": "112.2 points per game with a 113.1 average across the latest three scored matchups."
+    },
+    {
+      "rank": 10,
+      "previous_rank": null,
+      "team_id": 9,
+      "team_name": "Saquads squad  Ship",
+      "owners": [
+        "Adam Heckelman"
+      ],
+      "score": 12.9,
+      "record": "4-10",
+      "explanation": "106.0 points per game with a 100.9 average across the latest three scored matchups."
+    }
+  ],
+  "methodology": {
+    "power_rankings": "45% record, 35% season scoring strength, 20% latest-three scoring form. Weights will become phase-aware once the new season begins.",
+    "editorial": "Rankings, legality and evidence are computed before any AI copy pass. Reporters may change assignments by story, but their serious or playful persona never changes.",
+    "transactions": "ESPN keeper flags are treated as confirmed. Trade details require ESPN roster/activity evidence or a commissioner-confirmed event; model trade ideas are always labeled rumored."
+  }
+}

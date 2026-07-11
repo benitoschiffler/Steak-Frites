@@ -369,3 +369,51 @@ export type PlayerData = {
     last_year_with_box_scores: number | null;
   };
 };
+
+export type NewsroomReporter = {
+  id: string;
+  name: string;
+  role: string;
+  desk: string;
+  tone: 'serious' | 'playful';
+};
+
+export type NewsroomArticle = {
+  id: string;
+  kind: 'keeper' | 'power_rankings' | 'trade_rumor' | 'weekly' | 'feature';
+  label: string;
+  status: 'confirmed' | 'projected' | 'rumored' | 'analysis';
+  headline: string;
+  dek: string;
+  body: string;
+  reporter_id: string;
+  team_ids: number[];
+  confidence: number | null;
+  evidence: string[];
+  published_at: string;
+};
+
+export type PowerRanking = {
+  rank: number;
+  previous_rank: number | null;
+  team_id: number;
+  team_name: string;
+  owners: string[];
+  score: number;
+  record: string;
+  explanation: string;
+};
+
+export type NewsroomData = {
+  publication: string;
+  season: number;
+  phase: 'offseason' | 'in_season' | 'playoffs' | 'complete';
+  issue_id: string;
+  issue_label: string;
+  generated_at: string;
+  generation: 'deterministic' | 'openai';
+  reporters: NewsroomReporter[];
+  articles: NewsroomArticle[];
+  power_rankings: PowerRanking[];
+  methodology: { power_rankings: string; editorial: string; transactions: string };
+};

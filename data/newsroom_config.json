@@ -1,0 +1,16 @@
+{
+  "publication": "Newsroom",
+  "reporters": [
+    { "id": "anna-bortion", "name": "Anna Bortion", "role": "Senior NFL Insider", "desk": "Keepers & Breaking News", "tone": "serious" },
+    { "id": "edith-puthy", "name": "Edith Puthy", "role": "National Columnist", "desk": "Power & Legacy", "tone": "serious" },
+    { "id": "ben-n-syder", "name": "Ben N. Syder", "role": "Analytics Editor", "desk": "Rankings & Forecasting", "tone": "serious" },
+    { "id": "buster-hymen", "name": "Buster Hymen", "role": "Senior Beat Writer", "desk": "Roster Construction", "tone": "serious" },
+    { "id": "clee-torres", "name": "Clee Torres", "role": "Investigative Reporter", "desk": "Trade Market", "tone": "serious" },
+    { "id": "harry-weiner", "name": "Harry Weiner", "role": "Back Page Columnist", "desk": "Rumors & Overreactions", "tone": "playful" },
+    { "id": "heidi-salami", "name": "Heidi Salami", "role": "Features Writer", "desk": "Rivalries & Culture", "tone": "serious" },
+    { "id": "issac-cox", "name": "Issac Cox", "role": "Matchup Analyst", "desk": "Weekly Film Room", "tone": "serious" },
+    { "id": "mike-oxsbig", "name": "Mike Oxsbig", "role": "Tabloid Correspondent", "desk": "Chaos Desk", "tone": "playful" },
+    { "id": "eileen-ulick", "name": "Eileen Ulick", "role": "Deputy Editor", "desk": "Playoffs & Championships", "tone": "serious" }
+  ],
+  "confirmed_events": []
+}

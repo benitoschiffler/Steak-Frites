@@ -35,6 +35,8 @@ jobs:
         env:
           ESPN_S2: ${{ secrets.ESPN_S2 }}
           SWID: ${{ secrets.SWID }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          NEWSROOM_MODEL: gpt-5.6-luna
           CURRENT_YEAR: ${{ inputs.year }}
           NEXT_YEAR: ${{ inputs.next_year }}
         run: python -m pipeline.build

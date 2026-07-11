@@ -72,6 +72,14 @@ every run). The dynamic routes will pick up the new year automatically.
 Set the secrets in GitHub → repo Settings → Secrets → Actions:
 - `ESPN_S2` — value of the `espn_s2` cookie
 - `SWID` — value of the `SWID` cookie (including the braces)
+- `OPENAI_API_KEY` — optional; polishes Newsroom copy after the data model fixes
+  rankings, keeper legality, confidence, and evidence. Without it, the same
+  issue publishes with deterministic copy.
+
+The refresh also writes `data/newsroom.json`. Reporter personas live in
+`data/newsroom_config.json`; their serious/playful assignments are persistent.
+The workflow uses the cost-efficient `gpt-5.6-luna` model by default and the API
+key is never exposed to the Next.js client.
 
 You can also trigger a manual refresh via the Actions tab → "Refresh league data"
 → Run workflow.

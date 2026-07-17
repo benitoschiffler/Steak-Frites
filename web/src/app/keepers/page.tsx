@@ -19,7 +19,7 @@ export default function KeepersPage() {
     .map((t) => ({
       team_id: t.team_id,
       team_name: t.name,
-      owners: t.owner_ids.map((id) => ownerNameById.get(id) ?? id).join(", "),
+      owners: Array.from(new Set(t.owner_ids)).map((id) => ownerNameById.get(id) ?? id).join(", "),
       candidates: keepers.next_year_planning.candidates.filter((c) => c.team_id === t.team_id),
     }))
     .sort((a, b) => a.team_name.localeCompare(b.team_name));
@@ -132,9 +132,9 @@ export default function KeepersPage() {
                     {list
                       .sort((a, b) => (a.kept_round_this_year ?? 0) - (b.kept_round_this_year ?? 0))
                       .map((k, i) => (
-                        <li key={i} className="flex items-center gap-2 px-3 py-2.5">
+                        <li key={i} className="flex flex-wrap items-center gap-2 px-3 py-2.5 sm:flex-nowrap">
                           <span className="badge badge-gold w-12 justify-center py-1">R{k.kept_round_this_year ?? "?"}</span>
-                          <span className="flex-1 font-bold">{k.player_name ?? "—"}</span>
+                          <span className="min-w-0 flex-1 font-bold">{k.player_name ?? "—"}</span>
                           {k.consecutive_keeper_years > 1 && (
                             <span className="badge badge-green py-1 text-[10px]" title={`Kept ${k.consecutive_keeper_years} years in a row`}>
                               Kept {k.consecutive_keeper_years}× in a row

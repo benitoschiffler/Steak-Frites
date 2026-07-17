@@ -69,19 +69,19 @@ export default function KeeperValidator({
   });
 
   return (
-    <div className="premium-panel rounded-xl p-4">
+    <div className="premium-panel min-w-0 rounded-xl p-4">
       {/* Team picker */}
-      <div className="grid gap-4 lg:grid-cols-[16rem_1fr]">
-        <aside className="space-y-2 lg:sticky lg:top-24 lg:self-start">
+      <div className="grid min-w-0 gap-4 lg:grid-cols-[16rem_minmax(0,1fr)]">
+        <aside className="min-w-0 space-y-2 lg:sticky lg:top-24 lg:self-start">
           <div className="kicker px-1">Team Room</div>
-          <div className="flex gap-2 overflow-x-auto pb-2 lg:flex-col lg:overflow-visible lg:pb-0">
+          <div className="flex max-w-full snap-x snap-mandatory gap-2 overflow-x-auto pb-2 lg:flex-col lg:overflow-visible lg:pb-0">
             {teamGroups.map((t) => {
               const isActive = t.team_id === activeTeamId;
               return (
                 <button
                   key={t.team_id}
                   onClick={() => switchTeam(t.team_id)}
-                  className={`min-w-max rounded-lg border px-3 py-2 text-left transition lg:min-w-0 ${
+                  className={`min-h-11 min-w-[10rem] snap-start rounded-lg border px-3 py-2 text-left transition lg:min-w-0 ${
                     isActive
                       ? "border-[#123d35] bg-[#123d35] text-[#fffaf0] shadow-sm"
                       : "border-black/10 bg-[#fffdf7] text-[#3b3328] hover:border-[#c8962d]/50"
@@ -101,7 +101,7 @@ export default function KeeperValidator({
           </div>
         </aside>
 
-        <div className="space-y-4">
+        <div className="min-w-0 space-y-4">
           {team && (
             <div className="flex flex-col gap-2 rounded-lg border border-black/10 bg-[#fffdf7]/70 p-4 sm:flex-row sm:items-center sm:justify-between">
               <div>
@@ -157,8 +157,59 @@ export default function KeeperValidator({
             )}
           </div>
 
-          {/* Candidate list — scrolls inside its shell with a sticky header */}
-          <div className="table-shell rounded-lg max-h-[60vh] overflow-y-auto">
+          {/* Mobile candidate cards keep the selection controls and keeper cost in one glance. */}
+          <div className="grid gap-2 md:hidden">
+            {sorted.map((p) => {
+              const blocked = bandForRound(p.cost_round) === "blocked";
+              const isSelected = selected.has(p.candidate.player_id);
+              const source = p.cost_source === "adp" ? "ADP (2yr+ streak)" : p.cost_source === "fa" ? "Free agent" : "Last year's draft";
+              return (
+                <label
+                  key={p.candidate.player_id}
+                  className={`flex min-h-16 items-start gap-3 rounded-lg border p-3 transition ${
+                    blocked
+                      ? "border-black/10 bg-black/[0.03] opacity-55"
+                      : isSelected
+                      ? "border-[#c8962d]/60 bg-[#f1dfaa]/35"
+                      : "border-black/10 bg-[#fffdf7]"
+                  }`}
+                >
+                  <input
+                    type="checkbox"
+                    checked={isSelected}
+                    onChange={() => toggle(p.candidate.player_id)}
+                    disabled={blocked && !isSelected}
+                    aria-label={`Select ${p.candidate.player_name} as a keeper`}
+                    className="mt-1 h-5 w-5 shrink-0 accent-[#123d35]"
+                  />
+                  <span className="min-w-0 flex-1">
+                    <span className="flex items-start justify-between gap-2">
+                      <span className="min-w-0">
+                        <span className="block font-bold leading-tight">{p.candidate.player_name}</span>
+                        <span className="mt-1 block text-xs font-medium text-[#766d61]">{source}</span>
+                      </span>
+                      {blocked ? <span className="badge badge-red">Blocked</span> : <span className="badge badge-gold">R{p.cost_round}</span>}
+                    </span>
+                    <span className="mt-2 flex flex-wrap gap-1.5 text-xs font-semibold text-[#5c5549]">
+                      <span className="badge py-1">{p.candidate.position ?? "—"}</span>
+                      <span>Last round {p.candidate.base_round_this_year ?? "FA"}</span>
+                      <span aria-hidden>·</span>
+                      <span>ADP {p.adp != null ? p.adp.toFixed(1) : "—"}</span>
+                      {p.candidate.consecutive_keeper_years_through_current > 0 && (
+                        <>
+                          <span aria-hidden>·</span>
+                          <span>{p.candidate.consecutive_keeper_years_through_current}yr streak</span>
+                        </>
+                      )}
+                    </span>
+                  </span>
+                </label>
+              );
+            })}
+          </div>
+
+          {/* Desktop candidate list scrolls inside its shell with a sticky header. */}
+          <div className="table-shell hidden max-h-[60vh] overflow-y-auto rounded-lg md:block">
             <table className="min-w-full text-sm">
               <thead className="text-left sticky top-0 z-10">
                 <tr>

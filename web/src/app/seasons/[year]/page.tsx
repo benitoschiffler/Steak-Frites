@@ -21,7 +21,7 @@ export default async function SeasonPage(props: PageProps<"/seasons/[year]">) {
   const teamById = new Map(season.teams.map((t) => [t.team_id, t]));
   const ownerNameById = new Map(owners.map((o) => [o.owner_id, o.display_name]));
   const ownerLink = (ids: string[]) =>
-    ids.map((id) => ({ id, name: ownerNameById.get(id) ?? id }));
+    Array.from(new Set(ids)).map((id) => ({ id, name: ownerNameById.get(id) ?? id }));
 
   // Standings sorted by final standing (or wins then PF)
   const standings = [...season.teams].sort((a, b) => {

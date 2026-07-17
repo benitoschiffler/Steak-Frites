@@ -29,6 +29,11 @@ body {
     linear-gradient(180deg, #f8f5ee 0%, var(--background) 42%, #eee8da 100%);
   color: var(--foreground);
   font-family: var(--font-geist-sans), Arial, Helvetica, sans-serif;
+  overflow-x: clip;
+}
+
+footer {
+  padding-bottom: env(safe-area-inset-bottom);
 }
 
 ::selection {
@@ -58,10 +63,25 @@ body {
 }
 
 .table-shell {
+  max-width: 100%;
   overflow-x: auto;
+  overscroll-behavior-inline: contain;
+  -webkit-overflow-scrolling: touch;
   border: 1px solid rgba(72, 57, 36, 0.15);
   background: rgba(255, 253, 247, 0.9);
   box-shadow: 0 14px 34px rgba(47, 38, 22, 0.06);
+}
+
+@media (max-width: 767px) {
+  .premium-panel,
+  .club-panel,
+  .stat-card {
+    max-width: 100%;
+  }
+
+  .table-shell {
+    scrollbar-width: thin;
+  }
 }
 
 .table-shell table {

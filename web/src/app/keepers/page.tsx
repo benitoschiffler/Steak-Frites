@@ -49,6 +49,24 @@ export default function KeepersPage() {
         title={`${meta.next_year} Keeper Planner`}
         subtitle={`Pick up to ${keepers.rules.max_total} players from your end-of-${meta.current_year} roster. The cost shown for each is the round value they would be drafted at.`}
       >
+        <div className="mb-4 flex flex-col gap-2 rounded-lg border border-[#2f6f4e]/20 bg-[#2f6f4e]/[0.07] p-4 text-sm sm:flex-row sm:items-center sm:justify-between">
+          <div>
+            <div className="font-black text-[#164331]">
+              {adp.team_count}-team {adp.scoring_format} ADP · {adp.source.drafts?.toLocaleString() ?? "Live"} drafts
+            </div>
+            <div className="mt-1 font-medium text-[#5c5549]">
+              Market sample {adp.source.sample_start ?? "—"} through {adp.source.sample_end ?? "—"} · refreshed {new Date(adp.pulled_at).toLocaleDateString()}
+            </div>
+          </div>
+          <a
+            href={adp.source.url}
+            target="_blank"
+            rel="noreferrer"
+            className="shrink-0 font-bold text-[#123d35] underline decoration-[#c8962d] decoration-2 underline-offset-4"
+          >
+            Source: {adp.source.name}
+          </a>
+        </div>
         <KeeperValidator
           teamGroups={teamGroups}
           adp={adp.players}

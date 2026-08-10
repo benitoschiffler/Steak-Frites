@@ -4,7 +4,7 @@ For an ESPN-free re-process (e.g., after editing pipeline/overrides.py), use:
 
     python -m pipeline.postprocess && python -m pipeline.records && python -m pipeline.keepers && python -m pipeline.newsroom
 """
-from . import pull, postprocess, records, keepers, players, newsroom
+from . import adp, pull, postprocess, records, keepers, players, newsroom
 
 
 def main():
@@ -15,6 +15,7 @@ def main():
     postprocess.main()
     records.main()
     keepers.main()
+    adp.main()
     players.main()
     newsroom.main()
 

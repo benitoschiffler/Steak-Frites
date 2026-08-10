@@ -30,7 +30,6 @@ const NAV = [
   { href: "/seasons", label: "Seasons" },
   { href: "/teams", label: "Owners" },
   { href: "/keepers", label: "Keepers" },
-  { href: "/draft", label: "Draft Lottery" },
 ];
 
 function relativeTime(iso: string): string {

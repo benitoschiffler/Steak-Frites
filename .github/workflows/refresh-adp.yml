@@ -1,0 +1,41 @@
+name: Refresh half-PPR keeper ADP
+
+on:
+  schedule:
+    # Daily through draft-prep season; weekly the rest of the year.
+    - cron: "0 13 * 5-8 *"
+    - cron: "0 13 * 1-4,9-12 2"
+  workflow_dispatch:
+
+jobs:
+  refresh-adp:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Refresh keeper ADP and dependent stories
+        run: |
+          python -m pipeline.adp
+          python -m pipeline.newsroom
+
+      - name: Commit data changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/adp.json data/newsroom.json
+          if git diff --cached --quiet; then
+            echo "No ADP changes."
+          else
+            git commit -m "chore: refresh half-PPR ADP ($(date -u +%Y-%m-%d))"
+            git push
+          fi

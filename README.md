@@ -6,6 +6,7 @@ A living history site for the Steak Frites fantasy football league.
 - **Per-season recaps:** standings, weekly results, drafts.
 - **Owner profiles:** lifetime record, head-to-head matrix, keeper history, full draft history.
 - **Keeper planner:** pick up to 2 players from your end-of-season roster, see if it's legal under the rules, see the cost (drafted round, or ADP-equivalent for repeat keepers).
+  Repeat-keeper costs use current 10-team, 0.5-PPR ADP from Fantasy Football Calculator.
 
 ## Architecture
 
@@ -15,7 +16,7 @@ A living history site for the Steak Frites fantasy football league.
 ├── data/            # canonical JSON dataset (committed; rebuilt by pipeline)
 ├── web/             # Next.js 16 app (App Router, TS, Tailwind 4)
 ├── exports/         # raw CSV + Excel exports (gitignored; from older export_league.py)
-└── .github/workflows/refresh.yml   # weekly refresh + auto-redeploy
+└── .github/workflows/              # league + ADP refreshes and auto-redeploys
 ```
 
 ## Local development
@@ -84,6 +85,12 @@ key is never exposed to the Next.js client.
 You can also trigger a manual refresh via the Actions tab → "Refresh league data"
 → Run workflow.
 
+Keeper ADP has its own automatic refresh (`refresh-adp.yml`): daily from May
+through August, then weekly the rest of the year. It uses the free Fantasy
+Football Calculator half-PPR feed for the league's current team count, updates
+the keeper/newsroom data, and triggers a Vercel rebuild only through committed
+data changes. No paid API key is required.
+
 ## Keeper rules (encoded in `pipeline/config.py`)
 
 - Max 2 keepers per team per season
@@ -92,8 +99,8 @@ You can also trigger a manual refresh via the Actions tab → "Refresh league da
 - Rounds 8-16: at most 2
 - Free agents count as last-round keepers (round 16)
 - If a player is kept by the same team for back-to-back seasons or more,
-  from season 2+ their keeper cost is their **ADP** (mapped to the
-  equivalent draft round)
+  from season 2+ their keeper cost is their current **10-team, 0.5-PPR ADP**
+  (mapped to the equivalent draft round)
 
 ## Known limitations
 

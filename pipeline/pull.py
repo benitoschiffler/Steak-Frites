@@ -7,7 +7,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 from .config import YEARS, DATA_DIR, SEASONS_DIR, LEAGUE_ID, CURRENT_YEAR, NEXT_YEAR, EXCLUDED_RECORD_YEARS
-from .espn import load_league, fetch_player_adp
+from .espn import load_league
 from .overrides import (
     CO_OWNER_MERGES,
     CO_OWNER_SOURCE_NAMES,
@@ -297,18 +297,6 @@ def main():
     owners = build_owners_index()
     (DATA_DIR / "owners.json").write_text(json.dumps(owners, indent=2, default=str))
     print(f"\nOwners: {len(owners)} unique")
-
-    # ADP for upcoming-draft year (used by keeper validator).
-    # ESPN resets historical ADP after a season ends, so we always pull NEXT_YEAR.
-    try:
-        print(f"Pulling ADP for {NEXT_YEAR} (upcoming draft)…")
-        adp = fetch_player_adp(NEXT_YEAR, limit=500)
-        (DATA_DIR / "adp.json").write_text(
-            json.dumps({"year": NEXT_YEAR, "players": adp}, indent=2, default=str)
-        )
-        print(f"  ADP: {len(adp)} players")
-    except Exception as e:
-        print(f"  ADP failed: {e}")
 
     meta = {
         "league_id": LEAGUE_ID,

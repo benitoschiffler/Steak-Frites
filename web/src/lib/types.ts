@@ -277,15 +277,30 @@ export type AdpPlayer = {
   player_id: number;
   name: string;
   position: string | null;
-  pro_team_id: number | null;
+  pro_team: string | null;
   adp: number;
-  percent_owned: number | null;
-  rank_standard: number | null;
-  rank_ppr: number | null;
+  times_drafted: number | null;
+  source_player_id: number | null;
 };
 
 export type AdpData = {
   year: number;
+  scoring_format: "0.5 PPR";
+  team_count: number;
+  pulled_at: string;
+  source: {
+    name: string;
+    url: string;
+    api_url: string;
+    drafts: number | null;
+    sample_start: string | null;
+    sample_end: string | null;
+  };
+  coverage: {
+    keeper_candidates: number;
+    matched_candidates: number;
+    unmatched_candidates: string[];
+  };
   players: AdpPlayer[];
 };
 

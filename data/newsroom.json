@@ -4,7 +4,7 @@
   "phase": "offseason",
   "issue_id": "2026-offseason-1",
   "issue_label": "2026 Offseason \u00b7 Keeper Watch",
-  "generated_at": "2026-08-21T13:50:36.059837+00:00",
+  "generated_at": "2026-08-22T13:36:47.727716+00:00",
   "generation": "deterministic",
   "reporters": [
     {
@@ -98,7 +98,7 @@
         "Josh Allen: 374.6 lineup points in 2025",
         "Dallas Goedert: 87.0 lineup points in 2025"
       ],
-      "published_at": "2026-08-21T13:50:36.059837+00:00"
+      "published_at": "2026-08-22T13:36:47.727716+00:00"
     },
     {
       "id": "2026-keeper-2",
@@ -119,7 +119,7 @@
         "Travis Etienne Jr.: 212.6 lineup points in 2025",
         "Justin Herbert: 181.2 lineup points in 2025"
       ],
-      "published_at": "2026-08-21T13:50:36.059837+00:00"
+      "published_at": "2026-08-22T13:36:47.727716+00:00"
     },
     {
       "id": "2026-keeper-3",
@@ -140,7 +140,7 @@
         "Rico Dowdle: 176.0 lineup points in 2025",
         "Matthew Stafford: 164.4 lineup points in 2025"
       ],
-      "published_at": "2026-08-21T13:50:36.059837+00:00"
+      "published_at": "2026-08-22T13:36:47.727716+00:00"
     },
     {
       "id": "2026-keeper-5",
@@ -161,7 +161,7 @@
         "Chase McLaughlin: 141.0 lineup points in 2025",
         "Harold Fannin Jr.: 109.8 lineup points in 2025"
       ],
-      "published_at": "2026-08-21T13:50:36.059837+00:00"
+      "published_at": "2026-08-22T13:36:47.727716+00:00"
     },
     {
       "id": "2026-keeper-6",
@@ -182,7 +182,7 @@
         "Drake Maye: 343.7 lineup points in 2025",
         "Seahawks D/ST: 150.0 lineup points in 2025"
       ],
-      "published_at": "2026-08-21T13:50:36.059837+00:00"
+      "published_at": "2026-08-22T13:36:47.727716+00:00"
     },
     {
       "id": "2026-keeper-7",
@@ -203,7 +203,7 @@
         "Javonte Williams: 205.9 lineup points in 2025",
         "Eddy Pineiro: 89.0 lineup points in 2025"
       ],
-      "published_at": "2026-08-21T13:50:36.059837+00:00"
+      "published_at": "2026-08-22T13:36:47.727716+00:00"
     },
     {
       "id": "2026-keeper-9",
@@ -224,7 +224,7 @@
         "Jalen Hurts: 293.0 lineup points in 2025",
         "Kyle Pitts Sr.: 148.6 lineup points in 2025"
       ],
-      "published_at": "2026-08-21T13:50:36.059837+00:00"
+      "published_at": "2026-08-22T13:36:47.727716+00:00"
     },
     {
       "id": "2026-keeper-10",
@@ -245,7 +245,7 @@
         "George Pickens: 244.0 lineup points in 2025",
         "Caleb Williams: 222.5 lineup points in 2025"
       ],
-      "published_at": "2026-08-21T13:50:36.059837+00:00"
+      "published_at": "2026-08-22T13:36:47.727716+00:00"
     },
     {
       "id": "2026-keeper-11",
@@ -266,7 +266,7 @@
         "Jason Myers: 129.0 lineup points in 2025",
         "Michael Wilson: 97.1 lineup points in 2025"
       ],
-      "published_at": "2026-08-21T13:50:36.059837+00:00"
+      "published_at": "2026-08-22T13:36:47.727716+00:00"
     },
     {
       "id": "2026-keeper-12",
@@ -287,7 +287,7 @@
         "Jake Ferguson: 103.9 lineup points in 2025",
         "Dak Prescott: 179.7 lineup points in 2025"
       ],
-      "published_at": "2026-08-21T13:50:36.059837+00:00"
+      "published_at": "2026-08-22T13:36:47.727716+00:00"
     },
     {
       "id": "2026-keeper-market",
@@ -305,7 +305,7 @@
         "Rounds 1-3 excluded",
         "Round-band limits enforced"
       ],
-      "published_at": "2026-08-21T13:50:36.059837+00:00"
+      "published_at": "2026-08-22T13:36:47.727716+00:00"
     }
   ],
   "power_rankings": [

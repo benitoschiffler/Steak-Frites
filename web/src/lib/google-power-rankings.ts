@@ -4,7 +4,8 @@ import { loadPowerRankings } from './data';
 import type { PublishedPowerRanking } from './types';
 
 const SHEET_ID = '18-2kfsfmkUnkmHSFqimlgOVYiCECCZ4GQWfSadLS2vM';
-const SITE_EXPORT_URL = `https://docs.google.com/spreadsheets/d/${SHEET_ID}/gviz/tq?tqx=out:csv&sheet=Site%20Export`;
+const SITE_EXPORT_URL =
+  'https://docs.google.com/spreadsheets/d/e/2PACX-1vQLbhBDXccxDKZgKQNRtB_7f1fO7SItDyCt-qDLQ04mEzRaJ6s7nhmdl4p8IyBAswD6mHo5h5Eut6HI/pub?gid=1142531984&single=true&output=csv';
 
 function parseCsv(input: string): string[][] {
   const rows: string[][] = [];

@@ -1,10 +1,10 @@
 {
   "publication": "Newsroom",
   "season": 2026,
-  "phase": "offseason",
-  "issue_id": "2026-offseason-1",
-  "issue_label": "2026 Offseason \u00b7 Keeper Watch",
-  "generated_at": "2026-09-08T16:56:37.562656+00:00",
+  "phase": "in_season",
+  "issue_id": "2026-week-1",
+  "issue_label": "2026 \u00b7 Week 1 Power Report",
+  "generated_at": "2026-09-14T18:54:44.449164+00:00",
   "generation": "deterministic",
   "reporters": [
     {
@@ -80,360 +80,450 @@
   ],
   "articles": [
     {
-      "id": "2026-keeper-1",
-      "kind": "keeper",
-      "label": "Keeper Intel",
-      "status": "projected",
-      "headline": "Dallas Goedert and Chris Olave lead the keeper board for Lily Phillips",
-      "dek": "Bennett Schiff enter the offseason with a projected pairing built on legal cost and proven production.",
-      "body": "The Newsroom model currently favors Dallas Goedert and Chris Olave. This is a projection\u2014not a report of a submitted decision\u2014and it will move with ADP, injuries and official keeper declarations.",
-      "reporter_id": "anna-bortion",
-      "team_ids": [
-        1
-      ],
-      "confidence": 0.88,
-      "evidence": [
-        "Dallas Goedert (Round 16, free agent)",
-        "Chris Olave (Round 7, draft)",
-        "Dallas Goedert: 87.0 lineup points in 2025",
-        "Chris Olave: 191.2 lineup points in 2025"
-      ],
-      "published_at": "2026-09-08T16:56:37.562656+00:00"
-    },
-    {
-      "id": "2026-keeper-2",
-      "kind": "keeper",
-      "label": "Keeper Intel",
-      "status": "projected",
-      "headline": "Travis Etienne Jr. and Justin Herbert lead the keeper board for Jake and Seth",
-      "dek": "Jake Fischer, Seth Taratoot enter the offseason with a projected pairing built on legal cost and proven production.",
-      "body": "The Newsroom model currently favors Travis Etienne Jr. and Justin Herbert. This is a projection\u2014not a report of a submitted decision\u2014and it will move with ADP, injuries and official keeper declarations.",
-      "reporter_id": "edith-puthy",
-      "team_ids": [
-        2
-      ],
-      "confidence": 0.94,
-      "evidence": [
-        "Travis Etienne Jr. (Round 9, draft)",
-        "Justin Herbert (Round 16, free agent)",
-        "Travis Etienne Jr.: 212.6 lineup points in 2025",
-        "Justin Herbert: 181.2 lineup points in 2025"
-      ],
-      "published_at": "2026-09-08T16:56:37.562656+00:00"
-    },
-    {
-      "id": "2026-keeper-3",
-      "kind": "keeper",
-      "label": "Keeper Intel",
-      "status": "projected",
-      "headline": "Rico Dowdle and Matthew Stafford lead the keeper board for Diggs in a Blankets",
-      "dek": "Stefan Lachkar enter the offseason with a projected pairing built on legal cost and proven production.",
-      "body": "The Newsroom model currently favors Rico Dowdle and Matthew Stafford. This is a projection\u2014not a report of a submitted decision\u2014and it will move with ADP, injuries and official keeper declarations.",
+      "id": "2026-week-1-power-lead",
+      "kind": "power_rankings",
+      "label": "Power Rankings",
+      "status": "analysis",
+      "headline": "Stefan Lachkar opens Week 1 at No. 1",
+      "dek": "Amon-Ra Dog It leads the first phase-aware Steak Frites power model with a 95.0 rating.",
+      "body": "163.1 PPG and a 100% all-play rate. The actual record is close to the all-play expectation.",
       "reporter_id": "ben-n-syder",
       "team_ids": [
         3
       ],
-      "confidence": 0.94,
+      "confidence": null,
       "evidence": [
-        "Rico Dowdle (Round 16, free agent)",
-        "Matthew Stafford (Round 16, free agent)",
-        "Rico Dowdle: 176.0 lineup points in 2025",
-        "Matthew Stafford: 164.4 lineup points in 2025"
+        "1-0 record",
+        "163.1 PPG",
+        "100% all-play rate"
       ],
-      "published_at": "2026-09-08T16:56:37.562656+00:00"
+      "published_at": "2026-09-14T18:54:44.449164+00:00"
     },
     {
-      "id": "2026-keeper-5",
-      "kind": "keeper",
-      "label": "Keeper Intel",
-      "status": "projected",
-      "headline": "Chase McLaughlin and Harold Fannin Jr. lead the keeper board for McConkey Kong",
-      "dek": "Jonathan Coopersmith enter the offseason with a projected pairing built on legal cost and proven production.",
-      "body": "The Newsroom model currently favors Chase McLaughlin and Harold Fannin Jr.. This is a projection\u2014not a report of a submitted decision\u2014and it will move with ADP, injuries and official keeper declarations.",
-      "reporter_id": "buster-hymen",
-      "team_ids": [
-        5
-      ],
-      "confidence": 0.91,
-      "evidence": [
-        "Chase McLaughlin (Round 14, draft)",
-        "Harold Fannin Jr. (Round 16, free agent)",
-        "Chase McLaughlin: 141.0 lineup points in 2025",
-        "Harold Fannin Jr.: 109.8 lineup points in 2025"
-      ],
-      "published_at": "2026-09-08T16:56:37.562656+00:00"
-    },
-    {
-      "id": "2026-keeper-6",
-      "kind": "keeper",
-      "label": "Keeper Intel",
-      "status": "projected",
-      "headline": "Drake Maye and Seahawks D/ST lead the keeper board for Nude Egg",
-      "dek": "Ben Wolbransky enter the offseason with a projected pairing built on legal cost and proven production.",
-      "body": "The Newsroom model currently favors Drake Maye and Seahawks D/ST. This is a projection\u2014not a report of a submitted decision\u2014and it will move with ADP, injuries and official keeper declarations.",
-      "reporter_id": "clee-torres",
-      "team_ids": [
-        6
-      ],
-      "confidence": 0.94,
-      "evidence": [
-        "Drake Maye (Round 12, draft)",
-        "Seahawks D/ST (Round 16, free agent)",
-        "Drake Maye: 343.7 lineup points in 2025",
-        "Seahawks D/ST: 150.0 lineup points in 2025"
-      ],
-      "published_at": "2026-09-08T16:56:37.562656+00:00"
-    },
-    {
-      "id": "2026-keeper-7",
-      "kind": "keeper",
-      "label": "Keeper Intel",
-      "status": "projected",
-      "headline": "Javonte Williams and Eddy Pineiro lead the keeper board for Los Peloteros De Katz",
-      "dek": "Ben Katz enter the offseason with a projected pairing built on legal cost and proven production.",
-      "body": "The Newsroom model currently favors Javonte Williams and Eddy Pineiro. This is a projection\u2014not a report of a submitted decision\u2014and it will move with ADP, injuries and official keeper declarations.",
-      "reporter_id": "heidi-salami",
+      "id": "2026-week-1-schedule-luck",
+      "kind": "weekly",
+      "label": "Schedule Desk",
+      "status": "analysis",
+      "headline": "The early numbers say Ben Katz deserved better",
+      "dek": "Los Peloteros De Katz sits -0.8 wins from its all-play expectation.",
+      "body": "All-play compares each weekly score with every other team, separating team strength from the opponent that happened to appear on the schedule.",
+      "reporter_id": "edith-puthy",
       "team_ids": [
         7
       ],
-      "confidence": 0.91,
-      "evidence": [
-        "Javonte Williams (Round 9, draft)",
-        "Eddy Pineiro (Round 16, free agent)",
-        "Javonte Williams: 205.9 lineup points in 2025",
-        "Eddy Pineiro: 89.0 lineup points in 2025"
-      ],
-      "published_at": "2026-09-08T16:56:37.562656+00:00"
-    },
-    {
-      "id": "2026-keeper-9",
-      "kind": "keeper",
-      "label": "Keeper Intel",
-      "status": "projected",
-      "headline": "Jalen Hurts and Kyle Pitts Sr. lead the keeper board for Saquads squad  Ship",
-      "dek": "Adam Heckelman enter the offseason with a projected pairing built on legal cost and proven production.",
-      "body": "The Newsroom model currently favors Jalen Hurts and Kyle Pitts Sr.. This is a projection\u2014not a report of a submitted decision\u2014and it will move with ADP, injuries and official keeper declarations.",
-      "reporter_id": "issac-cox",
-      "team_ids": [
-        9
-      ],
-      "confidence": 0.94,
-      "evidence": [
-        "Jalen Hurts (Round 4, draft)",
-        "Kyle Pitts Sr. (Round 15, draft)",
-        "Jalen Hurts: 293.0 lineup points in 2025",
-        "Kyle Pitts Sr.: 148.6 lineup points in 2025"
-      ],
-      "published_at": "2026-09-08T16:56:37.562656+00:00"
-    },
-    {
-      "id": "2026-keeper-10",
-      "kind": "keeper",
-      "label": "Keeper Intel",
-      "status": "projected",
-      "headline": "George Pickens and Caleb Williams lead the keeper board for Team Goldstein",
-      "dek": "Jordan Klein, Ben Goldstein enter the offseason with a projected pairing built on legal cost and proven production.",
-      "body": "The Newsroom model currently favors George Pickens and Caleb Williams. This is a projection\u2014not a report of a submitted decision\u2014and it will move with ADP, injuries and official keeper declarations.",
-      "reporter_id": "eileen-ulick",
-      "team_ids": [
-        10
-      ],
-      "confidence": 0.94,
-      "evidence": [
-        "George Pickens (Round 6, draft)",
-        "Caleb Williams (Round 13, draft)",
-        "George Pickens: 244.0 lineup points in 2025",
-        "Caleb Williams: 222.5 lineup points in 2025"
-      ],
-      "published_at": "2026-09-08T16:56:37.562656+00:00"
-    },
-    {
-      "id": "2026-keeper-11",
-      "kind": "keeper",
-      "label": "Keeper Intel",
-      "status": "projected",
-      "headline": "Jason Myers and Michael Wilson lead the keeper board for E Bo Nix",
-      "dek": "Jules Salkind enter the offseason with a projected pairing built on legal cost and proven production.",
-      "body": "The Newsroom model currently favors Jason Myers and Michael Wilson. This is a projection\u2014not a report of a submitted decision\u2014and it will move with ADP, injuries and official keeper declarations.",
-      "reporter_id": "anna-bortion",
-      "team_ids": [
-        11
-      ],
-      "confidence": 0.91,
-      "evidence": [
-        "Jason Myers (Round 16, free agent)",
-        "Michael Wilson (Round 16, free agent)",
-        "Jason Myers: 129.0 lineup points in 2025",
-        "Michael Wilson: 97.1 lineup points in 2025"
-      ],
-      "published_at": "2026-09-08T16:56:37.562656+00:00"
-    },
-    {
-      "id": "2026-keeper-12",
-      "kind": "keeper",
-      "label": "Keeper Intel",
-      "status": "projected",
-      "headline": "Jake Ferguson and Dak Prescott lead the keeper board for 2 Browns 2 Felonies",
-      "dek": "Ryan Vader enter the offseason with a projected pairing built on legal cost and proven production.",
-      "body": "The Newsroom model currently favors Jake Ferguson and Dak Prescott. This is a projection\u2014not a report of a submitted decision\u2014and it will move with ADP, injuries and official keeper declarations.",
-      "reporter_id": "edith-puthy",
-      "team_ids": [
-        12
-      ],
-      "confidence": 0.94,
-      "evidence": [
-        "Jake Ferguson (Round 16, free agent)",
-        "Dak Prescott (Round 16, free agent)",
-        "Jake Ferguson: 103.9 lineup points in 2025",
-        "Dak Prescott: 179.7 lineup points in 2025"
-      ],
-      "published_at": "2026-09-08T16:56:37.562656+00:00"
-    },
-    {
-      "id": "2026-keeper-market",
-      "kind": "feature",
-      "label": "Leaguewide Analysis",
-      "status": "analysis",
-      "headline": "The 2026 keeper market is officially taking shape",
-      "dek": "Ten rosters, two keeper slots each and no shortage of decisions that will age loudly.",
-      "body": "The first Newsroom board evaluates every legal pairing using keeper cost and prior lineup production. Official decisions will replace projections as ESPN records them.",
-      "reporter_id": "harry-weiner",
-      "team_ids": [],
       "confidence": null,
       "evidence": [
-        "166 final-roster candidates evaluated",
-        "Rounds 1-3 excluded",
-        "Round-band limits enforced"
+        "7.0-2.0 all-play record",
+        "137.9 PPG"
       ],
-      "published_at": "2026-09-08T16:56:37.562656+00:00"
+      "published_at": "2026-09-14T18:54:44.449164+00:00"
+    },
+    {
+      "id": "2026-week-1-back-page",
+      "kind": "feature",
+      "label": "Back Page",
+      "status": "analysis",
+      "headline": "Ben Wolbransky has work to do\u2014and the spreadsheet has receipts",
+      "dek": "Nude Egg checks in at No. 10, but one strong week can still rewrite an early table.",
+      "body": "The model is intentionally responsive at the start of the season. A hot score moves quickly; sustained production matters more once three weeks of form exist.",
+      "reporter_id": "harry-weiner",
+      "team_ids": [
+        6
+      ],
+      "confidence": null,
+      "evidence": [
+        "Model score: 5.0",
+        "77.2 PPG"
+      ],
+      "published_at": "2026-09-14T18:54:44.449164+00:00"
     }
   ],
   "power_rankings": [
     {
-      "rank": 1,
-      "previous_rank": null,
-      "team_id": 12,
-      "team_name": "2 Browns 2 Felonies",
-      "owners": [
-        "Ryan Vader"
-      ],
-      "score": 90.2,
-      "record": "12-2",
-      "explanation": "133.3 points per game with a 149.9 average across the latest three scored matchups."
-    },
-    {
-      "rank": 2,
-      "previous_rank": null,
-      "team_id": 11,
-      "team_name": "E Bo Nix",
-      "owners": [
-        "Jules Salkind"
-      ],
-      "score": 85.7,
-      "record": "11-3",
-      "explanation": "136.2 points per game with a 129.1 average across the latest three scored matchups."
-    },
-    {
-      "rank": 3,
-      "previous_rank": null,
       "team_id": 3,
-      "team_name": "Diggs in a Blankets",
+      "owner_ids": [
+        "{6EB109A3-B9E1-4D2D-B109-A3B9E10D2D41}"
+      ],
       "owners": [
         "Stefan Lachkar"
       ],
-      "score": 72.7,
-      "record": "10-4",
-      "explanation": "130.4 points per game with a 124.4 average across the latest three scored matchups."
-    },
-    {
-      "rank": 4,
-      "previous_rank": null,
-      "team_id": 5,
-      "team_name": "McConkey Kong",
-      "owners": [
-        "Jonathan Coopersmith"
+      "owner": "Stefan Lachkar",
+      "team_name": "Amon-Ra Dog It",
+      "past_team_names": [
+        "Fuck This League @schiff",
+        "2017 Fantasy   Champ FTL",
+        "Running The  Table",
+        "Running The Table",
+        "3CHI Robby Hootz",
+        "Ridley's  Bookie",
+        "Olaver Your Face",
+        "Stroud Boys",
+        "Diggs in a Blankets"
       ],
-      "score": 51.4,
-      "record": "6-8",
-      "explanation": "116.4 points per game with a 144.0 average across the latest three scored matchups."
+      "wins": 1,
+      "losses": 0,
+      "ties": 0,
+      "record": "1-0",
+      "points_for": 163.06,
+      "points_against": 137.9,
+      "games": 1,
+      "ppg": 163.06,
+      "recent3_ppg": 163.06,
+      "all_play_wins": 9.0,
+      "all_play_losses": 0.0,
+      "all_play_pct": 1.0,
+      "expected_wins": 1.0,
+      "luck": 0.0,
+      "median_win_pct": 1.0,
+      "floor_score": 163.06,
+      "score": 95.0,
+      "previous_rank": null,
+      "rank": 1,
+      "movement": null,
+      "explanation": "163.1 PPG and a 100% all-play rate. The actual record is close to the all-play expectation."
     },
     {
-      "rank": 5,
-      "previous_rank": null,
-      "team_id": 6,
-      "team_name": "Nude Egg",
-      "owners": [
-        "Ben Wolbransky"
-      ],
-      "score": 44.0,
-      "record": "9-5",
-      "explanation": "118.8 points per game with a 106.3 average across the latest three scored matchups."
-    },
-    {
-      "rank": 6,
-      "previous_rank": null,
-      "team_id": 2,
-      "team_name": "Jake and Seth",
-      "owners": [
-        "Jake Fischer",
-        "Seth Taratoot"
-      ],
-      "score": 42.9,
-      "record": "6-8",
-      "explanation": "114.3 points per game with a 127.0 average across the latest three scored matchups."
-    },
-    {
-      "rank": 7,
-      "previous_rank": null,
-      "team_id": 7,
-      "team_name": "Los Peloteros De Katz",
-      "owners": [
-        "Ben Katz"
-      ],
-      "score": 26.5,
-      "record": "5-9",
-      "explanation": "114.9 points per game with a 102.2 average across the latest three scored matchups."
-    },
-    {
-      "rank": 8,
-      "previous_rank": null,
       "team_id": 10,
-      "team_name": "Team Goldstein",
+      "owner_ids": [
+        "{CBF6473A-C5A3-46D7-8EF8-BFAF0D868891}"
+      ],
       "owners": [
         "Jordan Klein",
         "Ben Goldstein"
       ],
-      "score": 20.9,
-      "record": "5-9",
-      "explanation": "110.1 points per game with a 86.0 average across the latest three scored matchups."
+      "owner": "Jordan Klein & Ben Goldstein",
+      "team_name": "Team Goldstein",
+      "past_team_names": [
+        "Hunting for the Win"
+      ],
+      "wins": 1,
+      "losses": 0,
+      "ties": 0,
+      "record": "1-0",
+      "points_for": 140.96,
+      "points_against": 120.2,
+      "games": 1,
+      "ppg": 140.96,
+      "recent3_ppg": 140.96,
+      "all_play_wins": 8.0,
+      "all_play_losses": 1.0,
+      "all_play_pct": 0.8889,
+      "expected_wins": 0.89,
+      "luck": 0.11,
+      "median_win_pct": 1.0,
+      "floor_score": 140.96,
+      "score": 82.1,
+      "previous_rank": null,
+      "rank": 2,
+      "movement": null,
+      "explanation": "141.0 PPG and a 89% all-play rate. The actual record is close to the all-play expectation."
     },
     {
-      "rank": 9,
-      "previous_rank": null,
       "team_id": 1,
-      "team_name": "Lily Phillips ",
+      "owner_ids": [
+        "{3A1A4E24-2A98-4038-9A4E-242A98803865}"
+      ],
       "owners": [
         "Bennett Schiff"
       ],
-      "score": 18.4,
-      "record": "2-12",
-      "explanation": "112.2 points per game with a 113.1 average across the latest three scored matchups."
+      "owner": "Bennett Schiff",
+      "team_name": "We Did It, Joe!",
+      "past_team_names": [
+        "Wilfork on First Date",
+        "Counting Crowells",
+        "WILD 'N OUT",
+        "Deshaun of The Dead",
+        "JewJew Smith-Schiffler",
+        "I Am Inevitable",
+        "Started From The Bottom",
+        "Just Happy To Be Here",
+        "Lily Phillips"
+      ],
+      "wins": 1,
+      "losses": 0,
+      "ties": 0,
+      "record": "1-0",
+      "points_for": 133.56,
+      "points_against": 104.42,
+      "games": 1,
+      "ppg": 133.56,
+      "recent3_ppg": 133.56,
+      "all_play_wins": 6.0,
+      "all_play_losses": 3.0,
+      "all_play_pct": 0.6667,
+      "expected_wins": 0.67,
+      "luck": 0.33,
+      "median_win_pct": 1.0,
+      "floor_score": 133.56,
+      "score": 71.3,
+      "previous_rank": null,
+      "rank": 3,
+      "movement": null,
+      "explanation": "133.6 PPG and a 67% all-play rate. The actual record is close to the all-play expectation."
     },
     {
-      "rank": 10,
+      "team_id": 2,
+      "owner_ids": [
+        "{4F3E4D57-5F87-4D74-92C0-40815B7DFD51}"
+      ],
+      "owners": [
+        "Jake Fischer",
+        "Seth Taratoot"
+      ],
+      "owner": "Jake Fischer & Seth Taratoot",
+      "team_name": "Jake and Seth",
+      "past_team_names": [
+        "Process Trusters",
+        "Traded James Harden!"
+      ],
+      "wins": 1,
+      "losses": 0,
+      "ties": 0,
+      "record": "1-0",
+      "points_for": 132.76,
+      "points_against": 77.22,
+      "games": 1,
+      "ppg": 132.76,
+      "recent3_ppg": 132.76,
+      "all_play_wins": 5.0,
+      "all_play_losses": 4.0,
+      "all_play_pct": 0.5556,
+      "expected_wins": 0.56,
+      "luck": 0.44,
+      "median_win_pct": 1.0,
+      "floor_score": 132.76,
+      "score": 67.1,
       "previous_rank": null,
+      "rank": 4,
+      "movement": null,
+      "explanation": "132.8 PPG and a 56% all-play rate. The actual record is close to the all-play expectation."
+    },
+    {
+      "team_id": 5,
+      "owner_ids": [
+        "{BDC02B8B-DDC4-464E-B2E9-065DF145DDBB}"
+      ],
+      "owners": [
+        "Jonathan Coopersmith"
+      ],
+      "owner": "Jonathan Coopersmith",
+      "team_name": "Bijan Mustard",
+      "past_team_names": [
+        "Need Based",
+        "Wraith Talk",
+        "Cooper Kupp or Smith",
+        "CeeDeez Nuts",
+        "McConkey Kong"
+      ],
+      "wins": 1,
+      "losses": 0,
+      "ties": 0,
+      "record": "1-0",
+      "points_for": 130.56,
+      "points_against": 102.56,
+      "games": 1,
+      "ppg": 130.56,
+      "recent3_ppg": 130.56,
+      "all_play_wins": 4.0,
+      "all_play_losses": 5.0,
+      "all_play_pct": 0.4444,
+      "expected_wins": 0.44,
+      "luck": 0.56,
+      "median_win_pct": 0.0,
+      "floor_score": 130.56,
+      "score": 62.3,
+      "previous_rank": null,
+      "rank": 5,
+      "movement": null,
+      "explanation": "130.6 PPG and a 44% all-play rate. The actual record is close to the all-play expectation."
+    },
+    {
+      "team_id": 7,
+      "owner_ids": [
+        "{ECD9E4C2-4E30-4915-AC59-6C1700E34A69}"
+      ],
+      "owners": [
+        "Ben Katz"
+      ],
+      "owner": "Ben Katz",
+      "team_name": "Los Peloteros De Katz",
+      "past_team_names": [
+        "Team katz",
+        "Hyde-ing My Johnson",
+        "Give my Chubb an OBJ...plz"
+      ],
+      "wins": 0,
+      "losses": 1,
+      "ties": 0,
+      "record": "0-1",
+      "points_for": 137.9,
+      "points_against": 163.06,
+      "games": 1,
+      "ppg": 137.9,
+      "recent3_ppg": 137.9,
+      "all_play_wins": 7.0,
+      "all_play_losses": 2.0,
+      "all_play_pct": 0.7778,
+      "expected_wins": 0.78,
+      "luck": -0.78,
+      "median_win_pct": 1.0,
+      "floor_score": 137.9,
+      "score": 57.0,
+      "previous_rank": null,
+      "rank": 6,
+      "movement": null,
+      "explanation": "137.9 PPG and a 78% all-play rate. The schedule has cost roughly 0.8 wins versus all-play expectation."
+    },
+    {
       "team_id": 9,
-      "team_name": "Saquads squad  Ship",
+      "owner_ids": [
+        "{8D1E7E24-92F1-49FC-ADF1-C8193EA1C44E}"
+      ],
       "owners": [
         "Adam Heckelman"
       ],
-      "score": 12.9,
-      "record": "4-10",
-      "explanation": "106.0 points per game with a 100.9 average across the latest three scored matchups."
+      "owner": "Adam Heckelman",
+      "team_name": "Saquads squad  Ship",
+      "past_team_names": [],
+      "wins": 0,
+      "losses": 1,
+      "ties": 0,
+      "record": "0-1",
+      "points_for": 120.2,
+      "points_against": 140.96,
+      "games": 1,
+      "ppg": 120.2,
+      "recent3_ppg": 120.2,
+      "all_play_wins": 3.0,
+      "all_play_losses": 6.0,
+      "all_play_pct": 0.3333,
+      "expected_wins": 0.33,
+      "luck": -0.33,
+      "median_win_pct": 0.0,
+      "floor_score": 120.2,
+      "score": 34.2,
+      "previous_rank": null,
+      "rank": 7,
+      "movement": null,
+      "explanation": "120.2 PPG and a 33% all-play rate. The actual record is close to the all-play expectation."
+    },
+    {
+      "team_id": 12,
+      "owner_ids": [
+        "{B792F7C9-61CE-4E29-940C-DC1C5E6C4208}"
+      ],
+      "owners": [
+        "Ryan Vader"
+      ],
+      "owner": "Ryan Vader",
+      "team_name": "Run CMC ft. Omarion",
+      "past_team_names": [
+        "Kentucky Buckets",
+        "Where is Tyreeks Neck",
+        "Pls Trade Me Thick Necks",
+        "Jack, Robin, Harry and Sons",
+        "2 Browns 2 Felonies"
+      ],
+      "wins": 0,
+      "losses": 1,
+      "ties": 0,
+      "record": "0-1",
+      "points_for": 104.42,
+      "points_against": 133.56,
+      "games": 1,
+      "ppg": 104.42,
+      "recent3_ppg": 104.42,
+      "all_play_wins": 2.0,
+      "all_play_losses": 7.0,
+      "all_play_pct": 0.2222,
+      "expected_wins": 0.22,
+      "luck": -0.22,
+      "median_win_pct": 0.0,
+      "floor_score": 104.42,
+      "score": 23.9,
+      "previous_rank": null,
+      "rank": 8,
+      "movement": null,
+      "explanation": "104.4 PPG and a 22% all-play rate. The actual record is close to the all-play expectation."
+    },
+    {
+      "team_id": 11,
+      "owner_ids": [
+        "{93FE02E3-D523-4B1D-AC57-E31C8D235433}"
+      ],
+      "owners": [
+        "Jules Salkind"
+      ],
+      "owner": "Jules Salkind",
+      "team_name": "E Bo Nix",
+      "past_team_names": [
+        "Tickle Pitts"
+      ],
+      "wins": 0,
+      "losses": 1,
+      "ties": 0,
+      "record": "0-1",
+      "points_for": 102.56,
+      "points_against": 130.56,
+      "games": 1,
+      "ppg": 102.56,
+      "recent3_ppg": 102.56,
+      "all_play_wins": 1.0,
+      "all_play_losses": 8.0,
+      "all_play_pct": 0.1111,
+      "expected_wins": 0.11,
+      "luck": -0.11,
+      "median_win_pct": 0.0,
+      "floor_score": 102.56,
+      "score": 19.2,
+      "previous_rank": null,
+      "rank": 9,
+      "movement": null,
+      "explanation": "102.6 PPG and a 11% all-play rate. The actual record is close to the all-play expectation."
+    },
+    {
+      "team_id": 6,
+      "owner_ids": [
+        "{429F0506-3667-4F0B-A2ED-1761D0A3F682}"
+      ],
+      "owners": [
+        "Ben Wolbransky"
+      ],
+      "owner": "Ben Wolbransky",
+      "team_name": "Nude Egg",
+      "past_team_names": [
+        "How's Business? Boomin'",
+        "Shrek's Shreks",
+        "The Turbo Team",
+        "The  Turbo Football Team",
+        "Hambone Fake Namingtons",
+        "Shirt Brothers"
+      ],
+      "wins": 0,
+      "losses": 1,
+      "ties": 0,
+      "record": "0-1",
+      "points_for": 77.22,
+      "points_against": 132.76,
+      "games": 1,
+      "ppg": 77.22,
+      "recent3_ppg": 77.22,
+      "all_play_wins": 0.0,
+      "all_play_losses": 9.0,
+      "all_play_pct": 0.0,
+      "expected_wins": 0.0,
+      "luck": 0.0,
+      "median_win_pct": 0.0,
+      "floor_score": 77.22,
+      "score": 5.0,
+      "previous_rank": null,
+      "rank": 10,
+      "movement": null,
+      "explanation": "77.2 PPG and a 0% all-play rate. The actual record is close to the all-play expectation."
     }
   ],
   "methodology": {
-    "power_rankings": "45% record, 35% season scoring strength, 20% latest-three scoring form. Weights will become phase-aware once the new season begins.",
+    "power_rankings": "Weeks 1-2: 35% all-play, 35% scoring, 20% record, 10% neutral floor. The live week is marked provisional until ESPN standings close.",
     "editorial": "Rankings, legality and evidence are computed before any AI copy pass. Reporters may change assignments by story, but their serious or playful persona never changes.",
     "transactions": "ESPN keeper flags are treated as confirmed. Trade details require ESPN roster/activity evidence or a commissioner-confirmed event; model trade ideas are always labeled rumored."
   }

@@ -116,14 +116,14 @@ const OWNER_COLUMNS: SortableColumn<WhatIfOwnerRow>[] = [
 const SEASON_COLUMNS: SortableColumn<WhatIfTeamRow>[] = [
   {
     key: "team",
-    label: "Team",
+    label: "Owner / Team",
     align: "left",
     defaultDir: "asc",
-    sortValue: (r) => r.team.toLowerCase(),
+    sortValue: (r) => (r.owner_names.join(" ") || r.team).toLowerCase(),
     cell: (r) => (
       <div>
-        <div className="font-semibold">{r.team}</div>
-        <div className="text-xs text-[#766d61]">{r.owner_names.join(", ")}</div>
+        <div className="font-semibold">{r.owner_names.join(" & ") || "—"}</div>
+        <div className="text-xs text-[#766d61]">{r.team}</div>
       </div>
     ),
   },

@@ -1,4 +1,5 @@
 import { loadNewsroom } from "@/lib/data";
+import { loadPublishedPowerRankings } from "@/lib/google-power-rankings";
 
 export const metadata = { title: "Newsroom — Steak Frites" };
 
@@ -9,8 +10,11 @@ const statusStyle = {
   analysis: "",
 } as const;
 
-export default function NewsroomPage() {
+export const revalidate = 300;
+
+export default async function NewsroomPage() {
   const news = loadNewsroom();
+  const rankings = await loadPublishedPowerRankings();
   const reporterById = new Map(news.reporters.map((reporter) => [reporter.id, reporter]));
   const lead = news.articles[0];
   const remaining = news.articles.slice(1);
@@ -43,7 +47,7 @@ export default function NewsroomPage() {
 
       <section>
         <div className="kicker">Latest from the desks</div>
-        <h2 className="mt-2 text-3xl font-black tracking-tight">Offseason notebook</h2>
+        <h2 className="mt-2 text-3xl font-black tracking-tight">Week {rankings[0]?.week ?? 1} notebook</h2>
         <div className="mt-5 grid gap-5 md:grid-cols-2">
           {remaining.map((article) => (
             <ArticleCard key={article.id} article={article} reporter={reporterById.get(article.reporter_id)} />
@@ -55,21 +59,22 @@ export default function NewsroomPage() {
         <div className="flex flex-col gap-2 sm:flex-row sm:items-end sm:justify-between">
           <div>
             <div className="kicker">Model board</div>
-            <h2 className="mt-1 text-3xl font-black">Final {news.season - 1} power index</h2>
+            <h2 className="mt-1 text-3xl font-black">Live Week {rankings[0]?.week ?? 1} power index</h2>
           </div>
           <p className="max-w-xl text-xs leading-5 text-[#766d61] sm:text-right">{news.methodology.power_rankings}</p>
         </div>
         <div className="mt-6 grid gap-3 lg:grid-cols-2">
-          {news.power_rankings.map((row) => (
+          {rankings.map((row) => (
             <div key={row.team_id} className="flex gap-4 rounded-lg border border-black/10 bg-white/55 p-4">
               <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-[#123d35] text-lg font-black text-[#f7d77d]">{row.rank}</div>
               <div className="min-w-0">
                 <div className="flex flex-wrap items-baseline gap-x-2">
-                  <h3 className="font-black">{row.team_name}</h3>
+                  <h3 className="font-black">{row.owner}</h3>
                   <span className="text-xs font-bold text-[#8a6a22]">{row.record} · {row.score}</span>
                 </div>
-                <p className="text-xs font-semibold text-[#766d61]">{row.owners.join(" & ")}</p>
-                <p className="mt-2 text-sm leading-5 text-[#5f584d]">{row.explanation}</p>
+                <p className="text-xs font-semibold text-[#766d61]">{row.team_name}</p>
+                {row.past_team_names.length > 0 && <p className="mt-1 line-clamp-1 text-[11px] text-[#9a907f]">Previously: {row.past_team_names.join(" · ")}</p>}
+                <p className="mt-2 text-sm leading-5 text-[#5f584d]">{row.commentary}</p>
               </div>
             </div>
           ))}

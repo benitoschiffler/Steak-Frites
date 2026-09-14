@@ -4,7 +4,7 @@ For an ESPN-free re-process (e.g., after editing pipeline/overrides.py), use:
 
     python -m pipeline.postprocess && python -m pipeline.records && python -m pipeline.keepers && python -m pipeline.newsroom
 """
-from . import adp, pull, postprocess, records, keepers, players, newsroom
+from . import adp, pull, postprocess, records, keepers, players, newsroom, power_rankings
 
 
 def main():
@@ -15,8 +15,14 @@ def main():
     postprocess.main()
     records.main()
     keepers.main()
-    adp.main()
+    try:
+        adp.main()
+    except Exception as exc:
+        # The next season's public ADP feed is normally unavailable during the
+        # fall.  League standings and Newsroom publishing must not fail with it.
+        print(f"ADP refresh skipped; preserving the last successful file: {exc}")
     players.main()
+    power_rankings.main()
     newsroom.main()
 
 

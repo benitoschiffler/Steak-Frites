@@ -109,8 +109,7 @@ export default async function SeasonPage(props: PageProps<"/seasons/[year]">) {
             <thead className="text-left">
               <tr>
                 <th className="px-3 py-2">Finish</th>
-                <th className="px-3 py-2">Team</th>
-                <th className="px-3 py-2">Owner</th>
+                <th className="px-3 py-2">Owner / Team</th>
                 <th className="px-3 py-2 text-right">Record</th>
                 <th className="px-3 py-2 text-right">PF</th>
                 <th className="px-3 py-2 text-right">PA</th>
@@ -121,16 +120,16 @@ export default async function SeasonPage(props: PageProps<"/seasons/[year]">) {
               {standings.map((t) => (
                 <tr key={t.team_id} className="border-t border-black/5">
                   <td className="px-3 py-2 font-black">{t.final_standing != null ? fmt.ordinal(t.final_standing) : "—"}</td>
-                  <td className="px-3 py-2 font-bold">{t.name}</td>
-                  <td className="px-3 py-2 text-sm font-medium text-[#766d61]">
-                    {ownerLink(t.owner_ids).map((o, i) => (
-                      <span key={o.id}>
-                        {i > 0 && ", "}
-                        <Link href={`/teams/${encodeURIComponent(o.id)}`} className="hover:underline">
-                          {o.name}
-                        </Link>
-                      </span>
-                    ))}
+                  <td className="px-3 py-2">
+                    <div className="font-bold">
+                      {ownerLink(t.owner_ids).map((o, i) => (
+                        <span key={o.id}>
+                          {i > 0 && ", "}
+                          <Link href={`/teams/${encodeURIComponent(o.id)}`} className="hover:underline">{o.name}</Link>
+                        </span>
+                      ))}
+                    </div>
+                    <div className="text-xs font-medium text-[#766d61]">{t.name}</div>
                   </td>
                   <td className="px-3 py-2 text-right font-semibold tabular-nums">{fmt.record(t.wins, t.losses, t.ties)}</td>
                   <td className="px-3 py-2 text-right font-semibold tabular-nums">{fmt.pts(t.points_for)}</td>
@@ -166,9 +165,12 @@ export default async function SeasonPage(props: PageProps<"/seasons/[year]">) {
                     return (
                       <li key={i} className="flex items-center gap-2 px-3 py-2.5 text-sm">
                         <div className="flex-1">
-                          <span className={winnerHome ? "font-black" : "font-medium text-[#766d61]"}>{home?.name ?? "—"}</span>
-                          <span className="text-[#b9ae9d]"> vs </span>
-                          <span className={!winnerHome ? "font-black" : "font-medium text-[#766d61]"}>{away?.name ?? "—"}</span>
+                          <div>
+                            <span className={winnerHome ? "font-black" : "font-medium text-[#766d61]"}>{home ? ownerLink(home.owner_ids).map((o) => o.name).join(" & ") : "—"}</span>
+                            <span className="text-[#b9ae9d]"> vs </span>
+                            <span className={!winnerHome ? "font-black" : "font-medium text-[#766d61]"}>{away ? ownerLink(away.owner_ids).map((o) => o.name).join(" & ") : "—"}</span>
+                          </div>
+                          <div className="text-xs text-[#8a8173]">{home?.name ?? "—"} vs {away?.name ?? "—"}</div>
                         </div>
                         <div className="font-black tabular-nums text-right">
                           {fmt.pts(g.home_score)} – {fmt.pts(g.away_score)}
@@ -205,7 +207,10 @@ export default async function SeasonPage(props: PageProps<"/seasons/[year]">) {
                             {p.player_name ?? "—"}
                             {p.keeper_status && <span className="badge badge-gold ml-2 py-1 text-[10px]">Keeper</span>}
                           </span>
-                          <span className="text-xs font-medium text-[#766d61]">{team?.name ?? "—"}</span>
+                          <span className="text-right text-xs font-medium text-[#3b3328]">
+                            <span className="block font-bold">{team ? ownerLink(team.owner_ids).map((o) => o.name).join(" & ") : "—"}</span>
+                            <span className="block text-[#8a8173]">{team?.name ?? "—"}</span>
+                          </span>
                         </li>
                       );
                     })}

@@ -125,8 +125,8 @@ function SeasonLuckCard({ row }: { row: WhatIfTeamRow }) {
           {row.luck_vs_pyth.toFixed(2)}
         </span>
       </div>
-      <div className="mt-3 text-base font-black leading-tight">{row.team}</div>
-      <div className="text-xs text-[#766d61]">{row.owner_names.join(", ")}</div>
+      <div className="mt-3 text-base font-black leading-tight">{row.owner_names.join(" & ") || "—"}</div>
+      <div className="text-xs text-[#766d61]">{row.team}</div>
       <div className="mt-3 text-xs text-[#5c5549]">
         Actual <span className="font-bold">{fmt.record(row.wins, row.losses, row.ties)}</span>
         <span className="mx-1 text-[#9a9085]">·</span>

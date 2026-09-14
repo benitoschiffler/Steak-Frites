@@ -20,7 +20,7 @@ export function SiteHeader({
 
   const navLinkClass = (href: string) => {
     const active = pathname === href || (href !== "/" && pathname.startsWith(`${href}/`));
-    return `flex min-h-11 items-center whitespace-nowrap rounded-lg px-3 font-semibold transition lg:min-h-10 lg:px-2 lg:text-xs xl:text-sm ${
+    return `flex min-h-11 items-center whitespace-nowrap rounded-lg px-3 font-semibold transition lg:min-h-10 lg:px-2 lg:text-xs ${
       active
         ? "bg-[#123d35] text-[#fffaf0]"
         : "text-[#5c5549] hover:bg-[#123d35]/10 hover:text-[#123d35]"
@@ -58,7 +58,7 @@ export function SiteHeader({
             {menuOpen ? "Close" : "Menu"}
           </button>
 
-          <nav className="hidden min-w-0 flex-1 flex-wrap items-center gap-1 lg:flex" aria-label="Primary navigation">
+          <nav className="hidden min-w-0 flex-1 flex-nowrap items-center gap-0.5 lg:flex" aria-label="Primary navigation">
             {nav.map((item) => (
               <Link
                 key={item.href}

@@ -30,7 +30,7 @@ export default function SeasonTable({
   > = {
     rank: { label: "Rank", align: "left", defaultDir: "asc", sortValue: (_, i) => i },
     year: { label: "Year", align: "left", defaultDir: "desc", sortValue: (r) => r.year },
-    team: { label: "Team", align: "left", defaultDir: "asc", sortValue: (r) => r.team.toLowerCase() },
+    team: { label: "Owner / Team", align: "left", defaultDir: "asc", sortValue: (r) => (r.owner_names?.join(" ") || r.team).toLowerCase() },
     record: { label: "Record", align: "right", defaultDir: "desc", sortValue: (r) => r.wins },
     stat: {
       label: valueKey === "points_for" ? "PF" : "PPG",
@@ -86,12 +86,12 @@ export default function SeasonTable({
                 <Link href={`/seasons/${s.year}`} className="hover:underline hover:text-[#123d35]">{s.year}</Link>
               </td>
               <td className="px-3 py-2">
-                <div className="font-bold">{s.team}</div>
                 <OwnerNames
-                  className="text-xs text-[#766d61]"
+                  className="font-bold"
                   names={s.owner_names ?? []}
                   ids={s.owner_ids ?? []}
                 />
+                <div className="text-xs text-[#766d61]">{s.team}</div>
               </td>
               <td className="px-3 py-2 text-right font-semibold tabular-nums">{fmt.record(s.wins, s.losses, s.ties)}</td>
               <td className="px-3 py-2 text-right font-black tabular-nums">{fmt.pts(s[valueKey])}</td>

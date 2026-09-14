@@ -202,7 +202,7 @@ export default function HomePage() {
             label="Biggest Blowout"
             value={`${fmt.pts(topBlowout?.margin)}`}
             unit="pt margin"
-            sub={`${topBlowout?.year} W${topBlowout?.week} · ${topBlowout?.home_team} vs ${topBlowout?.away_team}`}
+            sub={`${topBlowout?.year} W${topBlowout?.week} · ${topBlowout?.home_owners.join(" & ")} vs ${topBlowout?.away_owners.join(" & ")} · ${topBlowout?.home_team} vs ${topBlowout?.away_team}`}
           />
           <FactCard
             href="/records"
@@ -210,7 +210,7 @@ export default function HomePage() {
             label="Highest Single Game"
             value={fmt.pts(topScore?.score)}
             unit="points"
-            sub={`${topScore?.year} W${topScore?.week} · ${topScore?.team}`}
+            sub={`${topScore?.year} W${topScore?.week} · ${topScore?.owners.join(" & ")} · ${topScore?.team}`}
           />
           <FactCard
             href="/records"
@@ -218,7 +218,7 @@ export default function HomePage() {
             label="Best Season (PF)"
             value={fmt.pts(topSeason?.points_for)}
             unit="total"
-            sub={`${topSeason?.year} · ${topSeason?.team}`}
+            sub={`${topSeason?.year} · ${topSeason?.owner_names.join(" & ")} · ${topSeason?.team}`}
           />
           <FactCard
             href="/records"
@@ -246,10 +246,8 @@ export default function HomePage() {
                   Champion
                 </div>
               </div>
-              <div className="mt-4 text-lg font-black">{c.team}</div>
-              <div className="text-sm font-medium text-[#6f6a60]">
-                {c.owner_names.join(", ")}
-              </div>
+              <div className="mt-4 text-lg font-black">{c.owner_names.join(" & ")}</div>
+              <div className="text-sm font-medium text-[#6f6a60]">{c.team}</div>
               <div className="mt-3 text-xs font-semibold text-[#8a8173]">
                 {fmt.record(c.wins, c.losses, c.ties)} · {fmt.pts(c.points_for)} PF
               </div>

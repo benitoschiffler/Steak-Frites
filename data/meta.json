@@ -10,12 +10,13 @@
     2022,
     2023,
     2024,
-    2025
+    2025,
+    2026
   ],
-  "current_year": 2025,
-  "next_year": 2026,
+  "current_year": 2026,
+  "next_year": 2027,
   "excluded_record_years": {
     "2021": "Played on Sleeper \u2014 ESPN data not authoritative."
   },
-  "updated_at": "2026-05-31T15:32:16.899275+00:00"
+  "updated_at": "2026-09-14T16:15:23+00:00"
 }

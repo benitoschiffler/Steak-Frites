@@ -5,6 +5,7 @@ A living history site for the Steak Frites fantasy football league.
 - **Records & fun facts:** all-time leaderboards, blowouts, scoring records, streaks, champions.
 - **Per-season recaps:** standings, weekly results, drafts.
 - **Owner profiles:** lifetime record, head-to-head matrix, keeper history, full draft history.
+- **Weekly power rankings:** phase-aware model scores plus a Google Sheet editor desk for commentary, featured teams, publishing controls, and bounded adjustments.
 - **Keeper planner:** pick up to 2 players from your end-of-season roster, see if it's legal under the rules, see the cost (drafted round, or ADP-equivalent for repeat keepers).
   Repeat-keeper costs use current 10-team, 0.5-PPR ADP from Fantasy Football Calculator.
 
@@ -12,7 +13,7 @@ A living history site for the Steak Frites fantasy football league.
 
 ```
 .
-├── pipeline/        # Python: pulls from ESPN, computes records & keepers, writes JSON
+├── pipeline/        # Python: pulls from ESPN, computes records, keepers, rankings & Newsroom
 ├── data/            # canonical JSON dataset (committed; rebuilt by pipeline)
 ├── web/             # Next.js 16 app (App Router, TS, Tailwind 4)
 ├── exports/         # raw CSV + Excel exports (gitignored; from older export_league.py)
@@ -51,14 +52,15 @@ ESPN_S2='…' SWID='{…}' \
 python -m pipeline.build
 ```
 
-You also need to update `pipeline/config.py` `CURRENT_YEAR` (or set the env var on
-every run). The dynamic routes will pick up the new year automatically.
+The pipeline automatically treats the current calendar year as the active season
+from August onward (and the prior year before August). Environment variables remain
+available for an explicit override.
 
 ## Deployment (Vercel)
 
 1. Create a Vercel project pointing at this repo, with **root directory = `web/`**.
-2. No env vars needed at build time — the site is a static export reading
-   the committed `data/` JSON.
+2. No env vars are needed at build time. The site reads committed JSON and polls
+   the published Google Sheet export for editor commentary and ranking overrides.
 3. Push to `main` → Vercel auto-deploys.
 
 ## Weekly auto-refresh
@@ -77,7 +79,15 @@ Set the secrets in GitHub → repo Settings → Secrets → Actions:
   rankings, keeper legality, confidence, and evidence. Without it, the same
   issue publishes with deterministic copy.
 
-The refresh also writes `data/newsroom.json`. Reporter personas live in
+The refresh also writes `data/power_rankings.json` and `data/newsroom.json`.
+The public `/api/power-rankings-feed` route refreshes the workbook's hidden
+`Auto Data` tab. The workbook's hidden `Site Export` tab is read by the site every
+five minutes, so commentary and the bounded -5 to +5 adjustment publish without a
+new deploy. The model score remains visible beside the edited score for auditability.
+
+Workbook: https://docs.google.com/spreadsheets/d/18-2kfsfmkUnkmHSFqimlgOVYiCECCZ4GQWfSadLS2vM/edit
+
+Reporter personas live in
 `data/newsroom_config.json`; their serious/playful assignments are persistent.
 The workflow uses the cost-efficient `gpt-5.6-luna` model by default and the API
 key is never exposed to the Next.js client.

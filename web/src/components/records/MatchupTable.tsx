@@ -30,7 +30,7 @@ export default function MatchupTable({
   > = {
     rank: { label: "Rank", align: "left", defaultDir: "asc", sortValue: (_, i) => i },
     when: { label: "When", align: "left", defaultDir: "desc", sortValue: (g) => g.year * 100 + g.week },
-    matchup: { label: "Matchup", align: "left", defaultDir: "asc", sortValue: (g) => g.home_team.toLowerCase() },
+    matchup: { label: "Owners / Teams", align: "left", defaultDir: "asc", sortValue: (g) => (g.home_owners?.join(" ") || g.home_team).toLowerCase() },
     value: {
       label: valueKey === "margin" ? "Margin" : "Total",
       align: "right",
@@ -90,16 +90,12 @@ export default function MatchupTable({
                   </Link>
                 </td>
                 <td className="px-3 py-2 align-top">
-                  <div>
-                    <span className={homeWon ? "font-bold" : ""}>{g.home_team}</span>{" "}
-                    <span className="text-[#766d61] tabular-nums">{fmt.pts(g.home_score)} – {fmt.pts(g.away_score)}</span>{" "}
-                    <span className={awayWon ? "font-bold" : ""}>{g.away_team}</span>
+                  <div className="flex flex-wrap items-baseline gap-x-2">
+                    <OwnerNames className={homeWon ? "font-black" : "font-semibold"} names={g.home_owners ?? []} ids={g.home_owner_ids ?? []} />
+                    <span className="text-[#766d61] tabular-nums">{fmt.pts(g.home_score)} – {fmt.pts(g.away_score)}</span>
+                    <OwnerNames className={awayWon ? "font-black" : "font-semibold"} names={g.away_owners ?? []} ids={g.away_owner_ids ?? []} />
                   </div>
-                  <div className="text-xs text-[#766d61]">
-                    <OwnerNames names={g.home_owners ?? []} ids={g.home_owner_ids ?? []} />
-                    <span className="text-[#b9ae9d]"> vs </span>
-                    <OwnerNames names={g.away_owners ?? []} ids={g.away_owner_ids ?? []} />
-                  </div>
+                  <div className="text-xs text-[#8a8173]">{g.home_team} vs {g.away_team}</div>
                 </td>
                 <td className="px-3 py-2 text-right font-black tabular-nums align-top">{fmt.pts(g[valueKey])}</td>
               </tr>

@@ -141,8 +141,7 @@ function PodiumCell({ place, row }: { place: 1 | 2 | 3; row?: SeasonTeamRow }) {
       </div>
       {row ? (
         <>
-          <div className="text-lg font-black">{row.team}</div>
-          <div className="text-sm font-medium text-[#5c5549]">
+          <div className="text-lg font-black">
             {(row.owner_names ?? []).map((n, i) => {
               const id = row.owner_ids?.[i];
               return (
@@ -159,6 +158,7 @@ function PodiumCell({ place, row }: { place: 1 | 2 | 3; row?: SeasonTeamRow }) {
               );
             })}
           </div>
+          <div className="text-sm font-semibold text-[#766d61]">{row.team}</div>
           <div className="text-xs font-semibold text-[#8a8173]">
             {fmt.record(row.wins, row.losses, row.ties)} · {fmt.pts(row.points_for)} PF
           </div>
@@ -173,21 +173,20 @@ function PodiumCell({ place, row }: { place: 1 | 2 | 3; row?: SeasonTeamRow }) {
 function PodiumColumn({
   title,
   rows,
-  accent: _accent,
+  accent,
 }: {
   title: string;
   rows: SeasonTeamRow[];
   accent: "gold" | "silver" | "bronze";
 }) {
   return (
-    <div className="premium-panel overflow-hidden rounded-lg">
+    <div className="premium-panel overflow-hidden rounded-lg" data-accent={accent}>
       <div className="border-b border-black/10 bg-[#123d35]/[0.06] px-3 py-3 text-sm font-black">{title}</div>
       <ul className="divide-y divide-black/5">
         {[...rows].sort((a, b) => b.year - a.year).map((c) => (
           <li key={c.year} className="px-3 py-3 text-sm">
             <span className="badge badge-gold mr-2">{c.year}</span>
-            <span className="font-black">{c.team}</span>
-            <div className="mt-1 text-xs font-medium text-[#766d61]">
+            <span className="font-black">
               {(c.owner_names ?? []).map((n, i) => {
                 const id = c.owner_ids?.[i];
                 return (
@@ -203,6 +202,9 @@ function PodiumColumn({
                   </span>
                 );
               })}
+            </span>
+            <div className="mt-1 text-xs font-medium text-[#766d61]">
+              <span className="font-semibold">{c.team}</span>
               {" · "}
               {fmt.record(c.wins, c.losses, c.ties)} · {fmt.pts(c.points_for)} PF
             </div>

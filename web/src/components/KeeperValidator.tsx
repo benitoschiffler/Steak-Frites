@@ -87,14 +87,14 @@ export default function KeeperValidator({
                       : "border-black/10 bg-[#fffdf7] text-[#3b3328] hover:border-[#c8962d]/50"
                   }`}
                 >
-                  <div className="text-sm font-bold leading-tight">{t.team_name}</div>
                   {t.owners && (
-                    <div className={`mt-0.5 text-[11px] font-semibold leading-tight ${
+                    <div className="text-sm font-bold leading-tight">{t.owners}</div>
+                  )}
+                  <div className={`mt-0.5 text-[11px] font-semibold leading-tight ${
                       isActive ? "text-[#f7d77d]" : "text-[#766d61]"
                     }`}>
-                      {t.owners}
-                    </div>
-                  )}
+                    {t.team_name}
+                  </div>
                 </button>
               );
             })}
@@ -105,8 +105,8 @@ export default function KeeperValidator({
           {team && (
             <div className="flex flex-col gap-2 rounded-lg border border-black/10 bg-[#fffdf7]/70 p-4 sm:flex-row sm:items-center sm:justify-between">
               <div>
-                <div className="text-lg font-black">{team.team_name}</div>
-                <div className="text-sm font-medium text-[#766d61]">{team.owners}</div>
+                <div className="text-lg font-black">{team.owners}</div>
+                <div className="text-sm font-medium text-[#766d61]">{team.team_name}</div>
               </div>
               <div className="flex flex-wrap gap-2">
                 <span className="badge badge-green">{team.candidates.length} eligible</span>

@@ -53,12 +53,13 @@ export default function SeasonsIndex() {
                 ) : champ ? (
                   <div>
                     <span className="badge badge-gold mr-2">Champ</span>
-                    <span className="font-black">{champ.team}</span>
+                    <span className="font-black">{champ.owner_names.join(" & ") || "—"}</span>
+                    <div className="mt-1 pl-16 text-xs text-[#8a8173]">{champ.team}</div>
                   </div>
                 ) : (
                   <div className="text-[#9a907f]">No champion recorded</div>
                 )}
-                {!excludedNote && ru && <div className="mt-2 text-xs font-semibold text-[#766d61]">Runner-up: {ru.team}</div>}
+                {!excludedNote && ru && <div className="mt-2 text-xs font-semibold text-[#766d61]">Runner-up: {ru.owner_names.join(" & ") || "—"}<span className="block font-normal text-[#8a8173]">{ru.team}</span></div>}
               </div>
               {!excludedNote && (
                 <div className="mt-4 border-t border-black/5 pt-3 text-xs font-semibold text-[#766d61]">

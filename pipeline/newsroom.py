@@ -132,53 +132,59 @@ def _polish(articles: list[dict]) -> tuple[list[dict], str]:
 def main():
     meta = _read("meta.json")
     season = _read(f"seasons/{CURRENT_YEAR}.json")
-    keepers = _read("keepers.json")
-    adp_data = _read("adp.json")
     config = _read("newsroom_config.json")
-    adp = {p["player_id"]: p.get("adp") for p in adp_data.get("players", [])}
-    points = _player_points(season)
-    teams = {t["team_id"]: t for t in season["teams"]}
-    rules = keepers["rules"]
-    candidates = keepers["next_year_planning"]["candidates"]
-    by_team: dict[int, list[dict]] = defaultdict(list)
-    for c in candidates:
-        by_team[c["team_id"]].append(c)
+    rankings_data = _read("power_rankings.json")
     now = datetime.now(timezone.utc).isoformat()
     reporters = config["reporters"]
-    serious = [r for r in reporters if r["tone"] == "serious"]
+    rankings = rankings_data.get("rankings") or []
+    week = int(rankings_data.get("week") or 0)
     articles = []
-    for idx, team in enumerate(sorted(teams.values(), key=lambda t: t["team_id"])):
-        pair = _best_keeper_pair(by_team[team["team_id"]], points, adp, len(teams), rules)
-        if not pair:
-            continue
-        names = [p.get("player_name") or "Unknown" for p in pair]
-        costs = [f'{p["player_name"]} (Round {p["cost_round"]}, {p["cost_source"]})' for p in pair]
-        confidence = min(.94, .55 + sum(p["score"] for p in pair) / 1600)
-        reporter = serious[idx % len(serious)]
+    if rankings:
+        leader = rankings[0]
         articles.append({
-            "id": f'{NEXT_YEAR}-keeper-{team["team_id"]}', "kind": "keeper", "label": "Keeper Intel", "status": "projected",
-            "headline": f'{" and ".join(names)} lead the keeper board for {team["name"].strip()}',
-            "dek": f'{", ".join(team["owner_names"])} enter the offseason with a projected pairing built on legal cost and proven production.',
-            "body": f'The Newsroom model currently favors {" and ".join(names)}. This is a projection—not a report of a submitted decision—and it will move with ADP, injuries and official keeper declarations.',
-            "reporter_id": reporter["id"], "team_ids": [team["team_id"]], "confidence": round(confidence, 2),
-            "evidence": costs + [f'{p["player_name"]}: {p["points"]:.1f} lineup points in {CURRENT_YEAR}' for p in pair], "published_at": now,
+            "id": f'{CURRENT_YEAR}-week-{week}-power-lead', "kind": "power_rankings", "label": "Power Rankings", "status": "analysis",
+            "headline": f'{leader["owner"]} opens Week {week} at No. 1',
+            "dek": f'{leader["team_name"]} leads the first phase-aware Steak Frites power model with a {leader["score"]:.1f} rating.',
+            "body": leader["explanation"], "reporter_id": "ben-n-syder", "team_ids": [leader["team_id"]], "confidence": None,
+            "evidence": [f'{leader["record"]} record', f'{leader["ppg"]:.1f} PPG', f'{leader["all_play_pct"]:.0%} all-play rate'], "published_at": now,
         })
-    playful = next(r for r in reporters if r["id"] == "harry-weiner")
-    articles.append({
-        "id": f"{NEXT_YEAR}-keeper-market", "kind": "feature", "label": "Leaguewide Analysis", "status": "analysis",
-        "headline": f"The {NEXT_YEAR} keeper market is officially taking shape", "dek": f"Ten rosters, two keeper slots each and no shortage of decisions that will age loudly.",
-        "body": "The first Newsroom board evaluates every legal pairing using keeper cost and prior lineup production. Official decisions will replace projections as ESPN records them.",
-        "reporter_id": playful["id"], "team_ids": [], "confidence": None,
-        "evidence": [f"{len(candidates)} final-roster candidates evaluated", "Rounds 1-3 excluded", "Round-band limits enforced"], "published_at": now,
-    })
+        risers = sorted((row for row in rankings if row.get("movement")), key=lambda row: row["movement"], reverse=True)
+        if risers and risers[0]["movement"] > 0:
+            riser = risers[0]
+            articles.append({
+                "id": f'{CURRENT_YEAR}-week-{week}-riser', "kind": "weekly", "label": "Stock Watch", "status": "analysis",
+                "headline": f'{riser["owner"]} makes the week’s biggest move',
+                "dek": f'{riser["team_name"]} climbed {riser["movement"]} spot{"s" if riser["movement"] != 1 else ""} to No. {riser["rank"]}.',
+                "body": riser["explanation"], "reporter_id": "issac-cox", "team_ids": [riser["team_id"]], "confidence": None,
+                "evidence": [f'Previous rank: {riser["previous_rank"]}', f'Current score: {riser["score"]:.1f}'], "published_at": now,
+            })
+        unluckiest = min(rankings, key=lambda row: row["luck"])
+        articles.append({
+            "id": f'{CURRENT_YEAR}-week-{week}-schedule-luck', "kind": "weekly", "label": "Schedule Desk", "status": "analysis",
+            "headline": f'The early numbers say {unluckiest["owner"]} deserved better',
+            "dek": f'{unluckiest["team_name"]} sits {unluckiest["luck"]:+.1f} wins from its all-play expectation.',
+            "body": "All-play compares each weekly score with every other team, separating team strength from the opponent that happened to appear on the schedule.",
+            "reporter_id": "edith-puthy", "team_ids": [unluckiest["team_id"]], "confidence": None,
+            "evidence": [f'{unluckiest["all_play_wins"]:.1f}-{unluckiest["all_play_losses"]:.1f} all-play record', f'{unluckiest["ppg"]:.1f} PPG'], "published_at": now,
+        })
+        playful = next(r for r in reporters if r["id"] == "harry-weiner")
+        basement = rankings[-1]
+        articles.append({
+            "id": f'{CURRENT_YEAR}-week-{week}-back-page', "kind": "feature", "label": "Back Page", "status": "analysis",
+            "headline": f'{basement["owner"]} has work to do—and the spreadsheet has receipts',
+            "dek": f'{basement["team_name"]} checks in at No. {basement["rank"]}, but one strong week can still rewrite an early table.',
+            "body": "The model is intentionally responsive at the start of the season. A hot score moves quickly; sustained production matters more once three weeks of form exist.",
+            "reporter_id": playful["id"], "team_ids": [basement["team_id"]], "confidence": None,
+            "evidence": [f'Model score: {basement["score"]:.1f}', f'{basement["ppg"]:.1f} PPG'], "published_at": now,
+        })
     articles, generation = _polish(articles)
     output = {
-        "publication": config.get("publication", "Newsroom"), "season": NEXT_YEAR, "phase": "offseason",
-        "issue_id": f"{NEXT_YEAR}-offseason-1", "issue_label": f"{NEXT_YEAR} Offseason · Keeper Watch",
+        "publication": config.get("publication", "Newsroom"), "season": CURRENT_YEAR, "phase": "in_season",
+        "issue_id": f"{CURRENT_YEAR}-week-{week}", "issue_label": f"{CURRENT_YEAR} · Week {week} Power Report",
         "generated_at": now, "generation": generation, "reporters": reporters, "articles": articles,
-        "power_rankings": _power_rankings(season),
+        "power_rankings": rankings,
         "methodology": {
-            "power_rankings": "45% record, 35% season scoring strength, 20% latest-three scoring form. Weights will become phase-aware once the new season begins.",
+            "power_rankings": rankings_data["methodology"]["early_season"] if week <= 2 else rankings_data["methodology"]["standard"],
             "editorial": "Rankings, legality and evidence are computed before any AI copy pass. Reporters may change assignments by story, but their serious or playful persona never changes.",
             "transactions": "ESPN keeper flags are treated as confirmed. Trade details require ESPN roster/activity evidence or a commissioner-confirmed event; model trade ideas are always labeled rumored."
         }

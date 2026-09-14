@@ -14,9 +14,9 @@ const COLS: Record<
 > = {
   rank: { label: "Rank", align: "left", defaultDir: "asc", sortValue: (_, i) => i },
   when: { label: "When", align: "left", defaultDir: "desc", sortValue: (g) => g.year * 100 + g.week },
-  team: { label: "Team / Owner", align: "left", defaultDir: "asc", sortValue: (g) => g.team.toLowerCase() },
+  team: { label: "Owner / Team", align: "left", defaultDir: "asc", sortValue: (g) => (g.owners?.join(" ") || g.team).toLowerCase() },
   score: { label: "Score", align: "right", defaultDir: "desc", sortValue: (g) => g.score },
-  opp: { label: "Opponent", align: "left", defaultDir: "asc", sortValue: (g) => g.opp_team.toLowerCase() },
+  opp: { label: "Opponent", align: "left", defaultDir: "asc", sortValue: (g) => (g.opp_owners?.join(" ") || g.opp_team).toLowerCase() },
 };
 
 export default function TeamGameTable({
@@ -82,21 +82,21 @@ export default function TeamGameTable({
                 </Link>
               </td>
               <td className="px-3 py-2 align-top">
-                <div className="font-bold">{g.team}</div>
                 <OwnerNames
-                  className="text-xs text-[#766d61]"
+                  className="font-bold"
                   names={g.owners ?? []}
                   ids={g.owner_ids ?? []}
                 />
+                <div className="text-xs text-[#766d61]">{g.team}</div>
               </td>
               <td className="px-3 py-2 text-right font-black tabular-nums align-top">{fmt.pts(g.score)}</td>
               <td className="px-3 py-2 text-xs text-[#766d61] align-top">
-                <div>vs {g.opp_team} ({fmt.pts(g.opp_score)})</div>
                 <OwnerNames
-                  className="text-[#9a907f]"
+                  className="font-bold text-[#4e493f]"
                   names={g.opp_owners ?? []}
                   ids={g.opp_owner_ids ?? []}
                 />
+                <div className="text-[#9a907f]">{g.opp_team} · {fmt.pts(g.opp_score)}</div>
               </td>
             </tr>
           ))}

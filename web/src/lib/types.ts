@@ -414,9 +414,64 @@ export type PowerRanking = {
   team_id: number;
   team_name: string;
   owners: string[];
+  owner?: string;
+  owner_ids?: string[];
+  past_team_names?: string[];
   score: number;
   record: string;
   explanation: string;
+  wins?: number;
+  losses?: number;
+  ties?: number;
+  points_for?: number;
+  points_against?: number;
+  games?: number;
+  ppg?: number;
+  recent3_ppg?: number;
+  all_play_wins?: number;
+  all_play_losses?: number;
+  all_play_pct?: number;
+  expected_wins?: number;
+  luck?: number;
+  median_win_pct?: number;
+  floor_score?: number;
+  movement?: number | null;
+};
+
+export type PowerRankingsData = {
+  season: number;
+  week: number;
+  status: 'provisional' | 'official';
+  generated_at: string;
+  methodology: {
+    early_season: string;
+    standard: string;
+    editor: string;
+  };
+  rankings: PowerRanking[];
+  history: Array<{ week: number; rankings: PowerRanking[] }>;
+};
+
+export type PublishedPowerRanking = {
+  rank: number;
+  owner: string;
+  team_name: string;
+  past_team_names: string[];
+  record: string;
+  score: number;
+  model_score: number;
+  movement: number | null;
+  ppg: number;
+  recent3_ppg: number;
+  all_play_pct: number;
+  luck: number;
+  commentary: string;
+  featured: boolean;
+  team_id: number;
+  status: string;
+  week: number;
+  updated_at: string;
+  source: 'google-sheet' | 'model-fallback';
 };
 
 export type NewsroomData = {

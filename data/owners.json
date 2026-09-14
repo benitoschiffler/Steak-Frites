@@ -111,6 +111,16 @@
         "ties": 0,
         "points_for": 1570.2800000000002,
         "final_standing": 9
+      },
+      {
+        "year": 2026,
+        "team_id": 1,
+        "team_name": "We Did It, Joe!",
+        "wins": 0,
+        "losses": 0,
+        "ties": 0,
+        "points_for": 0.0,
+        "final_standing": 0
       }
     ]
   },
@@ -320,6 +330,16 @@
         "ties": 0,
         "points_for": 1663.0,
         "final_standing": 6
+      },
+      {
+        "year": 2026,
+        "team_id": 6,
+        "team_name": "Nude Egg",
+        "wins": 0,
+        "losses": 0,
+        "ties": 0,
+        "points_for": 0.0,
+        "final_standing": 0
       }
     ]
   },
@@ -476,6 +496,16 @@
         "ties": 0,
         "points_for": 1825.64,
         "final_standing": 4
+      },
+      {
+        "year": 2026,
+        "team_id": 3,
+        "team_name": "Amon-Ra Dog It",
+        "wins": 0,
+        "losses": 0,
+        "ties": 0,
+        "points_for": 0.0,
+        "final_standing": 0
       }
     ]
   },
@@ -647,6 +677,16 @@
         "ties": 0,
         "points_for": 1629.5800000000002,
         "final_standing": 1
+      },
+      {
+        "year": 2026,
+        "team_id": 5,
+        "team_name": "Bijan Mustard",
+        "wins": 0,
+        "losses": 0,
+        "ties": 0,
+        "points_for": 0.0,
+        "final_standing": 0
       }
     ]
   },
@@ -793,6 +833,16 @@
         "ties": 0,
         "points_for": 1609.1,
         "final_standing": 8
+      },
+      {
+        "year": 2026,
+        "team_id": 7,
+        "team_name": "Los Peloteros De Katz",
+        "wins": 0,
+        "losses": 0,
+        "ties": 0,
+        "points_for": 0.0,
+        "final_standing": 0
       }
     ]
   },
@@ -906,6 +956,16 @@
         "ties": 0,
         "points_for": 1865.7,
         "final_standing": 3
+      },
+      {
+        "year": 2026,
+        "team_id": 12,
+        "team_name": "Run CMC ft. Omarion",
+        "wins": 0,
+        "losses": 0,
+        "ties": 0,
+        "points_for": 0.0,
+        "final_standing": 0
       }
     ]
   },
@@ -1035,6 +1095,16 @@
         "ties": 0,
         "points_for": 1541.8200000000002,
         "final_standing": 10
+      },
+      {
+        "year": 2026,
+        "team_id": 10,
+        "team_name": "Team Goldstein",
+        "wins": 0,
+        "losses": 0,
+        "ties": 0,
+        "points_for": 0.0,
+        "final_standing": 0
       }
     ]
   },
@@ -1131,6 +1201,16 @@
         "ties": 0,
         "points_for": 1600.7,
         "final_standing": 2
+      },
+      {
+        "year": 2026,
+        "team_id": 2,
+        "team_name": "Jake and Seth",
+        "wins": 0,
+        "losses": 0,
+        "ties": 0,
+        "points_for": 0.0,
+        "final_standing": 0
       }
     ]
   },
@@ -1237,6 +1317,16 @@
         "ties": 0,
         "points_for": 1483.3,
         "final_standing": 7
+      },
+      {
+        "year": 2026,
+        "team_id": 9,
+        "team_name": "Saquads squad  Ship",
+        "wins": 0,
+        "losses": 0,
+        "ties": 0,
+        "points_for": 0.0,
+        "final_standing": 0
       }
     ]
   },
@@ -1293,6 +1383,16 @@
         "ties": 0,
         "points_for": 1906.1,
         "final_standing": 5
+      },
+      {
+        "year": 2026,
+        "team_id": 11,
+        "team_name": "E Bo Nix",
+        "wins": 0,
+        "losses": 0,
+        "ties": 0,
+        "points_for": 0.0,
+        "final_standing": 0
       }
     ]
   }

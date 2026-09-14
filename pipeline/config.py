@@ -1,12 +1,24 @@
 """Shared configuration."""
 import os
+from datetime import date
 from pathlib import Path
 
 LEAGUE_ID = 113984
 FIRST_YEAR = 2016
-# Current season defaults to env or auto from date. Update each fall.
-CURRENT_YEAR = int(os.environ.get("CURRENT_YEAR", 2025))    # last completed season we have data for
-NEXT_YEAR = int(os.environ.get("NEXT_YEAR", CURRENT_YEAR + 1))  # upcoming draft year - used for ADP / keeper planning
+
+
+def _env_year(name: str, fallback: int) -> int:
+    """Treat empty GitHub workflow inputs as absent instead of crashing."""
+    raw = (os.environ.get(name) or "").strip()
+    return int(raw) if raw else fallback
+
+
+# ESPN labels a season by the calendar year in which it begins.  Keep the
+# just-completed season active through July, then roll automatically in August.
+today = date.today()
+AUTOMATIC_CURRENT_YEAR = today.year if today.month >= 8 else today.year - 1
+CURRENT_YEAR = _env_year("CURRENT_YEAR", AUTOMATIC_CURRENT_YEAR)
+NEXT_YEAR = _env_year("NEXT_YEAR", CURRENT_YEAR + 1)
 YEARS = list(range(FIRST_YEAR, CURRENT_YEAR + 1))
 
 # Years that ran on a different platform (Sleeper) and whose ESPN data is not

@@ -9,10 +9,10 @@ on:
   workflow_dispatch:
     inputs:
       year:
-        description: "Override CURRENT_YEAR (last completed season)"
+        description: "Override CURRENT_YEAR (active season)"
         required: false
       next_year:
-        description: "Override NEXT_YEAR (upcoming draft, for ADP)"
+        description: "Override NEXT_YEAR (next draft year for ADP)"
         required: false
 
 permissions:

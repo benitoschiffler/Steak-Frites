@@ -139,10 +139,8 @@ function MvpCell({
             )}
           </div>
           <div className="mt-1 text-sm font-medium text-[#5c5549]">
-            <span className="font-bold">{mvp.team_name}</span>
             {mvp.owner_names?.length > 0 && (
-              <>
-                {" · "}
+              <span className="font-bold">
                 {mvp.owner_names.map((n, i) => {
                   const id = mvp.owner_ids?.[i];
                   return (
@@ -158,8 +156,9 @@ function MvpCell({
                     </span>
                   );
                 })}
-              </>
+              </span>
             )}
+            <span className="block text-xs text-[#8a8173]">{mvp.team_name}</span>
           </div>
           <div className="mt-3 grid grid-cols-2 gap-2 text-xs">
             {variant === "regular" ? (
@@ -265,8 +264,7 @@ function PositionTable({ position, rows }: { position: string; rows: PlayerPerfo
                 </Link>
               </td>
               <td className="px-3 py-2.5 align-top">
-                <div className="text-sm font-bold">{r.team_name ?? "—"}</div>
-                <div className="text-[11px] text-[#766d61]">
+                <div className="text-sm font-bold">
                   {(r.owner_names ?? []).map((n, ix) => {
                     const id = r.owner_ids?.[ix];
                     return (
@@ -283,6 +281,7 @@ function PositionTable({ position, rows }: { position: string; rows: PlayerPerfo
                     );
                   })}
                 </div>
+                <div className="text-[11px] text-[#766d61]">{r.team_name ?? "—"}</div>
               </td>
               <td className="px-3 py-2.5 align-top text-right font-black tabular-nums">{fmt.pts(r.points)}</td>
             </tr>

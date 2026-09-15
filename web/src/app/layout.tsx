@@ -21,13 +21,12 @@ export const metadata: Metadata = {
 
 const NAV = [
   { href: "/newsroom", label: "Newsroom" },
-  { href: "/power-rankings", label: "Power Rankings" },
+  { href: "/records", label: "Record Book" },
+  { href: "/players", label: "Players" },
   { href: "/versus", label: "Versus" },
   { href: "/champions", label: "Trophies" },
   { href: "/playoffs", label: "Playoffs" },
   { href: "/what-if", label: "What If" },
-  { href: "/records", label: "Records" },
-  { href: "/players", label: "Players" },
   { href: "/seasons", label: "Seasons" },
   { href: "/teams", label: "Owners" },
   { href: "/keepers", label: "Keepers" },

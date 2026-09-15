@@ -212,6 +212,9 @@ export type Records = {
   closest_games: MatchupGame[];
   highest_combined: MatchupGame[];
   lowest_combined: MatchupGame[];
+  opening_week_highest: SingleTeamGame[];
+  highest_losing_scores: SingleTeamGame[];
+  lowest_winning_scores: SingleTeamGame[];
   highest_season_pf: SeasonTeamRow[];
   lowest_season_pf: SeasonTeamRow[];
   best_season_ppg: SeasonTeamRow[];
@@ -320,6 +323,8 @@ export type PlayerPerformance = {
   owner_ids: string[];
   owner_names: string[];
   team_won: boolean | null;
+  team_score?: number | null;
+  team_share?: number;
   is_playoff: boolean;
 };
 
@@ -373,6 +378,9 @@ export type PlayerData = {
   all_time_top_by_position: Record<string, PlayerPerformance[]>;
   season_top_by_position: Record<string, Record<string, PlayerPerformance[]>>;
   winning_team_appearances: WinningTeamLeader[];
+  opening_week_top: PlayerPerformance[];
+  biggest_bench_scores: PlayerPerformance[];
+  biggest_carry_jobs: PlayerPerformance[];
   mvps_by_season: Record<string, SeasonMvp>;
   methodology: {
     regular_season_mvp: string;

@@ -117,6 +117,7 @@ def compute() -> dict[str, Any]:
     # Flatten all (player-week-team) performances across every season with box scores.
     perfs_started: list[dict] = []   # only starting lineup performances
     perfs_all_roster: list[dict] = []  # all rostered (incl. bench) — for winning-team count
+    team_week_scores: dict[tuple[int, int, int], float] = {}
     for s in seasons:
         if s["year"] in EXCLUDED_RECORD_YEARS:
             continue
@@ -124,6 +125,8 @@ def compute() -> dict[str, Any]:
         if not bx:
             continue
         winners = _matchup_winners_for_season(s)
+        for (week, team_id), result in winners.items():
+            team_week_scores[(s["year"], week, team_id)] = float(result["team_score"])
         for week_key, rows in bx.items():
             week = int(week_key)
             for row in rows:
@@ -133,6 +136,33 @@ def compute() -> dict[str, Any]:
                 perfs_all_roster.append(enriched)
                 if enriched["started"]:
                     perfs_started.append(enriched)
+
+    # Fun-record leaderboards that work as recurring weekly editorial hooks.
+    opening_week_top = sorted(
+        [p for p in perfs_started if p["week"] == 1],
+        key=lambda x: x["points"],
+        reverse=True,
+    )[:20]
+    biggest_bench_scores = sorted(
+        [p for p in perfs_all_roster if p["slot_position"] == "BE" and p["points"] > 0],
+        key=lambda x: x["points"],
+        reverse=True,
+    )[:20]
+    carry_jobs = []
+    for p in perfs_started:
+        team_score = team_week_scores.get((p["year"], p["week"], p["team_id"]))
+        if not team_score or team_score <= 0 or p["points"] <= 0:
+            continue
+        carry_jobs.append({
+            **p,
+            "team_score": team_score,
+            "team_share": round(p["points"] / team_score, 4),
+        })
+    biggest_carry_jobs = sorted(
+        carry_jobs,
+        key=lambda x: (x["team_share"], x["points"]),
+        reverse=True,
+    )[:20]
 
     # ─── Top single-week performances by position (all-time) ──────────────
     by_pos_all_time: dict[str, list[dict]] = defaultdict(list)
@@ -430,6 +460,9 @@ def compute() -> dict[str, Any]:
         "all_time_top_by_position": all_time_top_by_position,
         "season_top_by_position": season_top_by_position,
         "winning_team_appearances": winning_team_appearances,
+        "opening_week_top": opening_week_top,
+        "biggest_bench_scores": biggest_bench_scores,
+        "biggest_carry_jobs": biggest_carry_jobs,
         "mvps_by_season": mvps_by_season,
         "methodology": methodology,
         "coverage": {

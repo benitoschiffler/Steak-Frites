@@ -122,6 +122,20 @@ def compute() -> dict:
     closest_games = sorted([g for g in games if g["margin"] > 0], key=lambda x: x["margin"])[:20]
     highest_combined = sorted(games, key=lambda x: x["combined"], reverse=True)[:20]
     lowest_combined = sorted([g for g in games if g["combined"] > 0], key=lambda x: x["combined"])[:20]
+    opening_week_highest = sorted(
+        [g for g in team_games if g["week"] == 1],
+        key=lambda x: x["score"],
+        reverse=True,
+    )[:20]
+    highest_losing_scores = sorted(
+        [g for g in team_games if g["score"] < g["opp_score"]],
+        key=lambda x: x["score"],
+        reverse=True,
+    )[:20]
+    lowest_winning_scores = sorted(
+        [g for g in team_games if 0 < g["score"] and g["score"] > g["opp_score"]],
+        key=lambda x: x["score"],
+    )[:20]
 
     # ─── Season-level records ─────────────────────────────────────────────
     season_team_rows = []
@@ -342,6 +356,9 @@ def compute() -> dict:
         "closest_games": closest_games,
         "highest_combined": highest_combined,
         "lowest_combined": lowest_combined,
+        "opening_week_highest": opening_week_highest,
+        "highest_losing_scores": highest_losing_scores,
+        "lowest_winning_scores": lowest_winning_scores,
         "highest_season_pf": highest_season_pf,
         "lowest_season_pf": lowest_season_pf,
         "best_season_ppg": best_season_ppg,

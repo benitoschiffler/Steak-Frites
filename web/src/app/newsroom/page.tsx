@@ -1,5 +1,5 @@
+import Link from "next/link";
 import { loadNewsroom } from "@/lib/data";
-import { loadPublishedPowerRankings } from "@/lib/google-power-rankings";
 
 export const metadata = { title: "Newsroom — Steak Frites" };
 
@@ -10,14 +10,12 @@ const statusStyle = {
   analysis: "",
 } as const;
 
-export const revalidate = 300;
-
-export default async function NewsroomPage() {
+export default function NewsroomPage() {
   const news = loadNewsroom();
-  const rankings = await loadPublishedPowerRankings();
   const reporterById = new Map(news.reporters.map((reporter) => [reporter.id, reporter]));
   const lead = news.articles[0];
   const remaining = news.articles.slice(1);
+  const week = Number(news.issue_id.match(/week-(\d+)$/)?.[1] ?? 0);
 
   return (
     <div className="space-y-10">
@@ -32,7 +30,7 @@ export default async function NewsroomPage() {
               The league never sleeps.
             </h1>
             <p className="mt-4 max-w-2xl text-base leading-7 text-[#f7edda]/78">
-              Keeper intelligence, power rankings, trade-market logic and weekly reporting—built from the actual Steak Frites record.
+              Weekly records, player eruptions, lineup regrets and league reporting—built from the actual Steak Frites scores.
             </p>
           </div>
           <div className="rounded-lg border border-white/10 bg-white/[0.045] p-5 text-sm text-[#f7edda]/75">
@@ -47,7 +45,7 @@ export default async function NewsroomPage() {
 
       <section>
         <div className="kicker">Latest from the desks</div>
-        <h2 className="mt-2 text-3xl font-black tracking-tight">Week {rankings[0]?.week ?? 1} notebook</h2>
+        <h2 className="mt-2 text-3xl font-black tracking-tight">Week {week} notebook</h2>
         <div className="mt-5 grid gap-5 md:grid-cols-2">
           {remaining.map((article) => (
             <ArticleCard key={article.id} article={article} reporter={reporterById.get(article.reporter_id)} />
@@ -55,31 +53,23 @@ export default async function NewsroomPage() {
         </div>
       </section>
 
-      <section className="premium-panel rounded-xl p-6">
-        <div className="flex flex-col gap-2 sm:flex-row sm:items-end sm:justify-between">
+      <Link
+        href="/records"
+        className="group premium-panel block rounded-xl p-6 transition hover:border-[#c8962d]/45 hover:shadow-lg md:p-8"
+      >
+        <div className="flex flex-col gap-5 sm:flex-row sm:items-center sm:justify-between">
           <div>
-            <div className="kicker">Model board</div>
-            <h2 className="mt-1 text-3xl font-black">Live Week {rankings[0]?.week ?? 1} power index</h2>
+            <div className="kicker">Permanent archive</div>
+            <h2 className="mt-1 text-3xl font-black">Open the full Record Book</h2>
+            <p className="mt-3 max-w-2xl text-sm leading-6 text-[#5f584d]">
+              Opening-week royalty, heartbreak losses, ugly wins, bench nightmares, carry jobs, scoring peaks, streaks and more.
+            </p>
           </div>
-          <p className="max-w-xl text-xs leading-5 text-[#766d61] sm:text-right">{news.methodology.power_rankings}</p>
+          <span className="flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-[#123d35] text-2xl font-black text-[#f7d77d] transition group-hover:translate-x-1">
+            →
+          </span>
         </div>
-        <div className="mt-6 grid gap-3 lg:grid-cols-2">
-          {rankings.map((row) => (
-            <div key={row.team_id} className="flex gap-4 rounded-lg border border-black/10 bg-white/55 p-4">
-              <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-[#123d35] text-lg font-black text-[#f7d77d]">{row.rank}</div>
-              <div className="min-w-0">
-                <div className="flex flex-wrap items-baseline gap-x-2">
-                  <h3 className="font-black">{row.owner}</h3>
-                  <span className="text-xs font-bold text-[#8a6a22]">{row.record} · {row.score}</span>
-                </div>
-                <p className="text-xs font-semibold text-[#766d61]">{row.team_name}</p>
-                {row.past_team_names.length > 0 && <p className="mt-1 line-clamp-1 text-[11px] text-[#9a907f]">Previously: {row.past_team_names.join(" · ")}</p>}
-                <p className="mt-2 text-sm leading-5 text-[#5f584d]">{row.commentary}</p>
-              </div>
-            </div>
-          ))}
-        </div>
-      </section>
+      </Link>
 
       <section>
         <div className="kicker">Masthead</div>

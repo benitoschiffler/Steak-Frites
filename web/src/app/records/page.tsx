@@ -1,26 +1,87 @@
 import Link from "next/link";
-import { loadRecords } from "@/lib/data";
+import { loadMeta, loadPlayers, loadRecords } from "@/lib/data";
+import { fmt } from "@/lib/format";
 import { Section } from "@/components/Section";
 import TeamGameTable from "@/components/records/TeamGameTable";
 import MatchupTable from "@/components/records/MatchupTable";
 import SeasonTable from "@/components/records/SeasonTable";
 import StreakTable from "@/components/records/StreakTable";
+import PlayerRecordTable from "@/components/records/PlayerRecordTable";
 
 export const metadata = { title: "Records — Steak Frites" };
 
 export default function RecordsPage() {
   const r = loadRecords();
+  const players = loadPlayers();
+  const meta = loadMeta();
+  const currentYear = meta.current_year;
+  const openingTeam = r.opening_week_highest.find((row) => row.year === currentYear);
+  const openingTeamRank = openingTeam
+    ? r.opening_week_highest.findIndex(
+        (row) => row.year === openingTeam.year && row.team_id === openingTeam.team_id,
+      ) + 1
+    : null;
+  const openingPlayer = players.opening_week_top.find((row) => row.year === currentYear);
+  const openingPlayerRank = openingPlayer
+    ? players.opening_week_top.findIndex(
+        (row) =>
+          row.year === openingPlayer.year &&
+          row.player_id === openingPlayer.player_id &&
+          row.team_id === openingPlayer.team_id,
+      ) + 1
+    : null;
+  const openingHeartbreak = r.highest_losing_scores.find(
+    (row) => row.year === currentYear && row.week === 1,
+  );
 
   return (
     <div className="space-y-12">
-      <header className="premium-panel rounded-xl p-6">
-        <div className="kicker">Archive Room</div>
-        <h1 className="mt-2 text-4xl font-black tracking-tight">League Records</h1>
-        <p className="mt-2 max-w-2xl text-[#6f6a60]">
-          Every leaderboard worth bragging about — or hiding from. Click any column to re-sort.
-        </p>
+      <header className="club-panel overflow-hidden rounded-xl">
+        <div className="border-b border-white/10 px-6 py-3 text-xs font-black uppercase tracking-[0.2em] text-[#f7d77d]">
+          {currentYear} opening-week record watch
+        </div>
+        <div className="grid gap-8 p-6 md:grid-cols-[1.25fr_.75fr] md:p-10">
+          <div>
+            <h1 className="text-4xl font-black leading-tight tracking-tight md:text-6xl">The Record Book</h1>
+            <p className="mt-4 max-w-2xl text-base leading-7 text-[#f7edda]/78">
+              The scores people remember, the losses nobody lives down, and the NFL players who detonated a fantasy week.
+            </p>
+            {openingTeam && (
+              <div className="mt-8 flex flex-wrap items-end gap-x-5 gap-y-2">
+                <div className="text-6xl font-black tabular-nums text-[#f7d77d]">{fmt.pts(openingTeam.score)}</div>
+                <div className="pb-1">
+                  <div className="text-lg font-black">{openingTeam.owners.join(" & ")}</div>
+                  <div className="text-sm text-[#f7edda]/68">{openingTeam.team} · best score of {currentYear} Week 1</div>
+                </div>
+              </div>
+            )}
+          </div>
+          <div className="space-y-4 border-white/10 md:border-l md:pl-7">
+            {openingTeam && openingTeamRank && (
+              <RecordCallout
+                label="League-history rank"
+                value={`#${openingTeamRank}`}
+                detail={`among opening-week team scores since ${meta.years[0]}`}
+              />
+            )}
+            {openingPlayer && openingPlayerRank && (
+              <RecordCallout
+                label="Week 1 player leader"
+                value={`${openingPlayer.player_name} · ${fmt.pts(openingPlayer.points)}`}
+                detail={`#${openingPlayerRank} opening-week starter since ${players.coverage.first_year_with_box_scores}`}
+              />
+            )}
+            {openingHeartbreak && (
+              <RecordCallout
+                label="Week 1 heartbreak"
+                value={`${openingHeartbreak.owners.join(" & ")} · ${fmt.pts(openingHeartbreak.score)}`}
+                detail={`lost to ${openingHeartbreak.opp_owners.join(" & ")}, ${fmt.pts(openingHeartbreak.opp_score)}–${fmt.pts(openingHeartbreak.score)}`}
+              />
+            )}
+          </div>
+        </div>
         {Object.keys(r.excluded_years).length > 0 && (
-          <div className="mt-5 rounded-lg border border-[#c8962d]/30 bg-[#f1dfaa]/40 px-4 py-3 text-sm font-medium text-[#5e3f06]">
+          <div className="border-t border-white/10 bg-white/[0.04] px-6 py-3 text-xs font-medium text-[#f7edda]/68">
             <strong>Note:</strong> Records do not include{" "}
             {Object.entries(r.excluded_years)
               .map(([y, note]) => `${y} (${note})`)
@@ -28,6 +89,39 @@ export default function RecordsPage() {
           </div>
         )}
       </header>
+
+      <Section
+        eyebrow="Opening Bell"
+        title="Week 1 royalty"
+        subtitle="The hottest starts in league history—fantasy teams from 2016 onward and starting NFL players from 2019 onward."
+      >
+        <div className="grid gap-4 lg:grid-cols-2">
+          <TeamGameTable rows={r.opening_week_highest} title="Highest opening-week team scores" />
+          <PlayerRecordTable rows={players.opening_week_top} title="Highest opening-week player scores" />
+        </div>
+      </Section>
+
+      <Section
+        eyebrow="Pain & Fortune"
+        title="Heartbreak and ugly wins"
+        subtitle="The most points ever scored in a loss, and the fewest points anyone got away with in a win."
+      >
+        <div className="grid gap-4 lg:grid-cols-2">
+          <TeamGameTable rows={r.highest_losing_scores} title="Highest scores in a loss" />
+          <TeamGameTable rows={r.lowest_winning_scores} title="Lowest scores in a win" defaultDir="asc" />
+        </div>
+      </Section>
+
+      <Section
+        eyebrow="Player Chaos"
+        title="Bench nightmares and carry jobs"
+        subtitle="The eruptions stranded on the bench, and the starters who supplied the biggest share of an entire team score."
+      >
+        <div className="grid gap-4 lg:grid-cols-2">
+          <PlayerRecordTable rows={players.biggest_bench_scores} title="Most points left on the bench" />
+          <PlayerRecordTable rows={players.biggest_carry_jobs} title="Biggest one-player carry jobs" metric="share" />
+        </div>
+      </Section>
 
       <Section eyebrow="Game Peaks" title="Single-game scoring" subtitle="Highest and lowest single-team scores ever recorded.">
         <div className="grid md:grid-cols-2 gap-4">
@@ -79,6 +173,16 @@ export default function RecordsPage() {
           →
         </span>
       </Link>
+    </div>
+  );
+}
+
+function RecordCallout({ label, value, detail }: { label: string; value: string; detail: string }) {
+  return (
+    <div className="border-b border-white/10 pb-4 last:border-b-0 last:pb-0">
+      <div className="text-[10px] font-black uppercase tracking-[0.16em] text-[#f7d77d]">{label}</div>
+      <div className="mt-1 text-xl font-black">{value}</div>
+      <div className="mt-1 text-xs leading-5 text-[#f7edda]/65">{detail}</div>
     </div>
   );
 }

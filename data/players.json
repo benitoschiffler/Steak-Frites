@@ -5923,6 +5923,27 @@
         {
           "year": 2026,
           "week": 1,
+          "player_id": 4567048,
+          "player_name": "Kenneth Walker III",
+          "position": "RB",
+          "slot_position": "RB",
+          "pro_team": "KC",
+          "points": 32.6,
+          "started": true,
+          "team_id": 6,
+          "team_name": "Nude Egg",
+          "owner_ids": [
+            "{429F0506-3667-4F0B-A2ED-1761D0A3F682}"
+          ],
+          "owner_names": [
+            "Ben Wolbransky"
+          ],
+          "team_won": false,
+          "is_playoff": false
+        },
+        {
+          "year": 2026,
+          "week": 1,
           "player_id": 4259545,
           "player_name": "D'Andre Swift",
           "position": "RB",
@@ -5981,27 +6002,6 @@
           ],
           "owner_names": [
             "Ben Katz"
-          ],
-          "team_won": false,
-          "is_playoff": false
-        },
-        {
-          "year": 2026,
-          "week": 1,
-          "player_id": 4035538,
-          "player_name": "David Montgomery",
-          "position": "RB",
-          "slot_position": "RB",
-          "pro_team": "HOU",
-          "points": 27.4,
-          "started": true,
-          "team_id": 11,
-          "team_name": "E Bo Nix",
-          "owner_ids": [
-            "{93FE02E3-D523-4B1D-AC57-E31C8D235433}"
-          ],
-          "owner_names": [
-            "Jules Salkind"
           ],
           "team_won": false,
           "is_playoff": false
@@ -6204,22 +6204,20 @@
         {
           "year": 2026,
           "week": 1,
-          "player_id": 4572680,
-          "player_name": "Tucker Kraft",
+          "player_id": 15847,
+          "player_name": "Travis Kelce",
           "position": "TE",
           "slot_position": "TE",
-          "pro_team": "GB",
-          "points": 8.0,
+          "pro_team": "KC",
+          "points": 8.6,
           "started": true,
-          "team_id": 10,
-          "team_name": "Team Goldstein",
+          "team_id": 3,
+          "team_name": "Amon-Ra Dog It",
           "owner_ids": [
-            "{CBF6473A-C5A3-46D7-8EF8-BFAF0D868891}",
-            "{CBF6473A-C5A3-46D7-8EF8-BFAF0D868891}"
+            "{6EB109A3-B9E1-4D2D-B109-A3B9E10D2D41}"
           ],
           "owner_names": [
-            "Jordan Klein",
-            "Ben Goldstein"
+            "Stefan Lachkar"
           ],
           "team_won": true,
           "is_playoff": false
@@ -6452,11 +6450,11 @@
       "player_id": 15847,
       "player_name": "Travis Kelce",
       "position": "TE",
-      "weeks_started": 93,
+      "weeks_started": 94,
       "wins_when_started": 56,
-      "win_rate_when_started": 0.6022,
-      "total_starting_points": 1180.46,
-      "ppg_started": 12.69,
+      "win_rate_when_started": 0.5957,
+      "total_starting_points": 1189.06,
+      "ppg_started": 12.65,
       "seasons_count": 7,
       "last_year": 2026
     },
@@ -6476,11 +6474,11 @@
       "player_id": 3916387,
       "player_name": "Lamar Jackson",
       "position": "QB",
-      "weeks_started": 86,
+      "weeks_started": 87,
       "wins_when_started": 48,
-      "win_rate_when_started": 0.5581,
+      "win_rate_when_started": 0.5517,
       "total_starting_points": 1956.34,
-      "ppg_started": 22.75,
+      "ppg_started": 22.49,
       "seasons_count": 7,
       "last_year": 2026
     },
@@ -6500,11 +6498,11 @@
       "player_id": 3043078,
       "player_name": "Derrick Henry",
       "position": "RB",
-      "weeks_started": 94,
+      "weeks_started": 95,
       "wins_when_started": 45,
-      "win_rate_when_started": 0.4787,
+      "win_rate_when_started": 0.4737,
       "total_starting_points": 1611.42,
-      "ppg_started": 17.14,
+      "ppg_started": 16.96,
       "seasons_count": 7,
       "last_year": 2026
     },
@@ -6536,11 +6534,11 @@
       "player_id": 3117251,
       "player_name": "Christian McCaffrey",
       "position": "RB",
-      "weeks_started": 71,
+      "weeks_started": 72,
       "wins_when_started": 43,
-      "win_rate_when_started": 0.6056,
+      "win_rate_when_started": 0.5972,
       "total_starting_points": 1540.56,
-      "ppg_started": 21.7,
+      "ppg_started": 21.4,
       "seasons_count": 7,
       "last_year": 2026
     },
@@ -6548,11 +6546,11 @@
       "player_id": 4035538,
       "player_name": "David Montgomery",
       "position": "RB",
-      "weeks_started": 74,
+      "weeks_started": 75,
       "wins_when_started": 42,
-      "win_rate_when_started": 0.5676,
+      "win_rate_when_started": 0.56,
       "total_starting_points": 941.74,
-      "ppg_started": 12.73,
+      "ppg_started": 12.56,
       "seasons_count": 7,
       "last_year": 2026
     },
@@ -6560,11 +6558,11 @@
       "player_id": 16800,
       "player_name": "Davante Adams",
       "position": "WR",
-      "weeks_started": 83,
+      "weeks_started": 84,
       "wins_when_started": 42,
-      "win_rate_when_started": 0.506,
+      "win_rate_when_started": 0.5,
       "total_starting_points": 1279.1,
-      "ppg_started": 15.41,
+      "ppg_started": 15.23,
       "seasons_count": 7,
       "last_year": 2026
     },
@@ -6572,11 +6570,11 @@
       "player_id": 3055899,
       "player_name": "Harrison Butker",
       "position": "K",
-      "weeks_started": 80,
+      "weeks_started": 81,
       "wins_when_started": 40,
-      "win_rate_when_started": 0.5,
-      "total_starting_points": 695.0,
-      "ppg_started": 8.69,
+      "win_rate_when_started": 0.4938,
+      "total_starting_points": 702.0,
+      "ppg_started": 8.67,
       "seasons_count": 7,
       "last_year": 2026
     },
@@ -6584,11 +6582,11 @@
       "player_id": 3918298,
       "player_name": "Josh Allen",
       "position": "QB",
-      "weeks_started": 92,
+      "weeks_started": 93,
       "wins_when_started": 39,
-      "win_rate_when_started": 0.4239,
+      "win_rate_when_started": 0.4194,
       "total_starting_points": 2191.68,
-      "ppg_started": 23.82,
+      "ppg_started": 23.57,
       "seasons_count": 7,
       "last_year": 2026
     },
@@ -6596,11 +6594,11 @@
       "player_id": 3042519,
       "player_name": "Aaron Jones",
       "position": "RB",
-      "weeks_started": 70,
+      "weeks_started": 71,
       "wins_when_started": 38,
-      "win_rate_when_started": 0.5429,
+      "win_rate_when_started": 0.5352,
       "total_starting_points": 999.0,
-      "ppg_started": 14.27,
+      "ppg_started": 14.07,
       "seasons_count": 7,
       "last_year": 2026
     },
@@ -6608,11 +6606,11 @@
       "player_id": 3040151,
       "player_name": "George Kittle",
       "position": "TE",
-      "weeks_started": 72,
+      "weeks_started": 73,
       "wins_when_started": 38,
-      "win_rate_when_started": 0.5278,
+      "win_rate_when_started": 0.5205,
       "total_starting_points": 865.3,
-      "ppg_started": 12.02,
+      "ppg_started": 11.85,
       "seasons_count": 7,
       "last_year": 2026
     },
@@ -6620,11 +6618,11 @@
       "player_id": 4241389,
       "player_name": "CeeDee Lamb",
       "position": "WR",
-      "weeks_started": 63,
+      "weeks_started": 64,
       "wins_when_started": 36,
-      "win_rate_when_started": 0.5714,
+      "win_rate_when_started": 0.5625,
       "total_starting_points": 945.9,
-      "ppg_started": 15.01,
+      "ppg_started": 14.78,
       "seasons_count": 6,
       "last_year": 2026
     },
@@ -6632,11 +6630,11 @@
       "player_id": 4047650,
       "player_name": "DK Metcalf",
       "position": "WR",
-      "weeks_started": 73,
+      "weeks_started": 74,
       "wins_when_started": 36,
-      "win_rate_when_started": 0.4932,
+      "win_rate_when_started": 0.4865,
       "total_starting_points": 848.0,
-      "ppg_started": 11.62,
+      "ppg_started": 11.46,
       "seasons_count": 7,
       "last_year": 2026
     },
@@ -6656,11 +6654,11 @@
       "player_id": 4239993,
       "player_name": "Tee Higgins",
       "position": "WR",
-      "weeks_started": 58,
+      "weeks_started": 59,
       "wins_when_started": 35,
-      "win_rate_when_started": 0.6034,
+      "win_rate_when_started": 0.5932,
       "total_starting_points": 693.3,
-      "ppg_started": 11.95,
+      "ppg_started": 11.75,
       "seasons_count": 6,
       "last_year": 2026
     },
@@ -6704,11 +6702,11 @@
       "player_id": 4430807,
       "player_name": "Bijan Robinson",
       "position": "RB",
-      "weeks_started": 49,
+      "weeks_started": 50,
       "wins_when_started": 33,
-      "win_rate_when_started": 0.6735,
+      "win_rate_when_started": 0.66,
       "total_starting_points": 828.4,
-      "ppg_started": 16.91,
+      "ppg_started": 16.57,
       "seasons_count": 4,
       "last_year": 2026
     },
@@ -6740,11 +6738,11 @@
       "player_id": 4374302,
       "player_name": "Amon-Ra St. Brown",
       "position": "WR",
-      "weeks_started": 61,
+      "weeks_started": 62,
       "wins_when_started": 32,
-      "win_rate_when_started": 0.5246,
+      "win_rate_when_started": 0.5161,
       "total_starting_points": 943.38,
-      "ppg_started": 15.47,
+      "ppg_started": 15.22,
       "seasons_count": 5,
       "last_year": 2026
     },
@@ -6752,11 +6750,11 @@
       "player_id": 16737,
       "player_name": "Mike Evans",
       "position": "WR",
-      "weeks_started": 70,
+      "weeks_started": 71,
       "wins_when_started": 32,
-      "win_rate_when_started": 0.4571,
+      "win_rate_when_started": 0.4507,
       "total_starting_points": 948.9,
-      "ppg_started": 13.56,
+      "ppg_started": 13.36,
       "seasons_count": 7,
       "last_year": 2026
     },
@@ -6776,11 +6774,11 @@
       "player_id": -16033,
       "player_name": "Ravens D/ST",
       "position": "D/ST",
-      "weeks_started": 56,
+      "weeks_started": 57,
       "wins_when_started": 31,
-      "win_rate_when_started": 0.5536,
+      "win_rate_when_started": 0.5439,
       "total_starting_points": 507.0,
-      "ppg_started": 9.05,
+      "ppg_started": 8.89,
       "seasons_count": 7,
       "last_year": 2026
     },
@@ -6788,11 +6786,11 @@
       "player_id": 4262921,
       "player_name": "Justin Jefferson",
       "position": "WR",
-      "weeks_started": 65,
+      "weeks_started": 66,
       "wins_when_started": 31,
-      "win_rate_when_started": 0.4769,
+      "win_rate_when_started": 0.4697,
       "total_starting_points": 967.74,
-      "ppg_started": 14.89,
+      "ppg_started": 14.66,
       "seasons_count": 6,
       "last_year": 2026
     },
@@ -6800,11 +6798,11 @@
       "player_id": 3929630,
       "player_name": "Saquon Barkley",
       "position": "RB",
-      "weeks_started": 75,
+      "weeks_started": 76,
       "wins_when_started": 31,
-      "win_rate_when_started": 0.4133,
+      "win_rate_when_started": 0.4079,
       "total_starting_points": 1196.1,
-      "ppg_started": 15.95,
+      "ppg_started": 15.74,
       "seasons_count": 7,
       "last_year": 2026
     },
@@ -6812,11 +6810,11 @@
       "player_id": 4379399,
       "player_name": "James Cook",
       "position": "RB",
-      "weeks_started": 43,
+      "weeks_started": 44,
       "wins_when_started": 30,
-      "win_rate_when_started": 0.6977,
+      "win_rate_when_started": 0.6818,
       "total_starting_points": 623.9,
-      "ppg_started": 14.51,
+      "ppg_started": 14.18,
       "seasons_count": 5,
       "last_year": 2026
     },
@@ -6824,11 +6822,11 @@
       "player_id": 4038941,
       "player_name": "Justin Herbert",
       "position": "QB",
-      "weeks_started": 54,
+      "weeks_started": 55,
       "wins_when_started": 30,
-      "win_rate_when_started": 0.5556,
+      "win_rate_when_started": 0.5455,
       "total_starting_points": 1018.22,
-      "ppg_started": 18.86,
+      "ppg_started": 18.51,
       "seasons_count": 6,
       "last_year": 2026
     },
@@ -6860,11 +6858,11 @@
       "player_id": 4362628,
       "player_name": "Ja'Marr Chase",
       "position": "WR",
-      "weeks_started": 59,
+      "weeks_started": 60,
       "wins_when_started": 30,
-      "win_rate_when_started": 0.5085,
+      "win_rate_when_started": 0.5,
       "total_starting_points": 941.72,
-      "ppg_started": 15.96,
+      "ppg_started": 15.7,
       "seasons_count": 5,
       "last_year": 2026
     },
@@ -6872,11 +6870,11 @@
       "player_id": -16021,
       "player_name": "Eagles D/ST",
       "position": "D/ST",
-      "weeks_started": 60,
+      "weeks_started": 61,
       "wins_when_started": 30,
-      "win_rate_when_started": 0.5,
+      "win_rate_when_started": 0.4918,
       "total_starting_points": 471.0,
-      "ppg_started": 7.85,
+      "ppg_started": 7.72,
       "seasons_count": 7,
       "last_year": 2026
     },
@@ -6944,11 +6942,11 @@
       "player_id": 3915416,
       "player_name": "DJ Moore",
       "position": "WR",
-      "weeks_started": 62,
+      "weeks_started": 63,
       "wins_when_started": 29,
-      "win_rate_when_started": 0.4677,
+      "win_rate_when_started": 0.4603,
       "total_starting_points": 736.2,
-      "ppg_started": 11.87,
+      "ppg_started": 11.69,
       "seasons_count": 7,
       "last_year": 2026
     },
@@ -6956,11 +6954,11 @@
       "player_id": 4040715,
       "player_name": "Jalen Hurts",
       "position": "QB",
-      "weeks_started": 62,
+      "weeks_started": 63,
       "wins_when_started": 29,
-      "win_rate_when_started": 0.4677,
+      "win_rate_when_started": 0.4603,
       "total_starting_points": 1382.68,
-      "ppg_started": 22.3,
+      "ppg_started": 21.95,
       "seasons_count": 6,
       "last_year": 2026
     },
@@ -6968,11 +6966,11 @@
       "player_id": 4259545,
       "player_name": "D'Andre Swift",
       "position": "RB",
-      "weeks_started": 63,
+      "weeks_started": 64,
       "wins_when_started": 29,
-      "win_rate_when_started": 0.4603,
+      "win_rate_when_started": 0.4531,
       "total_starting_points": 787.0,
-      "ppg_started": 12.49,
+      "ppg_started": 12.3,
       "seasons_count": 6,
       "last_year": 2026
     },
@@ -6980,11 +6978,11 @@
       "player_id": 3121023,
       "player_name": "Dallas Goedert",
       "position": "TE",
-      "weeks_started": 49,
+      "weeks_started": 50,
       "wins_when_started": 28,
-      "win_rate_when_started": 0.5714,
+      "win_rate_when_started": 0.56,
       "total_starting_points": 442.8,
-      "ppg_started": 9.04,
+      "ppg_started": 8.86,
       "seasons_count": 7,
       "last_year": 2026
     },
@@ -7028,11 +7026,11 @@
       "player_id": 4567048,
       "player_name": "Kenneth Walker III",
       "position": "RB",
-      "weeks_started": 49,
+      "weeks_started": 50,
       "wins_when_started": 26,
-      "win_rate_when_started": 0.5306,
-      "total_starting_points": 602.4,
-      "ppg_started": 12.29,
+      "win_rate_when_started": 0.52,
+      "total_starting_points": 635.0,
+      "ppg_started": 12.7,
       "seasons_count": 5,
       "last_year": 2026
     },
@@ -7040,13 +7038,1333 @@
       "player_id": 4427366,
       "player_name": "Breece Hall",
       "position": "RB",
-      "weeks_started": 52,
+      "weeks_started": 53,
       "wins_when_started": 26,
-      "win_rate_when_started": 0.5,
+      "win_rate_when_started": 0.4906,
       "total_starting_points": 679.96,
-      "ppg_started": 13.08,
+      "ppg_started": 12.83,
       "seasons_count": 5,
       "last_year": 2026
+    }
+  ],
+  "opening_week_top": [
+    {
+      "year": 2023,
+      "week": 1,
+      "player_id": 3116406,
+      "player_name": "Tyreek Hill",
+      "position": "WR",
+      "slot_position": "WR",
+      "pro_team": "MIA",
+      "points": 39.0,
+      "started": true,
+      "team_id": 1,
+      "team_name": "Started From The Bottom",
+      "owner_ids": [
+        "{3A1A4E24-2A98-4038-9A4E-242A98803865}"
+      ],
+      "owner_names": [
+        "Bennett Schiff"
+      ],
+      "team_won": false,
+      "is_playoff": false
+    },
+    {
+      "year": 2025,
+      "week": 1,
+      "player_id": 3918298,
+      "player_name": "Josh Allen",
+      "position": "QB",
+      "slot_position": "QB",
+      "pro_team": "BUF",
+      "points": 38.76,
+      "started": true,
+      "team_id": 1,
+      "team_name": "Lily Phillips ",
+      "owner_ids": [
+        "{3A1A4E24-2A98-4038-9A4E-242A98803865}"
+      ],
+      "owner_names": [
+        "Bennett Schiff"
+      ],
+      "team_won": true,
+      "is_playoff": false
+    },
+    {
+      "year": 2019,
+      "week": 1,
+      "player_id": 3117251,
+      "player_name": "Christian McCaffrey",
+      "position": "RB",
+      "slot_position": "RB",
+      "pro_team": "CAR",
+      "points": 37.9,
+      "started": true,
+      "team_id": 2,
+      "team_name": "Process Trusters",
+      "owner_ids": [
+        "{4F3E4D57-5F87-4D74-92C0-40815B7DFD51}"
+      ],
+      "owner_names": [
+        "Jake Fischer"
+      ],
+      "team_won": true,
+      "is_playoff": false
+    },
+    {
+      "year": 2026,
+      "week": 1,
+      "player_id": 4431611,
+      "player_name": "Caleb Williams",
+      "position": "QB",
+      "slot_position": "QB",
+      "pro_team": "CHI",
+      "points": 37.26,
+      "started": true,
+      "team_id": 10,
+      "team_name": "Team Goldstein",
+      "owner_ids": [
+        "{CBF6473A-C5A3-46D7-8EF8-BFAF0D868891}",
+        "{CBF6473A-C5A3-46D7-8EF8-BFAF0D868891}"
+      ],
+      "owner_names": [
+        "Jordan Klein",
+        "Ben Goldstein"
+      ],
+      "team_won": true,
+      "is_playoff": false
+    },
+    {
+      "year": 2019,
+      "week": 1,
+      "player_id": 3068267,
+      "player_name": "Austin Ekeler",
+      "position": "RB",
+      "slot_position": "RB/WR/TE",
+      "pro_team": "LAC",
+      "points": 36.4,
+      "started": true,
+      "team_id": 7,
+      "team_name": "Team Katz",
+      "owner_ids": [
+        "{ECD9E4C2-4E30-4915-AC59-6C1700E34A69}"
+      ],
+      "owner_names": [
+        "Ben Katz"
+      ],
+      "team_won": true,
+      "is_playoff": false
+    },
+    {
+      "year": 2026,
+      "week": 1,
+      "player_id": 3918298,
+      "player_name": "Josh Allen",
+      "position": "QB",
+      "slot_position": "QB",
+      "pro_team": "BUF",
+      "points": 35.66,
+      "started": true,
+      "team_id": 2,
+      "team_name": "Jake and Seth",
+      "owner_ids": [
+        "{4F3E4D57-5F87-4D74-92C0-40815B7DFD51}",
+        "{4F3E4D57-5F87-4D74-92C0-40815B7DFD51}"
+      ],
+      "owner_names": [
+        "Jake Fischer",
+        "Seth Taratoot"
+      ],
+      "team_won": true,
+      "is_playoff": false
+    },
+    {
+      "year": 2023,
+      "week": 1,
+      "player_id": -16006,
+      "player_name": "Cowboys D/ST",
+      "position": "D/ST",
+      "slot_position": "D/ST",
+      "pro_team": "DAL",
+      "points": 35.0,
+      "started": true,
+      "team_id": 7,
+      "team_name": "Los Peloteros De Katz",
+      "owner_ids": [
+        "{ECD9E4C2-4E30-4915-AC59-6C1700E34A69}"
+      ],
+      "owner_names": [
+        "Ben Katz"
+      ],
+      "team_won": true,
+      "is_playoff": false
+    },
+    {
+      "year": 2022,
+      "week": 1,
+      "player_id": 4262921,
+      "player_name": "Justin Jefferson",
+      "position": "WR",
+      "slot_position": "WR",
+      "pro_team": "MIN",
+      "points": 34.9,
+      "started": true,
+      "team_id": 3,
+      "team_name": "Ridley's  Bookie",
+      "owner_ids": [
+        "{6EB109A3-B9E1-4D2D-B109-A3B9E10D2D41}"
+      ],
+      "owner_names": [
+        "Stefan Lachkar"
+      ],
+      "team_won": false,
+      "is_playoff": false
+    },
+    {
+      "year": 2022,
+      "week": 1,
+      "player_id": 3139477,
+      "player_name": "Patrick Mahomes",
+      "position": "QB",
+      "slot_position": "QB",
+      "pro_team": "KC",
+      "points": 34.9,
+      "started": true,
+      "team_id": 11,
+      "team_name": "Tyreek Hill's Burner Account",
+      "owner_ids": [
+        "{5431883D-E365-4401-97B9-DAD7EC2156AD}"
+      ],
+      "owner_names": [
+        "Dylan Campbell"
+      ],
+      "team_won": true,
+      "is_playoff": false
+    },
+    {
+      "year": 2026,
+      "week": 1,
+      "player_id": 3043078,
+      "player_name": "Derrick Henry",
+      "position": "RB",
+      "slot_position": "RB/WR/TE",
+      "pro_team": "BAL",
+      "points": 34.8,
+      "started": true,
+      "team_id": 3,
+      "team_name": "Amon-Ra Dog It",
+      "owner_ids": [
+        "{6EB109A3-B9E1-4D2D-B109-A3B9E10D2D41}"
+      ],
+      "owner_names": [
+        "Stefan Lachkar"
+      ],
+      "team_won": true,
+      "is_playoff": false
+    },
+    {
+      "year": 2020,
+      "week": 1,
+      "player_id": 16800,
+      "player_name": "Davante Adams",
+      "position": "WR",
+      "slot_position": "WR",
+      "pro_team": "GB",
+      "points": 34.6,
+      "started": true,
+      "team_id": 7,
+      "team_name": "Team Katz",
+      "owner_ids": [
+        "{ECD9E4C2-4E30-4915-AC59-6C1700E34A69}"
+      ],
+      "owner_names": [
+        "Ben Katz"
+      ],
+      "team_won": true,
+      "is_playoff": false
+    },
+    {
+      "year": 2020,
+      "week": 1,
+      "player_id": 4047365,
+      "player_name": "Josh Jacobs",
+      "position": "RB",
+      "slot_position": "RB",
+      "pro_team": "LV",
+      "points": 33.9,
+      "started": true,
+      "team_id": 2,
+      "team_name": "Process Trusters",
+      "owner_ids": [
+        "{4F3E4D57-5F87-4D74-92C0-40815B7DFD51}"
+      ],
+      "owner_names": [
+        "Jake Fischer"
+      ],
+      "team_won": true,
+      "is_playoff": false
+    },
+    {
+      "year": 2019,
+      "week": 1,
+      "player_id": 3916387,
+      "player_name": "Lamar Jackson",
+      "position": "QB",
+      "slot_position": "QB",
+      "pro_team": "BAL",
+      "points": 33.56,
+      "started": true,
+      "team_id": 3,
+      "team_name": "Running The Table",
+      "owner_ids": [
+        "{6EB109A3-B9E1-4D2D-B109-A3B9E10D2D41}"
+      ],
+      "owner_names": [
+        "Stefan Lachkar"
+      ],
+      "team_won": false,
+      "is_playoff": false
+    },
+    {
+      "year": 2022,
+      "week": 1,
+      "player_id": 3918298,
+      "player_name": "Josh Allen",
+      "position": "QB",
+      "slot_position": "QB",
+      "pro_team": "BUF",
+      "points": 33.48,
+      "started": true,
+      "team_id": 9,
+      "team_name": "Saquads squad  Ship",
+      "owner_ids": [
+        "{8D1E7E24-92F1-49FC-ADF1-C8193EA1C44E}"
+      ],
+      "owner_names": [
+        "Adam Heckelman"
+      ],
+      "team_won": true,
+      "is_playoff": false
+    },
+    {
+      "year": 2019,
+      "week": 1,
+      "player_id": 2577417,
+      "player_name": "Dak Prescott",
+      "position": "QB",
+      "slot_position": "QB",
+      "pro_team": "DAL",
+      "points": 33.4,
+      "started": true,
+      "team_id": 12,
+      "team_name": "Where is Tyreeks Neck",
+      "owner_ids": [
+        "{B792F7C9-61CE-4E29-940C-DC1C5E6C4208}"
+      ],
+      "owner_names": [
+        "Ryan Vader"
+      ],
+      "team_won": true,
+      "is_playoff": false
+    },
+    {
+      "year": 2026,
+      "week": 1,
+      "player_id": 4567048,
+      "player_name": "Kenneth Walker III",
+      "position": "RB",
+      "slot_position": "RB",
+      "pro_team": "KC",
+      "points": 32.6,
+      "started": true,
+      "team_id": 6,
+      "team_name": "Nude Egg",
+      "owner_ids": [
+        "{429F0506-3667-4F0B-A2ED-1761D0A3F682}"
+      ],
+      "owner_names": [
+        "Ben Wolbransky"
+      ],
+      "team_won": false,
+      "is_playoff": false
+    },
+    {
+      "year": 2024,
+      "week": 1,
+      "player_id": 3929630,
+      "player_name": "Saquon Barkley",
+      "position": "RB",
+      "slot_position": "RB",
+      "pro_team": "PHI",
+      "points": 32.2,
+      "started": true,
+      "team_id": 2,
+      "team_name": "Jake and Seth",
+      "owner_ids": [
+        "{4F3E4D57-5F87-4D74-92C0-40815B7DFD51}",
+        "{4F3E4D57-5F87-4D74-92C0-40815B7DFD51}"
+      ],
+      "owner_names": [
+        "Jake Fischer",
+        "Seth Taratoot"
+      ],
+      "team_won": false,
+      "is_playoff": false
+    },
+    {
+      "year": 2026,
+      "week": 1,
+      "player_id": 4259545,
+      "player_name": "D'Andre Swift",
+      "position": "RB",
+      "slot_position": "RB/WR/TE",
+      "pro_team": "CHI",
+      "points": 31.9,
+      "started": true,
+      "team_id": 10,
+      "team_name": "Team Goldstein",
+      "owner_ids": [
+        "{CBF6473A-C5A3-46D7-8EF8-BFAF0D868891}",
+        "{CBF6473A-C5A3-46D7-8EF8-BFAF0D868891}"
+      ],
+      "owner_names": [
+        "Jordan Klein",
+        "Ben Goldstein"
+      ],
+      "team_won": true,
+      "is_playoff": false
+    },
+    {
+      "year": 2020,
+      "week": 1,
+      "player_id": 14881,
+      "player_name": "Russell Wilson",
+      "position": "QB",
+      "slot_position": "QB",
+      "pro_team": "SEA",
+      "points": 31.78,
+      "started": true,
+      "team_id": 2,
+      "team_name": "Process Trusters",
+      "owner_ids": [
+        "{4F3E4D57-5F87-4D74-92C0-40815B7DFD51}"
+      ],
+      "owner_names": [
+        "Jake Fischer"
+      ],
+      "team_won": true,
+      "is_playoff": false
+    },
+    {
+      "year": 2019,
+      "week": 1,
+      "player_id": 3122840,
+      "player_name": "Deshaun Watson",
+      "position": "QB",
+      "slot_position": "QB",
+      "pro_team": "HOU",
+      "points": 31.72,
+      "started": true,
+      "team_id": 1,
+      "team_name": "Deshaun of The Dead",
+      "owner_ids": [
+        "{3A1A4E24-2A98-4038-9A4E-242A98803865}"
+      ],
+      "owner_names": [
+        "Bennett Schiff"
+      ],
+      "team_won": false,
+      "is_playoff": false
+    }
+  ],
+  "biggest_bench_scores": [
+    {
+      "year": 2023,
+      "week": 3,
+      "player_id": 4429160,
+      "player_name": "De'Von Achane",
+      "position": "RB",
+      "slot_position": "BE",
+      "pro_team": "MIA",
+      "points": 49.3,
+      "started": false,
+      "team_id": 6,
+      "team_name": "Shirt Brothers",
+      "owner_ids": [
+        "{429F0506-3667-4F0B-A2ED-1761D0A3F682}"
+      ],
+      "owner_names": [
+        "Ben Wolbransky"
+      ],
+      "team_won": true,
+      "is_playoff": false
+    },
+    {
+      "year": 2022,
+      "week": 9,
+      "player_id": 4362887,
+      "player_name": "Justin Fields",
+      "position": "QB",
+      "slot_position": "BE",
+      "pro_team": "CHI",
+      "points": 42.72,
+      "started": false,
+      "team_id": 12,
+      "team_name": "Pls Trade Me Thick Necks",
+      "owner_ids": [
+        "{B792F7C9-61CE-4E29-940C-DC1C5E6C4208}"
+      ],
+      "owner_names": [
+        "Ryan Vader"
+      ],
+      "team_won": true,
+      "is_playoff": false
+    },
+    {
+      "year": 2019,
+      "week": 1,
+      "player_id": 16725,
+      "player_name": "Sammy Watkins",
+      "position": "WR",
+      "slot_position": "BE",
+      "pro_team": "KC",
+      "points": 42.3,
+      "started": false,
+      "team_id": 11,
+      "team_name": "Finna Win This  Year Ya Diggs?",
+      "owner_ids": [
+        "{96349FBC-DBBD-4841-B49F-BCDBBD9841B6}"
+      ],
+      "owner_names": [
+        "Jeremy Isaacs"
+      ],
+      "team_won": true,
+      "is_playoff": false
+    },
+    {
+      "year": 2023,
+      "week": 9,
+      "player_id": 4432577,
+      "player_name": "C.J. Stroud",
+      "position": "QB",
+      "slot_position": "BE",
+      "pro_team": "HOU",
+      "points": 41.8,
+      "started": false,
+      "team_id": 3,
+      "team_name": "Olaver Your Face",
+      "owner_ids": [
+        "{6EB109A3-B9E1-4D2D-B109-A3B9E10D2D41}"
+      ],
+      "owner_names": [
+        "Stefan Lachkar"
+      ],
+      "team_won": false,
+      "is_playoff": false
+    },
+    {
+      "year": 2019,
+      "week": 3,
+      "player_id": 14881,
+      "player_name": "Russell Wilson",
+      "position": "QB",
+      "slot_position": "BE",
+      "pro_team": "SEA",
+      "points": 41.34,
+      "started": false,
+      "team_id": 2,
+      "team_name": "Process Trusters",
+      "owner_ids": [
+        "{4F3E4D57-5F87-4D74-92C0-40815B7DFD51}"
+      ],
+      "owner_names": [
+        "Jake Fischer"
+      ],
+      "team_won": false,
+      "is_playoff": false
+    },
+    {
+      "year": 2024,
+      "week": 15,
+      "player_id": 3046779,
+      "player_name": "Jared Goff",
+      "position": "QB",
+      "slot_position": "BE",
+      "pro_team": "DET",
+      "points": 41.06,
+      "started": false,
+      "team_id": 12,
+      "team_name": "Jack, Robin, Harry and Sons",
+      "owner_ids": [
+        "{B792F7C9-61CE-4E29-940C-DC1C5E6C4208}"
+      ],
+      "owner_names": [
+        "Ryan Vader"
+      ],
+      "team_won": null,
+      "is_playoff": false
+    },
+    {
+      "year": 2019,
+      "week": 14,
+      "player_id": 2580,
+      "player_name": "Drew Brees",
+      "position": "QB",
+      "slot_position": "BE",
+      "pro_team": "NO",
+      "points": 40.06,
+      "started": false,
+      "team_id": 2,
+      "team_name": "Process Trusters",
+      "owner_ids": [
+        "{4F3E4D57-5F87-4D74-92C0-40815B7DFD51}"
+      ],
+      "owner_names": [
+        "Jake Fischer"
+      ],
+      "team_won": false,
+      "is_playoff": true
+    },
+    {
+      "year": 2019,
+      "week": 14,
+      "player_id": 2969939,
+      "player_name": "Jameis Winston",
+      "position": "QB",
+      "slot_position": "BE",
+      "pro_team": "TB",
+      "points": 37.74,
+      "started": false,
+      "team_id": 3,
+      "team_name": "Running The Table",
+      "owner_ids": [
+        "{6EB109A3-B9E1-4D2D-B109-A3B9E10D2D41}"
+      ],
+      "owner_names": [
+        "Stefan Lachkar"
+      ],
+      "team_won": false,
+      "is_playoff": true
+    },
+    {
+      "year": 2019,
+      "week": 8,
+      "player_id": 2979477,
+      "player_name": "Tevin Coleman",
+      "position": "RB",
+      "slot_position": "BE",
+      "pro_team": "SF",
+      "points": 36.8,
+      "started": false,
+      "team_id": 3,
+      "team_name": "Running The Table",
+      "owner_ids": [
+        "{6EB109A3-B9E1-4D2D-B109-A3B9E10D2D41}"
+      ],
+      "owner_names": [
+        "Stefan Lachkar"
+      ],
+      "team_won": false,
+      "is_playoff": false
+    },
+    {
+      "year": 2024,
+      "week": 13,
+      "player_id": 4241463,
+      "player_name": "Jerry Jeudy",
+      "position": "WR",
+      "slot_position": "BE",
+      "pro_team": "CLE",
+      "points": 36.0,
+      "started": false,
+      "team_id": 2,
+      "team_name": "Jake and Seth",
+      "owner_ids": [
+        "{4F3E4D57-5F87-4D74-92C0-40815B7DFD51}",
+        "{4F3E4D57-5F87-4D74-92C0-40815B7DFD51}"
+      ],
+      "owner_names": [
+        "Jake Fischer",
+        "Seth Taratoot"
+      ],
+      "team_won": false,
+      "is_playoff": false
+    },
+    {
+      "year": 2020,
+      "week": 2,
+      "player_id": 13994,
+      "player_name": "Cam Newton",
+      "position": "QB",
+      "slot_position": "BE",
+      "pro_team": "NE",
+      "points": 35.58,
+      "started": false,
+      "team_id": 10,
+      "team_name": "Team Goldstein",
+      "owner_ids": [
+        "{CBF6473A-C5A3-46D7-8EF8-BFAF0D868891}"
+      ],
+      "owner_names": [
+        "Ben Goldstein"
+      ],
+      "team_won": false,
+      "is_playoff": false
+    },
+    {
+      "year": 2024,
+      "week": 5,
+      "player_id": 14880,
+      "player_name": "Kirk Cousins",
+      "position": "QB",
+      "slot_position": "BE",
+      "pro_team": "ATL",
+      "points": 35.36,
+      "started": false,
+      "team_id": 9,
+      "team_name": "Saquads squad  Ship",
+      "owner_ids": [
+        "{8D1E7E24-92F1-49FC-ADF1-C8193EA1C44E}"
+      ],
+      "owner_names": [
+        "Adam Heckelman"
+      ],
+      "team_won": false,
+      "is_playoff": false
+    },
+    {
+      "year": 2019,
+      "week": 16,
+      "player_id": 3917792,
+      "player_name": "Daniel Jones",
+      "position": "QB",
+      "slot_position": "BE",
+      "pro_team": "NYG",
+      "points": 35.28,
+      "started": false,
+      "team_id": 10,
+      "team_name": "Team Goldstein",
+      "owner_ids": [
+        "{CBF6473A-C5A3-46D7-8EF8-BFAF0D868891}"
+      ],
+      "owner_names": [
+        "Ben Goldstein"
+      ],
+      "team_won": true,
+      "is_playoff": true
+    },
+    {
+      "year": 2020,
+      "week": 6,
+      "player_id": 4262921,
+      "player_name": "Justin Jefferson",
+      "position": "WR",
+      "slot_position": "BE",
+      "pro_team": "MIN",
+      "points": 35.1,
+      "started": false,
+      "team_id": 3,
+      "team_name": "3CHI Robby Hootz",
+      "owner_ids": [
+        "{6EB109A3-B9E1-4D2D-B109-A3B9E10D2D41}"
+      ],
+      "owner_names": [
+        "Stefan Lachkar"
+      ],
+      "team_won": true,
+      "is_playoff": false
+    },
+    {
+      "year": 2020,
+      "week": 16,
+      "player_id": 16737,
+      "player_name": "Mike Evans",
+      "position": "WR",
+      "slot_position": "BE",
+      "pro_team": "TB",
+      "points": 35.1,
+      "started": false,
+      "team_id": 3,
+      "team_name": "3CHI Robby Hootz",
+      "owner_ids": [
+        "{6EB109A3-B9E1-4D2D-B109-A3B9E10D2D41}"
+      ],
+      "owner_names": [
+        "Stefan Lachkar"
+      ],
+      "team_won": true,
+      "is_playoff": true
+    },
+    {
+      "year": 2023,
+      "week": 15,
+      "player_id": 4379399,
+      "player_name": "James Cook",
+      "position": "RB",
+      "slot_position": "BE",
+      "pro_team": "BUF",
+      "points": 35.1,
+      "started": false,
+      "team_id": 6,
+      "team_name": "Shirt Brothers",
+      "owner_ids": [
+        "{429F0506-3667-4F0B-A2ED-1761D0A3F682}"
+      ],
+      "owner_names": [
+        "Ben Wolbransky"
+      ],
+      "team_won": false,
+      "is_playoff": true
+    },
+    {
+      "year": 2019,
+      "week": 10,
+      "player_id": 3895856,
+      "player_name": "Christian Kirk",
+      "position": "WR",
+      "slot_position": "BE",
+      "pro_team": "ARI",
+      "points": 34.8,
+      "started": false,
+      "team_id": 11,
+      "team_name": "Finna Win This  Year Ya Diggs?",
+      "owner_ids": [
+        "{96349FBC-DBBD-4841-B49F-BCDBBD9841B6}"
+      ],
+      "owner_names": [
+        "Jeremy Isaacs"
+      ],
+      "team_won": false,
+      "is_playoff": false
+    },
+    {
+      "year": 2024,
+      "week": 5,
+      "player_id": 3915511,
+      "player_name": "Joe Burrow",
+      "position": "QB",
+      "slot_position": "BE",
+      "pro_team": "CIN",
+      "points": 34.78,
+      "started": false,
+      "team_id": 2,
+      "team_name": "Jake and Seth",
+      "owner_ids": [
+        "{4F3E4D57-5F87-4D74-92C0-40815B7DFD51}",
+        "{4F3E4D57-5F87-4D74-92C0-40815B7DFD51}"
+      ],
+      "owner_names": [
+        "Jake Fischer",
+        "Seth Taratoot"
+      ],
+      "team_won": true,
+      "is_playoff": false
+    },
+    {
+      "year": 2022,
+      "week": 2,
+      "player_id": 4372016,
+      "player_name": "Jaylen Waddle",
+      "position": "WR",
+      "slot_position": "BE",
+      "pro_team": "MIA",
+      "points": 34.6,
+      "started": false,
+      "team_id": 9,
+      "team_name": "Saquads squad  Ship",
+      "owner_ids": [
+        "{8D1E7E24-92F1-49FC-ADF1-C8193EA1C44E}"
+      ],
+      "owner_names": [
+        "Adam Heckelman"
+      ],
+      "team_won": false,
+      "is_playoff": false
+    },
+    {
+      "year": 2024,
+      "week": 17,
+      "player_id": 3052587,
+      "player_name": "Baker Mayfield",
+      "position": "QB",
+      "slot_position": "BE",
+      "pro_team": "TB",
+      "points": 34.56,
+      "started": false,
+      "team_id": 5,
+      "team_name": "CeeDeez Nuts",
+      "owner_ids": [
+        "{BDC02B8B-DDC4-464E-B2E9-065DF145DDBB}"
+      ],
+      "owner_names": [
+        "Jonathan Coopersmith"
+      ],
+      "team_won": false,
+      "is_playoff": true
+    }
+  ],
+  "biggest_carry_jobs": [
+    {
+      "year": 2025,
+      "week": 17,
+      "player_id": 3043078,
+      "player_name": "Derrick Henry",
+      "position": "RB",
+      "slot_position": "RB",
+      "pro_team": "BAL",
+      "points": 45.6,
+      "started": true,
+      "team_id": 9,
+      "team_name": "Saquads squad  Ship",
+      "owner_ids": [
+        "{8D1E7E24-92F1-49FC-ADF1-C8193EA1C44E}"
+      ],
+      "owner_names": [
+        "Adam Heckelman"
+      ],
+      "team_won": true,
+      "is_playoff": true,
+      "team_score": 86.9,
+      "team_share": 0.5247
+    },
+    {
+      "year": 2020,
+      "week": 12,
+      "player_id": 3116406,
+      "player_name": "Tyreek Hill",
+      "position": "WR",
+      "slot_position": "WR",
+      "pro_team": "KC",
+      "points": 51.4,
+      "started": true,
+      "team_id": 5,
+      "team_name": "Wraith Talk",
+      "owner_ids": [
+        "{BDC02B8B-DDC4-464E-B2E9-065DF145DDBB}"
+      ],
+      "owner_names": [
+        "Jonathan Coopersmith"
+      ],
+      "team_won": false,
+      "is_playoff": false,
+      "team_score": 106.8,
+      "team_share": 0.4813
+    },
+    {
+      "year": 2023,
+      "week": 7,
+      "player_id": 3139477,
+      "player_name": "Patrick Mahomes",
+      "position": "QB",
+      "slot_position": "QB",
+      "pro_team": "KC",
+      "points": 34.86,
+      "started": true,
+      "team_id": 11,
+      "team_name": "Tyreek Hill is Dead to Me Now",
+      "owner_ids": [
+        "{5431883D-E365-4401-97B9-DAD7EC2156AD}"
+      ],
+      "owner_names": [
+        "Dylan Campbell"
+      ],
+      "team_won": false,
+      "is_playoff": false,
+      "team_score": 74.96,
+      "team_share": 0.465
+    },
+    {
+      "year": 2023,
+      "week": 5,
+      "player_id": 3915416,
+      "player_name": "DJ Moore",
+      "position": "WR",
+      "slot_position": "WR",
+      "pro_team": "CHI",
+      "points": 45.0,
+      "started": true,
+      "team_id": 9,
+      "team_name": "Saquads squad  Ship",
+      "owner_ids": [
+        "{8D1E7E24-92F1-49FC-ADF1-C8193EA1C44E}"
+      ],
+      "owner_names": [
+        "Adam Heckelman"
+      ],
+      "team_won": false,
+      "is_playoff": false,
+      "team_score": 99.4,
+      "team_share": 0.4527
+    },
+    {
+      "year": 2019,
+      "week": 6,
+      "player_id": 11237,
+      "player_name": "Matt Ryan",
+      "position": "QB",
+      "slot_position": "QB",
+      "pro_team": "ATL",
+      "points": 30.94,
+      "started": true,
+      "team_id": 11,
+      "team_name": "Finna Win This  Year Ya Diggs?",
+      "owner_ids": [
+        "{96349FBC-DBBD-4841-B49F-BCDBBD9841B6}"
+      ],
+      "owner_names": [
+        "Jeremy Isaacs"
+      ],
+      "team_won": false,
+      "is_playoff": false,
+      "team_score": 68.64,
+      "team_share": 0.4508
+    },
+    {
+      "year": 2024,
+      "week": 15,
+      "player_id": 3918298,
+      "player_name": "Josh Allen",
+      "position": "QB",
+      "slot_position": "QB",
+      "pro_team": "BUF",
+      "points": 41.28,
+      "started": true,
+      "team_id": 1,
+      "team_name": "Just Happy To Be Here",
+      "owner_ids": [
+        "{3A1A4E24-2A98-4038-9A4E-242A98803865}"
+      ],
+      "owner_names": [
+        "Bennett Schiff"
+      ],
+      "team_won": false,
+      "is_playoff": true,
+      "team_score": 91.78,
+      "team_share": 0.4498
+    },
+    {
+      "year": 2019,
+      "week": 10,
+      "player_id": 4047365,
+      "player_name": "Josh Jacobs",
+      "position": "RB",
+      "slot_position": "RB",
+      "pro_team": "LV",
+      "points": 17.6,
+      "started": true,
+      "team_id": 11,
+      "team_name": "Finna Win This  Year Ya Diggs?",
+      "owner_ids": [
+        "{96349FBC-DBBD-4841-B49F-BCDBBD9841B6}"
+      ],
+      "owner_names": [
+        "Jeremy Isaacs"
+      ],
+      "team_won": false,
+      "is_playoff": false,
+      "team_score": 40.78,
+      "team_share": 0.4316
+    },
+    {
+      "year": 2025,
+      "week": 12,
+      "player_id": 4429795,
+      "player_name": "Jahmyr Gibbs",
+      "position": "RB",
+      "slot_position": "RB",
+      "pro_team": "DET",
+      "points": 49.9,
+      "started": true,
+      "team_id": 6,
+      "team_name": "Nude Egg",
+      "owner_ids": [
+        "{429F0506-3667-4F0B-A2ED-1761D0A3F682}"
+      ],
+      "owner_names": [
+        "Ben Wolbransky"
+      ],
+      "team_won": false,
+      "is_playoff": false,
+      "team_score": 118.66,
+      "team_share": 0.4205
+    },
+    {
+      "year": 2023,
+      "week": 4,
+      "player_id": 3916387,
+      "player_name": "Lamar Jackson",
+      "position": "QB",
+      "slot_position": "QB",
+      "pro_team": "BAL",
+      "points": 28.14,
+      "started": true,
+      "team_id": 1,
+      "team_name": "Started From The Bottom",
+      "owner_ids": [
+        "{3A1A4E24-2A98-4038-9A4E-242A98803865}"
+      ],
+      "owner_names": [
+        "Bennett Schiff"
+      ],
+      "team_won": false,
+      "is_playoff": false,
+      "team_score": 67.34,
+      "team_share": 0.4179
+    },
+    {
+      "year": 2022,
+      "week": 17,
+      "player_id": 16737,
+      "player_name": "Mike Evans",
+      "position": "WR",
+      "slot_position": "WR",
+      "pro_team": "TB",
+      "points": 43.7,
+      "started": true,
+      "team_id": 12,
+      "team_name": "Pls Trade Me Thick Necks",
+      "owner_ids": [
+        "{B792F7C9-61CE-4E29-940C-DC1C5E6C4208}"
+      ],
+      "owner_names": [
+        "Ryan Vader"
+      ],
+      "team_won": false,
+      "is_playoff": true,
+      "team_score": 106.3,
+      "team_share": 0.4111
+    },
+    {
+      "year": 2024,
+      "week": 12,
+      "player_id": 3929630,
+      "player_name": "Saquon Barkley",
+      "position": "RB",
+      "slot_position": "RB",
+      "pro_team": "PHI",
+      "points": 44.2,
+      "started": true,
+      "team_id": 2,
+      "team_name": "Jake and Seth",
+      "owner_ids": [
+        "{4F3E4D57-5F87-4D74-92C0-40815B7DFD51}",
+        "{4F3E4D57-5F87-4D74-92C0-40815B7DFD51}"
+      ],
+      "owner_names": [
+        "Jake Fischer",
+        "Seth Taratoot"
+      ],
+      "team_won": true,
+      "is_playoff": false,
+      "team_score": 108.06,
+      "team_share": 0.409
+    },
+    {
+      "year": 2022,
+      "week": 10,
+      "player_id": 4362887,
+      "player_name": "Justin Fields",
+      "position": "QB",
+      "slot_position": "QB",
+      "pro_team": "CHI",
+      "points": 40.38,
+      "started": true,
+      "team_id": 12,
+      "team_name": "Pls Trade Me Thick Necks",
+      "owner_ids": [
+        "{B792F7C9-61CE-4E29-940C-DC1C5E6C4208}"
+      ],
+      "owner_names": [
+        "Ryan Vader"
+      ],
+      "team_won": true,
+      "is_playoff": false,
+      "team_score": 100.28,
+      "team_share": 0.4027
+    },
+    {
+      "year": 2023,
+      "week": 17,
+      "player_id": 3915416,
+      "player_name": "DJ Moore",
+      "position": "WR",
+      "slot_position": "WR",
+      "pro_team": "CHI",
+      "points": 26.4,
+      "started": true,
+      "team_id": 9,
+      "team_name": "Saquads squad  Ship",
+      "owner_ids": [
+        "{8D1E7E24-92F1-49FC-ADF1-C8193EA1C44E}"
+      ],
+      "owner_names": [
+        "Adam Heckelman"
+      ],
+      "team_won": false,
+      "is_playoff": true,
+      "team_score": 65.6,
+      "team_share": 0.4024
+    },
+    {
+      "year": 2020,
+      "week": 13,
+      "player_id": 3918298,
+      "player_name": "Josh Allen",
+      "position": "QB",
+      "slot_position": "QB",
+      "pro_team": "BUF",
+      "points": 30.1,
+      "started": true,
+      "team_id": 7,
+      "team_name": "Team Katz",
+      "owner_ids": [
+        "{ECD9E4C2-4E30-4915-AC59-6C1700E34A69}"
+      ],
+      "owner_names": [
+        "Ben Katz"
+      ],
+      "team_won": false,
+      "is_playoff": false,
+      "team_score": 75.3,
+      "team_share": 0.3997
+    },
+    {
+      "year": 2020,
+      "week": 2,
+      "player_id": 3918298,
+      "player_name": "Josh Allen",
+      "position": "QB",
+      "slot_position": "QB",
+      "pro_team": "BUF",
+      "points": 34.5,
+      "started": true,
+      "team_id": 7,
+      "team_name": "Team Katz",
+      "owner_ids": [
+        "{ECD9E4C2-4E30-4915-AC59-6C1700E34A69}"
+      ],
+      "owner_names": [
+        "Ben Katz"
+      ],
+      "team_won": false,
+      "is_playoff": false,
+      "team_score": 87.8,
+      "team_share": 0.3929
+    },
+    {
+      "year": 2025,
+      "week": 15,
+      "player_id": 4360248,
+      "player_name": "Kyle Pitts Sr.",
+      "position": "TE",
+      "slot_position": "TE",
+      "pro_team": "ATL",
+      "points": 40.1,
+      "started": true,
+      "team_id": 9,
+      "team_name": "Saquads squad  Ship",
+      "owner_ids": [
+        "{8D1E7E24-92F1-49FC-ADF1-C8193EA1C44E}"
+      ],
+      "owner_names": [
+        "Adam Heckelman"
+      ],
+      "team_won": false,
+      "is_playoff": true,
+      "team_score": 102.1,
+      "team_share": 0.3928
+    },
+    {
+      "year": 2019,
+      "week": 9,
+      "player_id": 4047365,
+      "player_name": "Josh Jacobs",
+      "position": "RB",
+      "slot_position": "RB",
+      "pro_team": "LV",
+      "points": 24.0,
+      "started": true,
+      "team_id": 11,
+      "team_name": "Finna Win This  Year Ya Diggs?",
+      "owner_ids": [
+        "{96349FBC-DBBD-4841-B49F-BCDBBD9841B6}"
+      ],
+      "owner_names": [
+        "Jeremy Isaacs"
+      ],
+      "team_won": false,
+      "is_playoff": false,
+      "team_score": 61.1,
+      "team_share": 0.3928
+    },
+    {
+      "year": 2020,
+      "week": 7,
+      "player_id": 2330,
+      "player_name": "Tom Brady",
+      "position": "QB",
+      "slot_position": "QB",
+      "pro_team": "TB",
+      "points": 36.86,
+      "started": true,
+      "team_id": 10,
+      "team_name": "Team Goldstein",
+      "owner_ids": [
+        "{CBF6473A-C5A3-46D7-8EF8-BFAF0D868891}"
+      ],
+      "owner_names": [
+        "Ben Goldstein"
+      ],
+      "team_won": false,
+      "is_playoff": false,
+      "team_score": 94.46,
+      "team_share": 0.3902
+    },
+    {
+      "year": 2019,
+      "week": 11,
+      "player_id": 3918298,
+      "player_name": "Josh Allen",
+      "position": "QB",
+      "slot_position": "QB",
+      "pro_team": "BUF",
+      "points": 33.84,
+      "started": true,
+      "team_id": 5,
+      "team_name": "Wraith Talk",
+      "owner_ids": [
+        "{BDC02B8B-DDC4-464E-B2E9-065DF145DDBB}"
+      ],
+      "owner_names": [
+        "Jonathan Coopersmith"
+      ],
+      "team_won": false,
+      "is_playoff": false,
+      "team_score": 86.94,
+      "team_share": 0.3892
+    },
+    {
+      "year": 2023,
+      "week": 1,
+      "player_id": 3116406,
+      "player_name": "Tyreek Hill",
+      "position": "WR",
+      "slot_position": "WR",
+      "pro_team": "MIA",
+      "points": 39.0,
+      "started": true,
+      "team_id": 1,
+      "team_name": "Started From The Bottom",
+      "owner_ids": [
+        "{3A1A4E24-2A98-4038-9A4E-242A98803865}"
+      ],
+      "owner_names": [
+        "Bennett Schiff"
+      ],
+      "team_won": false,
+      "is_playoff": false,
+      "team_score": 101.26,
+      "team_share": 0.3851
     }
   ],
   "mvps_by_season": {

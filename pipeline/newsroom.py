@@ -30,7 +30,11 @@ def _player_points(season: dict) -> dict[int, float]:
     totals: dict[int, float] = defaultdict(float)
     for rows in (season.get("box_scores") or {}).values():
         for row in rows:
-            if row.get("player_id") and row.get("slot_position") not in {"BE", "IR"}:
+            if (
+                row.get("player_id")
+                and row.get("slot_position")
+                and row.get("slot_position") not in {"BE", "IR"}
+            ):
                 totals[row["player_id"]] += float(row.get("points") or 0)
     return totals
 
@@ -134,58 +138,140 @@ def main():
     season = _read(f"seasons/{CURRENT_YEAR}.json")
     config = _read("newsroom_config.json")
     rankings_data = _read("power_rankings.json")
+    records_data = _read("records.json")
+    players_data = _read("players.json")
     now = datetime.now(timezone.utc).isoformat()
     reporters = config["reporters"]
     rankings = rankings_data.get("rankings") or []
-    week = int(rankings_data.get("week") or 0)
-    articles = []
-    if rankings:
-        leader = rankings[0]
-        articles.append({
-            "id": f'{CURRENT_YEAR}-week-{week}-power-lead', "kind": "power_rankings", "label": "Power Rankings", "status": "analysis",
-            "headline": f'{leader["owner"]} opens Week {week} at No. 1',
-            "dek": f'{leader["team_name"]} leads the first phase-aware Steak Frites power model with a {leader["score"]:.1f} rating.',
-            "body": leader["explanation"], "reporter_id": "ben-n-syder", "team_ids": [leader["team_id"]], "confidence": None,
-            "evidence": [f'{leader["record"]} record', f'{leader["ppg"]:.1f} PPG', f'{leader["all_play_pct"]:.0%} all-play rate'], "published_at": now,
-        })
-        risers = sorted((row for row in rankings if row.get("movement")), key=lambda row: row["movement"], reverse=True)
-        if risers and risers[0]["movement"] > 0:
-            riser = risers[0]
-            articles.append({
-                "id": f'{CURRENT_YEAR}-week-{week}-riser', "kind": "weekly", "label": "Stock Watch", "status": "analysis",
-                "headline": f'{riser["owner"]} makes the week’s biggest move',
-                "dek": f'{riser["team_name"]} climbed {riser["movement"]} spot{"s" if riser["movement"] != 1 else ""} to No. {riser["rank"]}.',
-                "body": riser["explanation"], "reporter_id": "issac-cox", "team_ids": [riser["team_id"]], "confidence": None,
-                "evidence": [f'Previous rank: {riser["previous_rank"]}', f'Current score: {riser["score"]:.1f}'], "published_at": now,
+    completed = [
+        m for m in season.get("matchups", [])
+        if m.get("home_score") is not None
+        and m.get("away_score") is not None
+        and ((m.get("home_score") or 0) > 0 or (m.get("away_score") or 0) > 0)
+    ]
+    week = max((int(m["week"]) for m in completed), default=0)
+    teams = {t["team_id"]: t for t in season.get("teams", [])}
+    week_team_rows = []
+    for matchup in (m for m in completed if int(m["week"]) == week):
+        for side, opponent in (("home", "away"), ("away", "home")):
+            team_id = matchup.get(f"{side}_team_id")
+            opponent_id = matchup.get(f"{opponent}_team_id")
+            team = teams.get(team_id) or {}
+            opponent_team = teams.get(opponent_id) or {}
+            week_team_rows.append({
+                "team_id": team_id,
+                "team_name": team.get("name", "Unknown team"),
+                "owner_names": team.get("owner_names") or ["Unknown owner"],
+                "score": float(matchup.get(f"{side}_score") or 0),
+                "opponent_team_id": opponent_id,
+                "opponent_team_name": opponent_team.get("name", "Unknown team"),
+                "opponent_owner_names": opponent_team.get("owner_names") or ["Unknown owner"],
+                "opponent_score": float(matchup.get(f"{opponent}_score") or 0),
             })
-        unluckiest = min(rankings, key=lambda row: row["luck"])
+    week_team_rows.sort(key=lambda row: row["score"], reverse=True)
+    weekly_leader = week_team_rows[0] if week_team_rows else None
+    weekly_heartbreak = next(
+        (row for row in week_team_rows if row["score"] < row["opponent_score"]),
+        None,
+    )
+
+    week_box = (season.get("box_scores") or {}).get(str(week), [])
+    starters = sorted(
+        [
+            row
+            for row in week_box
+            if row.get("slot_position") and row.get("slot_position") not in {"BE", "IR"}
+        ],
+        key=lambda row: float(row.get("points") or 0),
+        reverse=True,
+    )
+    bench = sorted(
+        [row for row in week_box if row.get("slot_position") == "BE"],
+        key=lambda row: float(row.get("points") or 0),
+        reverse=True,
+    )
+    weekly_player = starters[0] if starters else None
+    weekly_bench = bench[0] if bench else None
+
+    articles = []
+    if weekly_leader:
+        history_key = "opening_week_highest" if week == 1 else "highest_single_game"
+        history_rows = records_data.get(history_key) or []
+        history_rank = next(
+            (
+                index + 1
+                for index, row in enumerate(history_rows)
+                if row.get("year") == CURRENT_YEAR
+                and row.get("week") == week
+                and row.get("team_id") == weekly_leader["team_id"]
+            ),
+            None,
+        )
+        history_phrase = (
+            f'No. {history_rank} in league history for {"opening week" if week == 1 else "a single week"}'
+            if history_rank else "outside the current all-time top 20"
+        )
         articles.append({
-            "id": f'{CURRENT_YEAR}-week-{week}-schedule-luck', "kind": "weekly", "label": "Schedule Desk", "status": "analysis",
-            "headline": f'The early numbers say {unluckiest["owner"]} deserved better',
-            "dek": f'{unluckiest["team_name"]} sits {unluckiest["luck"]:+.1f} wins from its all-play expectation.',
-            "body": "All-play compares each weekly score with every other team, separating team strength from the opponent that happened to appear on the schedule.",
-            "reporter_id": "edith-puthy", "team_ids": [unluckiest["team_id"]], "confidence": None,
-            "evidence": [f'{unluckiest["all_play_wins"]:.1f}-{unluckiest["all_play_losses"]:.1f} all-play record', f'{unluckiest["ppg"]:.1f} PPG'], "published_at": now,
+            "id": f'{CURRENT_YEAR}-week-{week}-score-lead', "kind": "weekly", "label": "Record Watch", "status": "confirmed",
+            "headline": f'{" & ".join(weekly_leader["owner_names"])} owns Week {week}’s high score',
+            "dek": f'{weekly_leader["team_name"]} opened the record watch with {weekly_leader["score"]:.2f} points—{history_phrase.lower()}.',
+            "body": f'The weekly crown belongs to {weekly_leader["team_name"]}. The score beat {weekly_leader["opponent_team_name"]} by {weekly_leader["score"] - weekly_leader["opponent_score"]:.2f} points and now has a permanent place in the Steak Frites archive.',
+            "reporter_id": "ben-n-syder", "team_ids": [weekly_leader["team_id"]], "confidence": None,
+            "evidence": [f'{weekly_leader["score"]:.2f} Week {week} points', history_phrase, f'{weekly_leader["opponent_score"]:.2f} opponent score'], "published_at": now,
         })
-        playful = next(r for r in reporters if r["id"] == "harry-weiner")
-        basement = rankings[-1]
+
+    if weekly_player:
+        team = teams.get(weekly_player.get("team_id")) or {}
+        opening_rows = players_data.get("opening_week_top") or []
+        player_rank = next(
+            (
+                index + 1 for index, row in enumerate(opening_rows)
+                if week == 1 and row.get("year") == CURRENT_YEAR
+                and row.get("player_id") == weekly_player.get("player_id")
+                and row.get("team_id") == weekly_player.get("team_id")
+            ),
+            None,
+        )
+        rank_fact = f'No. {player_rank} opening-week starter since 2019' if player_rank else f'Week {week} player leader'
         articles.append({
-            "id": f'{CURRENT_YEAR}-week-{week}-back-page', "kind": "feature", "label": "Back Page", "status": "analysis",
-            "headline": f'{basement["owner"]} has work to do—and the spreadsheet has receipts',
-            "dek": f'{basement["team_name"]} checks in at No. {basement["rank"]}, but one strong week can still rewrite an early table.',
-            "body": "The model is intentionally responsive at the start of the season. A hot score moves quickly; sustained production matters more once three weeks of form exist.",
-            "reporter_id": playful["id"], "team_ids": [basement["team_id"]], "confidence": None,
-            "evidence": [f'Model score: {basement["score"]:.1f}', f'{basement["ppg"]:.1f} PPG'], "published_at": now,
+            "id": f'{CURRENT_YEAR}-week-{week}-player-eruption', "kind": "weekly", "label": "Player Eruption", "status": "confirmed",
+            "headline": f'{weekly_player.get("player_name")} delivers the week’s biggest punch',
+            "dek": f'{float(weekly_player.get("points") or 0):.2f} points from {weekly_player.get("position") or "a starter"} paced every player in the Steak Frites starting lineups.',
+            "body": f'{weekly_player.get("player_name")} did the damage for {" & ".join(team.get("owner_names") or ["an unknown owner"])} on {team.get("name", "an unknown team")}. Player records use only starting-lineup points; bench scores live in their own hall of regret.',
+            "reporter_id": "issac-cox", "team_ids": [weekly_player.get("team_id")], "confidence": None,
+            "evidence": [f'{float(weekly_player.get("points") or 0):.2f} fantasy points', rank_fact, f'{weekly_player.get("position") or "Unknown"} · {weekly_player.get("pro_team") or "NFL team unavailable"}'], "published_at": now,
+        })
+
+    if weekly_heartbreak:
+        articles.append({
+            "id": f'{CURRENT_YEAR}-week-{week}-heartbreak', "kind": "weekly", "label": "Heartbreak Hotel", "status": "confirmed",
+            "headline": f'{" & ".join(weekly_heartbreak["owner_names"])} scores {weekly_heartbreak["score"]:.2f} and still loses',
+            "dek": f'{weekly_heartbreak["team_name"]} posted the highest losing score of Week {week}. There are no moral victories in the standings.',
+            "body": f'{weekly_heartbreak["opponent_team_name"]} answered with {weekly_heartbreak["opponent_score"]:.2f}. That left a {weekly_heartbreak["opponent_score"] - weekly_heartbreak["score"]:.2f}-point gap and the kind of result the record book was built to preserve.',
+            "reporter_id": "edith-puthy", "team_ids": [weekly_heartbreak["team_id"], weekly_heartbreak["opponent_team_id"]], "confidence": None,
+            "evidence": [f'{weekly_heartbreak["score"]:.2f} points in defeat', f'{weekly_heartbreak["opponent_score"]:.2f} opponent points'], "published_at": now,
+        })
+
+    if weekly_bench and float(weekly_bench.get("points") or 0) > 0:
+        playful = next(r for r in reporters if r["id"] == "harry-weiner")
+        team = teams.get(weekly_bench.get("team_id")) or {}
+        articles.append({
+            "id": f'{CURRENT_YEAR}-week-{week}-bench-regret', "kind": "feature", "label": "Bench Regret", "status": "confirmed",
+            "headline": f'{weekly_bench.get("player_name")} scores {float(weekly_bench.get("points") or 0):.2f} points for absolutely nobody',
+            "dek": f'The week’s biggest bench eruption belonged to {" & ".join(team.get("owner_names") or ["an unknown owner"])}.',
+            "body": f'{weekly_bench.get("player_name")} watched from the bench while piling up {float(weekly_bench.get("points") or 0):.2f} points. The points did not count toward {team.get("name", "the fantasy team")}, but the decision now counts forever.',
+            "reporter_id": playful["id"], "team_ids": [weekly_bench.get("team_id")], "confidence": None,
+            "evidence": [f'{float(weekly_bench.get("points") or 0):.2f} bench points', f'{weekly_bench.get("position") or "Unknown"} · {weekly_bench.get("pro_team") or "NFL team unavailable"}'], "published_at": now,
         })
     articles, generation = _polish(articles)
     output = {
         "publication": config.get("publication", "Newsroom"), "season": CURRENT_YEAR, "phase": "in_season",
-        "issue_id": f"{CURRENT_YEAR}-week-{week}", "issue_label": f"{CURRENT_YEAR} · Week {week} Power Report",
+        "issue_id": f"{CURRENT_YEAR}-week-{week}", "issue_label": f"{CURRENT_YEAR} · Week {week} Record Watch",
         "generated_at": now, "generation": generation, "reporters": reporters, "articles": articles,
         "power_rankings": rankings,
         "methodology": {
             "power_rankings": rankings_data["methodology"]["early_season"] if week <= 2 else rankings_data["methodology"]["standard"],
-            "editorial": "Rankings, legality and evidence are computed before any AI copy pass. Reporters may change assignments by story, but their serious or playful persona never changes.",
+            "editorial": "Scores, lineup status and historical ranks are computed before any AI copy pass. Reporters may change assignments by story, but their serious or playful persona never changes.",
             "transactions": "ESPN keeper flags are treated as confirmed. Trade details require ESPN roster/activity evidence or a commissioner-confirmed event; model trade ideas are always labeled rumored."
         }
     }

@@ -4,7 +4,7 @@
   "phase": "in_season",
   "issue_id": "2026-week-1",
   "issue_label": "2026 \u00b7 Week 1 Record Watch",
-  "generated_at": "2026-09-15T15:38:17.134797+00:00",
+  "generated_at": "2026-09-15T17:55:09.365898+00:00",
   "generation": "deterministic",
   "reporters": [
     {
@@ -97,7 +97,7 @@
         "No. 1 in league history for opening week",
         "137.90 opponent score"
       ],
-      "published_at": "2026-09-15T15:38:17.134797+00:00"
+      "published_at": "2026-09-15T17:55:09.365898+00:00"
     },
     {
       "id": "2026-week-1-player-eruption",
@@ -117,7 +117,7 @@
         "No. 4 opening-week starter since 2019",
         "QB \u00b7 CHI"
       ],
-      "published_at": "2026-09-15T15:38:17.134797+00:00"
+      "published_at": "2026-09-15T17:55:09.365898+00:00"
     },
     {
       "id": "2026-week-1-heartbreak",
@@ -137,7 +137,7 @@
         "137.90 points in defeat",
         "171.66 opponent points"
       ],
-      "published_at": "2026-09-15T15:38:17.134797+00:00"
+      "published_at": "2026-09-15T17:55:09.365898+00:00"
     },
     {
       "id": "2026-week-1-bench-regret",
@@ -156,7 +156,7 @@
         "29.70 bench points",
         "WR \u00b7 GB"
       ],
-      "published_at": "2026-09-15T15:38:17.134797+00:00"
+      "published_at": "2026-09-15T17:55:09.365898+00:00"
     }
   ],
   "power_rankings": [

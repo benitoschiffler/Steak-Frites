@@ -2453,7 +2453,7 @@
         "pro_team": "LV",
         "points": 0.0,
         "projected_points": 0.0,
-        "injury_status": "OUT"
+        "injury_status": "QUESTIONABLE"
       },
       {
         "side": "home",
@@ -3473,7 +3473,7 @@
         "pro_team": "NE",
         "points": 0.0,
         "projected_points": 0.0,
-        "injury_status": "OUT"
+        "injury_status": "QUESTIONABLE"
       },
       {
         "side": "away",
@@ -4219,7 +4219,7 @@
         "pro_team": "LV",
         "points": 0.0,
         "projected_points": 11.73,
-        "injury_status": "OUT"
+        "injury_status": "QUESTIONABLE"
       },
       {
         "side": "away",
@@ -4447,7 +4447,7 @@
         "pro_team": "NE",
         "points": 0.0,
         "projected_points": 8.02,
-        "injury_status": "OUT"
+        "injury_status": "QUESTIONABLE"
       },
       {
         "side": "home",

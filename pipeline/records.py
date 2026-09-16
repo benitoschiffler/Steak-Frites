@@ -72,12 +72,18 @@ def compute() -> dict:
             away_team = teams.get(aid)
             if not home_team or not away_team:
                 continue
+            is_championship = (
+                bool(m["is_playoff"])
+                and m["matchup_type"] == "WINNERS_BRACKET"
+                and {home_team.get("final_standing"), away_team.get("final_standing")} == {1, 2}
+            )
             margin = abs(m["home_score"] - m["away_score"])
             games.append({
                 "year": s["year"],
                 "week": m["week"],
                 "matchup_type": m["matchup_type"],
                 "is_playoff": m["is_playoff"],
+                "is_championship": is_championship,
                 "home_team_id": hid,
                 "home_team": home_team["name"],
                 "home_owners": _team_owner_names(home_team),
@@ -127,6 +133,10 @@ def compute() -> dict:
         key=lambda x: x["score"],
         reverse=True,
     )[:20]
+    opening_week_lowest = sorted(
+        [g for g in team_games if g["week"] == 1 and g["score"] > 0],
+        key=lambda x: x["score"],
+    )[:20]
     highest_losing_scores = sorted(
         [g for g in team_games if g["score"] < g["opp_score"]],
         key=lambda x: x["score"],
@@ -136,6 +146,57 @@ def compute() -> dict:
         [g for g in team_games if 0 < g["score"] and g["score"] > g["opp_score"]],
         key=lambda x: x["score"],
     )[:20]
+
+    def _game_record_set(matchup_rows, team_rows):
+        """Build the same record categories for one game context.
+
+        Keeping complete context-specific pools here prevents the UI from
+        filtering an already-truncated all-games top 20.
+        """
+        return {
+            "highest_scores": sorted(team_rows, key=lambda x: x["score"], reverse=True)[:20],
+            "lowest_scores": sorted(
+                [g for g in team_rows if g["score"] > 0],
+                key=lambda x: x["score"],
+            )[:20],
+            "highest_losing_scores": sorted(
+                [g for g in team_rows if g["score"] < g["opp_score"]],
+                key=lambda x: x["score"],
+                reverse=True,
+            )[:20],
+            "lowest_winning_scores": sorted(
+                [g for g in team_rows if 0 < g["score"] and g["score"] > g["opp_score"]],
+                key=lambda x: x["score"],
+            )[:20],
+            "biggest_blowouts": sorted(matchup_rows, key=lambda x: x["margin"], reverse=True)[:20],
+            "closest_games": sorted(
+                [g for g in matchup_rows if g["margin"] > 0],
+                key=lambda x: x["margin"],
+            )[:20],
+            "highest_combined": sorted(matchup_rows, key=lambda x: x["combined"], reverse=True)[:20],
+            "lowest_combined": sorted(
+                [g for g in matchup_rows if g["combined"] > 0],
+                key=lambda x: x["combined"],
+            )[:20],
+        }
+
+    regular_games = [g for g in games if not g["is_playoff"]]
+    regular_team_games = [g for g in team_games if not g["is_playoff"]]
+    playoff_games = [
+        g for g in games
+        if g["is_playoff"] and g["matchup_type"] == "WINNERS_BRACKET"
+    ]
+    playoff_team_games = [
+        g for g in team_games
+        if g["is_playoff"] and g["matchup_type"] == "WINNERS_BRACKET"
+    ]
+    championship_games = [g for g in games if g["is_championship"]]
+    championship_team_games = [g for g in team_games if g["is_championship"]]
+    game_records = {
+        "regular_season": _game_record_set(regular_games, regular_team_games),
+        "playoffs": _game_record_set(playoff_games, playoff_team_games),
+        "championships": _game_record_set(championship_games, championship_team_games),
+    }
 
     # ─── Season-level records ─────────────────────────────────────────────
     season_team_rows = []
@@ -357,8 +418,10 @@ def compute() -> dict:
         "highest_combined": highest_combined,
         "lowest_combined": lowest_combined,
         "opening_week_highest": opening_week_highest,
+        "opening_week_lowest": opening_week_lowest,
         "highest_losing_scores": highest_losing_scores,
         "lowest_winning_scores": lowest_winning_scores,
+        "game_records": game_records,
         "highest_season_pf": highest_season_pf,
         "lowest_season_pf": lowest_season_pf,
         "best_season_ppg": best_season_ppg,

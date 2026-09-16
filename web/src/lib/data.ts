@@ -3,7 +3,7 @@ import 'server-only';
 import fs from 'node:fs';
 import path from 'node:path';
 import type {
-  AdpData, KeeperData, Meta, NewsroomData, Owner, PlayerData, PowerRankingsData, Records, Season,
+  AdpData, KeeperData, Meta, Owner, PlayerData, PowerRankingsData, Records, Season,
 } from './types';
 
 const DATA_DIR = path.resolve(process.cwd(), '..', 'data');
@@ -35,10 +35,6 @@ export function loadAdp(): AdpData {
 
 export function loadPlayers(): PlayerData {
   return readJson<PlayerData>('players.json');
-}
-
-export function loadNewsroom(): NewsroomData {
-  return readJson<NewsroomData>('newsroom.json');
 }
 
 export function loadPowerRankings(): PowerRankingsData {

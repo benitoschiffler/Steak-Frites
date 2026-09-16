@@ -3,8 +3,8 @@
 The old workbook averaged ordinal ranks across six inputs.  This model keeps
 the useful ideas (record, scoring, all-play, trend, consistency) but scores the
 underlying values on a 0-100 scale so a narrow second place is not treated the
-same as a distant one.  The output is shared by Newsroom, the public CSV feed,
-and the Google Sheet editor desk.
+same as a distant one. The output is shared by the public CSV feed and the
+Google Sheet editor desk.
 """
 from __future__ import annotations
 

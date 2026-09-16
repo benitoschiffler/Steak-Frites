@@ -13,7 +13,7 @@ A living history site for the Steak Frites fantasy football league.
 
 ```
 .
-├── pipeline/        # Python: pulls from ESPN, computes records, keepers, rankings & Newsroom
+├── pipeline/        # Python: pulls from ESPN and computes records, keepers, players & rankings
 ├── data/            # canonical JSON dataset (committed; rebuilt by pipeline)
 ├── web/             # Next.js 16 app (App Router, TS, Tailwind 4)
 ├── exports/         # raw CSV + Excel exports (gitignored; from older export_league.py)
@@ -75,11 +75,8 @@ available for an explicit override.
 Set the secrets in GitHub → repo Settings → Secrets → Actions:
 - `ESPN_S2` — value of the `espn_s2` cookie
 - `SWID` — value of the `SWID` cookie (including the braces)
-- `OPENAI_API_KEY` — optional; polishes Newsroom copy after the data model fixes
-  rankings, keeper legality, confidence, and evidence. Without it, the same
-  issue publishes with deterministic copy.
 
-The refresh also writes `data/power_rankings.json` and `data/newsroom.json`.
+The refresh also writes `data/power_rankings.json`.
 The public `/api/power-rankings-feed` route refreshes the workbook's hidden
 `Auto Data` tab. The workbook's hidden `Site Export` tab is read by the site every
 five minutes, so commentary and the bounded -5 to +5 adjustment publish without a
@@ -87,19 +84,17 @@ new deploy. The model score remains visible beside the edited score for auditabi
 
 Workbook: https://docs.google.com/spreadsheets/d/18-2kfsfmkUnkmHSFqimlgOVYiCECCZ4GQWfSadLS2vM/edit
 
-Reporter personas live in
-`data/newsroom_config.json`; their serious/playful assignments are persistent.
-The workflow uses the cost-efficient `gpt-5.6-luna` model by default and the API
-key is never exposed to the Next.js client.
-
 You can also trigger a manual refresh via the Actions tab → "Refresh league data"
 → Run workflow.
 
 Keeper ADP has its own automatic refresh (`refresh-adp.yml`): daily from May
 through August, then weekly the rest of the year. It uses the free Fantasy
 Football Calculator half-PPR feed for the league's current team count, updates
-the keeper/newsroom data, and triggers a Vercel rebuild only through committed
-data changes. No paid API key is required.
+the keeper ADP data, and triggers a Vercel rebuild only through committed data
+changes.
+
+The retired Newsroom product concept is preserved in
+`docs/newsroom-concept.md` for a possible future revival.
 
 ## Keeper rules (encoded in `pipeline/config.py`)
 

@@ -4,6 +4,15 @@ import Link from "next/link";
 
 export type SortDir = "asc" | "desc";
 
+/** Keeps the record category visible above the column labels while rows scroll. */
+export function RecordTableTitle({ children }: { children: React.ReactNode }) {
+  return (
+    <div className="sticky top-0 z-20 flex min-h-11 items-center border-b border-black/10 bg-[#f5f1e7] px-3 py-2.5 text-sm font-black shadow-[0_1px_0_rgba(0,0,0,0.04)]">
+      {children}
+    </div>
+  );
+}
+
 /**
  * Renders a list of owner names as comma-separated links to /teams/[ownerId].
  * Falls back to plain text if ids are missing.

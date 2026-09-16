@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { fmt } from "@/lib/format";
 import type { PlayerPerformance } from "@/lib/types";
+import { RecordTableTitle } from "./shared";
 
 export default function PlayerRecordTable({
   title,
@@ -13,11 +14,9 @@ export default function PlayerRecordTable({
 }) {
   return (
     <div className="table-shell max-h-[420px] overflow-y-auto rounded-lg">
-      <div className="border-b border-black/10 bg-[#123d35]/[0.06] px-3 py-3 text-sm font-black">
-        {title}
-      </div>
+      <RecordTableTitle>{title}</RecordTableTitle>
       <table className="min-w-full text-sm">
-        <thead className="sticky top-0 z-10">
+        <thead className="sticky top-11 z-10">
           <tr>
             <th className="px-3 py-3 text-left text-xs font-black uppercase tracking-[0.14em]">Rank</th>
             <th className="px-3 py-3 text-left text-xs font-black uppercase tracking-[0.14em]">Player</th>

@@ -4,7 +4,7 @@ import Link from "next/link";
 import { useState } from "react";
 import type { SeasonTeamRow } from "@/lib/types";
 import { fmt } from "@/lib/format";
-import { OwnerNames, SortDir, SortHeader, cmp } from "./shared";
+import { OwnerNames, RecordTableTitle, SortDir, SortHeader, cmp } from "./shared";
 
 type ColKey = "rank" | "year" | "team" | "record" | "stat";
 
@@ -58,11 +58,9 @@ export default function SeasonTable({
 
   return (
     <div className="table-shell rounded-lg max-h-[420px] overflow-y-auto">
-      <div className="border-b border-black/10 bg-[#123d35]/[0.06] px-3 py-3 text-sm font-black">
-        {title}
-      </div>
+      <RecordTableTitle>{title}</RecordTableTitle>
       <table className="min-w-full text-sm">
-        <thead className="sticky top-0 z-10">
+        <thead className="sticky top-11 z-10">
           <tr>
             {(Object.keys(COLS) as ColKey[]).map((k) => (
               <SortHeader

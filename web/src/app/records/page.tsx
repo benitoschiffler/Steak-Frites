@@ -1,12 +1,7 @@
 import Link from "next/link";
 import { loadMeta, loadPlayers, loadRecords } from "@/lib/data";
 import { fmt } from "@/lib/format";
-import { Section } from "@/components/Section";
-import TeamGameTable from "@/components/records/TeamGameTable";
-import MatchupTable from "@/components/records/MatchupTable";
-import SeasonTable from "@/components/records/SeasonTable";
-import StreakTable from "@/components/records/StreakTable";
-import PlayerRecordTable from "@/components/records/PlayerRecordTable";
+import RecordBookTabs from "@/components/records/RecordBookTabs";
 
 export const metadata = { title: "Records — Steak Frites" };
 
@@ -90,75 +85,23 @@ export default function RecordsPage() {
         )}
       </header>
 
-      <Section
-        eyebrow="Opening Bell"
-        title="Week 1 royalty"
-        subtitle="The hottest starts in league history—fantasy teams from 2016 onward and starting NFL players from 2019 onward."
-      >
-        <div className="grid gap-4 lg:grid-cols-2">
-          <TeamGameTable rows={r.opening_week_highest} title="Highest opening-week team scores" />
-          <PlayerRecordTable rows={players.opening_week_top} title="Highest opening-week player scores" />
-        </div>
-      </Section>
-
-      <Section
-        eyebrow="Pain & Fortune"
-        title="Heartbreak and ugly wins"
-        subtitle="The most points ever scored in a loss, and the fewest points anyone got away with in a win."
-      >
-        <div className="grid gap-4 lg:grid-cols-2">
-          <TeamGameTable rows={r.highest_losing_scores} title="Highest scores in a loss" />
-          <TeamGameTable rows={r.lowest_winning_scores} title="Lowest scores in a win" defaultDir="asc" />
-        </div>
-      </Section>
-
-      <Section
-        eyebrow="Player Chaos"
-        title="Bench nightmares and carry jobs"
-        subtitle="The eruptions stranded on the bench, and the starters who supplied the biggest share of an entire team score."
-      >
-        <div className="grid gap-4 lg:grid-cols-2">
-          <PlayerRecordTable rows={players.biggest_bench_scores} title="Most points left on the bench" />
-          <PlayerRecordTable rows={players.biggest_carry_jobs} title="Biggest one-player carry jobs" metric="share" />
-        </div>
-      </Section>
-
-      <Section eyebrow="Game Peaks" title="Single-game scoring" subtitle="Highest and lowest single-team scores ever recorded.">
-        <div className="grid md:grid-cols-2 gap-4">
-          <TeamGameTable rows={r.highest_single_game} title="Highest" />
-          <TeamGameTable rows={r.lowest_single_game} title="Lowest" defaultDir="asc" />
-        </div>
-      </Section>
-
-      <Section eyebrow="Matchup Drama" title="Margin of victory" subtitle="Biggest blowouts and closest games of all time.">
-        <div className="grid md:grid-cols-2 gap-4">
-          <MatchupTable rows={r.biggest_blowouts} title="Biggest blowouts" valueKey="margin" />
-          <MatchupTable rows={r.closest_games} title="Closest games" valueKey="margin" defaultDir="asc" />
-        </div>
-      </Section>
-
-      <Section eyebrow="Totals" title="Combined scores" subtitle="Shootouts and slugfests — total points by both teams.">
-        <div className="grid md:grid-cols-2 gap-4">
-          <MatchupTable rows={r.highest_combined} title="Highest combined" valueKey="combined" />
-          <MatchupTable rows={r.lowest_combined} title="Lowest combined" valueKey="combined" defaultDir="asc" />
-        </div>
-      </Section>
-
-      <Section eyebrow="Season Marks" title="Single-season records" subtitle="Best and worst regular seasons (points for, win record).">
-        <div className="grid md:grid-cols-2 gap-4">
-          <SeasonTable rows={r.highest_season_pf} title="Highest PF" valueKey="points_for" />
-          <SeasonTable rows={r.lowest_season_pf} title="Lowest PF" valueKey="points_for" defaultDir="asc" />
-          <SeasonTable rows={r.best_season_ppg} title="Best PPG" valueKey="ppg" />
-          <SeasonTable rows={r.worst_season_ppg} title="Worst PPG" valueKey="ppg" defaultDir="asc" />
-        </div>
-      </Section>
-
-      <Section eyebrow="Momentum" title="Streaks" subtitle="Longest runs of consecutive wins and losses.">
-        <div className="grid md:grid-cols-2 gap-4">
-          <StreakTable title="Longest winning streaks" rows={r.streaks} kind="win" />
-          <StreakTable title="Longest losing streaks" rows={r.streaks} kind="loss" />
-        </div>
-      </Section>
+      <RecordBookTabs
+        records={{
+          opening_week_highest: r.opening_week_highest,
+          opening_week_lowest: r.opening_week_lowest,
+          game_records: r.game_records,
+          highest_season_pf: r.highest_season_pf,
+          lowest_season_pf: r.lowest_season_pf,
+          best_season_ppg: r.best_season_ppg,
+          worst_season_ppg: r.worst_season_ppg,
+          streaks: r.streaks,
+        }}
+        players={{
+          openingWeek: players.opening_week_top,
+          benchScores: players.biggest_bench_scores,
+          carryJobs: players.biggest_carry_jobs,
+        }}
+      />
 
       <Link
         href="/champions"

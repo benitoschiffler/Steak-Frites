@@ -26,16 +26,14 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
-      - name: Refresh keeper ADP and dependent stories
-        run: |
-          python -m pipeline.adp
-          python -m pipeline.newsroom
+      - name: Refresh keeper ADP
+        run: python -m pipeline.adp
 
       - name: Commit data changes
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/adp.json data/newsroom.json
+          git add data/adp.json
           if git diff --cached --quiet; then
             echo "No ADP changes."
           else

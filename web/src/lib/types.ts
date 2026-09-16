@@ -110,6 +110,7 @@ export type SingleTeamGame = {
   week: number;
   matchup_type: string | null;
   is_playoff: boolean;
+  is_championship: boolean;
   team_id: number;
   team: string;
   owners: string[];
@@ -129,6 +130,7 @@ export type MatchupGame = {
   week: number;
   matchup_type: string | null;
   is_playoff: boolean;
+  is_championship: boolean;
   home_team_id: number;
   home_team: string;
   home_owners: string[];
@@ -203,6 +205,17 @@ export type StreakRow = {
   loss_streak_range: [[number, number], [number, number]] | null;
 };
 
+export type GameRecordSet = {
+  highest_scores: SingleTeamGame[];
+  lowest_scores: SingleTeamGame[];
+  highest_losing_scores: SingleTeamGame[];
+  lowest_winning_scores: SingleTeamGame[];
+  biggest_blowouts: MatchupGame[];
+  closest_games: MatchupGame[];
+  highest_combined: MatchupGame[];
+  lowest_combined: MatchupGame[];
+};
+
 export type Records = {
   /** Map of year string -> reason. Surfaces "this year was excluded because…" notes in UI. */
   excluded_years: Record<string, string>;
@@ -213,8 +226,14 @@ export type Records = {
   highest_combined: MatchupGame[];
   lowest_combined: MatchupGame[];
   opening_week_highest: SingleTeamGame[];
+  opening_week_lowest: SingleTeamGame[];
   highest_losing_scores: SingleTeamGame[];
   lowest_winning_scores: SingleTeamGame[];
+  game_records: {
+    regular_season: GameRecordSet;
+    playoffs: GameRecordSet;
+    championships: GameRecordSet;
+  };
   highest_season_pf: SeasonTeamRow[];
   lowest_season_pf: SeasonTeamRow[];
   best_season_ppg: SeasonTeamRow[];
@@ -393,29 +412,6 @@ export type PlayerData = {
   };
 };
 
-export type NewsroomReporter = {
-  id: string;
-  name: string;
-  role: string;
-  desk: string;
-  tone: 'serious' | 'playful';
-};
-
-export type NewsroomArticle = {
-  id: string;
-  kind: 'keeper' | 'power_rankings' | 'trade_rumor' | 'weekly' | 'feature';
-  label: string;
-  status: 'confirmed' | 'projected' | 'rumored' | 'analysis';
-  headline: string;
-  dek: string;
-  body: string;
-  reporter_id: string;
-  team_ids: number[];
-  confidence: number | null;
-  evidence: string[];
-  published_at: string;
-};
-
 export type PowerRanking = {
   rank: number;
   previous_rank: number | null;
@@ -480,18 +476,4 @@ export type PublishedPowerRanking = {
   week: number;
   updated_at: string;
   source: 'google-sheet' | 'model-fallback';
-};
-
-export type NewsroomData = {
-  publication: string;
-  season: number;
-  phase: 'offseason' | 'in_season' | 'playoffs' | 'complete';
-  issue_id: string;
-  issue_label: string;
-  generated_at: string;
-  generation: 'deterministic' | 'openai';
-  reporters: NewsroomReporter[];
-  articles: NewsroomArticle[];
-  power_rankings: PowerRanking[];
-  methodology: { power_rankings: string; editorial: string; transactions: string };
 };

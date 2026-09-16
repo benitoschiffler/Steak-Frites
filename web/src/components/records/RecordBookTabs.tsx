@@ -1,10 +1,9 @@
 "use client";
 
-import { useRef, useState } from "react";
-import type { PlayerPerformance, Records } from "@/lib/types";
+import { useEffect, useRef, useState, type ReactNode } from "react";
+import type { Records } from "@/lib/types";
 import { Section } from "@/components/Section";
 import MatchupTable from "./MatchupTable";
-import PlayerRecordTable from "./PlayerRecordTable";
 import SeasonTable from "./SeasonTable";
 import StreakTable from "./StreakTable";
 import TeamGameTable from "./TeamGameTable";
@@ -32,27 +31,44 @@ type RecordBookData = Pick<
   | "streaks"
 >;
 
-type PlayerRecords = {
-  openingWeek: PlayerPerformance[];
-  benchScores: PlayerPerformance[];
-  carryJobs: PlayerPerformance[];
-};
-
 export default function RecordBookTabs({
   records,
-  players,
+  playerContent,
 }: {
   records: RecordBookData;
-  players: PlayerRecords;
+  playerContent: ReactNode;
 }) {
   const [activeTab, setActiveTab] = useState<TabId>("week-one");
   const tabListRef = useRef<HTMLDivElement>(null);
   const active = TABS.find((tab) => tab.id === activeTab) ?? TABS[0];
 
+  useEffect(() => {
+    const syncTabFromHash = () => {
+      const hashTab = window.location.hash.slice(1);
+      if (TABS.some((tab) => tab.id === hashTab)) {
+        setActiveTab(hashTab as TabId);
+      }
+    };
+
+    syncTabFromHash();
+    window.addEventListener("hashchange", syncTabFromHash);
+    return () => window.removeEventListener("hashchange", syncTabFromHash);
+  }, []);
+
+  useEffect(() => {
+    const selectedTab = tabListRef.current?.querySelector<HTMLElement>("[role='tab'][aria-selected='true']");
+    selectedTab?.scrollIntoView({ block: "nearest", inline: "center" });
+  }, [activeTab]);
+
+  function selectTab(tabId: TabId) {
+    setActiveTab(tabId);
+    window.history.replaceState(null, "", `#${tabId}`);
+  }
+
   function moveFocus(currentIndex: number, direction: -1 | 1) {
     const nextIndex = (currentIndex + direction + TABS.length) % TABS.length;
     const next = TABS[nextIndex];
-    setActiveTab(next.id);
+    selectTab(next.id);
     const buttons = tabListRef.current?.querySelectorAll<HTMLButtonElement>("[role='tab']");
     buttons?.[nextIndex]?.focus();
   }
@@ -77,7 +93,7 @@ export default function RecordBookTabs({
                 aria-selected={selected}
                 aria-controls="record-tab-panel"
                 tabIndex={selected ? 0 : -1}
-                onClick={() => setActiveTab(tab.id)}
+                onClick={() => selectTab(tab.id)}
                 onKeyDown={(event) => {
                   if (event.key === "ArrowRight") {
                     event.preventDefault();
@@ -135,27 +151,7 @@ export default function RecordBookTabs({
           <GameRecordSections records={records.game_records.championships} context="championship" />
         )}
 
-        {activeTab === "nfl-players" && (
-          <>
-            <Section
-              eyebrow="NFL Players"
-              title="Opening-week explosions"
-              subtitle="The biggest Week 1 performances by players in a starting lineup."
-            >
-              <PlayerRecordTable rows={players.openingWeek} title="Highest opening-week player scores" />
-            </Section>
-            <Section
-              eyebrow="Lineup Decisions"
-              title="Bench nightmares and carry jobs"
-              subtitle="The eruptions stranded on the bench, and the starters who supplied the biggest share of a team score."
-            >
-              <div className="grid gap-4 lg:grid-cols-2">
-                <PlayerRecordTable rows={players.benchScores} title="Most points left on the bench" />
-                <PlayerRecordTable rows={players.carryJobs} title="Biggest one-player carry jobs" metric="share" />
-              </div>
-            </Section>
-          </>
-        )}
+        {activeTab === "nfl-players" && playerContent}
 
         {activeTab === "seasons" && (
           <>

@@ -2,6 +2,7 @@ import Link from "next/link";
 import { loadMeta, loadPlayers, loadRecords } from "@/lib/data";
 import { fmt } from "@/lib/format";
 import RecordBookTabs from "@/components/records/RecordBookTabs";
+import PlayerRecordsSections from "@/components/records/PlayerRecordsSections";
 
 export const metadata = { title: "Records — Steak Frites" };
 
@@ -14,15 +15,6 @@ export default function RecordsPage() {
   const openingTeamRank = openingTeam
     ? r.opening_week_highest.findIndex(
         (row) => row.year === openingTeam.year && row.team_id === openingTeam.team_id,
-      ) + 1
-    : null;
-  const openingPlayer = players.opening_week_top.find((row) => row.year === currentYear);
-  const openingPlayerRank = openingPlayer
-    ? players.opening_week_top.findIndex(
-        (row) =>
-          row.year === openingPlayer.year &&
-          row.player_id === openingPlayer.player_id &&
-          row.team_id === openingPlayer.team_id,
       ) + 1
     : null;
   const openingHeartbreak = r.highest_losing_scores.find(
@@ -59,13 +51,6 @@ export default function RecordsPage() {
                 detail={`among opening-week team scores since ${meta.years[0]}`}
               />
             )}
-            {openingPlayer && openingPlayerRank && (
-              <RecordCallout
-                label="Week 1 player leader"
-                value={`${openingPlayer.player_name} · ${fmt.pts(openingPlayer.points)}`}
-                detail={`#${openingPlayerRank} opening-week starter since ${players.coverage.first_year_with_box_scores}`}
-              />
-            )}
             {openingHeartbreak && (
               <RecordCallout
                 label="Week 1 heartbreak"
@@ -96,11 +81,20 @@ export default function RecordsPage() {
           worst_season_ppg: r.worst_season_ppg,
           streaks: r.streaks,
         }}
-        players={{
-          openingWeek: players.opening_week_top,
-          benchScores: players.biggest_bench_scores,
-          carryJobs: players.biggest_carry_jobs,
-        }}
+        playerContent={
+          <PlayerRecordsSections
+            players={{
+              all_time_top_by_position: players.all_time_top_by_position,
+              winning_team_appearances: players.winning_team_appearances,
+              opening_week_top: players.opening_week_top,
+              biggest_bench_scores: players.biggest_bench_scores,
+              biggest_carry_jobs: players.biggest_carry_jobs,
+              mvps_by_season: players.mvps_by_season,
+              methodology: players.methodology,
+              coverage: players.coverage,
+            }}
+          />
+        }
       />
 
       <Link

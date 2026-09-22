@@ -65,7 +65,8 @@ available for an explicit override.
 
 ## Weekly auto-refresh
 
-`.github/workflows/refresh.yml` runs every Tuesday during the season:
+`.github/workflows/refresh.yml` runs every Tuesday at 8am Eastern during the
+season (September through January), once the week's matchups are final:
 
 1. Reads ESPN cookies from repo secrets `ESPN_S2` and `SWID`.
 2. Runs the pipeline.
@@ -88,10 +89,11 @@ You can also trigger a manual refresh via the Actions tab → "Refresh league da
 → Run workflow.
 
 Keeper ADP has its own automatic refresh (`refresh-adp.yml`): daily from May
-through August, then weekly the rest of the year. It uses the free Fantasy
-Football Calculator half-PPR feed for the league's current team count, updates
-the keeper ADP data, and triggers a Vercel rebuild only through committed data
-changes.
+through August, then weekly on Tuesdays the rest of the year — deliberately
+later in the day than the league refresh, which already runs the ADP step.
+It uses the free Fantasy Football Calculator half-PPR feed for the league's
+current team count, updates the keeper ADP data, and triggers a Vercel rebuild
+only through committed data changes.
 
 The retired Newsroom product concept is preserved in
 `docs/newsroom-concept.md` for a possible future revival.

@@ -2,9 +2,11 @@ name: Refresh half-PPR keeper ADP
 
 on:
   schedule:
-    # Daily through draft-prep season; weekly the rest of the year.
-    - cron: "0 13 * 5-8 *"
-    - cron: "0 13 * 1-4,9-12 2"
+    # Daily through draft-prep season; weekly the rest of the year. The weekly
+    # slot sits well clear of "Refresh league data" (Tuesdays ~12:11/13:11 UTC),
+    # which runs the ADP step itself — two jobs pushing data/ at once would race.
+    - cron: "41 13 * 5-8 *"
+    - cron: "41 15 * 1-4,9-12 2"
   workflow_dispatch:
 
 permissions:
@@ -38,5 +40,7 @@ jobs:
             echo "No ADP changes."
           else
             git commit -m "chore: refresh half-PPR ADP ($(date -u +%Y-%m-%d))"
+            # A delayed run can start after another job has already pushed.
+            git pull --rebase --autostash origin main
             git push
           fi

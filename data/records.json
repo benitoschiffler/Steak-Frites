@@ -1698,6 +1698,53 @@
       "opp_score": 69.0
     },
     {
+      "year": 2026,
+      "week": 3,
+      "matchup_type": "NONE",
+      "is_playoff": false,
+      "is_championship": false,
+      "home_team_id": 11,
+      "home_team": "Monanguys",
+      "home_owners": [
+        "Jules Salkind"
+      ],
+      "home_owner_ids": [
+        "{93FE02E3-D523-4B1D-AC57-E31C8D235433}"
+      ],
+      "home_score": 136.76,
+      "away_team_id": 9,
+      "away_team": "Saquads squad  Ship",
+      "away_owners": [
+        "Adam Heckelman"
+      ],
+      "away_owner_ids": [
+        "{8D1E7E24-92F1-49FC-ADF1-C8193EA1C44E}"
+      ],
+      "away_score": 60.94,
+      "winner_team_id": 11,
+      "loser_team_id": 9,
+      "margin": 75.82,
+      "combined": 197.7,
+      "team_id": 9,
+      "team": "Saquads squad  Ship",
+      "owners": [
+        "Adam Heckelman"
+      ],
+      "owner_ids": [
+        "{8D1E7E24-92F1-49FC-ADF1-C8193EA1C44E}"
+      ],
+      "score": 60.94,
+      "opp_team_id": 11,
+      "opp_team": "Monanguys",
+      "opp_owners": [
+        "Jules Salkind"
+      ],
+      "opp_owner_ids": [
+        "{93FE02E3-D523-4B1D-AC57-E31C8D235433}"
+      ],
+      "opp_score": 136.76
+    },
+    {
       "year": 2016,
       "week": 13,
       "matchup_type": "NONE",
@@ -1837,53 +1884,6 @@
         "{B792F7C9-61CE-4E29-940C-DC1C5E6C4208}"
       ],
       "opp_score": 123.68
-    },
-    {
-      "year": 2016,
-      "week": 11,
-      "matchup_type": "NONE",
-      "is_playoff": false,
-      "is_championship": false,
-      "home_team_id": 11,
-      "home_team": "Team katz",
-      "home_owners": [
-        "Ben Katz"
-      ],
-      "home_owner_ids": [
-        "{ECD9E4C2-4E30-4915-AC59-6C1700E34A69}"
-      ],
-      "home_score": 62.5,
-      "away_team_id": 2,
-      "away_team": "Chronic  Masterdeflater",
-      "away_owners": [
-        "Lane Kirschner"
-      ],
-      "away_owner_ids": [
-        "{600CAC49-2450-42EF-ABF1-33E7F0327DE9}"
-      ],
-      "away_score": 103.5,
-      "winner_team_id": 2,
-      "loser_team_id": 11,
-      "margin": 41.0,
-      "combined": 166.0,
-      "team_id": 11,
-      "team": "Team katz",
-      "owners": [
-        "Ben Katz"
-      ],
-      "owner_ids": [
-        "{ECD9E4C2-4E30-4915-AC59-6C1700E34A69}"
-      ],
-      "score": 62.5,
-      "opp_team_id": 2,
-      "opp_team": "Chronic  Masterdeflater",
-      "opp_owners": [
-        "Lane Kirschner"
-      ],
-      "opp_owner_ids": [
-        "{600CAC49-2450-42EF-ABF1-33E7F0327DE9}"
-      ],
-      "opp_score": 103.5
     }
   ],
   "biggest_blowouts": [
@@ -2352,6 +2352,35 @@
       "combined": 211.0
     },
     {
+      "year": 2026,
+      "week": 3,
+      "matchup_type": "NONE",
+      "is_playoff": false,
+      "is_championship": false,
+      "home_team_id": 11,
+      "home_team": "Monanguys",
+      "home_owners": [
+        "Jules Salkind"
+      ],
+      "home_owner_ids": [
+        "{93FE02E3-D523-4B1D-AC57-E31C8D235433}"
+      ],
+      "home_score": 136.76,
+      "away_team_id": 9,
+      "away_team": "Saquads squad  Ship",
+      "away_owners": [
+        "Adam Heckelman"
+      ],
+      "away_owner_ids": [
+        "{8D1E7E24-92F1-49FC-ADF1-C8193EA1C44E}"
+      ],
+      "away_score": 60.94,
+      "winner_team_id": 11,
+      "loser_team_id": 9,
+      "margin": 75.82,
+      "combined": 197.7
+    },
+    {
       "year": 2022,
       "week": 7,
       "matchup_type": "NONE",
@@ -2437,35 +2466,6 @@
       "loser_team_id": 4,
       "margin": 72.0,
       "combined": 199.0
-    },
-    {
-      "year": 2025,
-      "week": 13,
-      "matchup_type": "NONE",
-      "is_playoff": false,
-      "is_championship": false,
-      "home_team_id": 9,
-      "home_team": "Saquads squad  Ship",
-      "home_owners": [
-        "Adam Heckelman"
-      ],
-      "home_owner_ids": [
-        "{8D1E7E24-92F1-49FC-ADF1-C8193EA1C44E}"
-      ],
-      "home_score": 95.9,
-      "away_team_id": 12,
-      "away_team": "2 Browns 2 Felonies",
-      "away_owners": [
-        "Ryan Vader"
-      ],
-      "away_owner_ids": [
-        "{B792F7C9-61CE-4E29-940C-DC1C5E6C4208}"
-      ],
-      "away_score": 166.74,
-      "winner_team_id": 12,
-      "loser_team_id": 9,
-      "margin": 70.84,
-      "combined": 262.64
     }
   ],
   "closest_games": [
@@ -9398,6 +9398,53 @@
           "opp_score": 69.0
         },
         {
+          "year": 2026,
+          "week": 3,
+          "matchup_type": "NONE",
+          "is_playoff": false,
+          "is_championship": false,
+          "home_team_id": 11,
+          "home_team": "Monanguys",
+          "home_owners": [
+            "Jules Salkind"
+          ],
+          "home_owner_ids": [
+            "{93FE02E3-D523-4B1D-AC57-E31C8D235433}"
+          ],
+          "home_score": 136.76,
+          "away_team_id": 9,
+          "away_team": "Saquads squad  Ship",
+          "away_owners": [
+            "Adam Heckelman"
+          ],
+          "away_owner_ids": [
+            "{8D1E7E24-92F1-49FC-ADF1-C8193EA1C44E}"
+          ],
+          "away_score": 60.94,
+          "winner_team_id": 11,
+          "loser_team_id": 9,
+          "margin": 75.82,
+          "combined": 197.7,
+          "team_id": 9,
+          "team": "Saquads squad  Ship",
+          "owners": [
+            "Adam Heckelman"
+          ],
+          "owner_ids": [
+            "{8D1E7E24-92F1-49FC-ADF1-C8193EA1C44E}"
+          ],
+          "score": 60.94,
+          "opp_team_id": 11,
+          "opp_team": "Monanguys",
+          "opp_owners": [
+            "Jules Salkind"
+          ],
+          "opp_owner_ids": [
+            "{93FE02E3-D523-4B1D-AC57-E31C8D235433}"
+          ],
+          "opp_score": 136.76
+        },
+        {
           "year": 2016,
           "week": 13,
           "matchup_type": "NONE",
@@ -9819,53 +9866,6 @@
             "{429F0506-3667-4F0B-A2ED-1761D0A3F682}"
           ],
           "opp_score": 90.38
-        },
-        {
-          "year": 2019,
-          "week": 7,
-          "matchup_type": "NONE",
-          "is_playoff": false,
-          "is_championship": false,
-          "home_team_id": 1,
-          "home_team": "Deshaun of The Dead",
-          "home_owners": [
-            "Bennett Schiff"
-          ],
-          "home_owner_ids": [
-            "{3A1A4E24-2A98-4038-9A4E-242A98803865}"
-          ],
-          "home_score": 118.92,
-          "away_team_id": 2,
-          "away_team": "Process Trusters",
-          "away_owners": [
-            "Jake Fischer"
-          ],
-          "away_owner_ids": [
-            "{4F3E4D57-5F87-4D74-92C0-40815B7DFD51}"
-          ],
-          "away_score": 65.04,
-          "winner_team_id": 1,
-          "loser_team_id": 2,
-          "margin": 53.879999999999995,
-          "combined": 183.96,
-          "team_id": 2,
-          "team": "Process Trusters",
-          "owners": [
-            "Jake Fischer"
-          ],
-          "owner_ids": [
-            "{4F3E4D57-5F87-4D74-92C0-40815B7DFD51}"
-          ],
-          "score": 65.04,
-          "opp_team_id": 1,
-          "opp_team": "Deshaun of The Dead",
-          "opp_owners": [
-            "Bennett Schiff"
-          ],
-          "opp_owner_ids": [
-            "{3A1A4E24-2A98-4038-9A4E-242A98803865}"
-          ],
-          "opp_score": 118.92
         }
       ],
       "highest_losing_scores": [
@@ -12189,6 +12189,35 @@
           "combined": 211.0
         },
         {
+          "year": 2026,
+          "week": 3,
+          "matchup_type": "NONE",
+          "is_playoff": false,
+          "is_championship": false,
+          "home_team_id": 11,
+          "home_team": "Monanguys",
+          "home_owners": [
+            "Jules Salkind"
+          ],
+          "home_owner_ids": [
+            "{93FE02E3-D523-4B1D-AC57-E31C8D235433}"
+          ],
+          "home_score": 136.76,
+          "away_team_id": 9,
+          "away_team": "Saquads squad  Ship",
+          "away_owners": [
+            "Adam Heckelman"
+          ],
+          "away_owner_ids": [
+            "{8D1E7E24-92F1-49FC-ADF1-C8193EA1C44E}"
+          ],
+          "away_score": 60.94,
+          "winner_team_id": 11,
+          "loser_team_id": 9,
+          "margin": 75.82,
+          "combined": 197.7
+        },
+        {
           "year": 2022,
           "week": 7,
           "matchup_type": "NONE",
@@ -12303,35 +12332,6 @@
           "loser_team_id": 4,
           "margin": 68.75999999999999,
           "combined": 229.32
-        },
-        {
-          "year": 2023,
-          "week": 4,
-          "matchup_type": "NONE",
-          "is_playoff": false,
-          "is_championship": false,
-          "home_team_id": 10,
-          "home_team": "Team Goldstein",
-          "home_owners": [
-            "Ben Goldstein"
-          ],
-          "home_owner_ids": [
-            "{CBF6473A-C5A3-46D7-8EF8-BFAF0D868891}"
-          ],
-          "home_score": 155.56,
-          "away_team_id": 9,
-          "away_team": "Saquads squad  Ship",
-          "away_owners": [
-            "Adam Heckelman"
-          ],
-          "away_owner_ids": [
-            "{8D1E7E24-92F1-49FC-ADF1-C8193EA1C44E}"
-          ],
-          "away_score": 86.88,
-          "winner_team_id": 10,
-          "loser_team_id": 9,
-          "margin": 68.68,
-          "combined": 242.44
         }
       ],
       "closest_games": [
@@ -13440,6 +13440,35 @@
           "combined": 286.76
         },
         {
+          "year": 2026,
+          "week": 3,
+          "matchup_type": "NONE",
+          "is_playoff": false,
+          "is_championship": false,
+          "home_team_id": 1,
+          "home_team": "We Did It, Joe!",
+          "home_owners": [
+            "Bennett Schiff"
+          ],
+          "home_owner_ids": [
+            "{3A1A4E24-2A98-4038-9A4E-242A98803865}"
+          ],
+          "home_score": 135.28,
+          "away_team_id": 3,
+          "away_team": "Amon-Ra Dog It",
+          "away_owners": [
+            "Stefan Lachkar"
+          ],
+          "away_owner_ids": [
+            "{6EB109A3-B9E1-4D2D-B109-A3B9E10D2D41}"
+          ],
+          "away_score": 151.18,
+          "winner_team_id": 3,
+          "loser_team_id": 1,
+          "margin": 15.900000000000006,
+          "combined": 286.46000000000004
+        },
+        {
           "year": 2023,
           "week": 12,
           "matchup_type": "NONE",
@@ -13467,35 +13496,6 @@
           "loser_team_id": 5,
           "margin": 68.32,
           "combined": 286.0
-        },
-        {
-          "year": 2024,
-          "week": 11,
-          "matchup_type": "NONE",
-          "is_playoff": false,
-          "is_championship": false,
-          "home_team_id": 6,
-          "home_team": "Nude Egg",
-          "home_owners": [
-            "Ben Wolbransky"
-          ],
-          "home_owner_ids": [
-            "{429F0506-3667-4F0B-A2ED-1761D0A3F682}"
-          ],
-          "home_score": 128.74,
-          "away_team_id": 11,
-          "away_team": "Tickle Pitts",
-          "away_owners": [
-            "Jules Salkind"
-          ],
-          "away_owner_ids": [
-            "{93FE02E3-D523-4B1D-AC57-E31C8D235433}"
-          ],
-          "away_score": 157.2,
-          "winner_team_id": 11,
-          "loser_team_id": 6,
-          "margin": 28.45999999999998,
-          "combined": 285.94
         }
       ],
       "lowest_combined": [
@@ -24083,12 +24083,31 @@
         "{CBF6473A-C5A3-46D7-8EF8-BFAF0D868891}"
       ],
       "wins": 1,
-      "losses": 1,
+      "losses": 2,
       "ties": 0,
-      "points_for": 209.88,
-      "points_against": 295.88,
-      "games": 2,
-      "ppg": 104.94,
+      "points_for": 302.12,
+      "points_against": 402.22,
+      "games": 3,
+      "ppg": 100.71,
+      "final_standing": 0
+    },
+    {
+      "year": 2026,
+      "team_id": 9,
+      "team": "Saquads squad  Ship",
+      "owner_names": [
+        "Adam Heckelman"
+      ],
+      "owner_ids": [
+        "{8D1E7E24-92F1-49FC-ADF1-C8193EA1C44E}"
+      ],
+      "wins": 1,
+      "losses": 2,
+      "ties": 0,
+      "points_for": 319.5,
+      "points_against": 384.24,
+      "games": 3,
+      "ppg": 106.5,
       "final_standing": 0
     },
     {
@@ -24101,13 +24120,13 @@
       "owner_ids": [
         "{B792F7C9-61CE-4E29-940C-DC1C5E6C4208}"
       ],
-      "wins": 1,
+      "wins": 2,
       "losses": 1,
       "ties": 0,
-      "points_for": 213.38,
-      "points_against": 241.16,
-      "games": 2,
-      "ppg": 106.69,
+      "points_for": 321.9,
+      "points_against": 344.72,
+      "games": 3,
+      "ppg": 107.3,
       "final_standing": 0
     },
     {
@@ -24120,13 +24139,13 @@
       "owner_ids": [
         "{429F0506-3667-4F0B-A2ED-1761D0A3F682}"
       ],
-      "wins": 0,
+      "wins": 1,
       "losses": 2,
       "ties": 0,
-      "points_for": 217.04,
-      "points_against": 264.12,
-      "games": 2,
-      "ppg": 108.52,
+      "points_for": 323.38,
+      "points_against": 356.36,
+      "games": 3,
+      "ppg": 107.79,
       "final_standing": 0
     },
     {
@@ -24140,50 +24159,12 @@
         "{ECD9E4C2-4E30-4915-AC59-6C1700E34A69}"
       ],
       "wins": 0,
-      "losses": 2,
+      "losses": 3,
       "ties": 0,
-      "points_for": 222.6,
-      "points_against": 274.24,
-      "games": 2,
-      "ppg": 111.3,
-      "final_standing": 0
-    },
-    {
-      "year": 2026,
-      "team_id": 1,
-      "team": "We Did It, Joe!",
-      "owner_names": [
-        "Bennett Schiff"
-      ],
-      "owner_ids": [
-        "{3A1A4E24-2A98-4038-9A4E-242A98803865}"
-      ],
-      "wins": 2,
-      "losses": 0,
-      "ties": 0,
-      "points_for": 236.14,
-      "points_against": 189.12,
-      "games": 2,
-      "ppg": 118.07,
-      "final_standing": 0
-    },
-    {
-      "year": 2026,
-      "team_id": 5,
-      "team": "Bijan Mustard",
-      "owner_names": [
-        "Jonathan Coopersmith"
-      ],
-      "owner_ids": [
-        "{BDC02B8B-DDC4-464E-B2E9-065DF145DDBB}"
-      ],
-      "wins": 1,
-      "losses": 1,
-      "ties": 0,
-      "points_for": 238.16,
-      "points_against": 222.42,
-      "games": 2,
-      "ppg": 119.08,
+      "points_for": 333.46,
+      "points_against": 431.78,
+      "games": 3,
+      "ppg": 111.15,
       "final_standing": 0
     },
     {
@@ -24199,31 +24180,50 @@
         "{4F3E4D57-5F87-4D74-92C0-40815B7DFD51}"
       ],
       "wins": 1,
-      "losses": 1,
+      "losses": 2,
       "ties": 0,
-      "points_for": 252.58,
-      "points_against": 258.06,
-      "games": 2,
-      "ppg": 126.29,
+      "points_for": 356.14,
+      "points_against": 366.58,
+      "games": 3,
+      "ppg": 118.71,
       "final_standing": 0
     },
     {
       "year": 2026,
-      "team_id": 9,
-      "team": "Saquads squad  Ship",
+      "team_id": 1,
+      "team": "We Did It, Joe!",
       "owner_names": [
-        "Adam Heckelman"
+        "Bennett Schiff"
       ],
       "owner_ids": [
-        "{8D1E7E24-92F1-49FC-ADF1-C8193EA1C44E}"
+        "{3A1A4E24-2A98-4038-9A4E-242A98803865}"
       ],
-      "wins": 1,
+      "wins": 2,
       "losses": 1,
       "ties": 0,
-      "points_for": 258.56,
-      "points_against": 247.48,
-      "games": 2,
-      "ppg": 129.28,
+      "points_for": 371.42,
+      "points_against": 340.3,
+      "games": 3,
+      "ppg": 123.81,
+      "final_standing": 0
+    },
+    {
+      "year": 2026,
+      "team_id": 5,
+      "team": "Bijan Mustard",
+      "owner_names": [
+        "Jonathan Coopersmith"
+      ],
+      "owner_ids": [
+        "{BDC02B8B-DDC4-464E-B2E9-065DF145DDBB}"
+      ],
+      "wins": 2,
+      "losses": 1,
+      "ties": 0,
+      "points_for": 395.7,
+      "points_against": 333.28,
+      "games": 3,
+      "ppg": 131.9,
       "final_standing": 0
     },
     {
@@ -24236,13 +24236,13 @@
       "owner_ids": [
         "{93FE02E3-D523-4B1D-AC57-E31C8D235433}"
       ],
-      "wins": 1,
+      "wins": 2,
       "losses": 1,
       "ties": 0,
-      "points_for": 261.0,
-      "points_against": 250.38,
-      "games": 2,
-      "ppg": 130.5,
+      "points_for": 397.76,
+      "points_against": 311.32,
+      "games": 3,
+      "ppg": 132.59,
       "final_standing": 0
     },
     {
@@ -24255,13 +24255,13 @@
       "owner_ids": [
         "{6EB109A3-B9E1-4D2D-B109-A3B9E10D2D41}"
       ],
-      "wins": 2,
+      "wins": 3,
       "losses": 0,
       "ties": 0,
-      "points_for": 340.34,
-      "points_against": 206.82,
-      "games": 2,
-      "ppg": 170.17,
+      "points_for": 491.52,
+      "points_against": 342.1,
+      "games": 3,
+      "ppg": 163.84,
       "final_standing": 0
     },
     {
@@ -24371,13 +24371,13 @@
       "owner_ids": [
         "{6EB109A3-B9E1-4D2D-B109-A3B9E10D2D41}"
       ],
-      "wins": 2,
+      "wins": 3,
       "losses": 0,
       "ties": 0,
-      "points_for": 340.34,
-      "points_against": 206.82,
-      "games": 2,
-      "ppg": 170.17,
+      "points_for": 491.52,
+      "points_against": 342.1,
+      "games": 3,
+      "ppg": 163.84,
       "final_standing": 0
     },
     {
@@ -24447,13 +24447,32 @@
       "owner_ids": [
         "{93FE02E3-D523-4B1D-AC57-E31C8D235433}"
       ],
-      "wins": 1,
+      "wins": 2,
       "losses": 1,
       "ties": 0,
-      "points_for": 261.0,
-      "points_against": 250.38,
-      "games": 2,
-      "ppg": 130.5,
+      "points_for": 397.76,
+      "points_against": 311.32,
+      "games": 3,
+      "ppg": 132.59,
+      "final_standing": 0
+    },
+    {
+      "year": 2026,
+      "team_id": 5,
+      "team": "Bijan Mustard",
+      "owner_names": [
+        "Jonathan Coopersmith"
+      ],
+      "owner_ids": [
+        "{BDC02B8B-DDC4-464E-B2E9-065DF145DDBB}"
+      ],
+      "wins": 2,
+      "losses": 1,
+      "ties": 0,
+      "points_for": 395.7,
+      "points_against": 333.28,
+      "games": 3,
+      "ppg": 131.9,
       "final_standing": 0
     },
     {
@@ -24495,25 +24514,6 @@
       "final_standing": 1
     },
     {
-      "year": 2026,
-      "team_id": 9,
-      "team": "Saquads squad  Ship",
-      "owner_names": [
-        "Adam Heckelman"
-      ],
-      "owner_ids": [
-        "{8D1E7E24-92F1-49FC-ADF1-C8193EA1C44E}"
-      ],
-      "wins": 1,
-      "losses": 1,
-      "ties": 0,
-      "points_for": 258.56,
-      "points_against": 247.48,
-      "games": 2,
-      "ppg": 129.28,
-      "final_standing": 0
-    },
-    {
       "year": 2020,
       "team_id": 1,
       "team": "JewJew Smith-Schiffler",
@@ -24531,27 +24531,6 @@
       "games": 13,
       "ppg": 127.6,
       "final_standing": 3
-    },
-    {
-      "year": 2026,
-      "team_id": 2,
-      "team": "Jake and Seth",
-      "owner_names": [
-        "Jake Fischer",
-        "Seth Taratoot"
-      ],
-      "owner_ids": [
-        "{4F3E4D57-5F87-4D74-92C0-40815B7DFD51}",
-        "{4F3E4D57-5F87-4D74-92C0-40815B7DFD51}"
-      ],
-      "wins": 1,
-      "losses": 1,
-      "ties": 0,
-      "points_for": 252.58,
-      "points_against": 258.06,
-      "games": 2,
-      "ppg": 126.29,
-      "final_standing": 0
     },
     {
       "year": 2019,
@@ -24590,6 +24569,25 @@
       "games": 13,
       "ppg": 124.58,
       "final_standing": 6
+    },
+    {
+      "year": 2026,
+      "team_id": 1,
+      "team": "We Did It, Joe!",
+      "owner_names": [
+        "Bennett Schiff"
+      ],
+      "owner_ids": [
+        "{3A1A4E24-2A98-4038-9A4E-242A98803865}"
+      ],
+      "wins": 2,
+      "losses": 1,
+      "ties": 0,
+      "points_for": 371.42,
+      "points_against": 340.3,
+      "games": 3,
+      "ppg": 123.81,
+      "final_standing": 0
     },
     {
       "year": 2017,
@@ -26459,36 +26457,14 @@
   ],
   "owner_alltime": [
     {
-      "owner_id": "{B792F7C9-61CE-4E29-940C-DC1C5E6C4208}",
-      "display_name": "Ryan Vader",
-      "seasons": 10,
-      "wins": 74,
-      "losses": 49,
-      "ties": 0,
-      "points_for": 14301.98,
-      "points_against": 13183.78,
-      "championships": 2,
-      "runner_ups": 2,
-      "third_place_finishes": 1,
-      "playoff_appearances": 7,
-      "best_finish": 1,
-      "worst_finish": 12,
-      "high_score": 185.5,
-      "low_score": 70.0,
-      "games_played": 123,
-      "win_pct": 0.6016,
-      "points_diff": 1118.2,
-      "ppg": 116.28
-    },
-    {
       "owner_id": "{93FE02E3-D523-4B1D-AC57-E31C8D235433}",
       "display_name": "Jules Salkind",
       "seasons": 3,
-      "wins": 18,
+      "wins": 19,
       "losses": 12,
       "ties": 0,
-      "points_for": 3746.72,
-      "points_against": 3494.84,
+      "points_for": 3883.48,
+      "points_against": 3555.78,
       "championships": 0,
       "runner_ups": 0,
       "third_place_finishes": 0,
@@ -26497,20 +26473,42 @@
       "worst_finish": 9,
       "high_score": 185.96,
       "low_score": 73.5,
-      "games_played": 30,
-      "win_pct": 0.6,
-      "points_diff": 251.88,
-      "ppg": 124.89
+      "games_played": 31,
+      "win_pct": 0.6129,
+      "points_diff": 327.7,
+      "ppg": 125.27
+    },
+    {
+      "owner_id": "{B792F7C9-61CE-4E29-940C-DC1C5E6C4208}",
+      "display_name": "Ryan Vader",
+      "seasons": 10,
+      "wins": 75,
+      "losses": 49,
+      "ties": 0,
+      "points_for": 14410.5,
+      "points_against": 13287.34,
+      "championships": 2,
+      "runner_ups": 2,
+      "third_place_finishes": 1,
+      "playoff_appearances": 7,
+      "best_finish": 1,
+      "worst_finish": 12,
+      "high_score": 185.5,
+      "low_score": 70.0,
+      "games_played": 124,
+      "win_pct": 0.6048,
+      "points_diff": 1123.16,
+      "ppg": 116.21
     },
     {
       "owner_id": "{6EB109A3-B9E1-4D2D-B109-A3B9E10D2D41}",
       "display_name": "Stefan Lachkar",
       "seasons": 10,
-      "wins": 71,
+      "wins": 72,
       "losses": 52,
       "ties": 0,
-      "points_for": 14341.8,
-      "points_against": 13568.22,
+      "points_for": 14492.98,
+      "points_against": 13703.5,
       "championships": 2,
       "runner_ups": 1,
       "third_place_finishes": 0,
@@ -26519,20 +26517,20 @@
       "worst_finish": 8,
       "high_score": 171.66,
       "low_score": 72.34,
-      "games_played": 123,
-      "win_pct": 0.5772,
-      "points_diff": 773.58,
-      "ppg": 116.6
+      "games_played": 124,
+      "win_pct": 0.5806,
+      "points_diff": 789.48,
+      "ppg": 116.88
     },
     {
       "owner_id": "{3A1A4E24-2A98-4038-9A4E-242A98803865}",
       "display_name": "Bennett Schiff",
       "seasons": 10,
       "wins": 67,
-      "losses": 55,
+      "losses": 56,
       "ties": 1,
-      "points_for": 13845.1,
-      "points_against": 13407.92,
+      "points_for": 13980.38,
+      "points_against": 13559.1,
       "championships": 0,
       "runner_ups": 1,
       "third_place_finishes": 3,
@@ -26541,10 +26539,10 @@
       "worst_finish": 9,
       "high_score": 176.28,
       "low_score": 57.48,
-      "games_played": 123,
-      "win_pct": 0.5488,
-      "points_diff": 437.18,
-      "ppg": 112.56
+      "games_played": 124,
+      "win_pct": 0.5444,
+      "points_diff": 421.28,
+      "ppg": 112.74
     },
     {
       "owner_id": "{600CAC49-2450-42EF-ABF1-33E7F0327DE9}",
@@ -26573,10 +26571,10 @@
       "display_name": "Ben Katz",
       "seasons": 10,
       "wins": 64,
-      "losses": 59,
+      "losses": 60,
       "ties": 0,
-      "points_for": 13795.3,
-      "points_against": 14000.34,
+      "points_for": 13906.16,
+      "points_against": 14157.88,
       "championships": 0,
       "runner_ups": 1,
       "third_place_finishes": 2,
@@ -26585,10 +26583,10 @@
       "worst_finish": 8,
       "high_score": 171.0,
       "low_score": 62.5,
-      "games_played": 123,
-      "win_pct": 0.5203,
-      "points_diff": -205.04,
-      "ppg": 112.16
+      "games_played": 124,
+      "win_pct": 0.5161,
+      "points_diff": -251.72,
+      "ppg": 112.15
     },
     {
       "owner_id": "{5431883D-E365-4401-97B9-DAD7EC2156AD}",
@@ -26616,11 +26614,11 @@
       "owner_id": "{429F0506-3667-4F0B-A2ED-1761D0A3F682}",
       "display_name": "Ben Wolbransky",
       "seasons": 9,
-      "wins": 55,
+      "wins": 56,
       "losses": 55,
       "ties": 0,
-      "points_for": 12199.06,
-      "points_against": 12036.18,
+      "points_for": 12305.4,
+      "points_against": 12128.42,
       "championships": 1,
       "runner_ups": 0,
       "third_place_finishes": 0,
@@ -26629,20 +26627,20 @@
       "worst_finish": 9,
       "high_score": 174.58,
       "low_score": 63.5,
-      "games_played": 110,
-      "win_pct": 0.5,
-      "points_diff": 162.88,
-      "ppg": 110.9
+      "games_played": 111,
+      "win_pct": 0.5045,
+      "points_diff": 176.98,
+      "ppg": 110.86
     },
     {
       "owner_id": "{BDC02B8B-DDC4-464E-B2E9-065DF145DDBB}",
       "display_name": "Jonathan Coopersmith",
       "seasons": 9,
-      "wins": 54,
+      "wins": 55,
       "losses": 55,
       "ties": 1,
-      "points_for": 12073.64,
-      "points_against": 12120.74,
+      "points_for": 12231.18,
+      "points_against": 12231.6,
       "championships": 2,
       "runner_ups": 1,
       "third_place_finishes": 0,
@@ -26651,20 +26649,20 @@
       "worst_finish": 10,
       "high_score": 167.56,
       "low_score": 58.5,
-      "games_played": 110,
-      "win_pct": 0.4955,
-      "points_diff": -47.1,
-      "ppg": 109.76
+      "games_played": 111,
+      "win_pct": 0.5,
+      "points_diff": -0.42,
+      "ppg": 110.19
     },
     {
       "owner_id": "{4F3E4D57-5F87-4D74-92C0-40815B7DFD51}",
       "display_name": "Jake Fischer",
       "seasons": 8,
       "wins": 46,
-      "losses": 51,
+      "losses": 52,
       "ties": 0,
-      "points_for": 10797.7,
-      "points_against": 11075.9,
+      "points_for": 10901.26,
+      "points_against": 11184.42,
       "championships": 1,
       "runner_ups": 1,
       "third_place_finishes": 1,
@@ -26673,10 +26671,10 @@
       "worst_finish": 8,
       "high_score": 188.7,
       "low_score": 65.04,
-      "games_played": 97,
-      "win_pct": 0.4742,
-      "points_diff": -278.2,
-      "ppg": 111.32
+      "games_played": 98,
+      "win_pct": 0.4694,
+      "points_diff": -283.16,
+      "ppg": 111.24
     },
     {
       "owner_id": "{4F5F2872-3868-445B-A9B7-97762020CC26}",
@@ -26771,10 +26769,10 @@
       "display_name": "Adam Heckelman",
       "seasons": 7,
       "wins": 35,
-      "losses": 49,
+      "losses": 50,
       "ties": 0,
-      "points_for": 9281.78,
-      "points_against": 9635.16,
+      "points_for": 9342.72,
+      "points_against": 9771.92,
       "championships": 0,
       "runner_ups": 1,
       "third_place_finishes": 0,
@@ -26783,20 +26781,20 @@
       "worst_finish": 10,
       "high_score": 166.26,
       "low_score": 30.0,
-      "games_played": 84,
-      "win_pct": 0.4167,
-      "points_diff": -353.38,
-      "ppg": 110.5
+      "games_played": 85,
+      "win_pct": 0.4118,
+      "points_diff": -429.2,
+      "ppg": 109.91
     },
     {
       "owner_id": "{CBF6473A-C5A3-46D7-8EF8-BFAF0D868891}",
       "display_name": "Ben Goldstein",
       "seasons": 9,
       "wins": 45,
-      "losses": 65,
+      "losses": 66,
       "ties": 0,
-      "points_for": 11926.58,
-      "points_against": 12686.5,
+      "points_for": 12018.82,
+      "points_against": 12792.84,
       "championships": 0,
       "runner_ups": 0,
       "third_place_finishes": 2,
@@ -26805,10 +26803,10 @@
       "worst_finish": 10,
       "high_score": 163.5,
       "low_score": 54.54,
-      "games_played": 110,
-      "win_pct": 0.4091,
-      "points_diff": -759.92,
-      "ppg": 108.42
+      "games_played": 111,
+      "win_pct": 0.4054,
+      "points_diff": -774.02,
+      "ppg": 108.28
     },
     {
       "owner_id": "{92775292-B9FA-4B38-B752-92B9FADB38B0}",
@@ -26900,10 +26898,10 @@
       "owner_a": "{ECD9E4C2-4E30-4915-AC59-6C1700E34A69}",
       "owner_b": "{BDC02B8B-DDC4-464E-B2E9-065DF145DDBB}",
       "wins": 4,
-      "losses": 1,
+      "losses": 2,
       "ties": 0,
-      "points_for": 665.88,
-      "points_against": 508.4
+      "points_for": 776.74,
+      "points_against": 665.94
     },
     {
       "owner_a": "{92775292-B9FA-4B38-B752-92B9FADB38B0}",
@@ -27341,10 +27339,10 @@
       "owner_a": "{3A1A4E24-2A98-4038-9A4E-242A98803865}",
       "owner_b": "{6EB109A3-B9E1-4D2D-B109-A3B9E10D2D41}",
       "wins": 3,
-      "losses": 2,
+      "losses": 3,
       "ties": 0,
-      "points_for": 588.54,
-      "points_against": 619.34
+      "points_for": 723.82,
+      "points_against": 770.52
     },
     {
       "owner_a": "{BDC02B8B-DDC4-464E-B2E9-065DF145DDBB}",
@@ -27952,11 +27950,11 @@
     {
       "owner_a": "{B792F7C9-61CE-4E29-940C-DC1C5E6C4208}",
       "owner_b": "{4F3E4D57-5F87-4D74-92C0-40815B7DFD51}",
-      "wins": 7,
+      "wins": 8,
       "losses": 5,
       "ties": 0,
-      "points_for": 1503.16,
-      "points_against": 1395.76
+      "points_for": 1611.68,
+      "points_against": 1499.32
     },
     {
       "owner_a": "{D919A776-B138-4470-ABA8-48265F7DC679}",
@@ -28132,11 +28130,11 @@
     {
       "owner_a": "{429F0506-3667-4F0B-A2ED-1761D0A3F682}",
       "owner_b": "{CBF6473A-C5A3-46D7-8EF8-BFAF0D868891}",
-      "wins": 7,
+      "wins": 8,
       "losses": 3,
       "ties": 0,
-      "points_for": 1133.52,
-      "points_against": 1071.12
+      "points_for": 1239.86,
+      "points_against": 1163.36
     },
     {
       "owner_a": "{D919A776-B138-4470-ABA8-48265F7DC679}",
@@ -28744,11 +28742,11 @@
     {
       "owner_a": "{93FE02E3-D523-4B1D-AC57-E31C8D235433}",
       "owner_b": "{8D1E7E24-92F1-49FC-ADF1-C8193EA1C44E}",
-      "wins": 2,
+      "wins": 3,
       "losses": 0,
       "ties": 0,
-      "points_for": 191.56,
-      "points_against": 175.18
+      "points_for": 328.32,
+      "points_against": 236.12
     },
     {
       "owner_a": "{BDC02B8B-DDC4-464E-B2E9-065DF145DDBB}",

@@ -2,11 +2,11 @@ name: Refresh half-PPR keeper ADP
 
 on:
   schedule:
-    # Daily through draft-prep season; weekly the rest of the year. The weekly
-    # slot sits well clear of "Refresh league data" (Tuesdays ~12:11/13:11 UTC),
-    # which runs the ADP step itself — two jobs pushing data/ at once would race.
+    # Offseason only: ADP is draft value, and the next season's feed returns
+    # 400s once the season starts. Daily through draft-prep season (May-Aug),
+    # weekly on Tuesdays Feb-Apr. Nothing runs Sep-Jan.
     - cron: "41 13 * 5-8 *"
-    - cron: "41 15 * 1-4,9-12 2"
+    - cron: "41 15 * 2-4 2"
   workflow_dispatch:
 
 permissions:

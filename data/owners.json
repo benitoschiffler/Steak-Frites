@@ -117,9 +117,9 @@
         "team_id": 1,
         "team_name": "We Did It, Joe!",
         "wins": 2,
-        "losses": 1,
+        "losses": 2,
         "ties": 0,
-        "points_for": 371.41999999999996,
+        "points_for": 529.24,
         "final_standing": 0
       }
     ]
@@ -335,10 +335,10 @@
         "year": 2026,
         "team_id": 6,
         "team_name": "Nude Egg",
-        "wins": 1,
+        "wins": 2,
         "losses": 2,
         "ties": 0,
-        "points_for": 323.38,
+        "points_for": 458.64,
         "final_standing": 0
       }
     ]
@@ -502,9 +502,9 @@
         "team_id": 3,
         "team_name": "Amon-Ra Dog It",
         "wins": 3,
-        "losses": 0,
+        "losses": 1,
         "ties": 0,
-        "points_for": 491.52000000000004,
+        "points_for": 603.6400000000001,
         "final_standing": 0
       }
     ]
@@ -682,10 +682,10 @@
         "year": 2026,
         "team_id": 5,
         "team_name": "Bijan Mustard",
-        "wins": 2,
+        "wins": 3,
         "losses": 1,
         "ties": 0,
-        "points_for": 395.7,
+        "points_for": 562.28,
         "final_standing": 0
       }
     ]
@@ -838,10 +838,10 @@
         "year": 2026,
         "team_id": 7,
         "team_name": "Los Peloteros De Katz",
-        "wins": 0,
+        "wins": 1,
         "losses": 3,
         "ties": 0,
-        "points_for": 333.46000000000004,
+        "points_for": 480.14000000000004,
         "final_standing": 0
       }
     ]
@@ -962,9 +962,9 @@
         "team_id": 12,
         "team_name": "Run CMC ft. Omarion",
         "wins": 2,
-        "losses": 1,
+        "losses": 2,
         "ties": 0,
-        "points_for": 321.9,
+        "points_for": 441.82,
         "final_standing": 0
       }
     ]
@@ -1100,10 +1100,10 @@
         "year": 2026,
         "team_id": 10,
         "team_name": "Team Goldstein",
-        "wins": 1,
+        "wins": 2,
         "losses": 2,
         "ties": 0,
-        "points_for": 302.12,
+        "points_for": 398.02,
         "final_standing": 0
       }
     ]
@@ -1207,9 +1207,9 @@
         "team_id": 2,
         "team_name": "Jake and Seth",
         "wins": 1,
-        "losses": 2,
+        "losses": 3,
         "ties": 0,
-        "points_for": 356.14,
+        "points_for": 491.86,
         "final_standing": 0
       }
     ]
@@ -1322,10 +1322,10 @@
         "year": 2026,
         "team_id": 9,
         "team_name": "Saquads squad  Ship",
-        "wins": 1,
+        "wins": 2,
         "losses": 2,
         "ties": 0,
-        "points_for": 319.5,
+        "points_for": 444.4,
         "final_standing": 0
       }
     ]
@@ -1389,9 +1389,9 @@
         "team_id": 11,
         "team_name": "Monanguys",
         "wins": 2,
-        "losses": 1,
+        "losses": 2,
         "ties": 0,
-        "points_for": 397.76,
+        "points_for": 467.0,
         "final_standing": 0
       }
     ]
